@@ -1,6 +1,6 @@
 baseURL = "https://buster.wiki/"
 languageCode = "en-us"
-title = "buster.wiki"
+title = "Buster's Wiki"
 theme = "ananke"
 
 [params]
