@@ -1,8 +1,15 @@
 {{ define "main" }}
 
-<section class="overlay">
+<section>
 <div class="container">
-<h1>buster.wiki</h1>
+  {{ range first 10 .Pages.ByLastmod }}
+    <div class="row">
+      <div class="col">
+        <strong><a href="{{ .Permalink }}">{{ .Title }}</a></strong>
+        <div>{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+      </div>
+    </div>
+  {{ end }}
 </div>
 </section>
 
