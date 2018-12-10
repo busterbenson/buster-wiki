@@ -1,8 +1,7 @@
 baseURL = "https://buster.wiki/"
 languageCode = "en-us"
-title = "Buster's Wiki"
 theme = "ananke"
-
+title = "Buster's Wiki"
 [params]
-	custom_css = ["css/vendor.css","css/style.css"]
-	custom_js  = ["js/vendor.min.js", "js/app.js"]
+custom_css = ["css/vendor.css", "css/style.css"]
+custom_js = ["js/vendor.min.js", "js/app.js"]
