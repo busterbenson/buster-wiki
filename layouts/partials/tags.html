@@ -1,4 +1,3 @@
-Tags: 
 {{ range .Params.tags }}
 	<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{- . -}}</a>
 {{ end }}

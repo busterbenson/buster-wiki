@@ -5,6 +5,10 @@
       <h1 class="f1 athelas mb1">
         {{- .Title -}}
       </h1>
+      <div>
+        {{ .Date.Format "January 2, 2006" }} • 
+        {{ partial "tags.html" . }}
+      </div>      
       {{/*  
           Show "reading time" and "word count" but only if one of the following are true:
           1) A global config `params` value is set `show_reading_time = true`
@@ -12,16 +16,16 @@
           3) A page front matter value is set `show_reading_time = true`
         */}}
       {{ if (or (eq (.Param "show_reading_time") true) (eq $section.Params.show_reading_time true) )}}
-        <span> - {{ .ReadingTime}} minutes read</span>
-        <span> - {{ .WordCount}} words</span>
+        <div>
+          <span> - {{ .ReadingTime}} minutes read</span>
+          <span> - {{ .WordCount}} words</span>
+        </div>
       {{ end }}
 
-      {{- .Content -}}
+      <div class="row mt-2">
+        <div class="col-md-8">{{- .Content -}}</div>
+      </div>
 
-      <div>
-        {{ .Date.Format "January 2, 2006" }} • 
-        {{ partial "tags.html" . }}
-      </div>      
     </div>
   </section>
 {{ end }}
