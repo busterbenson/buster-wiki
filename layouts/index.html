@@ -5,8 +5,7 @@
   {{ range first 10 .Pages.ByLastmod }}
     <div class="row">
       <div class="col">
-        <strong><a href="{{ .Permalink }}">{{ .Title }}</a></strong>
-        <div>{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+	      {{ partial "summary.html" . }}
       </div>
     </div>
   {{ end }}

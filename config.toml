@@ -1,4 +1,4 @@
-baseURL = "https://buster.wiki/"
+baseURL = "https://buster-wiki.netlify.com/"
 languageCode = "en-us"
 theme = "ananke"
 title = "Buster's Wiki"
