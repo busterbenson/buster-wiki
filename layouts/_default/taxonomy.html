@@ -1,0 +1,14 @@
+{{ define "main" }}
+  <section>
+    <div class="container">
+      <h3>
+        <p>Nodes tagged {{ .Title }}</p>
+      </h3>
+      {{ range  .Pages }}
+        <div>
+          {{ partial "summary.html" . }}
+        </div>
+      {{ end }}
+    </div>
+  </section>  
+{{ end }}
