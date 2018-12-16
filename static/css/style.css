@@ -63,7 +63,8 @@ body {
   line-height: 1.5;
   color: #555555;
   text-align: left;
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8; 
+}
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
@@ -1999,7 +2000,7 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #064CDB;
+  color: #0088ee; // #064CDB;
   background-color: transparent; }
   .btn-link:hover {
     color: #043291;
@@ -4078,7 +4079,7 @@ button.close {
   margin-bottom: 0;
   font-size: 1rem;
   color: #000;
-  background-color: #f7f7f7;
+  //background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px); }
