@@ -26,5 +26,3 @@ fields:
   name: featured
   label: Featured
   description: If this is a special node.
-pages:
-- content/posts/tree-of-beliefs.md
