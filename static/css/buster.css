@@ -8,3 +8,9 @@ h1, h2 {
 .lora {
 	font-family: 'lora', serif;
 }
+header .navbar a, header .navbar a:visited {
+	color: #000;
+}
+header .navbar a:hover {
+	color: #000;
+}

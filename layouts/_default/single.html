@@ -2,28 +2,33 @@
   {{ $section := .Site.GetPage "section" .Section }}
   <section>
     <div class="container">
-      <h1 class="lora">
-        {{- .Title -}}
-      </h1>
-      <div>
-        {{ .Date.Format "January 2, 2006" }} • 
-        {{ partial "tags.html" . }}
-      </div>      
-      {{/*  
-          Show "reading time" and "word count" but only if one of the following are true:
-          1) A global config `params` value is set `show_reading_time = true`
-          2) A section front matter value is set `show_reading_time = true`
-          3) A page front matter value is set `show_reading_time = true`
-        */}}
-      {{ if (or (eq (.Param "show_reading_time") true) (eq $section.Params.show_reading_time true) )}}
-        <div>
-          <span> - {{ .ReadingTime}} minutes read</span>
-          <span> - {{ .WordCount}} words</span>
+      
+      <div class="row mt-2 justify-content-center">
+        <div class="col-md-8">
+          <h1 class="lora">
+            {{- .Title -}}
+          </h1>
+          <div>
+            {{ .Date.Format "January 2, 2006" }} • 
+            {{ partial "tags.html" . }}
+          </div>      
+          {{/*  
+              Show "reading time" and "word count" but only if one of the following are true:
+              1) A global config `params` value is set `show_reading_time = true`
+              2) A section front matter value is set `show_reading_time = true`
+              3) A page front matter value is set `show_reading_time = true`
+            */}}
+          {{ if (or (eq (.Param "show_reading_time") true) (eq $section.Params.show_reading_time true) )}}
+            <div>
+              <span> - {{ .ReadingTime}} minutes read</span>
+              <span> - {{ .WordCount}} words</span>
+            </div>
+          {{ end }}
         </div>
-      {{ end }}
+      </div>
 
       <div class="row mt-2 justify-content-center">
-        <div class="col-md-6">{{- .Content -}}</div>
+        <div class="col-md-8">{{- .Content -}}</div>
       </div>
 
     </div>

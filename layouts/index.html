@@ -4,24 +4,12 @@
 	<div class="container">
 
     <div class="row mt-2 justify-content-center">
-      <div class="col-md-8">This is my life in weeks.</div>
+      <div class="col-md-8">
+        Hello.
+
+      </div>
     </div>
 
-
-    <div class="row mt-2 justify-content-center">
-      <div class="col-lg-12">
-		    {{ range $num := seq 100 }}
-		    	{{ $age := sub $num 1 }}
-		    	{{ $year := add 1976 $age }}
-		    	{{ $this_year_date := time ( printf "%d-05-28" $year ) }}
-        	<div class="border border-dark float-left p-1 m-1 ml-0">AGE {{ $age }} / {{ $year }}</div>
-      		{{ range $week := seq 52 }}
-			    	{{ $this_week_date := $this_year_date.AddDate 0 0 (int (mul $week 7) ) }}
-			    	{{ $border_class := cond (gt $this_week_date now) "border-dark" "border-dark" }}
-      			<div class="border {{$border_class}} float-left p-1 m-1 ml-0">&nbsp;</div>
-      		{{ end }}
-      	{{ end }}
-    	</div>
 	</div>
 </section>
 
