@@ -41,7 +41,7 @@
     {{ end }}
   </head>
 
-  <body id="top">
+  <body id="top" {{ if (gt now.Hour 17) or (lt now.Hour 7) }}class="night"{{ end }}>
 
     {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
     {{ block "main" . }}{{ end }}

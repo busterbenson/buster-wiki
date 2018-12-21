@@ -1,16 +1,35 @@
 #top {
-	background-color: #fefefe;
+	background-color: #fff;
 	color: #000;
+}
+body.night header {
+	background-color: #fff;
 }
 h1, h2 {
 	font-family: 'lora', serif;
 }
+.title {
+	font-size: 70px; 
+	margin-bottom: 0px;
+}
+.subtitle {
+	color: #666;
+	padding-bottom: 1em;
+	margin-top: 0px;
+}
 .lora {
 	font-family: 'lora', serif;
+}
+header {
+	background-color: #eff;
 }
 header .topnav a.navbar-text, header .topnav a:visited.navbar-text {
 	color: #000;
 }
 header .topnav a:hover.navbar-text {
 	color: #000;
+}
+.header + section {
+	padding: 2em;
+	margin: 0;
 }

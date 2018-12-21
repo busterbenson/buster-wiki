@@ -5,15 +5,12 @@
       
       <div class="row mt-2 justify-content-center">
         <div class="col-md-8">
-          <h1 class="lora">
+          <h1 class="title">
             {{- .Title -}}
           </h1>
-          <div>
-            {{ if isset .Params "one_liner" }}
-              {{ .Param "one_liner" }} • 
-            {{ end }}
-            {{ .Date.Format "Jan 2 2006" }}
-          </div>      
+          {{ if isset .Params "one_liner" }}
+            <h4 class="subtitle font-weight-light">{{ .Param "one_liner" }}</h4>  
+          {{ end }}
           {{/*  
               Show "reading time" and "word count" but only if one of the following are true:
               1) A global config `params` value is set `show_reading_time = true`

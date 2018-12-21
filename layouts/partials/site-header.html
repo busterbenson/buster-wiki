@@ -3,16 +3,26 @@
     <div class="row justify-content-center">
     	<div class="col-md-8 topnav">
 
-				{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
-				{{ $.Scratch.Add "path" .Site.BaseURL }}
-			  <a href="/" class="navbar-text">➰ Buster's Wiki</a>
-			  {{ range $index, $element := split $url "/" }}
-			    {{ $.Scratch.Add "path" $element }}
-			      {{ if ne $element "" }}
-			      	/ <a class="navbar-text" href='{{ $.Scratch.Get "path" }}'>{{ . }}</a>
-			      {{ $.Scratch.Add "path" "/" }}
-			    {{ end }}
-			  {{ end }}
+			{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+			{{ $.Scratch.Add "path" .Site.BaseURL }}
+			{{ $path_parts := split $url "/" }}
+		  {{ $path_length := (len $path_parts) }}
+		  <a href="/" class="navbar-text">➰ Buster's Wiki</a>
+
+		  {{ range $index, $element := $path_parts }}
+		    {{ $.Scratch.Add "path" $element }}
+		    {{ if ne $element "" }}
+		      {{ if ne $element "nodes" }}
+			      / 
+						{{ if eq (add $index 2) $path_length }}
+							{{ . }}
+						{{ else }}
+				      <a class="navbar-text" href='{{ $.Scratch.Get "path" }}'>{{ . }}</a>
+						{{ end }}
+		      {{ end }}
+		      {{ $.Scratch.Add "path" "/" }}
+		    {{ end }}
+		  {{ end }}
 
 	     </div>
     </div>
