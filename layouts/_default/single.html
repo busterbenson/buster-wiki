@@ -9,8 +9,10 @@
             {{- .Title -}}
           </h1>
           <div>
-            {{ .Date.Format "January 2, 2006" }} • 
-            {{ partial "tags.html" . }}
+            {{ if isset .Params "one_liner" }}
+              {{ .Param "one_liner" }} • 
+            {{ end }}
+            {{ .Date.Format "Jan 2 2006" }}
           </div>      
           {{/*  
               Show "reading time" and "word count" but only if one of the following are true:
