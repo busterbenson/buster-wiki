@@ -3,10 +3,17 @@
 	color: #000;
 }
 body.night header {
-	background-color: #fff;
+	background-color: #eff;
 }
 h1, h2 {
 	font-family: 'lora', serif;
+}
+h4 {
+	margin-top: 1.5em;
+	border-bottom: 1px solid #ccc;
+}
+h4.mailchimp {
+	border-bottom: none;
 }
 .title {
 	font-size: 70px; 
@@ -16,12 +23,13 @@ h1, h2 {
 	color: #666;
 	padding-bottom: 1em;
 	margin-top: 0px;
+	border-bottom: none;
 }
 .lora {
 	font-family: 'lora', serif;
 }
 header {
-	background-color: #eff;
+	background-color: #efe;
 }
 header .topnav a.navbar-text, header .topnav a:visited.navbar-text {
 	color: #000;
@@ -32,4 +40,25 @@ header .topnav a:hover.navbar-text {
 .header + section {
 	padding: 2em;
 	margin: 0;
+}
+footer {
+}
+#mc_embed_signup {
+	font-family: "Muli", sans-serif !important;
+}
+#mc_embed_signup form {
+	margin: 0;
+	padding-left: 0 !important;
+}
+#mc_embed_signup #mce-success-response {
+	color: #000 !important;
+	font-size: 20px;
+}
+#mc_embed_signup div#mce-responses {
+	margin: 0 !important;
+	padding: 0 0 1em 0 !important;
+}
+button.btn button.button-link {
+	text-decoration: none !important;
+	border: 1px solid #000 !important;
 }

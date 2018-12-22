@@ -1,4 +1,12 @@
 <footer>
   <div class="container">
+	  {{ if eq (.Param "mailchimp") true }}
+      <div class="row mt-2 justify-content-center">
+        <div class="col-md-8">
+        	{{ partial "divider" }}
+          {{ partial "mailchimp" }}                  
+        </div>  
+      </div>
+	  {{ end }}  	
   </div>
 </footer>
