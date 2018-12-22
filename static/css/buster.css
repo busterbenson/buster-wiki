@@ -10,7 +10,6 @@ h1, h2 {
 }
 h4 {
 	margin-top: 1.5em;
-	border-bottom: 1px solid #ccc;
 }
 h4.mailchimp {
 	border-bottom: none;
@@ -37,10 +36,6 @@ header .topnav a.navbar-text, header .topnav a:visited.navbar-text {
 header .topnav a:hover.navbar-text {
 	color: #000;
 }
-.header + section {
-	padding: 2em;
-	margin: 0;
-}
 footer {
 }
 #mc_embed_signup {
@@ -61,4 +56,12 @@ footer {
 button.btn button.button-link {
 	text-decoration: none !important;
 	border: 1px solid #000 !important;
+}
+iframe {
+	margin-bottom: 1em;
+}
+.embedly-card {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 0 10px;
 }
