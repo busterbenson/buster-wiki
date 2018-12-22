@@ -22,4 +22,4 @@ Gum Theory bridges the gap between prickly and gooey things... everything is gum
 <blockquote class="embedly-card" data-card-key="5827e7f2248f44159fc84d9fe7b78845" data-card-controls="0" data-card-type="article" data-card-align="left"><h4><a href="https://medium.com/gum-theory/a-blueberry-danish-from-scratch-faec21271b4b">A blueberry danish from scratch - Gum Theory - Medium</a></h4><p>1 Carl Sagan's famous quote with his one-of-a-kind delivery: I found this amazing remix as well, which is why I love the internet. *2 What is Gum Theory ? It's my take on a light-hearted "Theory of Everything" for kids and busy people.</p></blockquote>
 <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
-
+ 
