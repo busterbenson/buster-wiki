@@ -1,0 +1,22 @@
+
+{{ define "main" }}
+{{ $section := .Site.GetPage "section" .Section }}
+<div class="container">
+  
+  <div class="row mt-2 justify-content-center">
+    <div class="col-md-8">
+      <h1 class="title">{{ .Title }}</h1>
+      <h4 class="subtitle">{{ .Param "one_liner" }}</h4>
+      {{ .Content }}
+      <ul class="contents">
+      {{ range .Paginator.Pages }}
+        {{ if ne (.Param "hide") true }}
+          <li><a href="{{ .URL }}">{{.Title}}</a></li>
+        {{ end }}
+      {{ end }}
+      </ul>
+
+    </div>
+  </div>
+</div>
+{{ end }}

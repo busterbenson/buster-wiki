@@ -1,36 +1,22 @@
 {{ define "main" }}
   {{ $section := .Site.GetPage "section" .Section }}
-  <section>
-    <div class="container">
-      
-      <div class="row mt-2 justify-content-center">
-        <div class="col-md-8">
-          <h1 class="title">
-            {{- .Title -}}
-          </h1>
-          {{ if isset .Params "one_liner" }}
-            <h4 class="subtitle font-weight-light">{{ .Param "one_liner" }}</h4>  
-          {{ end }}
-          {{/*  
-              Show "reading time" and "word count" but only if one of the following are true:
-              1) A global config `params` value is set `show_reading_time = true`
-              2) A section front matter value is set `show_reading_time = true`
-              3) A page front matter value is set `show_reading_time = true`
-            */}}
-          {{ if (or (eq (.Param "show_reading_time") true) (eq $section.Params.show_reading_time true) )}}
-            <div>
-              <span> - {{ .ReadingTime}} minutes read</span>
-              <span> - {{ .WordCount}} words</span>
-            </div>
-          {{ end }}
-        </div>
+  <div class="container">
+    
+    <div class="row mt-2 justify-content-center">
+      <div class="col-md-8">
+        <h1 class="title">
+          {{- .Title -}}
+        </h1>
+        {{ if isset .Params "one_liner" }}
+          <h4 class="subtitle font-weight-light">{{ .Param "one_liner" }}</h4>  
+        {{ end }}
       </div>
-
-      <div class="row mt-2 justify-content-center"> 
-        <div class="col-md-8">{{- .Content -}}</div>
-      </div>
-
     </div>
-  </section>
+
+    <div class="row mt-2 justify-content-center"> 
+      <div class="col-md-8">{{- .Content -}}</div>
+    </div>
+
+  </div>
 
 {{ end }}

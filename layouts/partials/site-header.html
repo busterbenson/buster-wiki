@@ -12,14 +12,12 @@
 		  {{ range $index, $element := $path_parts }}
 		    {{ $.Scratch.Add "path" $element }}
 		    {{ if ne $element "" }}
-		      {{ if ne $element "nodes" }}
-			      / 
-						{{ if eq (add $index 2) $path_length }}
-							{{ . }}
-						{{ else }}
-				      <a class="navbar-text" href='{{ $.Scratch.Get "path" }}'>{{ . }}</a>
-						{{ end }}
-		      {{ end }}
+		      / 
+				{{ if eq (add $index 2) $path_length }}
+					{{ . }}
+				{{ else }}
+			      <a class="navbar-text" href='{{ $.Scratch.Get "path" }}'>{{ . }}</a>
+				{{ end }}
 		      {{ $.Scratch.Add "path" "/" }}
 		    {{ end }}
 		  {{ end }}
