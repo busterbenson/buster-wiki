@@ -3,6 +3,7 @@ title = "Gum Theory"
 one_liner = "A weird new theory of everything for kids and busy people."
 created_date = "2018-12-20"
 mailchimp = true
+draft = false
 +++
 
 The gist of it is that there are two kinds of things in the world, "prickly things and gooey things" as Alan Watts has described it. Prickly things have lots of edges, and are distinct, and measurable, and feel real. Gooey things are sort of fuzzy, and hard to define, and may or may not be real. We often get mixed up about things because we think of them as either prickly or gooey... but if you look closely everything is a little prickly and a little gooey. 
