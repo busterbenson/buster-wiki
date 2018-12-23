@@ -1,4 +1,4 @@
 # Hugo default output directory
 /public
-*.DS_Store
+.DS_Store
 /themes/ananke
