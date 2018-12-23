@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+<div class="container">
+
+  <div class="row mt-2 justify-content-center">
+    <div class="col-md-8">
+			<p>{{ .Content }}</p>
+		</div>
+	</div>
+
+  <div class="row mt-2 justify-content-center">
+    <div class="col-md-12">
+
+      <div class="row justify-content-start">
+      {{ range (.Paginator 50).Pages.ByDate }}
+        {{ if ne (.Param "hide_from_lists") true }}
+          {{ partial "image-card" . }}
+        {{ end }}
+      {{ end }}
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+{{ end }}

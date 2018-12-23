@@ -1,6 +1,5 @@
 
 {{ define "main" }}
-{{ $section := .Site.GetPage "section" .Section }}
 <div class="container">
   
   <div class="row mt-2 justify-content-center">
@@ -8,14 +7,24 @@
       <h1 class="title">{{ .Title }}</h1>
       <h4 class="subtitle">{{ .Param "one_liner" }}</h4>
       {{ .Content }}
-      <ul class="contents">
-      {{ range .Paginator.Pages }}
-        {{ if ne (.Param "hide") true }}
-          <li><a href="{{ .URL }}">{{.Title}}</a></li>
+    </div>
+  </div>
+  <div class="row mt-2">
+    <div class="col-md-12">
+      {{ if eq (.Param "show_tree") true }}
+        <div class="row justify-content-start">
+        {{ range .Site.Pages }}
+          {{ if ne (.Param "hide_from_lists") true }}
+            {{ if and (eq .Kind "page") (eq .Dir "nodes/" ) }}
+              {{ partial "node-card" . }}
+            {{ end }}
+            {{ if eq .Kind "section" }}
+              {{ partial "section-card" . }}
+            {{ end }}
+          {{ end }}
         {{ end }}
+        </div>
       {{ end }}
-      </ul>
-
     </div>
   </div>
 </div>

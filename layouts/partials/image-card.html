@@ -1,0 +1,7 @@
+{{ if and (isset .Params "featured_image") (ne (.Param "featured_image") "") }}
+	<div class="col-12 col-md-6 col-lg-4 mb-3">
+		<div class="card scale">
+		  <a href="{{.URL}}"><img class="card-img-top" src="{{ .Param "featured_image" }}" alt="{{.Title}}"></a>
+		</div>
+	</div>
+{{ end }}
