@@ -2,6 +2,7 @@ baseURL = "https://buster-wiki.netlify.com/"
 languageCode = "en-us"
 theme = "buster"
 title = "Buster's Wiki"
+enableInlineShortcodes = true
 [params]
 custom_css = ["css/vendor.css", "css/style.css", "css/buster.css"]
 custom_js = ["js/vendor.min.js", "js/app.js"]
