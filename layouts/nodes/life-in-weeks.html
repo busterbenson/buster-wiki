@@ -11,16 +11,29 @@
 
 
     <div class="row mt-2 justify-content-center">
-      <div class="col-lg-12">
+      <div class="col-lg">
 		    {{ range $num := seq 100 }}
 		    	{{ $age := sub $num 1 }}
 		    	{{ $year := add 1976 $age }}
-		    	{{ $this_year_date := time ( printf "%d-05-28" $year ) }}
-        	<div class="border border-dark float-left p-1 m-1 ml-0">AGE {{ $age }} / {{ $year }}</div>
+		    	{{ $this_year_date := time ( printf "%d-05-21" $year ) }}
+          {{ $year_border_class := cond (gt $this_year_date now) "" "theme-background" }}
+        	<div class="border border-dark float-left p-1 m-1 ml-0 {{ $year_border_class }}">AGE {{ $age }} / {{ $year }}</div>
       		{{ range $week := seq 52 }}
 			    	{{ $this_week_date := $this_year_date.AddDate 0 0 (int (mul $week 7) ) }}
-			    	{{ $border_class := cond (gt $this_week_date now) "border-dark" "border-dark" }}
-      			<div class="border {{$border_class}} float-left p-1 m-1 ml-0">&nbsp;</div>
+			    	{{ $week_border_class := cond (gt $this_week_date now) "border-secondary" "border-dark" }}
+      			<div class="border {{$week_border_class}} float-left p-1 m-1 ml-0">
+              {{ range $each_day := seq 7  }}
+                {{ $specific_date := $this_week_date.AddDate 0 0 (int (sub $each_day 1)) }}
+                {{ $date_string := printf "%04d-%02d-%02d" $specific_date.Year $specific_date.Month $specific_date.Day }}
+                {{ $key := index $.Site.Data.life $date_string }}
+                {{ if ne $key nil }}
+                  {{ range $key }}
+                    <a data-toggle="tooltip" data-placement="top" title="{{$specific_date.Format "Jan"}}, {{$specific_date.Day}} {{$specific_date.Year}}"><small>{{ .event }}</small></a>
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+              &nbsp;
+            </div>
       		{{ end }}
       	{{ end }}
     	</div>

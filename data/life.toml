@@ -1,0 +1,256 @@
+[[1976-05-28]]
+event = "I enter the world."
+category = "self"
+tags = ["me"]
+
+[[1978-10-29]]
+event = "My sister, Kristy, is born."
+category = "family"
+tags = ["kristy"]
+
+[[1982-08-25]]
+event = "I start at Glenmeade Elementary."
+category = "school"
+
+[[1984-08-01]]
+event = "We move to Irvine."
+category = "family"
+
+[[1984-09-02]]
+event = "I transfer to Stonecreek Elementary for 3rd grade."
+category = "school"
+
+[[1988-09-10]]
+event = "I start 7th grade at Lakeside Middle."
+category = "school"
+
+[[1990-09-02]]
+event = "I start at Woodbridge High School."
+category = "school"
+
+[[1993-10-30]]
+event = "My father passes away."
+category = "family"
+tags = ["dad"]
+
+[[1994-05-15]]
+event = "I graduate from Woodbridge High School."
+category = "school"
+
+[[1994-08-07]]
+event = "I move to Berkeley, California."
+category = "self"
+
+[[1995-08-01]]
+event = "I move to Seattle, Washington."
+category = "self"
+
+[[1994-08-19]]
+event = "First day of college at UC Berkeley."
+category = "school"
+
+[[1995-09-25]]
+event = "First day at University of Washington after transfer."
+category = "school"
+
+[[1998-06-13]]
+event = "I graduate from UW with a degree in creative writing."
+category = "school"
+
+[[1998-11-02]]
+event = "My first day at Amazon, doing night shift customer service."
+category = "work"
+tags = ["technology"]
+
+[[1999-10-03]]
+event = "I write my first blog post."
+category = "writing"
+
+
+[[2000-01-01]]
+event = "Y2K happens."
+category = "world"
+tags = ["technology"]
+
+[[2000-05-23]]
+event = "I become a 'web developer' -- my first official job as an engineer."
+category = "work"
+tags = ["technology"]
+
+[[2001-09-11]]
+event = "September 11th happens."
+category = "world"
+tags = ["politics"]
+
+[[2003-08-05]]
+event = "I self-publish my NaNoWriMo novel, Man Versus Himself."
+category = "writing"
+
+[[2004-09-01]]
+event = "The Robot Co-op is founded."
+category = "work"
+tags = ["robot co-op"]
+
+[[2004-11-01]]
+event = "I buy my first place: a condo in Belltown."
+category = "self"
+tags = ["self", "home"]
+
+[[2005-01-01]]
+event = "43things.com launches."
+category = "work"
+tags = ["robot co-op"]
+
+[[2006-12-31]]
+event = "McLeod Residence's New Year's Eve opening party."
+category = "work"
+tags = ["mcleod residence"]
+
+[[2006-12-31]]
+event = "I meet Kellianne."
+category = "family"
+tags = ["kellianne"]
+
+[[2007-03-04]]
+event = "First kiss with Kellianne."
+category = "family"
+tags = ["kellianne"]
+
+[[2007-06-29]]
+event = "The first iPhone is released."
+category = "world"
+tags = ["technology"]
+
+[[2008-09-15]]
+event = "Financial crisis caused by subprime meltdown."
+category = "world"
+tags = "politics"
+
+[[2008-11-04]]
+event = "Obama wins the election."
+category = "world"
+tags = ["politics"]
+
+[[2008-10-04]]
+event = "Kellianne and I get married."
+category = "family"
+tags = ["kellianne"]
+
+[[2008-10-31]]
+event = "McLeod Residence's last day in business."
+category = "work"
+tags = ["mcleod residence"]
+
+[[2009-03-17]]
+event = "Locavore, an iPhone app, launches."
+category = "work"
+tags = ["locavore"]
+
+[[2009-12-16]]
+event = "750words.com launches."
+category = "work"
+tags = ["750 words"]
+
+[[2010-05-10]]
+event = "Niko is born."
+category = "family"
+tags = ["niko"]
+
+[[2010-09-01]]
+event = "healthmonth.com launches."
+category = "work"
+tags = ["health month"]
+
+[[2011-07-01]]
+event = "Habit Labs is founded."
+category = "work"
+tags = ["habit labs"]
+
+[[2012-03-13]]
+event = "Habit Labs launches Budge."
+category = "work"
+tags = ["habit labs", "bud.ge"]
+
+[[2012-07-11]]
+event = "Habit Labs closes down."
+category = "work"
+tags = ["habit labs"]
+
+[[2012-09-21]]
+event = "My first day at Twitter."
+category = "work"
+tags = ["twitter"]
+
+[[2013-01-04]]
+event = "Kellianne, Niko, and I move to Berkeley, California."
+category = "family"
+tags = ["family", "home"]
+
+[[2013-12-23]]
+event = "I sell my Belltown condo in Seattle."
+category = "self"
+
+[[2014-05-09]]
+event = "I meet Rodney, my brother."
+category = "family"
+tags = ["rodney"]
+
+[[2014-09-09]]
+event = "We buy a house in Berkeley."
+category = "family"
+tags = ["home"]
+
+[[2015-06-03]]
+event = "My last day at Twitter."
+category = "work"
+tags = ["twitter"]
+
+[[2015-06-08]]
+event = "My first day at Slack."
+category = "work"
+tags = ["slack"]
+
+[[2015-12-15]]
+event = "We launch Slack's platform."
+category = "work"
+tags = ["slack"]
+
+[[2016-08-06]]
+event = "Louie is born."
+category = "family"
+tags = ["louie"]
+
+[[2016-11-08]]
+event = "Trump wins the election."
+category = "world"
+tags = ["politics"]
+
+[[2018-01-30]]
+event = "Received a book deal for my book about arguing."
+category = "writing"
+tags = ["why are we yelling?"]
+
+[[2018-02-21]]
+event = "My last day at Slack."
+category = "work"
+tags = ["slack"]
+
+[[2018-03-14]]
+event = "My first day at Patreon."
+category = "work"
+tags = ["patreon"]
+
+[[2018-09-23]]
+event = "My last day at Patreon."
+category = "work"
+tags = ["patreon"]
+
+[[2052-08-05]]
+event = "My life expectancy expiration date."
+category = "self"
+tags = []
+
+[[2076-05-28]]
+event = "Goal: ride a bike on my 100th birthday."
+category = "goal"
+tags = ["health"]

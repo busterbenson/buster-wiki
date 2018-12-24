@@ -1,6 +1,6 @@
 +++
 title = "Who am I?"
-one_liner = "About this site and the people"
+one_liner = "Buster Benson, Human."
 featured_image = "/images/rickshaw.jpg"
 show_on_homepage = true
 homepage_order = 1

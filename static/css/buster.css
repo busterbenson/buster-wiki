@@ -5,6 +5,12 @@
 body.night header {
 	background-color: #eff;
 }
+.theme-background {
+	background-color: #efe; 
+}
+body.night .theme-background {
+	background-color: #eff;	
+}
 h1, h2 {
 	font-family: 'lora', serif;
 }
