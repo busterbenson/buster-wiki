@@ -1,0 +1,215 @@
+[[world.climate]]
+desc = "Human-influenced climate change is real, and it's appropriate to panic."
+
+[[world.climate]]
+desc = "Climate change is of particular importance to humans, because it poses an existential risk to our survival."
+
+[[world.civilization]]
+desc = "Technology has or will eventually disrupt all other human-created institutions (politics, religion, identity, economics, energy)."
+
+[[world.civilization]]
+desc = "As history progresses, power will tend to be more quickly redistributed when it gets too heavy at the top."
+
+[[world.civilization]]
+desc = "When power is redistributed (through disruption, revolution, or disaster), it will have undesirable short-term consequences."
+
+[[world.civilization]]
+desc = "Being good/moral increasingly becomes our default state as we learn more about the world and are more connected with others."
+
+[[life.aliens]]
+desc = "Non-carbon-based life forms exist."
+
+[[life.aliens]]
+desc = "Aliens exist, but for the same reaon most sci-fi adopts faster-than-light travel, cryogenics, and wormholes to facilitate travel, humans and physics as we currently understand them are not going to make this easy. More likely, I think we will discover their creations (ie. long-lived, patient robots they made) before we discover their biological species."
+
+[[life.aliens]]
+desc = "Aliens will probably discover our own long-lived, patient robots before they discover us."
+
+[[life.aliens]]
+desc = "The vast majority of intelligent beings throughout the universe are probably more similar to robots and cyborgs than organically evolved life."
+
+[[life.aliens]]
+desc = "Aliens are unlikely to be aggressive. Any sufficient reason to come specifically to us is unlikely to be motivated by typical warlike intentions, because we don't have anything special in the universe that they can't get elsewhere for cheaper."
+
+[[life.consciousness]]
+desc = "The sensation of consciousness is real." 
+
+[[life.free-will]]
+desc = "Free will exists within constraints, in the same way a goldfish has freedom and autonomy within its fishbowl."
+
+[[life.medicine]]
+desc = "A lot about health and medicine is mental, which opens the door for things like placebo effect and fake remedies."
+
+[[life.medicine]]
+desc = "Acupuncture works, somehow."
+
+[[life.origins]]
+desc = "We were not created in the way described in any of the major holy texts, if you take a literal interpretation."
+
+[[life.origins]]
+desc = "Within this universe, we evolved through natural systems that required no outside intervention."
+
+[[life.origins]]
+desc = "Micro and macro evolution really happen."
+
+[[life.existential-threats]]
+desc = "Disrupting the world's ecology (through deforestation, overfishing, monocultures, etc) poses a 5% existential threat to us."
+
+[[life.existential-threats]]
+desc = "Climate change poses a 5% existential threat to us."
+
+[[life.existential-threats]]
+desc = "Nuclear war poses a 3% existential threat to us."
+
+[[life.existential-threats]]
+desc = "The supervolcano erupting poses an 2% existential threat to us."
+
+[[life.existential-threats]]
+desc = "Asteroid impact poses a 1% existential threat to us."
+
+[[life.existential-threats]]
+desc = "A runaway artificial intelligence poses a <1% existential threat to us."
+
+[[life.existential-threats]]
+desc = "The magnetic poles reversing poses a <1% existential threat to us."
+
+[[life.existential-threats]]
+desc = "Aliens pose a <0.001% existential threat to us."
+
+[[life.existential-threats]]
+desc = "If and when humans become extinct, the Earth will barely notice (perhaps just giving a long sigh of relief)."
+
+[[philosophy.death]]
+desc = "We will die."
+
+[[philosophy.death]]
+desc = "There is no afterlife."
+
+[[philosophy.death]]
+desc = "We are part of a larger system that cycles materials through processes that include what we call life, as well as many other things (like tectonic movement, weather systems, the magnetic field, the cycling of water, carbon, and many other molecules and compounds)."
+
+[[philosophy.death]]
+desc = "Dirt is what living things do in times between being alive."
+
+[[philosophy.purpose]]
+desc = "There is no official purpose or meaning granted to our lives."
+
+[[philosophy.purpose]]
+desc = "It's okay to identify our own objectives in life and call them a purpose."
+
+[[philosophy.purpose]]
+desc = "Memento mori is a useful tool for remembering you're alive."
+
+[[philosophy.truth]]
+desc = "Most questions have no answer (but asking them and talking about them anyway is often entertaining)."
+
+[[philosophy.truth]]
+desc = "I subscribe to Hume's Fork, which claims that there are two kinds of knowledge: matters of fact, and relations of ideas. Matters of fact aren’t accessible to us—we can never know something for certain, only that it hasn't been proven wrong yet. We can only create a self-referencing network of ideas that are related to each other. '2 + 2 = 4' and 'My name is Buster' are both conclusively true if we agree to the definitions and relations between each word and symbol."
+
+[[philosophy.truth]]
+desc = "Logic is a helpful tool, but has flaws and can't be relied on entirely."
+
+[[philosophy.truth]]
+desc = "Even if absolute truth about matters of fact aren't accessible to us, it's still possible to get closer to it. Especially in the context of making better predictions on limited data."
+
+[[psychology.bias]]
+desc = "The human brain (in its current state of evolution) can't comprehend the universe."
+
+[[psychology.bias]]
+desc = "We have many implicit associations that lead to bias."
+
+[[psychology.bias]]
+desc = "We're susceptible to many cognitive biases and logical fallacies, because our brains require them to get any thinking done within our constraints of time and energy."
+
+[[psychology.mindfulness]]
+desc = "Prayer is useful as a mental maintenance tool, but doesn't tap into any special lines of communication to powerful beings."
+
+[[psychology.mindfulness]]
+desc = "For beginners, private journaling and going on a long walk are both better than sitting on a pillow and trying not to think (aka meditating) or talking to an imaginary omniscient being (aka prayer)."
+
+[[psychology.tulpa]]
+desc = "Tulpa are super weird, but extremely fascinating as a concept."
+
+[[psychology.tulpa]]
+desc = "'Tulpa' is a term that refers to our internal thoughtforms of conscious entities. For example, while Santa may not exist in the real world, we all have an internal tulpa of Santa that we've trained to essentially simulate Santa in our minds. Tulpa can exist for living people, dead people, historical people, and even our concept of ourselves is a tulpa in some ways."
+
+[[psychology.tulpa]]
+desc = "The idea of tulpa as personal thoughtforms explains a whole lot."
+
+[[psychology.tulpa]]
+desc = "Some tulpa are trained off of our religious cultures: Santa, God, Jesus, etc."
+
+[[psychology.tulpa]]
+desc = "Some tulpa are trained off of our memories of people who have passed away: ghosts, dreams."
+
+[[psychology.tulpa]]
+desc = "All of our classic mental archetypes for father, mother, grandfather, grandmother, boss, teacher, etc are loosely defined tulpa that will pull partly from cultural sources, and partly from personal experiences."
+
+[[psychology.tulpa]]
+desc = "Even our personal sense of identity is a tulpa that we feed, act through, and help train other people on as they get to know us."
+
+[[physics.laws]]
+desc = "Nothing in our universe can travel faster than light."
+
+[[physics.laws]]
+desc = "Perception of time can be sped up or slowed down, but not reversed (forwards time travel is possible, backwards is not)."
+
+[[physics.laws]]
+desc = "Teleportation, if it's ever invented, is more likely to resemble the creation of copies than 'true' teleportation."
+
+[[physics.laws]]
+desc = "Our universe began with low entropy and continues on a long, slow path to high entropy, powering literally everything along the way."
+
+[[physics.laws]]
+desc = "The universe, at the most fundamental level, may just be a mathematical structure (ala Max Tegmark's The Mathematical Universe)."
+
+[[spirituality.supernatural]]
+desc = "Souls don't exist as separate from the physical body."
+
+[[spirituality.supernatural]]
+desc = "The gods of organized religion don't exist."
+
+[[spirituality.supernatural]]
+desc = "There is no heaven or hell."
+
+[[spirituality.supernatural]]
+desc = "Angels, demons, and other spirits exist as antropomorphised agents in our minds that are useful shortcuts for abstract concepts (see tulpas)."
+
+[[spirituality.supernatural]]
+desc = "Ghosts don't exist outside of our minds (see tulpas)."
+
+[[spirituality.supernatural]]
+desc = "The supposed law of attraction can't create reality through intention, it just primes our perception of it and makes us more likely to notice opportunities)."
+
+[[spirituality.astrology]]
+desc = "Astrology can be fun entertainment, like the Myers Briggs test."
+
+[[spirituality.astrology]]
+desc = "Astrology can stunt healthier forms of analysis if taken literally and seriously."
+
+[[technology.artificial-intelligence]]
+desc = "Machines will eventually become more intelligent than humans are today."
+
+[[technology.artificial-intelligence]]
+desc = "Machines will make humans more intelligent than we are today."
+
+[[technology.artificial-intelligence]]
+desc = "Intelligence isn't a single skill that can be acquired all at once, but the result of learning processes that take in one or more flows of new information, and communicate out analysis of the data in meaningful ways. Every flow of data will favor different intelligences, and intelligences that exist on one or more flows of data won't necessarily be adapted for other flows of data."
+
+[[technology.artificial-intelligence]]
+desc = "The advent of super artificial intelligence does pose some existential risk to humanity (see existential threats) but it is not the biggest threat."
+
+[[universe.origins]]
+desc = "Something like the Big Bang happened, and will probably happen again."
+
+[[universe.origins]]
+desc = "Something existed before the Big Bang (outside of time and space as we know them)."
+
+[[universe.multiverse]]
+desc = "Other dimensions and universes exist."
+
+[[universe.multiverse]]
+desc = "The laws of physics (see physics) likely prevent us from ever proving that other universes exist."
+
+[[universe.multiverse]]
+desc = "Our universe is probably a simulation or sandbox within a larger universe or set of universes."
