@@ -8,11 +8,14 @@
       <h4 class="subtitle">{{ .Param "one_liner" }}</h4>
       {{ .Content }}
     </div>
+
   </div>
 
   <div class="row mt-2 justify-content-center">
+    <div class="col-2 d-none d-md-block"></div>
     <div class="col-lg-8">
       {{ range $tag1, $map1 := $.Site.Data.beliefs }}
+        <a name="{{ $tag1 }}"></a>
         {{ range $tag2, $beliefs := $map1 }}
           <div class="card mb-3">
             <div class="card-body">
@@ -28,6 +31,18 @@
         {{ end }}
       {{ end }} 
     </div>
+
+    <div class="col-2 d-none d-md-block">
+      <div class="sticky sticky-with-header is_stuck" style="position: relative; top: 0; width: 255px;">
+        {{ range $tag1, $map1 := $.Site.Data.beliefs }}
+          <div class="overlay-menu">
+            <p class="card-title"><a href="#{{ $tag1 }}">{{ $tag1 }}</a></p>
+          </div>
+        {{ end }} 
+        
+      </div>
+    </div>
+
   </div>
 </div>
 
