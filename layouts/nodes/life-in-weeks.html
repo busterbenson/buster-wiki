@@ -5,14 +5,15 @@
 
     <div class="row mt-2 justify-content-center">
       <div class="col-md-8">
-        <div>{{- .Content -}}</div>
+        <h1 class="title">{{ .Title }}</h1>
+        <h4 class="subtitle">{{ .Param "one_liner" }}</h4>
+        {{ .Content }}
       </div>
     </div>
 
-
     <div class="row mt-2 justify-content-center">
       <div class="col-lg">
-		    {{ range $num := seq 100 }}
+		    {{ range $num := seq 101 }}
 		    	{{ $age := sub $num 1 }}
 		    	{{ $year := add 1976 $age }}
 		    	{{ $this_year_date := time ( printf "%d-05-21" $year ) }}
@@ -28,7 +29,7 @@
                 {{ $key := index $.Site.Data.life $date_string }}
                 {{ if ne $key nil }}
                   {{ range $key }}
-                    <a data-toggle="tooltip" data-placement="top" title="{{$specific_date.Format "Jan"}}, {{$specific_date.Day}} {{$specific_date.Year}}"><small>{{ .event }}</small></a>
+                    <a {{ if ne .link nil }}href="{{ .link }}" target="_new"{{ end }} data-toggle="tooltip" data-placement="top" title="{{$specific_date.Format "Jan"}}, {{$specific_date.Day}} {{$specific_date.Year}}"><small>{{ .event }}</small></a>
                   {{ end }}
                 {{ end }}
               {{ end }}
