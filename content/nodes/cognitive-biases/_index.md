@@ -1,9 +1,10 @@
 +++
 title = "Cognitive biases"
 one_liner = "Thinking is hard."
-created_date = "2018-12-09T00:00:00-800"
+featured_image = "/images/cognitive-bias-poster.jpg"
+show_on_homepage = true
+homepage_order = 4
 date = "2018-12-09T00:00:00-800"
-mailchimp = true
 draft = false
 +++
 

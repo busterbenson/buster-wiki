@@ -15,7 +15,7 @@ h4.mailchimp {
 	border-bottom: none;
 }
 .title {
-	font-size: 70px; 
+	font-size: 60px; 
 	margin-bottom: 0px;
 }
 .subtitle {
@@ -23,6 +23,9 @@ h4.mailchimp {
 	padding-bottom: 1em;
 	margin-top: 0px;
 	border-bottom: none;
+}
+.card-title {
+	margin-bottom: 0px;
 }
 .lora {
 	font-family: 'lora', serif;

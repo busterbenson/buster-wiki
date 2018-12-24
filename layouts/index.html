@@ -4,80 +4,26 @@
   
   <div class="row mt-2 justify-content-center">
     <div class="col-md-8">
-      <h1 class="title">Hello!</h1>
+      <h1 class="title">👋 Hello!</h1>
     </div>
   </div>
   <div class="row justify-content-start">
 
-		<div class="col-12 col-md-6 col-lg-4 mb-3">
-			<div class="card lift">
-			  <img class="card-img-top" src="/images/rickshaw.jpg" alt="Buster Benson">
-			  <div class="card-body">
-			    <h5 class="card-title">👋 I'm Buster Benson</h5>
-		    	<p class="badge badge-pill badge-secondary text-light">About</p>
-			    <p class="card-text">Human, 43 years old, living in Berkeley with Kellianne, Niko, and Louie.</p>
-			  </div>	
-			</div>
-		</div>
+    {{ range (where .Site.Pages ".Params.show_on_homepage" "=" true).ByParam "homepage_order" }}
+    	{{ partial "section-card" . }}
+    {{ end }}
+
+    {{ if false }}
 
 		<div class="col-12 col-md-6 col-lg-4 mb-3">
 			<div class="card lift">
-			  <img class="card-img-top" src="/images/argumentland.jpg" alt="Why Are We Yelling?">
+			  <img class="card-img-top" src="/images/life-of-clodia/001.png" alt="Life of Clodia">
 			  <div class="card-body">
-			    <h5 class="card-title">Why Are We Yelling?</h5>
-		    	<p class="badge badge-pill badge-info">Book</p>
-			    <p class="card-text">A private journaling community and tool.</p>
-			    <a class="card-link" href="/nodes/cognitive-biases">Read more</a>
-			  </div>	
-			</div>	
-		</div>		
-
-		<div class="col-12 col-md-6 col-lg-4 mb-3">
-			<div class="card lift">
-			  <img class="card-img-top" src="/images/750-birds.png" alt="750 Words">
-			  <div class="card-body">
-			    <h5 class="card-title">750 Words</h5>
-		    	<p class="badge badge-pill badge-primary">Website</p>
-			    <p class="card-text">A private journaling community and tool.</p>
-			    <a class="card-link" href="/nodes/cognitive-biases">Read more</a>
-			  </div>	
-			</div>	
-		</div>
-
-		<div class="col-12 col-md-6 col-lg-4 mb-3">
-			<div class="card lift">
-			  <img class="card-img-top" src="/images/beliefs.jpg" alt="Beliefs">
-			  <div class="card-body">
-			    <h5 class="card-title">Beliefs</h5>
-		    	<p class="badge badge-pill badge-success">Writing</p>
-			    <p class="card-text">This is a living (and dying) record of my beliefs about what things are, how they interact with each other, and myriad ideas and projects that build on these beliefs.</p>
-			    <a class="card-link" href="/nodes/gum-theory">Read more</a>
+			    <h3 class="card-title">Life of Clodia</h3>
+			    <p class="card-text">An incomplete choose-your-own-adventure story about an adventurous asteroid.</p>
+			    <a class="card-link" href="/nodes/life-of-clodia">Read more</a>
 			  </div>
 			 </div>
-		</div>
-
-		<div class="col-12 col-md-6 col-lg-4 mb-3">
-			<div class="card lift">
-			  <img class="card-img-top" src="/images/cognitive-bias-poster.jpg" alt="Cognitive bias cheat sheet">
-			  <div class="card-body">
-			    <h5 class="card-title">Cognitive Bias Cheat Sheet</h5>
-		    	<p class="badge badge-pill badge-success">Writing</p>
-			    <p class="card-text">Because thinking is hard</p>
-			    <a class="card-link" href="/nodes/cognitive-biases">Read more</a>
-			  </div>	
-			</div>	
-		</div>
-
-		<div class="col-12 col-md-6 col-lg-4 mb-3">
-			<div class="card lift">
-			  <img class="card-img-top" src="/images/life-in-weeks.png" alt="Life in Weeks">
-			  <div class="card-body">
-			    <h5 class="card-title">Life in Weeks</h5>
-		    	<p class="badge badge-pill badge-secondary text-light">About</p>
-			    <p class="card-text">Measuring my life in the weeks that I fill.</p>
-			    <a class="card-link" href="/nodes/life-in-weeks">Read more</a>
-			  </div>	
-			</div>	
 		</div>
 
 		<div class="col-12 col-md-6 col-lg-4 mb-3">
@@ -85,12 +31,13 @@
 			  <img class="card-img-top" src="/images/gum-theory.jpg" alt="Gum Theory">
 			  <div class="card-body">
 			    <h5 class="card-title">Gum Theory</h5>
-		    	<p class="badge badge-pill badge-warning">Drawing</p>
 			    <p class="card-text">A weird theory of everything for kids and busy people.</p>
 			    <a class="card-link" href="/nodes/gum-theory">Read more</a>
 			  </div>
 			 </div>
 		</div>
+
+		{{ end }}
 
     </div>
   </div>
