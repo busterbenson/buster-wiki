@@ -32,8 +32,11 @@
                     <a {{ if ne .link nil }}href="{{ .link }}" target="_new"{{ end }} data-toggle="tooltip" data-placement="top" title="{{$specific_date.Format "Jan"}}, {{$specific_date.Day}} {{$specific_date.Year}}"><small>{{ .event }}</small></a>
                   {{ end }}
                 {{ end }}
+                {{ if eq ($specific_date.Format "20060102") (now.Format "20060102") }}
+                  <a data-toggle="tooltip" data-placement="top" title="TODAY"><strong>👣</strong>
+                {{ end }}
               {{ end }}
-              &nbsp;
+              <small>&nbsp;</small>
             </div>
       		{{ end }}
       	{{ end }}
