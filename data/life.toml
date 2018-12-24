@@ -246,7 +246,7 @@ event = "I sell my Belltown condo in Seattle."
 category = "self"
 
 [[2014-05-09]]
-event = "❤️ I meet Rodney, my brother."
+event = "❤️ I meet Rodney, my brother. We found each other through 23andme.com."
 category = "family"
 tags = ["rodney"]
 
@@ -294,7 +294,7 @@ category = "family"
 tags = ["louie"]
 
 [[2016-09-01]]
-event = "📝 I publish the Cognitive Bias Cheat Sheet."
+event = "🧠 I publish the Cognitive Bias Cheat Sheet."
 category = "writing"
 link = "https://betterhumans.coach.me/cognitive-bias-cheat-sheet-55a472476b18"
 tags = ["biases"]
