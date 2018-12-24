@@ -14,6 +14,9 @@ body.night .theme-background {
 h1, h2 {
 	font-family: 'lora', serif;
 }
+h3.card-title {
+	font-size: 20px;
+}
 h4 {
 	margin-top: 1.5em;
 }

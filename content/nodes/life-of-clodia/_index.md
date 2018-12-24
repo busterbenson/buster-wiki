@@ -10,7 +10,5 @@ show_tree = true
 layout = 'gallery'
 +++
 
-This was written and drawn as part of a 100 day challenge. It's unfinished, but will be adding to it over time.
-
-<a class="btn btn-outline-dark" href="001">Read the story from page 1</a>
+<a class="btn btn-outline-dark" href="001">Read from the beginning</a>
 
