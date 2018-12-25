@@ -7,7 +7,5 @@ homepage_order = 8
 date = "2018-12-24"
 draft = false
 show_tree = true
-layout = 'gallery'
+layout = 'comic'
 +++
-
-<a class="btn btn-outline-dark" href="001">Read from the beginning</a>
