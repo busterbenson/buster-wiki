@@ -1,8 +1,10 @@
 [[world.climate]]
 desc = "Human-influenced climate change is real, and it's appropriate to panic."
+token = "human-influenced"
 
 [[world.climate]]
-desc = "Climate change is of particular importance to humans, because it poses an existential risk to our survival."
+desc = "Climate change is of particular importance to humans, because it poses an existential risk to our survival, but it's not the only risk and not the greatest risk (see existential threats)."
+token = "risk"
 
 [[world.civilization]]
 desc = "Technology has or will eventually disrupt all other human-created institutions (politics, religion, identity, economics, energy)."
@@ -59,7 +61,7 @@ desc = "Micro and macro evolution really happen."
 desc = "Disrupting the world's ecology (through deforestation, overfishing, monocultures, etc) poses a 5% existential threat to us."
 
 [[life.existential-threats]]
-desc = "Climate change poses a 5% existential threat to us."
+desc = "Climate change poses a 1% existential threat to us."
 
 [[life.existential-threats]]
 desc = "Nuclear war poses a 3% existential threat to us."
