@@ -1,40 +1,44 @@
 [[world.climate]]
-desc = "Human-influenced climate change is real, and it's appropriate to panic."
-token = "human-influenced"
 
-[[world.climate]]
-desc = "Climate change is of particular importance to humans, because it poses an existential risk to our survival, but it's not the only risk and not the greatest risk (see existential threats)."
-token = "risk"
+	[world.climate.human-influenced]
+	desc = "Human-influenced climate change is real, and it's appropriate to panic."
 
-[[world.civilization]]
-desc = "Technology has or will eventually disrupt all other human-created institutions (politics, religion, identity, economics, energy)."
+	[world.climate.risk]
+	desc = "Climate change is of particular importance to humans, because it poses an existential risk to our survival, but it's not the only risk and not the greatest risk (see existential threats)."
 
 [[world.civilization]]
-desc = "As history progresses, power will tend to be more quickly redistributed when it gets too heavy at the top."
 
-[[world.civilization]]
-desc = "When power is redistributed (through disruption, revolution, or disaster), it will have undesirable short-term consequences."
+	[world.civilization.disruption]
+	desc = "Technology has or will eventually disrupt all other human-created institutions (politics, religion, identity, economics, energy)."
 
-[[world.civilization]]
-desc = "Being good/moral increasingly becomes our default state as we learn more about the world and are more connected with others."
+	[world.civilization.power-redistribution]
+	desc = "As history progresses, power will tend to be more quickly redistributed when it gets too heavy at the top."
 
-[[world.civilization]]
-desc = "Power often becomes motivated to remain in power, which results in systemic discrimination, harrassment, and abuse. It is against power's first-order objectives to build structures that might lead to them being removed from power, but as awareness of this dynamic increases, so should accountability. It will be a very slow uphill battle with many movements backwards, but all the more reason to always push on increasing awareness and accountability within all systems."
+	[world.civilization.power-redistribution-downside]
+	desc = "When power is redistributed (through disruption, revolution, or disaster), it will have undesirable short-term consequences."
 
-[[life.aliens]]
-desc = "Non-carbon-based life forms exist."
+	[world.civilization.morality]
+	desc = "Being good/moral increasingly becomes our default state as we learn more about the world and are more connected with others."
 
-[[life.aliens]]
-desc = "Aliens exist, but for the same reaon most sci-fi adopts faster-than-light travel, cryogenics, and wormholes to facilitate travel, humans and physics as we currently understand them are not going to make this easy. More likely, I think we will discover their creations (ie. long-lived, patient robots they made) before we discover their biological species."
-
-[[life.aliens]]
-desc = "Aliens will probably discover our own long-lived, patient robots before they discover us."
+	[world.civilization.power-corrupts]
+	desc = "Power often becomes motivated to remain in power, which results in systemic discrimination, harrassment, and abuse. It is against power's first-order objectives to build structures that might lead to them being removed from power, but as awareness of this dynamic increases, so should accountability. It will be a very slow uphill battle with many movements backwards, but all the more reason to always push on increasing awareness and accountability within all systems."
 
 [[life.aliens]]
-desc = "The vast majority of intelligent beings throughout the universe are probably more similar to robots and cyborgs than organically evolved life."
 
-[[life.aliens]]
-desc = "Aliens are unlikely to be aggressive. Any sufficient reason to come specifically to us is unlikely to be motivated by typical warlike intentions, because we don't have anything special in the universe that they can't get elsewhere for cheaper."
+	[life.aliens.exists]
+	desc = "Other intelligent life forms exist somewhere in this universe."
+
+	[life.aliens.discovering-them]
+	desc = "I think we'll discover the creations of alien civilizations (ie. long-lived, patient robots they send into space) before we discover their original biological species."
+
+	[life.aliens.discovering-us]
+	desc = "Aliens will probably discover our own long-lived, patient robots before they discover us."
+
+	[life.aliens.robots]
+	desc = "The vast majority of intelligent beings throughout the universe are probably more similar to robots and cyborgs than organically evolved life."
+
+	[life.aliens.peaceful]
+	desc = "Aliens are unlikely to be aggressive. Any sufficient reason to come specifically to us is unlikely to be motivated by typical warlike intentions, because we don't have anything special in the universe that they can't get elsewhere for cheaper."
 
 [[life.consciousness]]
 desc = "The sensation of consciousness is real." 

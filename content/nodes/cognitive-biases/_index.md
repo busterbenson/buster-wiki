@@ -1,12 +1,12 @@
 +++
 title = "Cognitive biases"
-one_liner = "A cheat sheet to help you remember 200+ biases via 4 simple conundrums."
+one_liner = "A cheat sheet to help you remember 200+ biases via 4 conundrums."
 featured_image = "/images/cognitive-bias-poster.jpg"
-category = 'drawing'
 
 show_on_homepage = true
 homepage_order = 6
 
+layout = "biases-home"
 date = "2018-12-09T00:00:00-800"
 draft = false
 +++

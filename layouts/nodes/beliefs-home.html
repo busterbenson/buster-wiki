@@ -16,7 +16,13 @@
             </div>
             <ul class="list-group list-group-flush">
               {{ range $beliefs }}
-                <li class="list-group-item px-3">{{ .desc }}</li>
+                {{ if eq .desc nil }}
+                  {{ range . }}
+                    <li class="list-group-item px-3">{{ .desc }}</li>
+                  {{ end }}
+                {{ else }}
+                  <li class="list-group-item px-3">{{ .desc }}</li>
+                {{ end }}
               {{ end }}
             </ul>
 
@@ -27,9 +33,9 @@
 
     <div class="col-2 d-none d-md-block">
       <div class="sticky sticky-with-header is_stuck" style="position: relative; top: 0; width: 255px;">
-        {{ range $tag1, $map1 := $.Site.Data.beliefs }}
+        {{ range $tag, $map := $.Site.Data.beliefs }}
           <div class="overlay-menu">
-            <p><a class="text-secondary" href="#{{ $tag1 }}">{{ $tag1 }}</a></p>
+            <p><a class="text-secondary" href="#{{ $tag }}">{{ $tag }}</a></p>
           </div>
         {{ end }}
       </div>
