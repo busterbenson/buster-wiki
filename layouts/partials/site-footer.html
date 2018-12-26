@@ -3,11 +3,25 @@
 	  {{ if eq (.Param "mailchimp") true }}
       <div class="row mt-2 justify-content-center">
         <div class="col-md-8">
-        	{{ partial "divider" }}
           {{ partial "mailchimp" }}                  
         </div>  
       </div>
 	  {{ end }}  	
+
+    {{ if ne (.Param "hide_footer_nav") true }}
+
+      <div class="row my-10 justify-content-center">
+        <div class="col-sm-4 text-center">
+          <small class="text-secondary">
+            <p>➰</p>
+            <a href="/" class="text-secondary">Home</a> 
+            {{ range (where .Site.Pages ".Params.show_on_homepage" "=" true).ByParam "homepage_order" }}
+              • <a href="{{ .URL }}" class="text-secondary text-nowrap">{{ .Title }}</a>
+            {{ end }}
+          </small>
+        </div>
+      </div>
+    {{ end }}
   </div>
 </footer>
 {{ template "_internal/google_analytics.html" . }}

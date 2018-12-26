@@ -7,6 +7,7 @@ show_on_homepage = true
 homepage_order = 6
 
 layout = "biases-home"
+mailchimp = true
 date = "2018-12-09T00:00:00-800"
 draft = false
 +++

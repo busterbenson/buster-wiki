@@ -1,6 +1,6 @@
 +++
-title = "All Nodes"
-one_liner = "Branches, twigs, and leaves most recently touched."
+title = "Buster's Wiki"
+one_liner = "Hello."
 created_date = "2018-12-20"
 date = "2018-12-20"
 show_tree = true
