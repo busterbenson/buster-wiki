@@ -1,0 +1,29 @@
+<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+	<div class="card rounded">
+	  {{ if and (isset .Params "featured_image") (ne (.Param "featured_image") "") }}
+	  	<a href="{{ .URL }}"><img class="card-image-top" src="{{ .Param "featured_image" }}" alt="{{.Title}}"></a>
+	  {{ end }}
+	  <div class="card-body">
+	    <h3 class="card-title"><a href="{{ .URL }}" class="text-dark">{{ .Title }}</a></h3>
+	    <p class="card-text px-0"><small>{{ .Param "one_liner" | safeHTML }}</small></p>
+	  </div>	
+
+    {{ $influencer := index $.Site.Data.influences $.Params.data_key }}
+    {{ if $influencer }}
+	    {{ range $category := $.Params.data_categories }}
+	      <ul class="list-group list-group-flush m-0 p-0">
+	        {{ $item := index $influencer $category }}
+	        {{ if $item }}
+	        	{{ range $item }}
+		        	{{ if eq .featured true}}
+			        	<li class="list-group-item">
+		  	      		<small><a href="{{ .url }}">{{ .title }}</a>{{ if ne .desc nil }}: {{ .desc }}{{ end }}</small>
+			  	      </li>
+			    	  {{ end }}
+	        	{{ end }}
+	        {{ end }}
+	      </ul>
+	    {{ end }} 
+	  {{ end }}
+	</div>
+</div>

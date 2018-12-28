@@ -5,7 +5,7 @@ featured_image = "/images/life-of-clodia/001.png"
 hide_image_on_detail = true
 
 show_on_homepage = true
-homepage_order = 9
+homepage_order = 6
 
 mailchimp = true
 date = "2018-12-22"

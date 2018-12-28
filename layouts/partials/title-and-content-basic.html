@@ -7,7 +7,7 @@
       <img src="{{$.Params.featured_image}}" class="rounded align-right img-thumbnail float-left w-25 mr-3" />
     {{ end }}
     <h1 class="title">{{ .Title }}</h1>
-    <h4 class="subtitle">{{ .Param "one_liner" }}</h4>
+    <h4 class="subtitle">{{ .Param "one_liner" | safeHTML }}</h4>
 
     {{ if and (ne (.Param "featured_image") nil) (ne (.Param "hide_image_on_detail") true) }}
 	    <div class="clearfix"></div>

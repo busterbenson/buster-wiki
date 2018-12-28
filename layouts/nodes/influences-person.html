@@ -11,11 +11,13 @@
     </div>
     <div class="col-md-8">
       {{ range $category := $.Params.data_categories }}
-        <a name="category-{{ $category }}" href="#influences-category-{{ $category }}"></a>
-        <h3>{{ $category }}</h3>
-        {{ range $item := index $influencer $category }}
-          {{ partial "big-link" (dict "context" . "url" .url "title" .title "desc" .desc ) }}
-        {{ end }}
+        <div class="mb-10">
+          <a name="category-{{ $category }}" href="#influences-category-{{ $category }}"></a>
+          <h3>{{ $category }}</h3>
+          {{ range $item := index $influencer $category }}
+            {{ partial "big-link" (dict "context" . "url" .url "title" .title "desc" .desc ) }}
+          {{ end }}
+        </div>
       {{ end }} 
     </div>
 

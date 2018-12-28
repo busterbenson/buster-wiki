@@ -51,7 +51,7 @@ event = "First day of college at UC Berkeley."
 category = "school"
 
 [[1995-09-25]]
-event = "First day at University of Washington after transfer."
+event = "First day at UW, starting the sophomore year."
 category = "school"
 
 [[1998-06-13]]
@@ -66,7 +66,6 @@ tags = ["technology"]
 [[1999-10-03]]
 event = "I write my first blog post, on Live Journal."
 category = "writing"
-
 
 [[2000-01-01]]
 event = "Y2K happens."
@@ -88,9 +87,15 @@ event = "I complete my first National Novel Writing Month challenge."
 category = "writing"
 tags = ["man versus himself"]
 
+[[2003-03-20]]
+event = "The Iraq War starts."
+category = "world"
+tags = ["politics"]
+
 [[2003-08-05]]
 event = "I self-publish my NaNoWriMo novel, Man Versus Himself."
 category = "writing"
+link = "https://amzn.to/2GJ8ASw"
 tags = ["man versus himself"]
 
 [[2004-09-01]]
@@ -153,7 +158,7 @@ tags = ["annual review"]
 [[2008-09-15]]
 event = "Financial crisis caused by subprime meltdown."
 category = "world"
-tags = "politics"
+tags = ["politics"]
 
 [[2008-11-04]]
 event = "Obama wins the election."
@@ -171,7 +176,7 @@ category = "work"
 tags = ["mcleod residence"]
 
 [[2009-03-17]]
-event = "Locavore, an iPhone app, launches."
+event = "Locavore, my farmer's market iPhone app, launches."
 category = "work"
 tags = ["locavore"]
 

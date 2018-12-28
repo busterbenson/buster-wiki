@@ -1,19 +1,271 @@
 [Alan-Watts]
 
 	[[Alan-Watts.Books]]
-	url = "https://www.audible.com/pd/Youre-It-Audiobook/B0035G1H26"
 	title = "You're It!"
-	desc = "I've listened to this half a dozen times, and enjoy it more every time. It changed how I think about almost everything."
+	url = "https://amzn.to/2RpsSok"
+	desc = "This covers pretty much Alan Watts' entire philosophy. The audiobook is highly recommended."
+	featured = true
 
 [Amy-Jo-Kim]
 
 	[[Amy-Jo-Kim.Books]]
-	url = "https://www.amazon.com/Game-Thinking-Innovate-engagement-techniques-ebook/dp/B07CZFMV7H"
 	title = "Game Thinking"
-	desc = "Amy changed the way I think about game theory and creating engaging products."
+	url = "https://amzn.to/2Rpt3A0"
+	desc = "This is Amy's latest book but all of her work is great, including her talks."
+	featured = true
 
 [Brene-Brown]
 
 	[[Brene-Brown.Books]]
+	title = "Daring Greatly"
+	url = "https://amzn.to/2CCBAr6"
+	desc = "This is the first book I read of hers, but they are all great."
+	featured = true
 
-	[[Brene-Brown.Interviews]]
+	[[Brene-Brown.Podcasts]]
+	title = "Strong Back, Soft Front, Wild Heart"
+	url = "https://onbeing.org/programs/brene-brown-strong-back-soft-front-wild-heart-feb2018/"
+	desc = "A really great interview about belonging and being truly yourself at the same time."
+	featured = false
+
+[Brian-Whitworth]
+
+	[[Brian-Whitworth.Articles]]
+	title = "10 Reasons Why Our Universe Is a Virtual Reality"
+	url = "http://listverse.com/2014/11/26/10-reasons-why-our-universe-is-a-virtual-reality/"
+	desc = "Quantum realism is such a beautiful way to see the world."
+	featured = true
+
+[Dana-Meadows]
+
+	[[Dana-Meadows.Articles]]
+	title = "Places to Intervene in a System"
+	url = "http://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/"
+	desc = "This changed the way I think about action of any kind."
+	featured = true
+
+	[[Dana-Meadows.Books]]
+	title = "Thinking in Systems"
+	url = "https://amzn.to/2SlM7w0"
+	desc = "This was the first book I read that was dedicated to systems thinking, and sparked a lot of my further interest."
+	featured = false
+
+[Daniel-Kahneman]
+
+	[[Daniel-Kahneman.Books]]
+	title = "Thinking Fast and Slow"
+	url = "https://amzn.to/2rWxSlN"
+	desc = "This cracked opened the whole world of cognitive biases for me. I recommend the audiobook version."
+	featured = true
+
+[Douglas-Hofstadter]
+
+	[[Douglas-Hofstadter.Books]]
+	title = "I Am a Strange Loop"
+	url = "https://amzn.to/2LBAqyD"
+	desc = "I'm obsessed with strange loops."
+	featured = true
+
+	[[Douglas-Hofstadter.Books]]
+	title = "Gödel, Escher, Bach"
+	url = "https://amzn.to/2Roig8U"
+	desc = "A super weird book that broke my brain in a good way."
+	featured = true
+
+[Ed-Catmull]
+
+	[[Ed-Catmull.Books]]
+	title = "Creativity, Inc"
+	url = "https://amzn.to/2RihWZs"
+	desc = "This is such an interesting view into Pixar and Ed Catmull's organizational genius."
+	featured = true
+
+[Elle-Luna]
+
+	[[Elle-Luna.Books]]
+	title = "The Crossroads of Should and Must"
+	url = "https://amzn.to/2SpL8Le"
+	desc = "The book is great and I reference it a ton for how to intermingle words and art."
+	featured = true
+
+[Jane-McGonigal]
+
+	[[Jane-McGonigal.Books]]
+	title = "Reality is Broken"
+	url = "https://amzn.to/2SuwDGl"
+	desc = "Jane led the way with using games for good when everyone else was using them for evil."
+	featured = true
+
+[Jenny-Odell]
+
+	[[Jenny-Odell.Articles]]
+	title = "How to do nothing"
+	url = "https://medium.com/@the_jennitaur/how-to-do-nothing-57e100f59bbb"
+	desc = "I've read this a dozen times, it's so great."
+	featured = true
+
+[Jonny-Sun]
+
+	[[Jonny-Sun.Books]]
+	title = "Everone's a Aliebn When Ur a Aliebn Too"
+	url = "https://amzn.to/2Ai1HSm"
+	desc = "A truly unique and warm book about being yourself. Worth reading 100 times."
+	featured = true
+
+[Julia-Cameron]
+
+	[[Julia-Cameron.Books]]
+	title = "The Artist's Way"
+	url = "https://amzn.to/2SpAIeT"
+	desc = "I was so inspired by this that I built 750words.com based on morning pages."
+	featured = true
+
+[Julia-Galef]
+
+	[[Julia-Galef.Videos]]
+	title = "Why you think you're right, even when you're wrong"
+	url = "https://www.ted.com/talks/julia_galef_why_you_think_you_re_right_even_if_you_re_wrong"
+	desc = "Julia's very clear approach to rationality is summed up well here."
+	featured = true
+
+	[[Julia-Galef.Podcast]]
+	title = "Rationally Speaking"
+	url = "http://rationallyspeakingpodcast.org/"
+	desc = "Julia's one of the best interviewers around in my opinion."
+	featured = true
+
+[Kathy-Sierra]
+
+	[[Kathy-Sierra.Articles]]
+	title = "Touching the Wild"
+	url = "https://seriouspony.exposure.co/touching-the-wild"
+	desc = "This article, and many of Kathy's talks, helped remind me of my true nature."
+	featured = true
+
+[Kevin-Kelly]
+
+	[[Kevin-Kelly.Articles]]
+	title = "1000 True Fans"
+	url = "https://kk.org/thetechnium/1000-true-fans/"
+	desc = "The manifesto for creators."
+	featured = true
+
+	[[Kevin-Kelly.Books]]
+	title = "What Technology Wants"
+	url = "https://amzn.to/2GW5uL9"
+	desc = "This changed how I think about technology."
+	featured = true
+
+	[[Kevin-Kelly.Books]]
+	title = "The Inevitable"
+	url = "https://amzn.to/2GJ9rmf"
+	desc = "The way Kevin thinks is so fascinating. I read everything he writes."
+	featured = false
+
+[Krista-Tippett]
+
+	[[Krista-Tippett.Podcast]]
+	title = "On Being"
+	url = "https://onbeing.org/series/podcast/"
+	desc = "Krista interviewing style is really enjoyable and I always learn something."
+	featured = true
+
+	[[Krista-Tippett.Books]]
+
+[Linda-Booth-Sweeney]
+
+	[[Linda-Booth-Sweeney.Books]]
+	title = "When a Butterfly Sneezes"
+	url = "https://amzn.to/2Sr8AI8"
+	desc = "The best intro to systems thinking I know of."
+	featured = true
+
+[Maria-Popova]
+
+	[[Maria-Popova.Blog]]
+	title = "Brain Pickings"
+	url = "http://brainpickings.org"
+	desc = "So much good stuff here."
+	featured = true
+
+[Nassim-Nicholas-Taleb]
+
+	[[Nassim-Nicholas-Taleb.Books]]
+	title = "Antifragile"
+	url = "https://amzn.to/2SlTFik"
+	desc = "Such an valuable book, still sort of unbearable to read."
+	featured = true
+
+	[[Nassim-Nicholas-Taleb.Books]]
+	title = "Fooled By Randomness"
+	url = "https://amzn.to/2Vd5LMB"
+	desc = "This changed how I thought about probability."
+	featured = false
+
+[Neil-deGrasse-Tyson]
+
+	[[Neil-deGrasse-Tyson.Shows]]
+	title = "Cosmos"
+	url = "https://amzn.to/2RgxywF"
+	desc = "For brining Cosmos back, I'll always love Neil."
+	featured = true
+
+[Nicky-Case]
+
+	[[Nicky-Case.Articles]]
+	title = "The Evolution of Trust"
+	url = "https://ncase.me/trust/"
+	desc = "The best intro to my favorite game: prisoner's dilemma."
+	featured = true
+
+	[[Nicky-Case.Videos]]
+	title = "Seeing Whole Systems"
+	url = "http://longnow.org/seminars/02017/aug/07/seeing-whole-systems/"
+	desc = "A great articulation of systems thinking."
+	featured = true
+
+[Peter-Senge]
+
+	[[Peter-Senge.Books]]
+	title = "The Fifth Discipline"
+	url = "https://amzn.to/2RhZv7k"
+	desc = "Systems Thinking through the lens of business and management."
+	featured = true
+
+[Robin-Sloan]
+
+	[[Robin-Sloan.Books]]
+	title = "Mr. Penumbra's 24-Hour Bookstore"
+	url = "https://amzn.to/2LBPdt9"
+	desc = "A great novel packed with interesting ideas. I stole the Codex Vitae for myself."
+	featured = true	
+
+[Sean-Carroll]
+
+	[[Sean-Carroll.Books]]
+	title = "The Big Picture"
+	url = "https://amzn.to/2RpZC0m"
+	desc = "This gave me language to understand science and story-telling. My religion is poetic naturalism."
+	featured = true	
+
+[Tim-Urban]
+
+	[[Tim-Urban.Articles]]
+	title = "Your Life in Weeks"
+	url = "https://waitbutwhy.com/2014/05/life-weeks.html"
+	desc = "This inspired me to map my own life in weeks."
+	featured = true
+
+[Venkatesh-Rao]
+
+	[[Venkatesh-Rao.Articles]]
+	title = "Make Your Own Rules"
+	url = "https://www.ribbonfarm.com/2018/02/15/make-your-own-rules/"
+	desc = "I'm obsessed with life rule sets, and this only encouraged it."
+	featured = true
+
+	[[Venkatesh-Rao.Articles]]
+	title = "Welcome to the Future Nauseous"
+	url = "https://www.ribbonfarm.com/2012/05/09/welcome-to-the-future-nauseous/"
+	desc = "Changed how I think about the present moment."
+	featured = false

@@ -33,6 +33,9 @@ h4.mailchimp {
 	padding-bottom: 1em;
 	margin-top: 0px;
 	border-bottom: none;
+} 
+.card-body {
+	padding: 20px;
 }
 .card-title {
 	margin-bottom: 0px;

@@ -18,10 +18,10 @@
               {{ range $beliefs }}
                 {{ if eq .desc nil }}
                   {{ range . }}
-                    <li class="list-group-item px-3">{{ .desc }}</li>
+                    <li class="list-group-item">{{ .desc }}</li>
                   {{ end }}
                 {{ else }}
-                  <li class="list-group-item px-3">{{ .desc }}</li>
+                  <li class="list-group-item">{{ .desc }}</li>
                 {{ end }}
               {{ end }}
             </ul>

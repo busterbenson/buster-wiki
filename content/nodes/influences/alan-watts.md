@@ -1,6 +1,6 @@
 +++
 title = "Alan Watts"
-one_liner = "Philosopher."
+one_liner = "Changed the way I think about <mark>reality</mark>."
 featured_image = "/images/people/alan-watts.png"
 twitter = ""
 website = ""
