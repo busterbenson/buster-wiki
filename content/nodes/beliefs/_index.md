@@ -1,6 +1,6 @@
 +++
 title = "Beliefs"
-one_liner = "A living and dying record of my beliefs. Updated as they change."
+one_liner = "A living and dying record of my beliefs."
 featured_image = "/images/beliefs.jpg"
 show_on_homepage = true
 homepage_order = 4

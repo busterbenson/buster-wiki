@@ -1,10 +1,10 @@
 +++
-title = "{{ replace .Name "-" " " | title }}"
+title = "Robin Sloan"
 one_liner = ""
 featured_image = ""
 
 mailchimp = false
-date = {{ .Date }}
+date = 2018-12-26T13:13:05-08:00
 draft = true
 +++
 

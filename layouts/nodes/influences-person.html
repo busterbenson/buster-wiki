@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<div class="container">
+
+  {{ partial "title-and-content-basic" . }}
+
+  {{ $influencer := index $.Site.Data.influences $.Params.data_key }}
+
+  <div id="beliefs-list" class="row mt-2 justify-content-center">
+    <div class="col-2 d-none d-md-block">
+    </div>
+    <div class="col-md-8">
+      {{ range $category := $.Params.data_categories }}
+        <a name="category-{{ $category }}" href="#influences-category-{{ $category }}"></a>
+        <h3>{{ $category }}</h3>
+        {{ range $item := index $influencer $category }}
+          {{ partial "big-link" (dict "context" . "url" .url "title" .title "desc" .desc ) }}
+        {{ end }}
+      {{ end }} 
+    </div>
+
+    <div class="col-2 d-none d-md-block">
+      {{ if gt (len $.Params.data_categories) 2 }}
+        <div class="sticky sticky-with-header is_stuck" style="position: relative; top: 0; width: 255px;">
+          {{ range $category := $.Params.data_categories }}
+            <div class="overlay-menu">
+              <p><a class="text-secondary" href="#category-{{ $category }}">{{ $category }}</a></p>
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+
+  </div>
+</div>
+
+{{ end }}

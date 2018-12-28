@@ -1,7 +1,19 @@
 <div class="row mt-2 justify-content-center">
+  <div class="col-2 d-none d-md-block">
+  </div>
+
   <div class="col-md-8">
+    {{ if and (ne (.Param "featured_image") nil) (ne (.Param "hide_image_on_detail") true) }}
+      <img src="{{$.Params.featured_image}}" class="rounded align-right img-thumbnail float-left w-25 mr-3" />
+    {{ end }}
     <h1 class="title">{{ .Title }}</h1>
     <h4 class="subtitle">{{ .Param "one_liner" }}</h4>
-		<p>{{ .Content }}</p>
+
+    {{ if and (ne (.Param "featured_image") nil) (ne (.Param "hide_image_on_detail") true) }}
+	    <div class="clearfix"></div>
+    	{{ partial "divider" }}
+    {{ end }}
+		<div>{{ .Content }}</div>
 	</div>
+	<div class="col-2"></div>
 </div>
