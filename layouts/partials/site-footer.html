@@ -8,14 +8,6 @@
       </div>
 	  {{ end }}  	
 
-    {{ if eq (.Param "disqus") true }}
-      <div class="row mt-2 justify-content-center">
-        <div class="col-md-8">
-          {{ template "_internal/disqus.html" . }}
-        </div>
-      </div>
-    {{ end }}
-
     {{ if ne (.Param "hide_footer_nav") true }}
 
       <div class="row my-10 justify-content-center">
@@ -30,6 +22,18 @@
         </div>
       </div>
     {{ end }}
+
+    {{ if eq (.Param "disqus") true }}
+      <div class="row mt-2 justify-content-center">
+        <div class="col-md-8">
+          {{ partial "divider" }}
+          {{ template "_internal/disqus.html" . }}
+          }
+        </div>
+      </div>
+    {{ end }}
+
+
   </div>
 </footer>
 {{ template "_internal/google_analytics.html" . }}

@@ -1,6 +1,7 @@
 +++
 title = "Should we be happy?"
 one_liner = "A weird comic about happiness, based on the story of Sisyphus."
+piles = ["drawing", "systems-thinking"]
 
 featured_image = "/images/should-we-be-happy/sisyphus-square.png"
 hide_image_on_detail = true

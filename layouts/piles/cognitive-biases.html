@@ -154,6 +154,21 @@
     </div>
   {{ end }}
 
+  <div class="row mt-2 justify-content-center">
+    <div class="col-md-8">
+        <h3>My current beliefs</h3>
+    </div>
+  </div>
+  <div class="row mt-2 justify-content-center">
+    <div class="col-md-8">
+      <ul class="m-0 p-0">
+        {{ range $list := index $.Site.Data.beliefs "cognitive-biases" }}
+          <li class="mb-2">{{ $list.desc }}</li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+
 
   <div class="row mt-2 justify-content-center">
     <div class="col-md-8">

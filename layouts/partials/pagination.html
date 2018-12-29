@@ -1,0 +1,20 @@
+{{ $paginator := .Paginator }}
+
+<div class="row mt-2 justify-content-center">
+
+  <div class="col-md-2 d-flex justify-content-start align-items-center">
+    {{ if $paginator.HasNext }}
+      <a href="{{ $paginator.Next.URL }}" class="page-link"><small>< older pieces</small></a>
+    {{ end }}
+  </div>
+
+  <div class="col-md-4 justify-content-start">
+  </div>
+
+  <div class="col-md-2 d-flex justify-content-end align-items-center">
+    {{ if $paginator.HasPrev }}
+      <a href="{{ $paginator.Prev.URL }}" class="page-link"><small>newer pieces ></small></a>
+    {{ end }}
+  </div>
+
+</div>

@@ -21,10 +21,10 @@
             {{ range $list }}
               {{ if eq .desc nil }}
                 {{ range . }}
-                  <li class="list-group-item">{{ .desc }}</li>
+                  {{ partial "belief-li" . }}
                 {{ end }}
               {{ else }}
-                <li class="list-group-item">{{ .desc }}</li>
+                {{ partial "belief-li" . }}
               {{ end }}
             {{ end }}
           </ul>

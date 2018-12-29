@@ -21,6 +21,23 @@
     </div>
   {{ end }}
 
+  {{ if (where .Pages "Section" "projects") }}
+    <div class="row mt-2 justify-content-center">
+      <div class="col-md-8">
+          <h3>Related projects sparked by this</h3>
+      </div>
+      <div class="col-md-8 mt-2">
+        <div class="row justify-content-start">
+          {{ range (where .Pages "Section" "projects").ByTitle }}
+            {{ if ne (.Param "hide_from_lists") true }}
+              {{ partial "person-card-mini" . }}
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  {{ end }}
+
   {{ if ne (index $.Site.Data.beliefs .Data.Term) nil }}
   <div class="row mt-2 justify-content-center">
     <div class="col-md-8">
@@ -29,10 +46,10 @@
   </div>
   <div class="row mt-2 justify-content-center">
     <div class="col-md-8">
-      <ul class="list-group">
+      <ul class="m-0 p-0">
         {{ $pile := .Data.Term }}
         {{ range $list := index $.Site.Data.beliefs .Data.Term }}
-          <li class="list-group-item">{{ $list.desc }}</li>
+          <li class="mb-2">{{ $list.desc }}</li>
         {{ end }}
       </ul>
     </div>

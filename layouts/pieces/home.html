@@ -1,17 +1,12 @@
 {{ define "main" }}
 <div class="container">
   
-  <div class="row mt-2 justify-content-center">
-    <div class="col-md-8">
-      <h1 class="title">{{ .Title }}</h1>
-      <h4 class="subtitle">{{ .Param "one_liner" }}</h4>
-      {{ .Content }}
-    </div>
-  </div>
+  {{ partial "title-and-content-basic" . }}
+
   <div class="row mt-2 justify-content-center">
     <div class="col-md-8">
       {{ range (.Paginator 50).Pages.ByDate.Reverse }}
-        {{ partial "big-link" (dict "context" . "link" .Params.link "title" .Params.title "desc" .Params.one_liner) }}
+        {{ partial "piece-card" . }}
       {{ end }}
     </div>
   </div>
