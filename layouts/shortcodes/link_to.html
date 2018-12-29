@@ -1,0 +1,14 @@
+{{ $text := .Get "text" }}
+
+{{- if ne ($person := .Get "person") "" -}}
+	{{- $person := replace (lower $person) " " "-" -}}
+	{{- with .Site.GetPage ( printf "/influences/%s.md" $person ) -}}
+		<a href="{{ .Permalink }}">{{ if ne $text "" }}{{ $text }}{{ else }}{{ .Title }}{{ end }}</a>
+	{{- end -}}
+{{- else if ne ($idea := .Get "idea") "" -}}
+	{{- $idea := replace (lower $idea) " " "-" -}}
+	{{- with .Site.GetPage ( printf "/pieces/%s.md" $idea ) -}}
+		<a href="{{ .Permalink }}">{{ if ne $text "" }}{{ $text }}{{ else }}{{ .Title }}{{ end }}</a>
+	{{- end -}}
+{{- end -}}
+

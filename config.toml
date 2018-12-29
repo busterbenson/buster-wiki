@@ -15,3 +15,6 @@ custom_js = ["js/vendor.min.js", "js/app.js"]
 [taxonomies]
 tag = "tags"
 pile = "piles"
+projects = "projects"
+category = "categories"
+influence = "influences"

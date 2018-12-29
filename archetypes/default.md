@@ -2,20 +2,20 @@
 # basics
 title     		 = ""
 author    		 = 'me'
-emoji     		 = ''
 link      		 = ""
 one_liner 		 = ""
-featured_image = ""
+featured_image = "" # /images/pieces/
 
 # see /piles
 piles     		 = []
+projects			 = []
 
-# link, article-link, reference-link, thought
+# link, article, reference, thought, book, idea
 category  		 = '' 
 
 # metadata
 date      		 = {{ .Date }}
 layout    		 = "piece"
-disqus    		 = true
+disqus    		 = false
 +++
 

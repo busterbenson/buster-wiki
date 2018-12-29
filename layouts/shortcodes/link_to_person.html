@@ -1,0 +1,4 @@
+{{ $person := replace (lower (.Get 0)) " " "-" }}
+{{ with .Site.GetPage ( printf "/influences/%s.md" $person ) }}
+	<a href="{{ .Permalink }}">{{ .Title }}</a>
+{{ end }}

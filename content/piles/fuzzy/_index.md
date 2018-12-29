@@ -1,6 +1,6 @@
 +++
 title = "Fuzzy"
-one_liner = ""
+one_liner = "Pieces go here when they don't quite fit anywhere else."
 featured_image = ""
 show_on_homepage = false
 homepage_order = 0

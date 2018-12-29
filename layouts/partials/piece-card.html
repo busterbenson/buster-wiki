@@ -1,7 +1,11 @@
 <div class="row mb-5">
 	<div class="col-6">
 		{{ if .Params.link }}
-		  <h4 class="mt-0"><a href="{{ .Params.link }}" class="text-info" target="_new">{{ .Params.title }}</a></h4>
+			{{ if eq .Params.author "me" }}
+		  	<h4 class="mt-0"><a href="{{ .Params.link }}" class="text-info" target="_new">{{ .Params.title }}</a></h4>
+		  {{ else }}
+		  	<h4 class="mt-0"><a href="{{ .Params.link }}" class="text-info" target="_new">{{ .Params.title }}</a></h4>
+			{{ end }}			
 	  {{ else }}
 		  <h4 class="mt-0"><a href="{{ .URL }}">{{ .Params.title }}</a></h4>  
 	  {{ end }}
@@ -13,15 +17,30 @@
 		{{ if eq .Section "pieces" }}
 			{{ if .Params.piles }}
 				<div class="border-left p-1">
-					{{ range .Params.piles }}
-	          {{ with $.Site.GetPage (printf "/piles/%s" . ) }}
-	          	<small>
-	          		Added to the 
+        	<small>
+        		Added to the 
+          	{{ $length := (sub (len .Params.piles) 1) }}
+						{{ range $index, $pile := .Params.piles }}
+		          {{ with $.Site.GetPage (printf "/piles/%s" $pile ) }}
 	            	<mark><a href="{{ .Permalink }}">{{ .Title }}</a></mark>
-		          	pile.
-		         	</small>
+	            	{{- if (ne $length $index) -}}
+	            		{{- if eq $length 1 }}
+	            			and 
+	            		{{- else if eq $index (sub $length 1) -}}
+	            			, and 
+	            		{{- else -}}
+	            			, 
+	            		{{- end -}}
+	            	{{- else -}}
+	            		{{ if gt $length 0 }}
+	            			piles.
+	            		{{ else }}
+	            			pile.
+	            		{{ end }}
+	            	{{- end -}}
+	            {{ end }}
 	          {{ end }}
-					{{ end }}
+         	</small>
 
 					{{ if and ($author := .Params.author) false }}
 						{{ if ne .Params.author "me" }}
