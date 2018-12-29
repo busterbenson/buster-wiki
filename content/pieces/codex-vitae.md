@@ -3,7 +3,7 @@
 title     		 = "codex vitae"
 author    		 = 'me'
 link      		 = "https://buster.svbtle.com/codex-vitae"
-one_liner 		 = ""
+one_liner 		 = "A book that captures everything that you think is worth knowing about your life. Doesn't have to be a real book."
 featured_image = "" # /images/pieces/
 
 # see /piles

@@ -3,7 +3,7 @@
 title     		 = "optionality"
 author    		 = 'me'
 link      		 = ""
-one_liner 		 = ""
+one_liner 		 = "To have options."
 featured_image = "" # /images/pieces/
 
 # see /piles
