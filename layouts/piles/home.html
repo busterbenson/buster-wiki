@@ -9,12 +9,23 @@
       {{ .Content }}
     </div>
   </div>
-  <div class="row mt-2">
-    <div class="col-md-12">
-      <div class="row justify-content-start">
+  <div class="row mt-2 justify-content-center">
+    <div class="col-md-8">
+      <div class="row mt-2 justify-content-center">
       {{ range (.Paginator 50).Pages.ByTitle }}
         {{ if ne (.Param "hide_from_lists") true }}
-          <div class="col-3"><a href="{{ .URL }}">{{ .Title }}</a></div>
+          <div class="col-6 col-sm-3 mb-2">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title"><a href="{{ .URL }}">{{ .Title }}</a></div>
+              </div>
+              <ul class="list-group list-group-flush">
+                {{ range (.Paginator 3).Pages.ByDate.Reverse }}
+                  <li class="list-group-item"><small>{{ .Title }}</small></li>
+                {{ end }}
+              </ul>
+            </div>
+          </div>
         {{ end }}
       {{ end }}
       </div>

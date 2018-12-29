@@ -8,15 +8,11 @@
       {{ .Content }}
     </div>
   </div>
-  <div class="row mt-2">
-    <div class="col-md-12">
-      <div class="row justify-content-start">
-      {{ range (.Paginator 50).Pages.ByTitle }}
-        {{ if ne (.Param "hide_from_lists") true }}
-          {{ .Title }}
-        {{ end }}
+  <div class="row mt-2 justify-content-center">
+    <div class="col-md-8">
+      {{ range (.Paginator 50).Pages.ByDate.Reverse }}
+        {{ partial "big-link" (dict "context" . "link" .Params.link "title" .Params.title "desc" .Params.one_liner) }}
       {{ end }}
-      </div>
     </div>
   </div>
 </div>

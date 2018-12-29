@@ -1,10 +1,12 @@
 +++
-title = "{{ replace .Name "-" " " | title }}"
-url = ""
+title     = ""
+link      = ""
 one_liner = ""
-piles = []
+piles     = []
+category  = '' # link, article-link, reference-link
 
-disqus = true
-date = {{ .Date }}
+date      = {{ .Date }}
+layout    = "piece"
+disqus    = true
 +++
 

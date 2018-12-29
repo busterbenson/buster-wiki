@@ -3,6 +3,7 @@ title = "Life of Clodia"
 one_liner = "An incomplete choose-your-own-adventure story about an adventurous asteroid."
 featured_image = "/images/life-of-clodia/001.png"
 hide_image_on_detail = true
+piles = ["drawing", "systems-thinking"]
 
 show_on_homepage = true
 homepage_order = 6

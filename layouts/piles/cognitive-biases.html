@@ -140,18 +140,11 @@
   <div class="row mt-2 justify-content-center">
     <div class="col-md-8">
       {{ partial "divider" }}
-      <h3>Articles</h3>
+      <h3>Links</h3>
 
-      {{ partial "big-link" (dict "context" . "url" "https://betterhumans.coach.me/cognitive-bias-cheat-sheet-55a472476b18" "title" "Cognitive bias cheat sheet" "desc" "Original full analysis of 200+ cognitive biases.") }}
-
-      {{ partial "big-link" (dict "context" . "url" "https://medium.com/thinking-is-hard/4-conundrums-of-intelligence-2ab78d90740f" "title" "Cognitive bias cheat sheet, simplified" "desc" "Follow-up on the original, trying to boil it down some more.") }}
-
-      {{ partial "big-link" (dict "context" . "url" "https://medium.com/thinking-is-hard/a-rational-thinkers-guide-to-why-rational-thinking-often-fails-to-persuade-people-b3e65cac11e0" "title" "A rational person’s 1-minute guide to why rational thinking often fails to persuade people" "desc" "Read this if you think learning about biases will make you more persuasive.") }}
-
-      {{ partial "divider" }}
-      <h3>Additional resources</h3>
-
-      {{ partial "big-link" (dict "context" . "url" "https://en.wikipedia.org/wiki/List_of_cognitive_biases" "title" "Wikipedia's list of cognitive biases" "desc" "The infamous Wikipedia page that is super difficult to read.") }}
+      {{ range (where (index .Site.Taxonomies.piles "cognitive-biases") "Section" "pieces").Pages }}
+        {{ partial "big-link" (dict "context" . "link" .Params.link "title" .Params.title "desc" .Params.one_liner) }}
+      {{ end }}
 
     </div>
   </div>

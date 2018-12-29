@@ -1,4 +1,8 @@
 <div class="box mb-3">
-  <h4><a href="{{ .url }}" target="_new">{{ .title }}</a></h4>
+	{{ if .link }}
+	  <h4><a href="{{ .link }}" target="_new">{{ .title }}</a></h4>
+  {{ else }}
+	  <h4><a href="{{ .context.URL }}">{{ .title }}</a></h4>  
+  {{ end }}
   <div><small>{{ .desc }}</small></h3></div>
 </div>

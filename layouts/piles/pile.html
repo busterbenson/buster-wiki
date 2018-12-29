@@ -4,14 +4,14 @@
 
   {{ partial "title-and-content-basic" . }}
 
-  {{ if .Pages }}
+  {{ if (where .Pages "Section" "influences") }}
     <div class="row mt-2 justify-content-center">
       <div class="col-md-8">
           <h3>People who have influenced my thinking</h3>
       </div>
       <div class="col-md-8 mt-2">
         <div class="row justify-content-start">
-          {{ range .Pages.ByTitle }}
+          {{ range (where .Pages "Section" "influences").ByTitle }}
             {{ if ne (.Param "hide_from_lists") true }}
               {{ partial "person-card-mini" . }}
             {{ end }}
@@ -38,6 +38,23 @@
     </div>
   </div>
   {{ end }}
+
+  {{ if (where .Pages "Section" "pieces") }}
+    <div class="row mt-2 justify-content-center">
+      <div class="col-md-8">
+        <h3>Related pieces of the puzzle</h3>
+      </div>
+    </div>
+    {{ range (where .Pages "Section" "pieces").ByDate.Reverse }}
+      <div class="row justify-content-center">
+        <div class="col-md-8 justify-content-start">
+          <h4>{{ .Title }}</h4>
+          <h5>{{ .Content }}</h5>
+        </div>
+      </div>
+    {{ end }}
+  {{ end }}
+
 
 </div>
 
