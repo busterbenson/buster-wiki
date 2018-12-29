@@ -6,19 +6,18 @@
   {{ partial "title-and-content-basic" . }}
 
   <div class="row mt-2 justify-content-center">
-
     <div class="col-md-8 order-2">
       {{ range $paginator.Pages }}
         {{ partial "piece-card" . }}
       {{ end }}
     </div>
-
   </div>
 
   {{ partial "pagination" . }}
 
   <div class="row mt-2 justify-content-center">
     <div class="col-md-8">
+      {{ partial "divider" }}
       <h4>Pieces build up into <mark>piles</mark>.</h4>
       <p>
     </div>
@@ -51,9 +50,18 @@
 
   <div class="row mt-2 justify-content-center">
     <div class="col-md-8">
+      {{ partial "divider" }}
       <h4>Piles turn into beliefs and <mark>perspectives</mark>.</h4>
       <p>Here are beliefs I've updated recently.</p>
       <p>
+    </div>
+  </div>
+
+  <div class="row mt-2 justify-content-center">
+    <div class="col-md-8 order-2">
+      {{ range (where .Pages "Section" "beliefs").ByDate.Reverse }}
+        {{ partial "piece-card" . }}
+      {{ end }}
     </div>
   </div>
 
