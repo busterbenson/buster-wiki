@@ -5,13 +5,30 @@
   
   {{ partial "title-and-content-basic" . }}
 
+
   <div class="row mt-2 justify-content-center">
+
+    <div class="col-2 d-none d-md-block">
+    </div>
+
+
     <div class="col-md-8">
       {{ range $paginator.Pages }}
         {{ partial "piece-card" . }}
       {{ end }}
     </div>
+
+	  <div class="col-2 d-none d-md-block">
+		  <div class="sticky sticky-with-header is_stuck" style="position: relative; top: 0; width: 200px;">
+        {{ range (where .Site.Pages ".Params.show_on_homepage" "=" true).ByParam "homepage_order" }}
+          <p><a href="{{ .URL }}" class="text-secondary text-nowrap">{{ .Title }}</a></p>
+        {{ end }}
+		  </div>
+		 </div>
   </div>
+
+</div>
+
 
   {{ partial "pagination" . }}
 
