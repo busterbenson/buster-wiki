@@ -10,8 +10,7 @@
     <h4 class="subtitle">{{ .Param "one_liner" | safeHTML }}</h4>
 
     {{ if and (ne (.Param "featured_image") "") (ne (.Param "hide_image_on_detail") true) }}
-	    <div class="clearfix"></div>
-    	{{ partial "divider" }}
+	    <div class="clearfix mb-6"></div>
     {{ end }}
 		<div>{{ .Content }}</div>
 	</div>

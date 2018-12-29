@@ -4,5 +4,5 @@
   {{ else }}
 	  <h4><a href="{{ .context.URL }}">{{ .title }}</a></h4>  
   {{ end }}
-  <div><small>{{ .desc }}</small></h3></div>
+  <div><small>{{ .desc | safeHTML }}</small></h3></div>
 </div>

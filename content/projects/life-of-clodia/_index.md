@@ -5,7 +5,7 @@ featured_image = "/images/life-of-clodia/001.png"
 hide_image_on_detail = true
 piles = ["drawing", "systems-thinking"]
 
-show_on_homepage = true
+show_on_homepage = false
 homepage_order = 6
 
 mailchimp = true

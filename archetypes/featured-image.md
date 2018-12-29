@@ -1,7 +1,7 @@
 +++
 title = ""
 one_liner = ""
-featured_image = "/images/life-of-clodia/000.png"
+featured_image = ""
 date = {{ .Date }}
 layout = "featured-image"
 draft = false

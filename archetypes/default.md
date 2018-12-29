@@ -1,12 +1,21 @@
 +++
-title     = ""
-link      = ""
-one_liner = ""
-piles     = []
-category  = '' # link, article-link, reference-link
+# basics
+title     		 = ""
+author    		 = 'me'
+emoji     		 = ''
+link      		 = ""
+one_liner 		 = ""
+featured_image = ""
 
-date      = {{ .Date }}
-layout    = "piece"
-disqus    = true
+# see /piles
+piles     		 = []
+
+# link, article-link, reference-link, thought
+category  		 = '' 
+
+# metadata
+date      		 = {{ .Date }}
+layout    		 = "piece"
+disqus    		 = true
 +++
 

@@ -137,9 +137,26 @@
     </div>
   </div>
 
+  {{ if (where .Pages "Section" "influences") }}
+    <div class="row mt-8 justify-content-center">
+      <div class="col-md-8">
+          <h3>People who have influenced my thinking</h3>
+      </div>
+      <div class="col-md-8 mt-2">
+        <div class="row justify-content-start">
+          {{ range (where .Pages "Section" "influences").ByTitle }}
+            {{ if ne (.Param "hide_from_lists") true }}
+              {{ partial "person-card-mini" . }}
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  {{ end }}
+
+
   <div class="row mt-2 justify-content-center">
     <div class="col-md-8">
-      {{ partial "divider" }}
       <h3>Links</h3>
 
       {{ range (where (index .Site.Taxonomies.piles "cognitive-biases") "Section" "pieces").Pages }}

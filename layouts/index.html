@@ -1,21 +1,50 @@
 {{ define "main" }}
+{{ $paginator := .Paginate (where .Pages "Section" "pieces") 3 }}
 
 <div class="container">
   
+  {{ partial "title-and-content-basic" . }}
+
+  <div class="row mt-2 justify-content-center">
+
+    <div class="col-md-8 order-2">
+      {{ range $paginator.Pages }}
+        {{ partial "piece-card" . }}
+      {{ end }}
+    </div>
+
+  </div>
+
+  <div class="row mt-2 justify-content-center">
+
+    <div class="col-md-2 d-flex justify-content-start align-items-center">
+      {{ if $paginator.HasNext }}
+        <a href="{{ $paginator.Next.URL }}" class="page-link"><small>< older pieces</small></a>
+      {{ end }}
+    </div>
+
+    <div class="col-md-4 justify-content-start">
+    </div>
+
+    <div class="col-md-2 d-flex justify-content-end align-items-center">
+      {{ if $paginator.HasPrev }}
+        <a href="{{ $paginator.Prev.URL }}" class="page-link"><small>newer pieces ></small></a>
+      {{ end }}
+    </div>
+
+  </div>
+
   <div class="row mt-2 justify-content-center">
     <div class="col-md-8">
-      <h1 class="title">👋 Hello!</h1>
+      <h4>Piles turn into perspectives</h4>
     </div>
   </div>
-  <div class="row justify-content-start">
 
-    {{ range (where .Site.Pages ".Params.show_on_homepage" "=" true).ByParam "homepage_order" }}
-    	{{ partial "section-card" . }}
-    {{ end }}
-
+  <div class="row mt-2 justify-content-center">
+    <div class="col-md-12">
+      
     </div>
   </div>
 
 </div>
-
 {{ end }}
