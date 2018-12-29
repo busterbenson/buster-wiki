@@ -5,6 +5,7 @@ confidence = "high"
 conflict_of_head = true
 conflict_of_heart = true
 bristle = 2
+token = "ecosystems.human-influenced"
 
 [[ecosystems]]
 desc = "Climate change is of particular importance to humans, because it poses an existential risk to our survival, but it's not the only risk and not the greatest risk (see existential threats)."
