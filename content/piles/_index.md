@@ -1,6 +1,6 @@
 +++
 title = "Piles"
-one_liner = "Collections of thoughts around a topic."
+one_liner = "Pieces build up into <mark>piles</mark>."
 featured_image = "/images/tree.jpg"
 
 show_on_homepage = true 

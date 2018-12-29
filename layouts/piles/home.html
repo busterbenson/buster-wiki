@@ -1,34 +1,31 @@
 {{ define "main" }}
+{{ $paginator := (.Paginator 50).Pages.ByTitle }}
+
 <div class="container">
   
-  <div class="row mt-2 justify-content-center">
-    <div class="col-md-8">
-      <h1 class="title">{{ .Title }}</h1>
-      <h4 class="subtitle">{{ .Param "one_liner" }}</h4>
-      {{ .Content }}
-    </div>
-  </div>
+  {{ partial "title-and-content-basic" . }}
+
   <div class="row mt-2 justify-content-center">
     <div class="col-md-12">
       <div class="row mt-2 justify-content-center">
-      {{ range (.Paginator 50).Pages.ByTitle }}
-        {{ if ne (.Param "hide_from_lists") true }}
-          <div class="col-6 col-sm-3 mb-2">
-            <div class="card">
-              <div class="card-body">
-                <div class="card-title"><a href="{{ .URL }}">{{ .Title }}</a></div>
+      {{ range $paginator }}
+        <div class="col-6 col-md-4 col-lg-3 mb-2">
+          <div class="card">
+            <div class="card-body">
+              <div class="float-right">
               </div>
-              <ul class="list-group list-group-flush">
-                {{ range (.Paginator 3).Pages.ByDate.Reverse }}
-                  <li class="list-group-item"><small>{{ .Title }}</small></li>
-                {{ end }}
-              </ul>
+              <div class="card-title">
+                <a href="{{ .URL }}">
+                  <small>{{ .Title }}</small>
+                </a>
+              </div>
             </div>
           </div>
-        {{ end }}
+        </div>
       {{ end }}
       </div>
     </div>
   </div>
+
 </div>
 {{ end }}

@@ -1,12 +1,12 @@
 {{ define "main" }}
-{{ $paginator := .Paginate (where .Pages "Section" "pieces") 3 }}
+{{ $paginator := .Paginate (where .Pages "Section" "in" (slice "pieces" "beliefs") ) 5 }}
 
 <div class="container">
   
   {{ partial "title-and-content-basic" . }}
 
-  <div class="row mt-2 justify-content-center">
-    <div class="col-md-8 order-2">
+  <div class="row mt-2 justify-content-start">
+    <div class="col-md-8">
       {{ range $paginator.Pages }}
         {{ partial "piece-card" . }}
       {{ end }}
@@ -14,56 +14,6 @@
   </div>
 
   {{ partial "pagination" . }}
-
-  <div class="row mt-2 justify-content-center">
-    <div class="col-md-8">
-      {{ partial "divider" }}
-      <h4>Pieces build up into <mark>piles</mark>.</h4>
-      <p>
-    </div>
-  </div>
-
-  <div class="row mt-2 justify-content-center">
-    <div class="col-md-12">
-      <div class="row mt-2 justify-content-center">
-      {{ range $term, $pile := .Site.Taxonomies.piles }}
-        <div class="col-6 col-md-4 col-lg-3 mb-2">
-          <div class="card">
-            <div class="card-body">
-              <div class="float-right">
-                <span class="badge badge-pill badge-light">{{ $pile.Count }}</span>
-              </div>
-              <div class="card-title">
-                <a href="/piles/{{$term}}">
-                  {{ with $.Site.GetPage (printf "/piles/%s" $term ) }}
-                    <small>{{ .Title }}</small>
-                  {{ end }}
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      {{ end }}
-      </div>
-    </div>
-  </div>
-
-  <div class="row mt-2 justify-content-center">
-    <div class="col-md-8">
-      {{ partial "divider" }}
-      <h4>Piles turn into beliefs and <mark>perspectives</mark>.</h4>
-      <p>Here are beliefs I've updated recently.</p>
-      <p>
-    </div>
-  </div>
-
-  <div class="row mt-2 justify-content-center">
-    <div class="col-md-8 order-2">
-      {{ range (where .Pages "Section" "beliefs").ByDate.Reverse }}
-        {{ partial "piece-card" . }}
-      {{ end }}
-    </div>
-  </div>
 
 </div>
 {{ end }}

@@ -5,7 +5,8 @@ one_liner 		 = ""
 featured_image = ""
 
 # see 
-belief_tokens 	= ['']
+piles						= []
+belief_tokens 	= []
 
 # metadata
 date      		 = {{ .Date }}

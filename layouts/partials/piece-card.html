@@ -9,32 +9,51 @@
 	</div>
 
 	<div class="col-6">
-		{{ if .Params.piles }}
-			<div class="border-left p-1">
-				{{ range .Params.piles }}
-          {{ with $.Site.GetPage (printf "/piles/%s" . ) }}
-          	<small>
-          		Added to the 
-            	<mark><a href="{{ .Permalink }}">{{ .Title }}</a></mark>
-	          	pile.
-	         	</small>
-          {{ end }}
-				{{ end }}
 
-				{{ if and ($author := .Params.author) false }}
-					{{ if ne .Params.author "me" }}
-						<div><small>
-							{{ with $.Site.GetPage (printf "/piles/%s" $author) }}
-								By <a href="{{$author.Permalink}}">{{ $author.title }}</a>
-							{{ else }}
-								Via {{ $author }}
-							{{ end }}
-						</small></div>
+		{{ if eq .Section "pieces" }}
+			{{ if .Params.piles }}
+				<div class="border-left p-1">
+					{{ range .Params.piles }}
+	          {{ with $.Site.GetPage (printf "/piles/%s" . ) }}
+	          	<small>
+	          		Added to the 
+	            	<mark><a href="{{ .Permalink }}">{{ .Title }}</a></mark>
+		          	pile.
+		         	</small>
+	          {{ end }}
 					{{ end }}
-				{{ end }}	  
 
+					{{ if and ($author := .Params.author) false }}
+						{{ if ne .Params.author "me" }}
+							<div><small>
+								{{ with $.Site.GetPage (printf "/piles/%s" $author) }}
+									By <a href="{{$author.Permalink}}">{{ $author.title }}</a>
+								{{ else }}
+									Via {{ $author }}
+								{{ end }}
+							</small></div>
+						{{ end }}
+					{{ end }}	  
+				</div>
+			{{ end }}
+		{{ end }}
+
+		{{ if eq .Section "beliefs" }}
+			<div class="border-left p-1">
+				{{ if .Params.piles }}
+					{{ range .Params.piles }}
+	          {{ with $.Site.GetPage (printf "/piles/%s" . ) }}
+	          	<small>
+	          		Updated beliefs in the  
+	            	<mark><a href="{{ .Permalink }}">{{ .Title }}</a></mark>
+		          	pile.
+		         	</small>
+	          {{ end }}
+					{{ end }}
+
+				{{ end }}
 			</div>
 		{{ end }}
-	
+
 	</div>
 </div>
