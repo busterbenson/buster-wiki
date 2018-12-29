@@ -4,7 +4,7 @@
 	  	<a href="{{ .URL }}"><img class="card-image-top" src="{{ .Param "featured_image" }}" alt="{{.Title}}"></a>
 	  {{ end }}
 	  <div class="card-body">
-	    <h3 class="card-title"><a href="{{ .URL }}" class="text-dark">{{ .Title }}</a></h3>
+	    <h3 class="card-title"><a href="{{ .URL }}" class="text-dark">{{ .Title }}</a></h3>	    
 	    <p class="card-text px-0"><small>{{ .Param "one_liner" | safeHTML }}</small></p>
 	  </div>	
 
@@ -17,7 +17,7 @@
 	        	{{ range $item }}
 		        	{{ if eq .featured true}}
 			        	<li class="list-group-item">
-		  	      		<small><a href="{{ .url }}">{{ .title }}</a>{{ if ne .desc nil }}: {{ .desc }}{{ end }}</small>
+		  	      		<small><a href="{{ .url }}" target="_new">{{ .title }}</a>{{ if ne .desc nil }}: {{ .desc }}{{ end }}</small>
 			  	      </li>
 			    	  {{ end }}
 	        	{{ end }}

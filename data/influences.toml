@@ -240,6 +240,12 @@
 	desc = "A great novel packed with interesting ideas. I stole the Codex Vitae for myself."
 	featured = true	
 
+	[[Robin-Sloan.Articles]]
+	title = "Fish"
+	url = "https://www.robinsloan.com/fish/"
+	desc = "A manifesto about returning to things we love. So great."
+	featured = true
+
 [Sean-Carroll]
 
 	[[Sean-Carroll.Books]]
@@ -255,6 +261,14 @@
 	url = "https://waitbutwhy.com/2014/05/life-weeks.html"
 	desc = "This inspired me to map my own life in weeks."
 	featured = true
+
+[Ursula-K-Le-Guin]
+
+	[[Ursula-K-Le-Guin.Books]]
+	title = "Tao Te Ching"
+	url = "https://amzn.to/2BI429a"
+	desc = "She wrote so many great books but this one was a surprise that I love."
+	featured = true	
 
 [Venkatesh-Rao]
 

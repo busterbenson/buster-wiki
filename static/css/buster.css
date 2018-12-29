@@ -24,6 +24,9 @@ h4 {
 h4.mailchimp {
 	border-bottom: none;
 }
+mark a {
+	color: #000;
+}
 .title {
 	font-size: 60px; 
 	margin-bottom: 0px;
@@ -33,6 +36,7 @@ h4.mailchimp {
 	padding-bottom: 1em;
 	margin-top: 0px;
 	border-bottom: none;
+	line-height: 1.5em;
 } 
 .card-body {
 	padding: 20px;

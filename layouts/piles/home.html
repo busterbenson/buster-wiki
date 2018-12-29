@@ -1,0 +1,24 @@
+
+{{ define "main" }}
+<div class="container">
+  
+  <div class="row mt-2 justify-content-center">
+    <div class="col-md-8">
+      <h1 class="title">{{ .Title }}</h1>
+      <h4 class="subtitle">{{ .Param "one_liner" }}</h4>
+      {{ .Content }}
+    </div>
+  </div>
+  <div class="row mt-2">
+    <div class="col-md-12">
+      <div class="row justify-content-start">
+      {{ range (.Paginator 50).Pages.ByTitle }}
+        {{ if ne (.Param "hide_from_lists") true }}
+          <div class="col-3"><a href="{{ .URL }}">{{ .Title }}</a></div>
+        {{ end }}
+      {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

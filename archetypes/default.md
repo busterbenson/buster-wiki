@@ -1,10 +1,10 @@
 +++
 title = "{{ replace .Name "-" " " | title }}"
+url = ""
 one_liner = ""
-featured_image = ""
+piles = []
 
-mailchimp = false
+disqus = true
 date = {{ .Date }}
-draft = true
 +++
 

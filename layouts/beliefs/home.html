@@ -1,0 +1,48 @@
+{{ define "main" }}
+
+<div class="container">
+
+  {{ partial "title-and-content-basic" . }}
+
+  <div id="beliefs-list" class="row mt-2 justify-content-center">
+    <div class="col-2 d-none d-md-block"></div>
+    <div class="col-lg-8">
+      {{ range $pile, $list := $.Site.Data.beliefs }}
+        <a name="{{ $pile }}" href="#belief-pile-{{ $pile }}"></a>
+        <div class="card mb-3">
+          <div class="card-body">
+            <h3 class="card-title">
+              {{ with $.Site.GetPage (printf "/piles/%s" $pile) }}
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+              {{ end }}
+            </h3>
+          </div>
+          <ul class="list-group list-group-flush">
+            {{ range $list }}
+              {{ if eq .desc nil }}
+                {{ range . }}
+                  <li class="list-group-item">{{ .desc }}</li>
+                {{ end }}
+              {{ else }}
+                <li class="list-group-item">{{ .desc }}</li>
+              {{ end }}
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }} 
+    </div>
+
+    <div class="col-2 d-none d-md-block">
+      <div class="sticky sticky-with-header is_stuck" style="position: relative; top: 0; width: 255px;">
+        {{ range $pile, $list := $.Site.Data.beliefs }}
+          <div class="overlay-menu">
+            <p><a class="text-secondary" href="#{{ $pile }}">{{ $pile }}</a></p>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{{ end }}

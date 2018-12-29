@@ -1,0 +1,11 @@
+<div class="col-md-3 mb-3">
+	<div class="card">
+	  {{ if and (isset .Params "featured_image") (ne (.Param "featured_image") "") }}
+	  	<a href="{{ .URL }}"><img class="card-image-top" src="{{ .Param "featured_image" }}" alt="{{.Title}}"></a>
+	  {{ end }}
+	  <div class="card-body">
+	    <h3 class="card-title"><a href="{{ .URL }}" class="text-dark">{{ .Title }}</a></h3>
+	    <p class="card-text"><small>{{ .Param "one_liner" }}</small></p>
+	  </div>
+	</div>
+</div>
