@@ -1,0 +1,22 @@
++++
+# basics
+title     		 = "Thinking Fast and Slow"
+author    		 = 'me'
+link      		 = "https://amzn.to/2rWxSlN"
+one_liner 		 = "This cracked opened the whole world of cognitive biases for me. I recommend the audiobook version."
+featured_image = "" # /images/pieces/
+
+# taxonomies
+influences		 = ['daniel-kahneman']
+piles     		 = ['cognitive-biases']
+projects			 = []
+
+# link, article, reference, thought, book, idea
+category  		 = 'book' 
+
+# metadata
+type	    		 = "piece"
+date      		 = 2018-12-29T16:51:55-08:00
+disqus    		 = false
++++
+

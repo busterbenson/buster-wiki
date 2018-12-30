@@ -6,16 +6,17 @@ link      		 = ""
 one_liner 		 = ""
 featured_image = "" # /images/pieces/
 
-# see /piles
+# taxonomies
+influences		 = []
 piles     		 = []
 projects			 = []
 
-# link, article, reference, thought, book, idea
-category  		 = '' 
+# link, article, reference, thought, book, idea, podcast, blog, tv
+category  		 = ''
 
 # metadata
+type	    		 = "piece"
 date      		 = {{ .Date }}
-layout    		 = "piece"
 disqus    		 = false
 +++
 
