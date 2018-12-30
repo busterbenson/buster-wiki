@@ -1,6 +1,6 @@
 +++
 # basics
-title     		 = "Absurdy 30: Higher highs and lower lows"
+title     		 = "30: Higher highs and lower lows"
 author    		 = 'me'
 link      		 = "http://busterbenson.livejournal.com/85489.html"
 one_liner 		 = "My year in review."

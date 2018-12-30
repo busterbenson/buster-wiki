@@ -8,22 +8,24 @@
 	    <p class="card-text px-0"><small>{{ .Param "one_liner" | safeHTML }}</small></p>
 	  </div>	
 
-    {{ $influencer := index $.Site.Data.influences $.Params.data_key }}
-    {{ if $influencer }}
-	    {{ range $category := $.Params.data_categories }}
-	      <ul class="list-group list-group-flush m-0 p-0">
-	        {{ $item := index $influencer $category }}
-	        {{ if $item }}
-	        	{{ range $item }}
-		        	{{ if eq .featured true}}
-			        	<li class="list-group-item">
-		  	      		<small><a href="{{ .url }}" target="_new">{{ .title }}</a>{{ if ne .desc nil }}: {{ .desc }}{{ end }}</small>
-			  	      </li>
-			    	  {{ end }}
-	        	{{ end }}
-	        {{ end }}
-	      </ul>
-	    {{ end }} 
-	  {{ end }}
+	  {{ if .Params.data_key }}
+	    {{ $influencer := index $.Site.Data.influences $.Params.data_key }}
+	    {{ if $influencer }}
+		    {{ range $category := $.Params.data_categories }}
+		      <ul class="list-group list-group-flush m-0 p-0">
+		        {{ $item := index $influencer $category }}
+		        {{ if $item }}
+		        	{{ range $item }}
+			        	{{ if eq .featured true}}
+				        	<li class="list-group-item">
+			  	      		<small><a href="{{ .url }}" target="_new">{{ .title }}</a>{{ if ne .desc nil }}: {{ .desc }}{{ end }}</small>
+				  	      </li>
+				    	  {{ end }}
+		        	{{ end }}
+		        {{ end }}
+		      </ul>
+		    {{ end }} 
+		  {{ end }}
+		{{ end }}
 	</div>
 </div>

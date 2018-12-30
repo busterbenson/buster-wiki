@@ -1,6 +1,6 @@
 +++
 # basics
-title     		 = "Now 31! Double down"
+title     		 = "31: Double down"
 author    		 = 'me'
 link      		 = "https://buster.livejournal.com/120184.html"
 one_liner 		 = "My year in review."
