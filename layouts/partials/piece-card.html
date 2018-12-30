@@ -2,9 +2,9 @@
 	<div class="col-6">
 		{{ if .Params.link }}
 			{{ if eq .Params.author "me" }}
-		  	<h4 class="mt-0"><a href="{{ .Params.link }}" class="text-info" target="_new">{{ .Params.title }}</a></h4>
+		  	<h4 class="mt-0"><a href="{{ .URL }}">{{ .Params.title }}</a> <a href="{{ .Params.link }}" class="text-info" target="_new">↗</a></h4>
 		  {{ else }}
-		  	<h4 class="mt-0"><a href="{{ .Params.link }}" class="text-info" target="_new">{{ .Params.title }}</a></h4>
+		  	<h4 class="mt-0"><a href="{{ .URL }}">{{ .Params.title }}</a> <a href="{{ .Params.link }}" class="text-info" target="_new">↗</a></h4>
 			{{ end }}			
 	  {{ else }}
 		  <h4 class="mt-0"><a href="{{ .URL }}">{{ .Params.title }}</a></h4>  
@@ -55,23 +55,6 @@
 					{{ end }}	  
 				</div>
 			{{ end }}
-		{{ end }}
-
-		{{ if eq .Section "beliefs" }}
-			<div class="border-left p-1">
-				{{ if .Params.piles }}
-					{{ range .Params.piles }}
-	          {{ with $.Site.GetPage (printf "/piles/%s" . ) }}
-	          	<small>
-	          		Updated beliefs in the  
-	            	<mark><a href="{{ .Permalink }}">{{ .Title }}</a></mark>
-		          	pile.
-		         	</small>
-	          {{ end }}
-					{{ end }}
-
-				{{ end }}
-			</div>
 		{{ end }}
 
 	</div>

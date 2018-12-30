@@ -1,3 +1,17 @@
+[[dialogue]]
+desc = "If you're stuck in an unproductive or harmful conflict that seems impossible to resolve, the best course of action is to consider other alternatives to resolution."
+piles = ["dialogue"]
+confidence = "high"
+conflict_of_hand = true
+bristle = 2
+
+[[dialogue]]
+desc = "There are several ways to make a conflict productive other than through resolution. For example: learning something that was previously hidden, connecting with someone at a deeper level, having fun, becoming inspired to act in collaboration, etc."
+piles = ["dialogue"]
+confidence = "high"
+conflict_of_hand = true
+bristle = 2
+
 [[ecosystems]]
 desc = "Human-influenced climate change is real, and it's appropriate to panic."
 piles = ["ecosystems"]
@@ -5,7 +19,6 @@ confidence = "high"
 conflict_of_head = true
 conflict_of_heart = true
 bristle = 2
-token = "ecosystems.human-influenced"
 
 [[ecosystems]]
 desc = "Climate change is of particular importance to humans, because it poses an existential risk to our survival, but it's not the only risk and not the greatest risk (see existential threats)."

@@ -36,7 +36,7 @@
       <div class="sticky sticky-with-header is_stuck" style="position: relative; top: 0; width: 255px;">
         {{ range $pile, $list := $.Site.Data.beliefs }}
           <div class="overlay-menu">
-            <p><a class="text-secondary" href="#{{ $pile }}">{{ $pile }}</a></p>
+            <p><a class="text-secondary" href="#{{ $pile }}">{{ replace $pile "-" " " }}</a></p>
           </div>
         {{ end }}
       </div>

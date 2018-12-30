@@ -13,6 +13,7 @@ piles     		 = []
 projects			 = []
 
 # link, article, reference, thought, book, idea, podcast, blog, tv
+# annotated-link
 category  		 = ''
 
 # metadata

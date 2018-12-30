@@ -3,7 +3,7 @@ title = "Julia Galef"
 one_liner = "Changed the way I think about <mark>critical thinking</mark>."
 featured_image = "/images/people/julia-galef.jpg"
 
-piles = ["critical-thinking"]
+piles = ["critical-thinking", "dialogue"]
 twitter = "juliagalef"
 website = "https://juliagalef.com"
 wikipedia = ""

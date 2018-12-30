@@ -18,3 +18,22 @@ pile = "piles"
 projects = "projects"
 category = "categories"
 influence = "influences"
+
+[outputs]
+home = ["HTML", "RSS", "Bonsai"]
+
+# Bonsai.io config for elasticsearch
+# https://docs.bonsai.io/docs/hugo
+# run `hugo`
+# run `curl -H "Content-Type: application/x-ndjson" -XPOST "https://vzkemyzfkn:vlfw9gpien@buster-wiki-7980505858.us-west-2.bonsaisearch.net/_bulk" --data-binary @public/bonsai.json`
+# verify with `curl -XGET https://vzkemyzfkn:vlfw9gpien@buster-wiki-7980505858.us-west-2.bonsaisearch.net/_search`
+
+[outputFormats.Bonsai]
+baseName = "bonsai"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+
+[params.bonsai]
+vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
+params = ["categories", "tags", "influences", "piles", "projects"]

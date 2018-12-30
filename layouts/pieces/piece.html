@@ -3,8 +3,15 @@
   
 	<div class="row mt-2 justify-content-center">
 	  <div class="col-md-8">
-	    <h1 class="title">{{ .Title }}</h1>
-	    <h4 class="subtitle">{{ .Param "one_liner" | safeHTML }}</h4>
+	    <h1 class="small-title lora">{{ .Title }}</h1>
+	    <h4 class="subtitle">{{ .Param "one_liner" | safeHTML }}
+		    {{ if .Params.link }}
+	  	  	<a href="{{ .Params.link }}" class="text-info" target="_new">Read it ↗</a>
+	  	  	<div>
+	  	  		<small><a href="{{ .Params.link }}" class="text-secondary" target="_new">{{ .Params.link }}</a></small>
+	  	  	</div>
+	    	{{ end }}
+		  </h4>
 
 	    {{ if and (ne (.Param "featured_image") "") (ne (.Param "hide_image_on_detail") true) }}
 	      <img src="{{$.Params.featured_image}}" class="rounded align-center img-thumbnail" />
