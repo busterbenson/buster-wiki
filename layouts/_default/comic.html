@@ -6,8 +6,7 @@
 
   <div class="row mt-2 justify-content-center">
     <div class="col-md-12">
-
-      {{ range (.Paginator 50).Pages.ByDate }}
+      {{ range .Pages.ByTitle }}
         {{ if ne (.Param "hide_from_lists") true }}
           {{ if and (isset .Params "featured_image") (ne (.Param "featured_image") "") }}
               <p class="mb-3">

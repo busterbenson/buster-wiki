@@ -7,6 +7,6 @@ piles = []
 perspectives = []
 
 date = 2018-12-26T13:01:15-08:00
-draft = false
+draft = true
 layout = "project"
 +++
