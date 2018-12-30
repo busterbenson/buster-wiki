@@ -17,7 +17,7 @@ category  		 = ''
 
 # metadata
 date      		 = 2018-12-29T16:39:52-08:00
-type	    		 = "piece"
+layout	    	 = "piece"
 disqus    		 = false
 +++
 

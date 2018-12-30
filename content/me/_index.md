@@ -2,7 +2,6 @@
 title = "Who am I?"
 one_liner = "Buster Benson, Human."
 featured_image = "/images/rickshaw.jpg"
-hide_image_on_detail = true
 
 show_on_homepage = true
 homepage_order = 1

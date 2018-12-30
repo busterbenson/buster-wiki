@@ -16,7 +16,7 @@ projects			 = []
 category  		 = 'book'
 
 # metadata
-type	    		 = "piece"
+layout	    	 = "piece"
 date      		 = 2018-12-29T18:55:03-08:00
 disqus    		 = false
 +++

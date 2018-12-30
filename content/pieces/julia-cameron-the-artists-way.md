@@ -16,7 +16,7 @@ projects			 = ['750-words']
 category  		 = 'book'
 
 # metadata
-type	    		 = "piece"
+layout	    	 = "piece"
 date      		 = 2018-12-29T17:48:53-08:00
 disqus    		 = false
 +++

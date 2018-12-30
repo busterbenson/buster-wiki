@@ -16,7 +16,7 @@ projects			 = ['codex-vitae']
 category  		 = 'book'
 
 # metadata
-type	    		 = "piece"
+layout	    	 = "piece"
 date      		 = 2018-12-29T18:17:29-08:00
 disqus    		 = false
 +++

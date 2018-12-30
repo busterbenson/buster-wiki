@@ -5,6 +5,7 @@ author    		 = 'me'
 link      		 = ""
 one_liner 		 = ""
 featured_image = "" # /images/pieces/
+belief_delta.  = false
 
 # taxonomies
 influences		 = []
@@ -15,7 +16,7 @@ projects			 = []
 category  		 = ''
 
 # metadata
-type	    		 = "piece"
+layout	    	 = "piece"
 date      		 = {{ .Date }}
 disqus    		 = false
 +++

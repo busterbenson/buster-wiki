@@ -16,7 +16,7 @@ projects			 = []
 category  		 = 'video'
 
 # metadata
-type	    		 = "piece"
+layout	    	 = "piece"
 date      		 = 2018-12-29T18:10:15-08:00
 disqus    		 = false
 +++
