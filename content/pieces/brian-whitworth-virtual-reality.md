@@ -5,6 +5,7 @@ author    		 = 'Brian Whitworth'
 link      		 = "http://listverse.com/2014/11/26/10-reasons-why-our-universe-is-a-virtual-reality/"
 one_liner 		 = "Quantum realism is such a beautiful way to see the world."
 featured_image = "" # /images/pieces/
+belief_delta	 = true
 
 # taxonomies
 influences		 = ['brian-whitworth']

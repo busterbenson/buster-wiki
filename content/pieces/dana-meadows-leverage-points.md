@@ -5,6 +5,7 @@ author    		 = 'me'
 link      		 = "http://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/"
 one_liner 		 = "This completely changed the way I think about action of any kind."
 featured_image = "" # /images/pieces/
+belief_delta	 = true
 
 # taxonomies
 influences		 = ['dana-meadows']

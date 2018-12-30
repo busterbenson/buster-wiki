@@ -8,24 +8,15 @@
 	    <p class="card-text px-0"><small>{{ .Param "one_liner" | safeHTML }}</small></p>
 	  </div>	
 
-	  {{ if .Params.data_key }}
-	    {{ $influencer := index $.Site.Data.influences $.Params.data_key }}
-	    {{ if $influencer }}
-		    {{ range $category := $.Params.data_categories }}
-		      <ul class="list-group list-group-flush m-0 p-0">
-		        {{ $item := index $influencer $category }}
-		        {{ if $item }}
-		        	{{ range $item }}
-			        	{{ if eq .featured true}}
-				        	<li class="list-group-item">
-			  	      		<small><a href="{{ .url }}" target="_new">{{ .title }}</a>{{ if ne .desc nil }}: {{ .desc }}{{ end }}</small>
-				  	      </li>
-				    	  {{ end }}
-		        	{{ end }}
-		        {{ end }}
-		      </ul>
-		    {{ end }} 
-		  {{ end }}
-		{{ end }}
+	    
+    <ul class="list-group list-group-flush m-0 p-0">
+			{{ range $page := where (index .Site.Taxonomies.influences .Data.Term) "Params.belief_delta" true }}
+	    	<li class="list-group-item">
+	    		<small><a href="{{ .Permalink }}" target="_new">{{ .Title }}</a>{{ if ne .Params.one_liner nil }}: {{ .Params.one_liner }}{{ end }}</small>
+	      </li>
+	    {{ end }}
+    </ul>
+
+
 	</div>
 </div>

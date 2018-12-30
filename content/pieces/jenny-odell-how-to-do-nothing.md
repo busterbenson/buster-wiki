@@ -5,6 +5,7 @@ author    		 = 'Jenny Odell'
 link      		 = "https://medium.com/@the_jennitaur/how-to-do-nothing-57e100f59bbb"
 one_liner 		 = "I've read this a dozen times, it's such a great exploration of the art of doing nothing."
 featured_image = "" # /images/pieces/
+belief_delta	 = true
 
 # taxonomies
 influences		 = ['jenny-odell']

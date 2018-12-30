@@ -5,6 +5,7 @@ author    		 = 'Julia Cameron'
 link      		 = "https://amzn.to/2SpAIeT"
 one_liner 		 = "I was so inspired by this that I built 750words.com based on morning pages."
 featured_image = "" # /images/pieces/
+belief_delta	 = true
 
 # taxonomies
 influences		 = ['julia-cameron']

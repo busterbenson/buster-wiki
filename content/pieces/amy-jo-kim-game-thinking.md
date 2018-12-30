@@ -5,6 +5,7 @@ author    		 = 'Amy Jo Kim'
 link      		 = "https://amzn.to/2Rpt3A0"
 one_liner 		 = "This is Amy's latest book but all of her work is great, including her talks and workshops."
 featured_image = "" # /images/pieces/
+belief_delta	 = true
 
 # taxonomies
 influences		 = ['amy-jo-kim']

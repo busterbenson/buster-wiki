@@ -5,6 +5,7 @@ author    		 = 'Ed Catmull'
 link      		 = "https://amzn.to/2RihWZs"
 one_liner 		 = "This is such an interesting view into Pixar and Ed Catmull's organizational genius."
 featured_image = "" # /images/pieces/
+belief_delta	 = true
 
 # taxonomies
 influences		 = ['ed-catmull']

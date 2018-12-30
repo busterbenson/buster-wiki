@@ -5,6 +5,7 @@ author    		 = 'Julia Galef'
 link      		 = "http://rationallyspeakingpodcast.org"
 one_liner 		 = "Julia's one of the best interviewers around in my opinion."
 featured_image = "" # /images/pieces/
+belief_delta	 = true
 
 # taxonomies
 influences		 = ['julia-galef']

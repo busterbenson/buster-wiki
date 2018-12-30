@@ -5,4 +5,6 @@ featured_image = "/images/750-birds.png"
 date = "2018-12-22"
 draft = false
 show_tree = true
+
+layout = "project"
 +++

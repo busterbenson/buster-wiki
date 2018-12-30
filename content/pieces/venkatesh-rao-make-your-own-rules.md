@@ -2,8 +2,10 @@
 # basics
 title     		 = "Make Your Own Rules"
 author    		 = 'Venkatesh Rao'
-link      		 = "I'm obsessed with life rule sets, and this only encouraged it."
+link      		 = "https://www.ribbonfarm.com/2018/02/15/make-your-own-rules/"
+one_liner 		 = "I'm obsessed with life rule sets, and this only encouraged it."
 featured_image = "" # /images/pieces/
+belief_delta	 = true
 
 # taxonomies
 influences		 = ['venkatesh-rao']

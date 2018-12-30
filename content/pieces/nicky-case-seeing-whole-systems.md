@@ -5,6 +5,7 @@ author    		 = 'Nicky Case'
 link      		 = "http://longnow.org/seminars/02017/aug/07/seeing-whole-systems/"
 one_liner 		 = "A great articulation of systems thinking."
 featured_image = "" # /images/pieces/
+belief_delta	 = true
 
 # taxonomies
 influences		 = ['nicky-case']

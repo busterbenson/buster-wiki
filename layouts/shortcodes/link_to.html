@@ -10,5 +10,10 @@
 	{{- with .Site.GetPage ( printf "/pieces/%s.md" $idea ) -}}
 		<a href="{{ .Permalink }}">{{ if ne $text "" }}{{ $text }}{{ else }}{{ .Title }}{{ end }}</a>
 	{{- end -}}
+{{- else if ne ($pile := .Get "pile") "" -}}
+	{{- $pile := replace (lower $pile) " " "-" -}}
+	{{- with .Site.GetPage ( printf "/piles/%s" $pile ) -}}
+		<a href="{{ .Permalink }}">{{ if ne $text "" }}{{ $text }}{{ else }}{{ .Title }}{{ end }}</a>
+	{{- end -}}
 {{- end -}}
 

@@ -1,16 +1,7 @@
 {{ define "main" }}
   <div class="container">
     
-    <div class="row mt-2 justify-content-center">
-      <div class="col-md-8">
-        <h1 class="title">
-          {{- .Title -}}
-        </h1>
-        {{ if isset .Params "one_liner" }}
-          <h4 class="subtitle font-weight-light">{{ .Param "one_liner" }}</h4>  
-        {{ end }}
-      </div>
-    </div>
+    {{ partial "title-and-content-basic" . }}
 
     <div class="row mt-2 justify-content-center"> 
       <div class="col-md-8">{{- .Content -}}</div>

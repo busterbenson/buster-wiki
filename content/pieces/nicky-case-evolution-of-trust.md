@@ -5,6 +5,7 @@ author    		 = 'Nicky Case'
 link      		 = "https://ncase.me/trust/"
 one_liner 		 = "The best intro to my favorite game: prisoner's dilemma."
 featured_image = "" # /images/pieces/
+belief_delta	 = true
 
 # taxonomies
 influences		 = ['nicky-case']

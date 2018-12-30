@@ -20,7 +20,7 @@
 
 	  <div class="col-2 d-none d-md-block">
 		  <div class="sticky sticky-with-header is_stuck" style="position: relative; top: 0; width: 200px;">
-        {{ range (where .Site.Pages ".Params.show_on_homepage" "=" true).ByParam "homepage_order" }}
+        {{ range (where .Site.Pages ".Params.show_on_homepage" "=" true).ByTitle }}
           <p><a href="{{ .URL }}" class="text-secondary text-nowrap">{{ .Title }}</a></p>
         {{ end }}
 		  </div>

@@ -5,6 +5,7 @@ author    		 = 'Robin Sloan'
 link      		 = "https://amzn.to/2LBPdt9"
 one_liner 		 = "A great novel packed with interesting ideas. I stole the Codex Vitae for myself."
 featured_image = "" # /images/pieces/
+belief_delta	 = true
 
 # taxonomies
 influences		 = ['robin-sloan']

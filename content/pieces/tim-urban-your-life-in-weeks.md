@@ -5,6 +5,7 @@ author    		 = 'me'
 link      		 = "https://waitbutwhy.com/2014/05/life-weeks.html"
 one_liner 		 = "This inspired me to map my own life in weeks."
 featured_image = "" # /images/pieces/
+belief_delta	 = true
 
 # taxonomies
 influences		 = ['tim-urban']

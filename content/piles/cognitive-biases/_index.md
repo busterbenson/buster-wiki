@@ -6,8 +6,6 @@ show_on_homepage = true
 homepage_order = 4
 
 layout = "cognitive-biases"
-date = 2018-12-26T13:01:15-08:00
-draft = false
 
 pile = "cognitive-biases"
 +++

@@ -16,9 +16,9 @@
 		    {{ if ne $element "" }}
 		      / 
 					{{ if eq (add $index 2) $path_length }}
-						{{ . }}
+						{{ replace . "-" " " }}
 					{{ else }}
-			    	<a class="navbar-text" href='{{ $.Scratch.Get "path" }}'>{{ . }}</a>
+			    	<a class="navbar-text" href='{{ $.Scratch.Get "path" }}'>{{ replace . "-" " " }}</a>
 					{{ end }}
 		      {{ $.Scratch.Add "path" "/" }}
 		    {{ end }}

@@ -5,6 +5,7 @@ author    		 = 'Brene Brown'
 link      		 = "https://amzn.to/2CCBAr6"
 one_liner 		 = "This is the first book I read of hers, but they are all great."
 featured_image = "" # /images/pieces/
+belief_delta	 = true
 
 # taxonomies
 influences		 = ['brene-brown']

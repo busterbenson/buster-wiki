@@ -5,6 +5,7 @@ author    		 = 'Venkatesh Rao'
 link      		 = "https://www.ribbonfarm.com/2012/05/09/welcome-to-the-future-nauseous"
 one_liner 		 = "Changed how I think about the present moment."
 featured_image = "" # /images/pieces/
+belief_delta	 = true
 
 # taxonomies
 influences		 = ['venkatesh-rao']

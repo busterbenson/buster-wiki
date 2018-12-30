@@ -5,6 +5,7 @@ author    		 = 'Ursula K. Le Guin'
 link      		 = "https://amzn.to/2BI429a"
 one_liner 		 = "She wrote so many great books but this one was a surprise that I love."
 featured_image = "" # /images/pieces/
+belief_delta	 = true
 
 # taxonomies
 influences		 = ['ursula-k-le-guin']

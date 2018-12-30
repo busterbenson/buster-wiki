@@ -1,0 +1,31 @@
+{{ define "main" }}
+{{ $paginator := (.Paginator 50).Pages.ByTitle }}
+
+<div class="container">
+  
+  {{ partial "title-and-content-basic" . }}
+
+  <div class="row mt-2 justify-content-start">
+    <div class="col-md-12">
+      <div class="row mt-2 justify-content-start">
+      {{ range $paginator }}
+        <div class="col-6 col-md-4 col-lg-3 mb-2">
+          <div class="card">
+            <div class="card-body">
+              <div class="float-right">
+              </div>
+              <div class="card-title">
+                <a href="{{ .URL }}">
+                  <small>{{ .Title }}</small>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      {{ end }}
+      </div>
+    </div>
+  </div>
+
+</div>
+{{ end }}

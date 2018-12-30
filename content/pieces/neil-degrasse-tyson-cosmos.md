@@ -5,6 +5,7 @@ author    		 = 'Neil deGrasse Tyson'
 link      		 = "https://amzn.to/2RgxywF"
 one_liner 		 = "For brining Cosmos back, I'll always love Neil."
 featured_image = "" # /images/pieces/
+belief_delta	 = true
 
 # taxonomies
 influences		 = ['neil-degrasse-tyson']

@@ -5,6 +5,7 @@ author    		 = 'Maria Popova'
 link      		 = "http://brainpickings.org"
 one_liner 		 = "So much good stuff here."
 featured_image = "" # /images/pieces/
+belief_delta	 = true
 
 # taxonomies
 influences		 = ['maria-popova']

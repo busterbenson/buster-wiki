@@ -5,6 +5,7 @@ author    		 = 'me'
 link      		 = "https://kk.org/thetechnium/1000-true-fans"
 one_liner 		 = "The manifesto for creators."
 featured_image = "" # /images/pieces/
+belief_delta	 = true
 
 # taxonomies
 influences		 = ['kevin-kelly']

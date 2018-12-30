@@ -5,6 +5,7 @@ author    		 = 'me'
 link      		 = "https://amzn.to/2rWxSlN"
 one_liner 		 = "This cracked opened the whole world of cognitive biases for me. I recommend the audiobook version."
 featured_image = "" # /images/pieces/
+belief_delta	 = true
 
 # taxonomies
 influences		 = ['daniel-kahneman']

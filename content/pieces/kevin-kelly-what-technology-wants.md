@@ -5,6 +5,7 @@ author    		 = 'Kevin Kelly'
 link      		 = "https://amzn.to/2GW5uL9"
 one_liner 		 = "This changed how I think about technology."
 featured_image = "" # /images/pieces/
+belief_delta	 = true
 
 # taxonomies
 influences		 = ['kevin-kelly']
