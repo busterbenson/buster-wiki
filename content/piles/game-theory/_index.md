@@ -1,5 +1,5 @@
 +++
-title = "Game theory"
+title = "Game Theory"
 one_liner = "What's the relationship between players, rules, and strategy?"
 featured_image = ""
 show_on_homepage = false

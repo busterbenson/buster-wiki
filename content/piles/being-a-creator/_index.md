@@ -1,5 +1,5 @@
 +++
-title = "Being a creator"
+title = "Being a Creator"
 one_liner = ""
 featured_image = ""
 show_on_homepage = false

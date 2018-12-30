@@ -3,7 +3,7 @@ title = "Douglas Hofstadter"
 one_liner = "Changed the way I think about <mark>language</mark> and <mark>loopy thinking</mark>."
 featured_image = "/images/people/douglas-hofstadter.jpg"
 
-piles = ["language", "loopy-thinking"]
+piles = ["language", "strange-loops"]
 twitter = ""
 website = ""
 wikipedia = ""

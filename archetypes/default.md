@@ -5,7 +5,7 @@ author    		 = 'me'
 link      		 = ""
 one_liner 		 = ""
 featured_image = "" # /images/pieces/
-belief_delta.  = false
+belief_delta   = false
 
 # taxonomies
 influences		 = []

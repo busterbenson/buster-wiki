@@ -1,5 +1,5 @@
 +++
-title = "Internal mental space"
+title = "Internal Mental Space"
 one_liner = ""
 featured_image = ""
 show_on_homepage = false

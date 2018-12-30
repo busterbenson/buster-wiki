@@ -3,7 +3,7 @@ title = "Nicky Case"
 one_liner = "Changed how I think about <mark>dialogue</mark> and <mark>loopy thinking</mark>."
 featured_image = "/images/people/nicky-case.jpg"
 
-piles = ["dialogue", "loopy-thinking"]
+piles = ["dialogue", "strange-loops"]
 twitter = "ncasenmare"
 website = "https://ncase.me"
 wikipedia = ""

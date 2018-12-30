@@ -1,5 +1,5 @@
 +++
-title = "Loopy thinking"
+title = "Strange Loops"
 one_liner = ""
 featured_image = ""
 show_on_homepage = false

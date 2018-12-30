@@ -1,5 +1,5 @@
 +++
-title = "Mental health"
+title = "Mental Health"
 one_liner = ""
 featured_image = ""
 show_on_homepage = false

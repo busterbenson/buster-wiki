@@ -1,5 +1,5 @@
 +++
-title = "Being alive"
+title = "Being Alive"
 one_liner = ""
 featured_image = ""
 show_on_homepage = false

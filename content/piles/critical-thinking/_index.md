@@ -1,5 +1,5 @@
 +++
-title = "Critical thinking"
+title = "Critical Thinking"
 one_liner = ""
 featured_image = ""
 show_on_homepage = false

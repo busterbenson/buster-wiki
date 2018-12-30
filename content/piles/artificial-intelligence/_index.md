@@ -1,5 +1,5 @@
 +++
-title = "Artificial intelligence"
+title = "Artificial Intelligence"
 one_liner = ""
 featured_image = ""
 show_on_homepage = false
