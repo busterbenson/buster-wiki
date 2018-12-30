@@ -1,14 +1,20 @@
 <div class="row mb-5">
 	<div class="col-6">
-		{{ if .Params.link }}
-			{{ if eq .Params.author "me" }}
-		  	<h4 class="mt-0"><a href="{{ .URL }}">{{ .Params.title }}</a> <a href="{{ .Params.link }}" class="text-info" target="_new">↗</a></h4>
-		  {{ else }}
-		  	<h4 class="mt-0"><a href="{{ .URL }}">{{ .Params.title }}</a> <a href="{{ .Params.link }}" class="text-info" target="_new">↗</a></h4>
-			{{ end }}			
-	  {{ else }}
-		  <h4 class="mt-0"><a href="{{ .URL }}">{{ .Params.title }}</a></h4>  
-	  {{ end }}
+  	<h4 class="mt-0">
+  		<a href="{{ .URL }}">{{ .Params.title }}</a> 
+			{{ if .Params.link }}
+		  		&nbsp;
+		  		<a href="{{ .Params.link }}" target="_new" data-toggle="tooltip" data-placement="top" title="Open link in new tab">
+		  			<span class="oi oi-external-link small text-info"></span>
+		  		</a>
+		  {{ end }}
+  		{{ if .Params.annotated_link }}
+	  		&nbsp;
+	  		<a href="{{ .Params.annotated_link }}" target="_new" data-toggle="tooltip" data-placement="top" title="Open link with in-line comments">
+	  			<span class="oi oi-comment-square small text-info"></span>
+	  		</a>
+	  	{{ end }}
+  	</h4>
 	  <div><small>{{ .Params.one_liner | safeHTML }}</small></h3></div>
 	</div>
 

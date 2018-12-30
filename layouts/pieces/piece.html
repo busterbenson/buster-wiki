@@ -4,20 +4,26 @@
 	<div class="row mt-2 justify-content-center">
 	  <div class="col-md-8">
 	    <h1 class="small-title lora">{{ .Title }}</h1>
-	    <h4 class="subtitle">{{ .Param "one_liner" | safeHTML }}
+  	  {{ if .Params.link }}
+  	  	<div class="mt-1">
+  	  		<small><a href="{{ .Params.link }}" class="text-secondary" target="_new">{{ .Params.link }}</a></small>
+  	  	</div>
+    	{{ end }}
+		  <div class="small mt-1">
 		    {{ if .Params.link }}
-	  	  	<a href="{{ .Params.link }}" class="text-info" target="_new">Read it ↗</a>
-	  	  	<div>
-	  	  		<small><a href="{{ .Params.link }}" class="text-secondary" target="_new">{{ .Params.link }}</a></small>
-	  	  	</div>
-	    	{{ end }}
-		  </h4>
+	  	  	<a href="{{ .Params.link }}" class="mr-2" target="_new"><span class="oi oi-external-link"></span> Read it</a>
+	  	  {{ end }}
+		    {{ if .Params.annotated_link }}
+	  	  	<a href="{{ .Params.annotated_link }}" target="_new"><mark class="text-primary"><span class="oi oi-comment-square"></span> With in-line comments</mark></a>
+	  	  {{ end }}
+	  	</div>
 
 	    {{ if and (ne (.Param "featured_image") "") (ne (.Param "hide_image_on_detail") true) }}
 	      <img src="{{$.Params.featured_image}}" class="rounded align-center img-thumbnail" />
 	    {{ end }}
 
-			<div class="mt-2">{{ .Content }}</div>
+	    <h4 class="subtitle mt-4">{{ .Param "one_liner" | safeHTML }}</h4>
+			<div class="mt-1">{{ .Content }}</div>
 		</div>
 	</div>
 </div>

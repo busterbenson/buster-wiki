@@ -1,0 +1,41 @@
+{{ define "main" }}
+
+<div class="container">
+
+  {{ partial "title-and-content-basic" . }}
+
+	{{ $research := index $.Site.Taxonomies.tags .Params.research_tag }}
+	{{ if gt (len $research) 0 }}
+	  <div class="row mt-2 justify-content-center">
+	    <div class="col-md-8">
+
+	    	<h4 class="border-bottom">Some research to consider</h4>
+		  	<div class="my-4">
+			  	{{ range $research }}
+			  		{{ partial "piece-card" . }}
+			  	{{ end }}
+			  </div>
+
+	    </div>
+	  </div>
+  {{ end }}
+
+  <div class="row mt-2 justify-content-center">
+    <div class="col-md-8">
+    	<h4 class="border-bottom">Cases collected so far</h4>
+		  {{ range .Pages }}
+		  	<div class="my-4">
+			  	<h3><strong>{{ .Title }}</strong></h3>
+				  {{ range $tag := .Params.case_tags }}
+				  	{{ range $piece := index $.Site.Taxonomies.tags . }}
+				  		{{ partial "piece-card" . }}
+				  	{{ end }}
+				  {{ end }}
+			  </div>
+		  {{ end }}
+    </div>
+  </div>
+
+</div>
+
+{{ end }}

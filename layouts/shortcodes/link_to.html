@@ -6,6 +6,11 @@
 	{{- else -}}
 		{{- if ne $text "" -}}{{ $text }}{{- else -}}{{- .Get "person" -}}{{- end -}}
 	{{- end -}}
+{{- else if ne ($space := .Get "space") "" -}}
+	{{- $space := replace (lower $space) " " "-" -}}
+	{{- with .Site.GetPage ( printf "/spaces/%s" $space ) -}}
+		<a href="{{ .Permalink }}">{{ if ne $text "" }}{{ $text }}{{ else }}{{ .Title }}{{ end }}</a>
+	{{- end -}}
 {{- else if ne ($idea := .Get "idea") "" -}}
 	{{- $idea := replace (lower $idea) " " "-" -}}
 	{{- with .Site.GetPage ( printf "/pieces/%s.md" $idea ) -}}

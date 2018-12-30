@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="container">
+
+  {{ partial "title-and-content-basic" . }}
+
+	{{ range .Sections }}
+    <div class="row my-5 justify-content-center">
+      <div class="col-md-8">
+    		<h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <ul>
+          {{ range .Pages }}
+            <li>{{ .Title }}</li> 
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  {{ end }}
+
+</div>
+{{ end }}

@@ -12,9 +12,10 @@ belief_delta   = false
 influences		 = []
 piles     		 = ['dialogue']
 projects			 = []
+tags					 = ['should-dialog-be-open.no-comprome-isnt-a-virtue']
 
 # link, article, reference, thought, book, idea, podcast, blog, tv
-category  		 = 'annotated-link'
+category  		 = 'article'
 
 # metadata
 layout	    	 = "piece"
@@ -22,4 +23,4 @@ date      		 = 2018-12-29T23:56:26-08:00
 disqus    		 = false
 +++
 
-A good friend sent this to me. 
+A good friend sent this to me. It inspired me to start to consolidate different perspectives around this question: {{< link_to space="should-dialogue-be-open" text="should dialogue be open?" >}} 
