@@ -1,9 +1,9 @@
 +++
 title = "Robin Sloan"
-one_liner = "Changed the way I think about <mark>observation</mark> and <mark>self-reflection</mark>."
+one_liner = "Changed the way I think about <mark>observation</mark>."
 featured_image = "/images/people/robin-sloan.jpg"
 
-piles = ["observation", "self-reflection"]
+piles = ["observation"]
 twitter = "robinsloan"
 website = "https://www.robinsloan.com"
 wikipedia = "https://en.wikipedia.org/wiki/Robin_Sloan"
