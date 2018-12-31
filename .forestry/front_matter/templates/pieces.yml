@@ -1,7 +1,7 @@
 ---
 label: pieces
-hide_body: 
-is_partial: 
+hide_body: false
+is_partial: false
 fields:
 - name: title
   label: Title
@@ -43,11 +43,6 @@ fields:
   type: list
   hidden: false
   default: ''
-- name: category
-  label: Category
-  type: tag_list
-  hidden: false
-  default: ''
 - name: projects
   label: Projects
   type: list
@@ -56,6 +51,11 @@ fields:
 - name: influences
   label: Influences
   type: list
+  hidden: false
+  default: ''
+- name: category
+  label: Category
+  type: tag_list
   hidden: false
   default: ''
 - name: tags
