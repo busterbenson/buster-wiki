@@ -7,11 +7,17 @@
     <div class="row my-5 justify-content-center">
       <div class="col-md-8">
     		<h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-        <ul>
+        <div class="row">
           {{ range .Pages }}
-            <li>{{ .Title }}</li> 
+            <a class="col-4" href="{{ .Permalink }}">
+              <div class="card mb-2">
+                <div class="card-body text-dark">
+                  {{ .Title }}
+                </div>
+              </div>
+            </a>
           {{ end }}
-        </ul>
+        </div>
       </div>
     </div>
   {{ end }}

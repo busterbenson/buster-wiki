@@ -8,6 +8,6 @@ layout 				 = "case"
 date 					 = "2018-12-22"
 draft 				 = false
 
-case_tags 		 = ["should-dialog-be-open.no-comprome-isnt-a-virtue"]
+case_tag  		 = "should-dialog-be-open.no-comprome-isnt-a-virtue"
 +++
 

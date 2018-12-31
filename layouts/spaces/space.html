@@ -10,9 +10,9 @@
 	    <div class="col-md-8">
 
 	    	<h4 class="border-bottom">Some research to consider</h4>
-		  	<div class="my-4">
+		  	<div class="my-2">
 			  	{{ range $research }}
-			  		{{ partial "piece-card" . }}
+			  		{{ partial "piece-in-spaces-card" . }}
 			  	{{ end }}
 			  </div>
 
@@ -20,19 +20,22 @@
 	  </div>
   {{ end }}
 
-  <div class="row mt-2 justify-content-center">
+  <div class="row mt-0 justify-content-center">
     <div class="col-md-8">
     	<h4 class="border-bottom">Cases collected so far</h4>
 		  {{ range .Pages }}
-		  	<div class="my-4">
-			  	<h3><strong>{{ .Title }}</strong></h3>
-				  {{ range $tag := .Params.case_tags }}
-				  	{{ range $piece := index $.Site.Taxonomies.tags . }}
-				  		{{ partial "piece-card" . }}
-				  	{{ end }}
-				  {{ end }}
+		  	<div class="my-2">
+			  	<h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+			  	<ul>
+					  <li>{{ len (index $.Site.Taxonomies.tags .Params.case_tag) }} articles and links</li>
+					</ul>
 			  </div>
 		  {{ end }}
+
+	  	<div class="mt-8">
+		  	<h4 class="mb-2 border-bottom">✋ Have a different perspective?</h4> 
+		  	<div><button type="button" class="btn btn-outline-primary">Suggest a new case.</button></div>
+		  </div>
     </div>
   </div>
 

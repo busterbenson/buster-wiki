@@ -1,12 +1,11 @@
-<div class="row mt-2 justify-content-center">
-  <div class="col-2 d-none d-md-block">
-  </div>
+<div class="row mt-4 justify-content-center">
+  <div class="col-2 d-none d-md-block"></div>
 
   <div class="col-md-8">
     {{ if and (ne (.Param "featured_image") "") (ne (.Param "hide_image_on_detail") true) }}
       <img src="{{$.Params.featured_image}}" class="rounded align-right img-thumbnail float-left w-25 mr-3" />
     {{ end }}
-    {{ if eq .Section "influences"}}
+    {{ if or (eq .Section "influences") (eq .Layout "case" ) }}
       <h1 class="small-title">{{ .Title }}</h1>
     {{ else }}
       <h1 class="title">{{ .Title }}</h1>

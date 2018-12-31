@@ -2,20 +2,41 @@
 
 <div class="container">
 
-  {{ partial "title-and-content-basic" . }}
+	<div class="row mt-4 justify-content-center">
+	  <div class="col-md-8">
+			{{ with .Parent }}
+		  	<div>
+		  		<a href="{{ .Permalink }}" class="text-dark">
+		  			<span class="oi oi-arrow-left"></span>
+		  			{{ .Title }}
+		  		</a>
+		  	</div>
+  		{{ end }}
+      <h1 class="small-title mt-0">{{ .Title }}</h1>
+	    <h4 class="subtitle">{{ .Param "one_liner" | safeHTML }}</h4>
+		</div>
+	</div>
 
-  <div class="row mt-2 justify-content-center">
-    <div class="col-md-8">
+	<div class="row mt-0 justify-content-center">
+	  <div class="col-md-8">
+			<div>{{ .Content }}</div>
+		</div>
+	</div>
 
-		  {{ range $tag := .Params.case_tags }}
-		  	{{ range $piece := index $.Site.Taxonomies.tags . }}
-		  		{{ partial "piece-card" . }}
+
+	{{ $pieces := index $.Site.Taxonomies.tags .Params.case_tag }}
+	{{ if gt (len $pieces) 0 }}
+	  <div class="row mt-2 justify-content-center">
+	    <div class="col-md-8">
+
+	    	<h4 class="border-bottom">Links supporting this case</h4>
+		  	{{ range $pieces }}
+		  		{{ partial "piece-in-spaces-card" . }}
 		  	{{ end }}
-		  {{ end }}
 
-    </div>
-  </div>
-
+	    </div>
+	  </div>
+	{{ end }}
 </div>
 
 {{ end }}
