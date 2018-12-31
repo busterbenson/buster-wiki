@@ -4,7 +4,7 @@ title     		 = "The Big Picture"
 author    		 = 'Sean Carroll'
 link      		 = "https://amzn.to/2RpZC0m"
 one_liner 		 = "This gave me language to understand science and story-telling. My religion is poetic naturalism."
-featured_image = "" # /images/pieces/
+featured_image = "/images/pieces/the-big-picture.jpg" # /images/pieces/
 belief_delta	 = true
 
 # taxonomies

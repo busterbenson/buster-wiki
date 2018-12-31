@@ -1,1 +1,22 @@
-<li class="list-group-item">{{ .desc }}</li>
+<li class="list-group-item">
+	{{ .desc }}
+	<div class="small text-muted mt-1">
+		{{ if .conflict_of_head }}
+			<span data-toggle="tooltip" data-placement="top" title="A belief based on information.">🧠</span>
+		{{ end }}
+		{{ if .conflict_of_heart }}
+			<span data-toggle="tooltip" data-placement="top" title="A belief based on my values.">❤️</span>
+		{{ end }}
+		{{ if .conflict_of_hand }}
+			<span data-toggle="tooltip" data-placement="top" title="A belief about the outcome of some action.">✋</span>
+		{{ end }}
+		{{ if eq .confidence "high" }}
+			<span data-toggle="tooltip" data-placement="top" title="High confidence">💪</span>
+		{{ else if eq .confidence "low" }}
+			<span data-toggle="tooltip" data-placement="top" title="Low confidence">🤞</span>
+		{{ end }}
+		{{ if gt .bristle 1 }}
+			<span data-toggle="tooltip" data-placement="top" title="This belief has heat (aka raises my blood pressure).">🔥</span>
+		{{ end }}
+	</div>
+</li>

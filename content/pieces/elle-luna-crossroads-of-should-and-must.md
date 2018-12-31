@@ -4,7 +4,7 @@ title     		 = "The Crossroads of Should and Must"
 author    		 = 'Elle Luna'
 link      		 = "https://amzn.to/2SpL8Le"
 one_liner 		 = "The book is great and I reference it a ton for how to intermingle words and art."
-featured_image = "" # /images/pieces/
+featured_image = "/images/pieces/the-crossroads-of-should-and-must.jpg" # /images/pieces/
 belief_delta	 = true
 
 # taxonomies

@@ -4,7 +4,7 @@ title     		 = "You're It!"
 author    		 = 'Alan Watts'
 link      		 = "https://amzn.to/2RpsSok"
 one_liner 		 = "This covers pretty much Alan Watts' entire philosophy. The audiobook is highly recommended."
-featured_image = "" # /images/pieces/
+featured_image = "/images/pieces/youre-it.jpg" # /images/pieces/
 belief_delta	 = true
 
 # see /piles

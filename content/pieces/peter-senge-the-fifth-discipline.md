@@ -4,7 +4,7 @@ title     		 = "The Fifth Discipline"
 author    		 = 'Peter Senge'
 link      		 = "https://amzn.to/2RhZv7k"
 one_liner 		 = "This was the first book I read that directly discussed systems thinking, starting me down a long path. Also, just a great business book."
-featured_image = "" # /images/pieces/
+featured_image = "/images/pieces/the-fifth-discipline.jpg" # /images/pieces/
 belief_delta	 = true
 
 # taxonomies

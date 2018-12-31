@@ -4,12 +4,12 @@
   		<a href="{{ .URL }}">{{ .Params.title }}</a> 
 			{{ if .Params.link }}
 		  		&nbsp;
-		  		<a href="{{ .Params.link }}" target="_new" data-toggle="tooltip" data-placement="top" title="Open link in new tab" class="small">&nbsp;
+		  		<a href="{{ .Params.link }}" target="_new" data-toggle="tooltip" data-placement="top" title="Open link in new tab" class="small">
 		  			<span class="oi oi-external-link small text-info"></span>
 		  		</a>
 		  {{ end }}
   		{{ if .Params.annotated_link }}
-	  		<a href="{{ .Params.annotated_link }}" target="_new" data-toggle="tooltip" data-placement="top" title="Open link with in-line comments" class="small">&nbsp;
+	  		<a href="{{ .Params.annotated_link }}" target="_new" data-toggle="tooltip" data-placement="top" title="Open link with in-line comments" class="small">
 	  			<span class="oi oi-comment-square text-info"></span>
 	  		</a>
 	  	{{ end }}

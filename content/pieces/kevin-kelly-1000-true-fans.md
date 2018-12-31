@@ -1,7 +1,7 @@
 +++
 # basics
 title     		 = "1000 True Fans"
-author    		 = 'me'
+author    		 = 'Kevin Kelly'
 link      		 = "https://kk.org/thetechnium/1000-true-fans"
 one_liner 		 = "The manifesto for creators."
 featured_image = "" # /images/pieces/

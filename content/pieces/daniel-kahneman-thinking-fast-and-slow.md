@@ -4,7 +4,7 @@ title     		 = "Thinking Fast and Slow"
 author    		 = 'Daniel Kahneman'
 link      		 = "https://amzn.to/2rWxSlN"
 one_liner 		 = "This cracked opened the whole world of cognitive biases for me. I recommend the audiobook version."
-featured_image = "" # /images/pieces/
+featured_image = "/images/pieces/thinking-fast-and-slow.jpg" # /images/pieces/
 belief_delta	 = true
 
 # taxonomies

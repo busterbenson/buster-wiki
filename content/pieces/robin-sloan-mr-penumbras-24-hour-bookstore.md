@@ -4,7 +4,7 @@ title     		 = "Mr. Penumbra's 24-Hour Bookstore"
 author    		 = 'Robin Sloan'
 link      		 = "https://amzn.to/2LBPdt9"
 one_liner 		 = "A great novel packed with interesting ideas. I stole the Codex Vitae for myself."
-featured_image = "" # /images/pieces/
+featured_image = "/images/pieces/mr-penumbras.jpg" # /images/pieces/
 belief_delta	 = true
 
 # taxonomies

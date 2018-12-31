@@ -8,9 +8,14 @@
 	  		<div class="col-12 col-sm-6 col-lg-4 mb-2">
 		  		<div class="card">
 		  			<div class="card-body">
-		  				<h5 class="card-title">
-				  			<a href="{{ .Params.link }}">{{ .Title }}</a>
-				  		</h5>
+		  				<div class="card-text">
+			  				{{ if .Params.featured_image }}
+			  					<a href="{{ .Params.link }}" target="_new"><img src="{{ .Params.featured_image }}" class="w-25 pb-2" /></a>
+			  				{{ end }}
+		  				</div>
+		  				<h3 class="card-title">
+				  			<a href="{{ .Params.link }}" target="_new">{{ .Title }}</a>
+				  		</h3>
 				  		<h6 class="card-subtitle mb-2 text-muted">
 		  	  			{{ if eq .Params.author "me" }}
 		  	  				By Buster

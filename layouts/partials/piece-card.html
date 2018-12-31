@@ -33,15 +33,15 @@
 		{{ else if and (.Params.author) (ne .Params.author "me") }}
 			<div class="border-left px-1">
       	<small>
-      		From {{ .Params.author }}
+      		From {{ .Params.author }}.
 				</small>
 			</div>			
 		{{ end }}
 
 		{{ if eq .Section "pieces" }}
-			{{ if .Params.piles }}
-				<div class="border-left px-1">
-        	<small>
+			<div class="border-left px-1">
+				{{ if .Params.piles }}
+        	<div><small>
         		Added to the 
           	{{ $length := (sub (len .Params.piles) 1) }}
 						{{ range $index, $pile := .Params.piles }}
@@ -64,21 +64,49 @@
 	            	{{- end -}}
 	            {{ end }}
 	          {{ end }}
-         	</small>
+         	</small></div>
+        {{ end }}
 
-					{{ if and ($author := .Params.author) false }}
-						{{ if ne .Params.author "me" }}
-							<div><small>
-								{{ with $.Site.GetPage (printf "/piles/%s" $author) }}
-									By <a href="{{$author.Permalink}}">{{ $author.title }}</a>
-								{{ else }}
-									Via {{ $author }}
-								{{ end }}
-							</small></div>
-						{{ end }}
-					{{ end }}	  
-				</div>
-			{{ end }}
+				{{ if and ($author := .Params.author) false }}
+					{{ if ne .Params.author "me" }}
+						<div><small>
+							{{ with $.Site.GetPage (printf "/piles/%s" $author) }}
+								By <a href="{{$author.Permalink}}">{{ $author.title }}</a>
+							{{ else }}
+								Via {{ $author }}
+							{{ end }}
+						</small></div>
+					{{ end }}
+				{{ end }}	  
+
+				{{ if .Params.projects }}
+        	<small>
+        		Part of the 
+          	{{ $length := (sub (len .Params.projects) 1) }}
+						{{ range $index, $project := .Params.projects }}
+		          {{ with $.Site.GetPage (printf "/projects/%s" $project ) }}
+	            	<mark><a href="{{ .Permalink }}">{{ .Title }}</a></mark>
+	            	{{- if (ne $length $index) -}}
+	            		{{- if eq $length 1 }}
+	            			and 
+	            		{{- else if eq $index (sub $length 1) -}}
+	            			, and 
+	            		{{- else -}}
+	            			, 
+	            		{{- end -}}
+	            	{{- else -}}
+	            		{{ if gt $length 0 }}
+	            			projects.
+	            		{{ else }}
+	            			project.
+	            		{{ end }}
+	            	{{- end -}}
+	            {{ end }}
+	          {{ end }}
+         	</small>
+        {{ end }}
+
+			</div>
 		{{ end }}
 
 	</div>

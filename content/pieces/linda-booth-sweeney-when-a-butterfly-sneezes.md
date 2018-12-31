@@ -4,7 +4,7 @@ title     		 = "When a Butterfly Sneezes"
 author    		 = 'Linda Booth Sweeney'
 link      		 = "https://amzn.to/2Sr8AI8"
 one_liner 		 = "The best intro to systems thinking I know of."
-featured_image = "" # /images/pieces/
+featured_image = "/images/pieces/when-a-butterfly-sneezes.jpg" # /images/pieces/
 belief_delta	 = true
 
 # taxonomies

@@ -4,7 +4,7 @@ title     		 = "Reality is Broken"
 author    		 = 'Jane McGonigal'
 link      		 = "https://amzn.to/2SuwDGl"
 one_liner 		 = "Jane led the way with using games for good when everyone else was using them for evil."
-featured_image = "" # /images/pieces/
+featured_image = "/images/pieces/reality-is-broken.jpg" # /images/pieces/
 belief_delta	 = true
 
 # taxonomies

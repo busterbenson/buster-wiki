@@ -4,7 +4,7 @@ title     		 = "Everone's a Aliebn When Ur a Aliebn Too"
 author    		 = 'me'
 link      		 = "https://amzn.to/2Ai1HSm"
 one_liner 		 = "A truly unique and warm book about being yourself. Worth reading 100 times."
-featured_image = "" # /images/pieces/
+featured_image = "/images/pieces/everyones-a-aliebn.jpg" # /images/pieces/
 belief_delta	 = true
 
 # taxonomies

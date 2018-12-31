@@ -4,7 +4,7 @@ title     		 = "Creativity, Inc"
 author    		 = 'Ed Catmull'
 link      		 = "https://amzn.to/2RihWZs"
 one_liner 		 = "This is such an interesting view into Pixar and Ed Catmull's organizational genius."
-featured_image = "" # /images/pieces/
+featured_image = "/images/pieces/creativity-inc.jpg" # /images/pieces/
 belief_delta	 = true
 
 # taxonomies

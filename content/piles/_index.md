@@ -4,7 +4,7 @@ one_liner = "Pieces build up into <mark>piles</mark>."
 featured_image = "/images/tree.jpg"
 
 show_on_homepage = true 
-homepage_order = 7
+homepage_order = 6
 
 disqus = false
 mailchimp = true

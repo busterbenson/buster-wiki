@@ -224,6 +224,14 @@ conflict_of_head = true
 conflict_of_heart = true
 bristle = 3
 
+[[vulnerability]]
+desc = "The only way to be invulnerable is to be dead. To live is to be vulnerable, because that's the only way we can be seen. And everything that can be seen can also be hurt."
+piles = ["vulnerability", "self-reflection"]
+confidence = "low"
+conflict_of_head = true
+conflict_of_heart = true
+bristle = 3
+
 [[purpose]]
 desc = "Memento mori is a useful tool for remembering you're alive."
 piles = ["purpose", "being-alive"]

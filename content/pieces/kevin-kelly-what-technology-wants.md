@@ -2,9 +2,9 @@
 # basics
 title     		 = "What Technology Wants"
 author    		 = 'Kevin Kelly'
-link      		 = "https://amzn.to/2GW5uL9"
+link      		 = "https://amzn.to/2C2eTer"
 one_liner 		 = "This changed how I think about technology."
-featured_image = "" # /images/pieces/
+featured_image = "/images/pieces/what-technology-wants.jpg" # /images/pieces/
 belief_delta	 = true
 
 # taxonomies

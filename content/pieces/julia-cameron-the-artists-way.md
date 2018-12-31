@@ -4,7 +4,7 @@ title     		 = "The Artist's Way"
 author    		 = 'Julia Cameron'
 link      		 = "https://amzn.to/2SpAIeT"
 one_liner 		 = "I was so inspired by this that I built 750words.com based on morning pages."
-featured_image = "" # /images/pieces/
+featured_image = "/images/pieces/the-artists-way.jpg" # /images/pieces/
 belief_delta	 = true
 
 # taxonomies

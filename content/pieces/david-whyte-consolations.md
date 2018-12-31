@@ -4,7 +4,7 @@ title     		 = "Consolations"
 author    		 = 'David Whyte'
 link      		 = "https://amzn.to/2RqnTDA"
 one_liner 		 = "His articulation of the conversational nature of reality is so beautiful and resonates so deeply with me."
-featured_image = "" # /images/pieces/
+featured_image = "/images/pieces/consolations.jpg" # /images/pieces/
 belief_delta   = true
 
 # taxonomies
