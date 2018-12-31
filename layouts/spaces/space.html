@@ -10,7 +10,7 @@
 	    <div class="col-md-8">
 
 	    	<h4 class="border-bottom">Some research to consider</h4>
-		  	<div class="my-2">
+		  	<div class="mt-2">
 			  	{{ range $research }}
 			  		{{ partial "piece-in-spaces-card" . }}
 			  	{{ end }}
@@ -24,11 +24,17 @@
     <div class="col-md-8">
     	<h4 class="border-bottom">Cases collected so far</h4>
 		  {{ range .Pages }}
-		  	<div class="my-2">
-			  	<h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-			  	<ul>
-					  <li>{{ len (index $.Site.Taxonomies.tags .Params.case_tag) }} articles and links</li>
-					</ul>
+		  	<div class="mt-4">
+		  		<div class="row">
+		  			<div class="col-6">
+					  	<h4 class="mt-0"><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+					  </div>
+					  <div class="col-6">
+					  	<ul>
+							  <li>{{ len (index $.Site.Taxonomies.tags .Params.case_tag) }} articles and links</li>
+							</ul>
+						</div>
+					</div>
 			  </div>
 		  {{ end }}
 
