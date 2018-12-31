@@ -5,18 +5,13 @@ admin_path: forestry
 webhook_url: 
 sections:
 - type: directory
-  path: content
-  label: Pages
-  create: all
-  match: "*"
-- type: directory
-  path: content/piles
-  label: Piles
+  path: content/pieces
+  label: Pieces
   create: all
   match: "**/*"
 - type: directory
-  path: content/pieces
-  label: Pieces
+  path: content/piles
+  label: Piles
   create: all
   match: "**/*"
 - type: directory
