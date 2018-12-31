@@ -16,7 +16,8 @@ projects			 = []
 # link, article, reference, thought, book, idea, podcast, blog, tv
 # annotated-link
 category  		 = 'article'
-tags 					 = ['parenting-technology-and-kids']
+tags 					 = ['parenting-technology-and-kids', 
+									'parenting-technology-and-kids.bump-cultivate-interests']
 
 # metadata
 layout	    	 = "piece"

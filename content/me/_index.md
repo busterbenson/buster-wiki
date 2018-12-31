@@ -1,11 +1,14 @@
 +++
+# the basics
 title = "Who am I?"
 one_liner = "Buster Benson, Human."
 featured_image = "/images/rickshaw.jpg"
 
+# navigation
 show_on_homepage = true
 homepage_order = 1
 
+# metadata
 date = "2018-12-22"
 draft = false
 show_tree = false

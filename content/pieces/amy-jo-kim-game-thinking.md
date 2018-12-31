@@ -9,11 +9,11 @@ belief_delta	 = true
 
 # taxonomies
 influences		 = ['amy-jo-kim']
-piles     		 = []
+piles     		 = ['game-theory']
 projects			 = []
 
 # link, article, reference, thought, book, idea
-category  		 = '' 
+category  		 = 'book' 
 
 # metadata
 date      		 = 2018-12-29T16:39:52-08:00

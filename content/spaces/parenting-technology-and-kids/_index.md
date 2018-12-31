@@ -11,4 +11,4 @@ draft 				 = false
 research_tag   = "parenting-technology-and-kids"
 +++
 
-A collection of perspectives about how parents should approach raising kids around all the technology, screens, and other distractions of the modern day?
+A collection of perspectives about how parents should approach raising kids in a world filled with video games, screens, and other scary technologies.

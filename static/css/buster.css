@@ -38,16 +38,12 @@ mark a {
 }
 .subtitle {
 	color: #666;
-	padding-bottom: 1em;
-	margin-top: 0px;
-	border-bottom: none;
 	line-height: 1.5em;
 } 
 .card-body {
 	padding: 20px;
 }
 .card-title {
-	margin-bottom: 0px;
 }
 .lora {
 	font-family: 'lora', serif;

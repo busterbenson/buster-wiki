@@ -10,7 +10,7 @@
     {{ else }}
       <h1 class="title">{{ .Title }}</h1>
     {{ end }}
-    <h4 class="subtitle">{{ .Param "one_liner" | safeHTML }}</h4>
+    <h4 class="subtitle mt-0">{{ .Param "one_liner" | safeHTML }}</h4>
 
     {{ if and (ne (.Param "featured_image") "") (ne (.Param "hide_image_on_detail") true) }}
 	    <div class="clearfix mb-6"></div>

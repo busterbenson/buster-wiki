@@ -1,7 +1,7 @@
 +++
 # basics
 title     		 = "Thinking Fast and Slow"
-author    		 = 'me'
+author    		 = 'Daniel Kahneman'
 link      		 = "https://amzn.to/2rWxSlN"
 one_liner 		 = "This cracked opened the whole world of cognitive biases for me. I recommend the audiobook version."
 featured_image = "" # /images/pieces/
@@ -10,7 +10,7 @@ belief_delta	 = true
 # taxonomies
 influences		 = ['daniel-kahneman']
 piles     		 = ['cognitive-biases']
-projects			 = []
+projects			 = ['book']
 
 # link, article, reference, thought, book, idea
 category  		 = 'book' 

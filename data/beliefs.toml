@@ -1,4 +1,11 @@
 [[dialogue]]
+desc = "The conversation is the relationship. If the conversation is going poorly between two or more people, so are the relationships. And vice versa."
+piles = ["dialogue"]
+confidence = "high"
+conflict_of_hand = true
+bristle = 2
+
+[[dialogue]]
 desc = "If you're stuck in an unproductive or harmful conflict that seems impossible to resolve, the best course of action is to consider other alternatives to resolution."
 piles = ["dialogue"]
 confidence = "high"

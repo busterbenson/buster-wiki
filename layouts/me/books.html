@@ -1,0 +1,36 @@
+{{ define "main" }}
+  <div class="container">    
+    {{ partial "title-and-content-basic" . }}
+
+	  <div class="row mt-2 justify-content-start">
+	  	{{ range (where .Site.Pages "Params.category" "book").ByDate.Reverse }}
+	  		{{ if eq .Params.belief_delta true }}
+	  		<div class="col-12 col-sm-6 col-lg-4 mb-2">
+		  		<div class="card">
+		  			<div class="card-body">
+		  				<h5 class="card-title">
+				  			<a href="{{ .Params.link }}">{{ .Title }}</a>
+				  		</h5>
+				  		<h6 class="card-subtitle mb-2 text-muted">
+		  	  			{{ if eq .Params.author "me" }}
+		  	  				By Buster
+		  	  			{{ else if ne .Params.author ""}}
+		  	  				{{ $person := replace (replace (lower .Params.author) " " "-") "." "" }}
+					  			{{ with $person := $.Site.GetPage ( printf "/influences/%s" $person ) }}
+							  		By <a href="{{ .Permalink }}">{{ .Title }}</a>
+							  	{{ else }}
+							  		By {{ .Params.author }}
+						  		{{ end }}
+						  	{{ end }}
+				  		</h6>
+				  		<p class="card-text">
+				  			{{ .Params.one_liner | safeHTML }}
+				  		</p>
+				  	</div>
+		  		</div>
+		  	</div>
+		  	{{ end }}
+	  	{{ end }}
+		</div>
+  </div>
+{{ end }}

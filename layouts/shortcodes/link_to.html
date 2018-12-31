@@ -1,6 +1,6 @@
 {{ $text := .Get "text" }}
 {{- if ne ($person := .Get "person") "" -}}
-	{{- $person := replace (lower $person) " " "-" -}}
+	{{- $person := replace (replace (lower $person) " " "-") "." "" -}}
 	{{- with .Site.GetPage ( printf "/influences/%s" $person ) -}}
 		<a href="{{ .Permalink }}">{{ if ne $text "" }}{{ $text }}{{ else }}{{ .Title }}{{ end }}</a>
 	{{- else -}}
