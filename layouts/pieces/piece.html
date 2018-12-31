@@ -6,7 +6,20 @@
 	    <h1 class="small-title lora">{{ .Title }}</h1>
   	  {{ if .Params.link }}
   	  	<div class="mt-1">
-  	  		<small><a href="{{ .Params.link }}" class="text-secondary" target="_new">{{ .Params.link }}</a></small>
+  	  		<small>
+  	  			{{ if eq .Params.author "me" }}
+  	  				By Buster <span class="text-secondary">|</span>
+  	  			{{ else if ne .Params.author ""}}
+  	  				{{ $person := replace (lower .Params.author) " " "-" }}
+			  			{{ with $person := $.Site.GetPage ( printf "/influences/%s" $person ) }}
+					  		By <a href="{{ .Permalink }}">{{ .Title }}</a>
+					  	{{ else }}
+					  		By {{ .Params.author }}
+				  		{{ end }}
+  	  				<span class="text-secondary">|</span>  	  			
+  	  			{{ end }}
+  	  			<a href="{{ .Params.link }}" class="text-secondary" target="_new">{{ .Params.link }}</a>
+  	  		</small>
   	  	</div>
     	{{ end }}
 		  <div class="small mt-1">
@@ -25,6 +38,25 @@
 	    <h4 class="subtitle mt-4">{{ .Param "one_liner" | safeHTML }}</h4>
 			<div class="mt-1">{{ .Content }}</div>
 		</div>
+	</div>
+
+	<div class="row mt-2 justify-content-center border-top pt-5">
+	  <div class="col-md-8 small">
+	  	{{ if .Params.piles }}
+		  	{{ range .Params.piles }}
+		  		{{ with $pile := $.Site.GetPage ( printf "/piles/%s" . ) }}
+			  		<div>In the <mark><a href="{{ .Permalink }}">{{ .Title }}</a></mark> pile.</div>
+		  		{{ end }}
+		  	{{ end }}
+			{{ end }}
+			{{ if .Params.projects }}
+		  	{{ range .Params.projects }}
+		  		{{ with $project := $.Site.GetPage ( printf "/projects/%s" . ) }}
+			  		<div>Part of the <mark><a href="{{ .Permalink }}">{{ .Title }}</a></mark> project.</div>
+		  		{{ end }}
+		  	{{ end }}
+			{{ end }}
+	  </div>
 	</div>
 </div>
 {{ end }}

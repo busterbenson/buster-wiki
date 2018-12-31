@@ -12,9 +12,10 @@ influences		 = []
 piles     		 = []
 projects			 = []
 
-# link, article, reference, thought, book, idea, podcast, blog, tv
-# annotated-link
+# article, reference, thought, book, idea, podcast, blog, tv
+# annotated-link, space, case
 category  		 = ''
+tags					 = []
 
 # metadata
 layout	    	 = "piece"

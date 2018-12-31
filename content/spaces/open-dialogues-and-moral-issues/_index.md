@@ -1,9 +1,21 @@
 +++
+# basic info
 title          = "Should dialogue be open to all viewpoints when it comes to moral issues?"
 one_liner      = ""
 featured_image = ""
 show_tree      = true
 
+# taxonomies
+influences		 = []
+piles     		 = ['dialogue']
+projects			 = []
+
+# article, reference, thought, book, idea, podcast, blog, tv
+# annotated-link
+category  		 = 'space'
+tags					 = []
+
+# metadata
 layout 				 = "space"
 date 					 = "2018-12-30"
 draft 				 = false
