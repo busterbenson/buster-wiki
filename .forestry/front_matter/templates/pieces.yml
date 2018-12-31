@@ -38,6 +38,9 @@ fields:
   type: textarea
   hidden: false
   default: ''
+- type: text
+  name: annotated_link
+  label: annotated_link
 - name: piles
   label: Piles
   type: list
