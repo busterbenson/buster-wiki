@@ -2,7 +2,7 @@
 title          = "Moderation. Introduce games like Fortnite cautiously."
 one_liner      = ""
 featured_image = ""
-show_tree      = true
+disqus				 = true
 
 layout 				 = "case"
 date 					 = "2018-12-30"

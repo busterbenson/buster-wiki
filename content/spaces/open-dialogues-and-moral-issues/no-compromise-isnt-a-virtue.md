@@ -2,7 +2,7 @@
 title          = "No. Compromise isn't a virtue, and justice seldom lives in the middle."
 one_liner      = ""
 featured_image = ""
-show_tree      = true
+disqus				 = true
 
 layout 				 = "case"
 date 					 = "2018-12-22"
