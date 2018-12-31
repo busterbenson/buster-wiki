@@ -1,6 +1,6 @@
 +++
 title = "Organizations"
-one_liner = ""
+one_liner = "The corpus of us."
 featured_image = ""
 show_on_homepage = false
 homepage_order = 0

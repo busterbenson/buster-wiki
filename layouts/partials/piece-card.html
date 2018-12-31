@@ -20,9 +20,27 @@
 
 	<div class="col-6">
 
+		{{ if .Params.influences }}
+			<div class="border-left px-1">
+      	<small>
+			  	{{ range .Params.influences }}
+			  		{{ with $pile := $.Site.GetPage ( printf "/influences/%s" . ) }}
+				  		<div>From <mark><a href="{{ .Permalink }}">{{ .Title }}</a></mark>.</div>
+			  		{{ end }}
+			  	{{ end }}
+			 	</small>
+			</div>
+		{{ else if and (.Params.author) (ne .Params.author "me") }}
+			<div class="border-left px-1">
+      	<small>
+      		From {{ .Params.author }}
+				</small>
+			</div>			
+		{{ end }}
+
 		{{ if eq .Section "pieces" }}
 			{{ if .Params.piles }}
-				<div class="border-left p-1">
+				<div class="border-left px-1">
         	<small>
         		Added to the 
           	{{ $length := (sub (len .Params.piles) 1) }}

@@ -1,6 +1,6 @@
 +++
 title = "Death"
-one_liner = ""
+one_liner = "Memento mori."
 featured_image = ""
 show_on_homepage = false
 homepage_order = 0

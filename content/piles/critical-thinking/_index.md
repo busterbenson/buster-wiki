@@ -1,6 +1,6 @@
 +++
 title = "Critical Thinking"
-one_liner = ""
+one_liner = "Why is it so difficult to define the first principles of critical thinking?"
 featured_image = ""
 show_on_homepage = false
 homepage_order = 0

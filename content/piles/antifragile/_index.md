@@ -1,6 +1,6 @@
 +++
 title = "Antifragile"
-one_liner = ""
+one_liner = "The idea that things get stronger when they interact with chaos."
 featured_image = ""
 show_on_homepage = false
 homepage_order = 0

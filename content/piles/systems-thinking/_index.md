@@ -1,6 +1,6 @@
 +++
 title = "Systems thinking"
-one_liner = ""
+one_liner = "Everything connects."
 featured_image = ""
 show_on_homepage = false
 homepage_order = 0

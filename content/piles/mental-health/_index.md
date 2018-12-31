@@ -1,6 +1,6 @@
 +++
 title = "Mental Health"
-one_liner = ""
+one_liner = "How might we not become irrecoverably cynical?"
 featured_image = ""
 show_on_homepage = false
 homepage_order = 0

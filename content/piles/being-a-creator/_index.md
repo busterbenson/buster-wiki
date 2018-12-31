@@ -1,6 +1,6 @@
 +++
-title = "Being a Creator"
-one_liner = ""
+title = "Being A Creator"
+one_liner = "The challenge of making something new."
 featured_image = ""
 show_on_homepage = false
 homepage_order = 0

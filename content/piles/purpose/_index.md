@@ -1,6 +1,6 @@
 +++
 title = "Purpose"
-one_liner = ""
+one_liner = "The north star."
 featured_image = ""
 show_on_homepage = false
 homepage_order = 0

@@ -1,6 +1,6 @@
 +++
 title = "Artificial Intelligence"
-one_liner = ""
+one_liner = "What will this mean for us?"
 featured_image = ""
 show_on_homepage = false
 homepage_order = 0

@@ -1,6 +1,6 @@
 +++
 title = "Observation"
-one_liner = ""
+one_liner = "What are the rewards of careful observation?"
 featured_image = ""
 show_on_homepage = false
 homepage_order = 0

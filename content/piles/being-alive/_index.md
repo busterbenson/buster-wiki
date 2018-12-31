@@ -1,6 +1,6 @@
 +++
 title = "Being Alive"
-one_liner = ""
+one_liner = "What sparks life?"
 featured_image = ""
 show_on_homepage = false
 homepage_order = 0

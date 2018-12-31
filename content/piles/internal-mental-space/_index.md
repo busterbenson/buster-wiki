@@ -1,6 +1,6 @@
 +++
 title = "Internal Mental Space"
-one_liner = ""
+one_liner = "Our mind's map of the terrain."
 featured_image = ""
 show_on_homepage = false
 homepage_order = 0

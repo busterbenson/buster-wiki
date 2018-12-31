@@ -1,6 +1,6 @@
 +++
 title = "Drawing"
-one_liner = ""
+one_liner = "Just trying to acquire the raw basics of this craft."
 featured_image = ""
 show_on_homepage = false
 homepage_order = 0

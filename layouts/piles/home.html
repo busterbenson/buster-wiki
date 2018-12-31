@@ -9,16 +9,18 @@
     <div class="col-md-12">
       <div class="row mt-2 justify-content-start">
       {{ range $paginator }}
-        <div class="col-6 col-md-4 col-lg-3 mb-2">
+        <div class="col-6 col-lg-4 mb-2">
           <div class="card">
             <div class="card-body">
               <div class="float-right">
+                <span class="badge badge-light badge-pill">{{ len .Pages }}</span>
               </div>
-              <div class="card-title">
-                <a href="{{ .URL }}">
-                  <small>{{ .Title }}</small>
-                </a>
-              </div>
+              <h5 class="card-title">
+                <a href="{{ .URL }}">{{ .Title }}</a>
+              </h5>
+              <h6 class="card-subtitle">
+                {{ .Params.one_liner }}
+              </h6>
             </div>
           </div>
         </div>

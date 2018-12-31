@@ -1,6 +1,6 @@
 +++
 title = "Ecosystems"
-one_liner = ""
+one_liner = "The conversational nature of life, organic compounds, and physics."
 featured_image = ""
 show_on_homepage = false
 homepage_order = 0

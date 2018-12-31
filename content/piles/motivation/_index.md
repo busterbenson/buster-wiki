@@ -1,6 +1,6 @@
 +++
 title = "Motivation"
-one_liner = ""
+one_liner = "Why get out of bed?"
 featured_image = ""
 show_on_homepage = false
 homepage_order = 0

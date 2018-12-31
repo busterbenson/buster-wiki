@@ -1,6 +1,6 @@
 +++
 title = "Policy"
-one_liner = ""
+one_liner = "What are the rules of living with each other and how should we enforce it?"
 featured_image = ""
 show_on_homepage = false
 homepage_order = 0

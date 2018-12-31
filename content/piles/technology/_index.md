@@ -1,6 +1,6 @@
 +++
 title = "Technology"
-one_liner = ""
+one_liner = "The gift of fire."
 featured_image = ""
 show_on_homepage = false
 homepage_order = 0

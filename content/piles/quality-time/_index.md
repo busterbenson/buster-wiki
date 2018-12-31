@@ -1,6 +1,6 @@
 +++
 title = "Quality time"
-one_liner = ""
+one_liner = "Does anything else matter?"
 featured_image = ""
 show_on_homepage = false
 homepage_order = 0

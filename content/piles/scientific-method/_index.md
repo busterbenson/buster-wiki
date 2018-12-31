@@ -1,6 +1,6 @@
 +++
 title = "Scientific method"
-one_liner = ""
+one_liner = "Observation, hypothesis, experiment, results, and repeat."
 featured_image = ""
 show_on_homepage = false
 homepage_order = 0

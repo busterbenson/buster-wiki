@@ -1,6 +1,6 @@
 +++
 title = "Government"
-one_liner = ""
+one_liner = "How might we govern ourselves?"
 featured_image = ""
 show_on_homepage = false
 homepage_order = 0

@@ -1,6 +1,6 @@
 +++
 title = "Language"
-one_liner = ""
+one_liner = "Words matter."
 featured_image = ""
 show_on_homepage = false
 homepage_order = 0
