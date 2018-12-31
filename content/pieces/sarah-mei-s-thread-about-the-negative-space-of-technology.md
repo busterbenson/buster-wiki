@@ -3,7 +3,6 @@ annotated_link = ""
 author = "Sarah Mei"
 category = ["article"]
 date = "2018-12-31T08:09:00-08:00"
-draft = true
 featured_image = ""
 influences = []
 layout = "piece"
