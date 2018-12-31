@@ -31,12 +31,15 @@
 	  	  {{ end }}
 	  	</div>
 
+	    <h4 class="subtitle mt-2">{{ .Param "one_liner" | safeHTML }}</h4>
+
 	    {{ if and (ne (.Param "featured_image") "") (ne (.Param "hide_image_on_detail") true) }}
-	      <img src="{{$.Params.featured_image}}" class="rounded align-center img-thumbnail" />
+	      <div class="mt-2">
+	      	<a href="{{ .Params.link }}" class="mr-2" target="_new"><img src="{{$.Params.featured_image}}" class="rounded align-center img-thumbnail" /></a>
+	      </div>
 	    {{ end }}
 
-	    <h4 class="subtitle mt-4">{{ .Param "one_liner" | safeHTML }}</h4>
-			<div class="mt-1">{{ .Content }}</div>
+			<div class="mt-2">{{ .Content }}</div>
 		</div>
 	</div>
 
