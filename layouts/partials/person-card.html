@@ -10,7 +10,7 @@
 
 	    
     <ul class="list-group list-group-flush m-0 p-0">
-			{{ range $page := where (index .Site.Taxonomies.influences .Data.Term) "Params.belief_delta" true }}
+			{{ range $page := first 1 (where (index .Site.Taxonomies.influences .Data.Term) "Params.belief_delta" true) }}
 	    	<li class="list-group-item">
 	    		<small><a href="{{ .Permalink }}" target="_new">{{ .Title }}</a>{{ if ne .Params.one_liner nil }}: {{ .Params.one_liner }}{{ end }}</small>
 	      </li>

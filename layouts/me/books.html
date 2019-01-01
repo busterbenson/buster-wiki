@@ -37,5 +37,17 @@
 		  	{{ end }}
 	  	{{ end }}
 		</div>
+
+
+	  <div class="row mt-2 justify-content-center">
+  		<div class="col-8 mb-2">
+  			<h4>Articles that changed how I think</h4>
+		  	{{ range (where .Site.Pages "Params.category" "article").ByDate.Reverse }}
+		  		{{ if eq .Params.belief_delta true }}
+		  			{{ partial "piece-card" . }}
+		  		{{ end }}
+		  	{{ end }}
+			</div>
+		</div>
   </div>
 {{ end }}

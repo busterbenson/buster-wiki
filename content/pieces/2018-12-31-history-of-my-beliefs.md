@@ -20,7 +20,8 @@ tags					 = []
 # metadata
 layout	    	 = "piece"
 date      		 = 2018-12-31T11:37:18-08:00
-disqus    		 = true
+disqus    		 = false
+thoughts 			 = true
 +++
 
 A short history of how my beliefs have moved over the years. You can find every change to every belief between 2012 and 2019 in this [changelog](https://github.com/busterbenson/public/commits/master).

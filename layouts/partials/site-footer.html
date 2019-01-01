@@ -9,6 +9,17 @@
       </div>
     {{ end }}
 
+    {{ if eq (.Param "thoughts") true }}
+      {{ $from_url := .URL }}
+      {{ $from_page_title := .Title }}
+      {{ $from_question := "Thoughts?" }} 
+      <div class="row mt-2 justify-content-center">
+        <div class="col-md-8 text-center">
+          <a class="typeform-share button" href="https://buster.typeform.com/to/aW80Y3?from_url={{ $from_url }}&from_page_title={{ $from_page_title }}&from_question={{ $from_question }}" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#A086C4;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:16px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-submit-close-delay="5" target="_blank">Thoughts? </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+        </div>
+      </div>
+    {{ end }}
+
     {{ if ne (.Param "hide_footer_nav") true }}
       <div class="row my-10 justify-content-center">
         <div class="col-sm-4 text-center">
