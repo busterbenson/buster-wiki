@@ -11,5 +11,8 @@ homepage_order = 9
 date = "2018-12-30"
 draft = false
 layout = "books"
+thoughts = true
+thoughts_prompt = "Which books have changed the way you think?"
+thoughts_button = "Reply"
 +++
 

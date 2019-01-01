@@ -21,5 +21,7 @@ tags					 = []
 layout	    	 = "piece"
 date      		 = {{ .Date }}
 disqus    		 = false
+thoughts			 = true
+thoughts_prompt = "Thoughts?"
 +++
 
