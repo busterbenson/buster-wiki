@@ -14,7 +14,7 @@
       {{ $from_page_title := .Title }}
       {{ $from_question := "Thoughts?" }} 
 
-      {{ if ne .Params.thoughts_prompt "" }}
+      {{ if and (ne .Params.thoughts_prompt nil) (ne .Params.thoughts_prompt "") }}
         {{ $from_question = .Params.thoughts_prompt }} 
       {{ end }}
 
