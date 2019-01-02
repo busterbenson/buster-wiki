@@ -3,7 +3,6 @@
 title          = "Moderation. Introduce games like Fortnite cautiously."
 one_liner      = ""
 featured_image = ""
-disqus				 = true
 
 # taxonomies
 influences		 = []

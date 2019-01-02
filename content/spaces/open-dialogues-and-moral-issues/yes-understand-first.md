@@ -3,7 +3,6 @@
 title          = "Yes. Understanding the other side increases the possibility of a productive dialogue."
 one_liner      = ""
 featured_image = ""
-disqus				 = true
 
 # taxonomies
 influences		 = []

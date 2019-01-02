@@ -5,11 +5,6 @@ one_liner      = ""
 featured_image = ""
 show_tree      = true
 
-# taxonomies
-influences		 = []
-piles     		 = ['dialogue']
-projects			 = []
-
 # article, reference, thought, book, idea, podcast, blog, tv
 # annotated-link
 category  		 = 'space'
@@ -19,6 +14,11 @@ tags					 = []
 layout 				 = "space"
 date 					 = "2018-12-30"
 draft 				 = false
+
+# thoughts
+thoughts       = true
+thoughts_button = "Share"
+thoughts_prompt = "Have a link to add or a different perspective to share?"
 
 research_tag   = "open-dialogues-and-moral-issues"
 +++

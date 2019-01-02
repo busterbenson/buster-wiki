@@ -3,7 +3,6 @@
 title          = "No. Compromise isn't a virtue, and justice seldom lives in the middle."
 one_liner      = ""
 featured_image = ""
-disqus				 = true
 
 # taxonomies
 influences		 = []

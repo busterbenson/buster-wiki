@@ -3,7 +3,6 @@
 title          = "Bump it up a level. Consider this question in the larger context of cultivating healthy and balanced interests in your kids."
 one_liner      = ""
 featured_image = ""
-disqus				 = true
 
 # taxonomies
 influences		 = []
