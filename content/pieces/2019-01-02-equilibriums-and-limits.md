@@ -1,6 +1,6 @@
 +++
 # basics
-title     		 	= "A better way to look at most every political issue"
+title     		 	= "Equilibriums and Limits: a better way to look at most every political issue"
 author    		 	= 'me'
 link      		 	= "https://www.theatlantic.com/politics/archive/2018/02/a-better-way-to-look-at-most-every-political-issue/552752/"
 annotated_link	= "http://lnr.li/FDKM8"
