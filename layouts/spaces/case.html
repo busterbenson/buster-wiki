@@ -44,14 +44,43 @@
       {{ $space_title := .Parent.Title }}
       {{ $case_url    := .URL }}
       {{ $case_title  := .Title }} 
+      {{ $case_tag    := .Params.case_tag }}
 
-			<a class="typeform-share button" href="https://buster.typeform.com/to/B2bcXw?space_url={{ $space_url }}&space_title={{ $space_title }}&case_url={{ $case_url }}&case_title={{ $case_title }}" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#AB52FF;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:16px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="5" target="_blank">
+			<a class="typeform-share button" href="https://buster.typeform.com/to/B2bcXw?space_url={{ $space_url }}&space_title={{ $space_title }}&case_url={{ $case_url }}&case_title={{ $case_title }}&case_tag={{ $case_tag }}" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#AB52FF;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:16px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true data-submit-close-delay="5" target="_blank">
 					Share your take 
 			</a> 
 			<script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()</script>
 		</div>
 	</div>
 
+	{{ $url := "https://docs.google.com/spreadsheets/d/e/2PACX-1vRZ3LXj7FOi63cqU7VoCjtCys6dS56Z1njxwt50Y-oTvdbGVXP7qrL8jY7XSf973_tsDT2Qf3PyMaSO/pub?gid=170452979&single=true&output=csv" }}
+    {{ $sep := "," }}
+    {{ .Scratch.Set "agree_high_seeking" 0 }}
+    {{ .Scratch.Set "agree_low_seeking" 0 }}
+    {{ .Scratch.Set "disagree_high_seeking" 0 }}
+    {{ .Scratch.Set "disagree_low_seeking" 0 }}
+
+    {{ range $i, $r := getCSV $sep $url }}
+    	{{ if eq (index $r 10) $.URL }}
+    		{{ if eq (index $r 0) "I agree with high confidence" }}
+    			{{ $.Scratch.Add "agree_high_seeking" 1 }}
+    		{{ else if eq (index $r 0) "I agree with low confidence" }}
+    			{{ $.Scratch.Add "agree_low_seeking" 1 }}
+    		{{ else if eq (index $r 0) "I disagree with high confidence" }}
+    			{{ $.Scratch.Add "disagree_high_seeking" 1 }}
+    		{{ else if eq (index $r 0) "I disagree with low confidence" }}
+    			{{ $.Scratch.Add "disagree_low_seeking" 1 }}
+    		{{ end }}
+
+     	{{ end }}
+    {{ end }}
+
+    {{ if false }}
+    <div>Agree high seeking: {{ .Scratch.Get "agree_high_seeking" }}</div>
+    <div>Agree low seeking: {{ .Scratch.Get "agree_low_seeking" }}</div>
+    <div>Disagree low seeking: {{ .Scratch.Get "disagree_low_seeking" }}</div>
+    <div>Disagree high seeking: {{ .Scratch.Get "disagree_high_seeking" }}</div>
+    {{ end }}
 </div>
 
 {{ end }}

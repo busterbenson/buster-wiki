@@ -3,12 +3,12 @@
 
   <div class="col-md-8">
     {{ if and (ne (.Param "featured_image") "") (ne (.Param "hide_image_on_detail") true) }}
-      <img src="{{$.Params.featured_image}}" class="rounded align-right img-thumbnail float-left w-25 mr-3" />
+      <img src="{{$.Params.featured_image}}" class="rounded align-right img-thumbnail float-left w-25 mr-3 mt-1" />
     {{ end }}
     {{ if or (eq .Section "influences") (eq .Layout "space" ) }}
       <h1 class="small-title">{{ .Title }}</h1>
     {{ else }}
-      <h1 class="title">{{ .Title }}</h1>
+      <h1 class="title mt-0">{{ .Title }}</h1>
     {{ end }}
     <h4 class="subtitle mt-0">{{ .Param "one_liner" | safeHTML }}</h4>
 

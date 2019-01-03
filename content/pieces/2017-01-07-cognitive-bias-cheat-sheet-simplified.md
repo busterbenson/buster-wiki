@@ -12,7 +12,7 @@ piles     = ['cognitive-biases']
 category  = 'article' # link, article-link
 
 # metadata
-date      = 2017-01-07T16:53:11-08:00
+date      = "2017-01-07"
 layout    = "piece"
 disqus    = false
 +++

@@ -2,8 +2,8 @@
 title     		 = "First Post"
 author    		 = "me"
 link 					 = ""
-one_liner 		 = "Just a test."
-piles 				 = ['fuzzy','critical-thinking']
+one_liner 		 = "Just a fuzzy test."
+piles 				 = ['fuzzy']
 category  		 = 'thought'
 featured_image = ""
 

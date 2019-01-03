@@ -13,7 +13,7 @@ piles     		 = ['antifragile', 'behavior-change', 'self-tracking']
 category  		 = 'article' 
 
 # metadata
-date      		 = 2018-12-29T13:25:32-08:00
+date      		 = "2013-08-24"
 layout    		 = "piece"
 disqus    		 = false
 +++

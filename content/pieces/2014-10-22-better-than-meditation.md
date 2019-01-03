@@ -14,7 +14,7 @@ piles     		 = ['mindfulness']
 category  		 = 'article' 
 
 # metadata
-date      		 = 2018-12-29T13:02:44-08:00
+date      		 = "2014-10-22"
 layout    		 = "piece"
 disqus    		 = false
 +++

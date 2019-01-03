@@ -9,7 +9,7 @@ belief_delta	 = true
 
 # taxonomies
 influences		 = ['douglas-hofstadter']
-piles     		 = ['loopy-thinking']
+piles     		 = ['systems-thinking']
 projects			 = []
 
 # link, article, reference, thought, book, idea

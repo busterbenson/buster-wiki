@@ -1,0 +1,27 @@
+{{ define "main" }}
+  <div class="container">    
+    {{ partial "title-and-content-basic" . }}
+
+		{{ .Scratch.Set "year" "" }}
+		{{ .Scratch.Set "mt" "" }}
+
+	  <div class="row justify-content-center">
+  		<div class="col-12 col-lg-8">
+
+		  	{{ range (where .Site.Pages "Params.author" "me").ByDate.Reverse }}
+			  	{{ if ne (.Date.Year) ($.Scratch.Get "year")}}
+			  		<h2 class="{{ $.Scratch.Get "mt" }}">{{ .Date.Year }}</h2>
+
+			  		{{ $.Scratch.Set "year" .Date.Year }}
+			  		{{ $.Scratch.Set "mt" "mt-3" }}			  		
+			  	{{ end }}
+		  		<li class="mb-1">
+		  			<span class="text-large"><a href="{{ .URL }}">{{ .Title }}</a></span>
+		  		</li>
+		  	{{ end }}
+
+			</div>
+		</div>
+
+  </div>
+{{ end }}

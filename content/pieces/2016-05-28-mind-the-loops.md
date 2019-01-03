@@ -7,13 +7,13 @@ one_liner 		 = "My year in review."
 featured_image = "/images/pieces/mind-the-loops.png" # /images/pieces/
 
 # see /piles
-piles     		 = ['self-reflection', 'loopy-thinking']
-
+piles     		 = ['self-reflection', 'systems-thinking']
+ 
 # link, article, reference, thought, book
 category  		 = 'year-in-review' 
 
 # metadata
-date      		 = 2018-12-29T14:17:19-08:00
+date      		 = "2016-05-28"
 layout    		 = "piece"
 disqus    		 = false
 +++

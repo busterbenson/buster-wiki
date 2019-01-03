@@ -9,10 +9,10 @@ one_liner = "Original full analysis of 200+ cognitive biases."
 piles     = ['cognitive-biases']
 
 # link, article-link, reference-link, thought
-category  = 'article' # link, article-link
+category  = 'article' 
 
 # metadata
-date      = 2016-09-02T16:48:34-08:00
+date      = "2016-09-01"
 layout    = "piece"
 disqus    = false
 +++

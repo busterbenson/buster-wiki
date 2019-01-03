@@ -13,7 +13,7 @@ piles     		 = ['self-reflection', 'quality-time']
 category  		 = 'year-in-review' 
 
 # metadata
-date      		 = 2018-12-29T14:14:26-08:00
+date      		 = "2014-05-28"
 layout    		 = "piece"
 disqus    		 = false
 +++

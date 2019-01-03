@@ -17,7 +17,7 @@ category  		 = 'article'
 
 # metadata
 layout	    	 = "piece"
-date      		 = 2018-12-29T23:01:13-08:00
+date      		 = "2014-10-18"
 disqus    		 = false
 +++
 

@@ -19,7 +19,7 @@ tags					 = []
 
 # metadata
 layout	    	 = "piece"
-date      		 = 2016-07-17T11:51:36-08:00
+date      		 = "2016-07-17"
 disqus    		 = false
 +++
 

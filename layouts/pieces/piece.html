@@ -4,42 +4,39 @@
 	<div class="row mt-4 justify-content-center">
 	  <div class="col-md-8">
 	    <h1 class="small-title lora">{{ .Title }}</h1>
+	    <h4 class="subtitle mt-0">{{ .Param "one_liner" | safeHTML }}</h4>
   	  {{ if .Params.link }}
   	  	<div class="mt-1">
-  	  		<small>
+  	  		<small> 
   	  			{{ if eq .Params.author "me" }}
-  	  				By Buster <span class="text-secondary">|</span>
+  	  				<a href="/me">Buster Benson</a> <span class="text-secondary px-1">|</span>
   	  			{{ else if ne .Params.author ""}}
   	  				{{ $person := replace (lower .Params.author) " " "-" }}
 			  			{{ with $person := $.Site.GetPage ( printf "/influences/%s" $person ) }}
-					  		By <a href="{{ .Permalink }}">{{ .Title }}</a>
+					  		<a href="{{ .Permalink }}">{{ .Title }}</a>
 					  	{{ else }}
-					  		By {{ .Params.author }}
+					  		{{ .Params.author }}
 				  		{{ end }}
-  	  				<span class="text-secondary">|</span>  	  			
+  	  				<span class="text-secondary px-1">|</span>  	  			
   	  			{{ end }}
+  	  			<a href="{{ .Params.link }}" target="_new"> Read it:</a>
   	  			<a href="{{ .Params.link }}" class="text-secondary" target="_new">{{ .Params.link }}</a>
   	  		</small>
   	  	</div>
     	{{ end }}
 		  <div class="small mt-1">
-		    {{ if .Params.link }}
-	  	  	<a href="{{ .Params.link }}" class="mr-2" target="_new"><span class="oi oi-external-link"></span> Read it</a>
-	  	  {{ end }}
 		    {{ if .Params.annotated_link }}
-	  	  	<a href="{{ .Params.annotated_link }}" target="_new"><mark class="text-primary"><span class="oi oi-comment-square"></span> With in-line comments</mark></a>
+	  	  	<a href="{{ .Params.annotated_link }}" target="_new"><mark class="text-primary"><span class="oi oi-comment-square"></span> Read it with in-line comments</mark></a>
 	  	  {{ end }}
 	  	</div>
 
-	    <h4 class="subtitle mt-2">{{ .Param "one_liner" | safeHTML }}</h4>
-
 	    {{ if and (ne (.Param "featured_image") "") (ne (.Param "hide_image_on_detail") true) }}
-	      <div class="mt-2">
+	      <div class="mt-4">
 	      	<a href="{{ .Params.link }}" class="mr-2" target="_new"><img src="{{$.Params.featured_image}}" class="rounded align-center img-thumbnail" /></a>
 	      </div>
 	    {{ end }}
 
-			<div class="mt-2">{{ .Content }}</div>
+			<div class="mt-4 mb-3 piece-content">{{ .Content }}</div>
 		</div>
 	</div>
 

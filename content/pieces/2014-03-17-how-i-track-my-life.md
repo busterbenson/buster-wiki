@@ -13,7 +13,7 @@ piles     		 = ['behavior-change', 'quality-time', 'technology']
 category  		 = 'article' 
 
 # metadata
-date      		 = 2018-12-29T13:13:29-08:00
+date      		 = "2014-03-17"
 layout    		 = "piece"
 disqus    		 = false
 +++

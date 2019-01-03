@@ -13,7 +13,7 @@ piles     		 = ['product-management']
 category  		 = 'article' 
 
 # metadata
-date      		 = 2018-12-29T13:08:48-08:00
+date      		 = "2014-08-10"
 layout    		 = "piece"
 disqus    		 = false
 +++

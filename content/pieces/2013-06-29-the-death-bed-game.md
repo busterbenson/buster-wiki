@@ -13,7 +13,7 @@ piles     		 = ['death', 'self-tracking']
 category  		 = 'article' 
 
 # metadata
-date      		 = 2018-12-29T13:28:13-08:00
+date      		 = "2013-06-29"
 layout    		 = "piece"
 disqus    		 = false
 +++

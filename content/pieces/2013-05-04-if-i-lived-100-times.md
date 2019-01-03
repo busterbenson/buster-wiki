@@ -13,7 +13,7 @@ piles     		 = ['death', 'critical-thinking']
 category  		 = 'article' 
 
 # metadata
-date      		 = 2018-12-29T13:31:24-08:00
+date      		 = "2013-05-04"
 layout    		 = "piece"
 disqus    		 = false
 +++

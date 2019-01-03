@@ -20,13 +20,20 @@ h3.card-title {
 }
 h4 {
 	margin-top: 1.5em;
-	color: #666;
+	color: #333;
 }
 h4.mailchimp {
 	border-bottom: none;
 }
+li {
+	margin-bottom: 0.75em;
+}
 mark a {
 	color: #000;
+}
+blockquote {
+	border-left: 8px solid #666;
+	padding-left: 1em;
 }
 .title {
 	font-size: 60px; 
@@ -85,4 +92,35 @@ iframe {
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	padding: 0 10px;
+}
+.piece-content {
+	font-family: "lora", serif;
+	font-size: 20px;
+	line-height: 1.55;
+	font-weight: 400;
+}
+.piece-content h1 {
+	font-size: 42px;
+}
+.piece-content h2 {
+	font-size: 28px;
+	font-weight: 400;
+}
+.piece-content h3 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.15;
+	line-spacing: -0.15em;
+}
+.piece-content h4 {
+	font-size: 24px;
+	font-weight: 600;
+	line-spacing: -0.15em;
+}
+.piece-content a {
+	color: #000;
+	text-decoration: underline;
+}
+.piece-content hr {
+	margin: 3em;
 }

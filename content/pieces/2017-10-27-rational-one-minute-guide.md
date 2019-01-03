@@ -6,7 +6,7 @@ one_liner = "Read this if you think learning about biases will make you more per
 piles     = ['cognitive-biases']
 category  = 'article' # link
 
-date      = 2017-10-27T16:54:28-08:00
+date      = "2017-10-27"
 layout    = "piece"
 disqus    = false
 +++
