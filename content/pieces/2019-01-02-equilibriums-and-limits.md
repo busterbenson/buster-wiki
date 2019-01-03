@@ -10,7 +10,7 @@ belief_delta   	= false
 
 # taxonomies
 influences		 	= []
-piles     		 	= ['dialgue']
+piles     		 	= ['dialogue']
 projects			 	= []
 
 # article, reference, thought, book, idea, podcast, blog, tv
