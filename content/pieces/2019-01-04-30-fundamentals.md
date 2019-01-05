@@ -30,7 +30,7 @@ thoughts_button = "Thoughts?"
 
 ### My top take-away
 
-asdf
+I lifted a couple things from this list and added them to my own beliefs file. Specifically, thoughts around how modern life is changing the way we relate and communicated to each other and causing all kinds of problems. Overall, this is a great read and also a great example of the value in articulating foundational beliefs and opinions.
 
 ### My <mark>highlights</mark>
 
@@ -97,3 +97,9 @@ I'm going to nab this exact wording and add it to my beliefs file.
 > Everyone arguing has a point, even if often not a very strong one. Charity and civility in disagreement is an essential virtue, and make an effort to understand under what conditions something seemingly wrong would make sense. People are more different in how they see the world than we think, and we should practice telling ourselves stories that make the other sympathetic.
 
 Great one to end on.
+
+----
+
+### Read it
+
+Get a coffee and take 20-30 minutes to <a href="https://everythingstudies.com/2018/07/16/30-fundamentals/">read it</a>. Even if you don't agree with everything, or understand each point (I got lost on a few) it's a good brain-stretcher.
