@@ -7,7 +7,7 @@
   {{ if (where .Pages "Section" "influences") }}
     <div class="row mt-2 justify-content-center">
       <div class="col-md-8">
-        <h4>People who have influenced my thinking on this topic</h4>
+        <h3>Influences</h3>
       </div>
       <div class="col-md-8 mt-2">
         <div class="row justify-content-start">
@@ -24,7 +24,7 @@
   {{ if (where .Pages "Section" "projects") }}
     <div class="row mt-2 justify-content-center">
       <div class="col-md-8">
-        <h4>Related projects sparked by this</h4>
+        <h3>Related projects</h3>
       </div>
       <div class="col-md-8 mt-2">
         <div class="row justify-content-start">
@@ -41,7 +41,7 @@
   {{ if ne (index $.Site.Data.beliefs .Data.Term) nil }}
   <div class="row mt-2 justify-content-center">
     <div class="col-md-8">
-      <h4>My current beliefs</h4>
+      <h3>My beliefs</h3>
     </div>
   </div>
   <div class="row mt-2 justify-content-center">
@@ -64,9 +64,9 @@
   {{ end }}
 
   {{ if (where .Pages "Section" "pieces") }}
-    <div class="row mt-2 justify-content-center">
+    <div class="row mt-5 justify-content-center">
       <div class="col-md-8">
-        <h4>Pieces of the puzzle</h4>
+        <h3>In the pile</h3>
       </div>
     </div>
     {{ range (where .Pages "Section" "pieces").ByDate.Reverse }}
