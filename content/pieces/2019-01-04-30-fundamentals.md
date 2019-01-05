@@ -44,7 +44,7 @@ I agree, and also the impracticality of actually being explicit about everything
 
 > This works ok in the real world. It doesn’t work at all on the internet where voices are disembodied and spaces have ill-defined borders.
 
-Because in the real world we tend to have more history with the people we're talking to. Not necessarily because of the 
+Because in the real world we tend to have more history with the people we're talking to. Not necessarily because of the medium.
 
 > It also encourages a shoot-first-ask-questions-later, “thorns out” approach to reading about contentious issues.
 
