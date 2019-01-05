@@ -51,6 +51,7 @@ blockquote {
 	margin-top: 0.5em;
 	color: #666;
 	padding-top: 0;
+	font-style: italic;
 }
 .title {
 	font-size: 60px; 
@@ -113,7 +114,7 @@ iframe {
 .piece-content {
 	font-family: "Georgia", serif;
 	font-size: 19px;
-	line-height: 1.7;
+	line-height: 1.8;
 	font-weight: 200;
 }
 .piece-content h1 {
