@@ -43,6 +43,7 @@ mark {
 }
 mark a {
 	color: #000;
+	text-decoration: none !important;
 }
 blockquote {
 	border-left: 8px solid #f7f5a0;

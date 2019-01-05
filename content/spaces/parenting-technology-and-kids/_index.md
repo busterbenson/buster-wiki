@@ -1,17 +1,15 @@
 +++
 # basic info
-title          = "How should parents approach technology with their children?"
-one_liner      = ""
-featured_image = ""
-show_tree      = true
+title            = "How should parents approach technology with their children?"
+one_liner       = ""
+featured_image  = ""
 
 # metadata
-layout 				 = "space"
-date 					 = "2018-12-30"
-draft 				 = false
+layout 				  = "space"
+date 					  = "2018-12-30"
 
 # thoughts
-thoughts       = true
+thoughts        = true
 thoughts_button = "Share"
 thoughts_prompt = "Have a link to add or a different perspective to share?"
 

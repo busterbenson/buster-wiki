@@ -24,7 +24,7 @@ disqus    		 = false
 thoughts 			 = true
 +++
 
-A short history of how my beliefs have moved over the years. You can find every change to every belief between 2012 and 2019 in this [changelog](https://github.com/busterbenson/public/commits/master).
+A short history of how my <mark><a href="/beliefs">beliefs</a></mark> have moved over the years. You can find every change to every belief between 2012 and 2019 in this [changelog](https://github.com/busterbenson/public/commits/master).
 
 #### [2012](https://github.com/busterbenson/public/blob/master/book-of-beliefs-2012.md)
 

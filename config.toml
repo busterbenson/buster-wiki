@@ -2,8 +2,11 @@ baseURL = "https://buster.wiki/"
 languageCode = "en-us"
 theme = "buster"
 title = "Buster's Wiki"
+
 enableEmoji = true
 enableInlineShortcodes = true
+sectionPagesMenu = "main"
+
 googleAnalytics = 'UA-103669606-4'
 disqusShortname = 'buster-wiki'
 logFile = '/tmp/hugo.log'
