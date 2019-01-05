@@ -87,7 +87,7 @@ The difference is that I’ve learned to love the Chaos Monkey, and rather than 
 
 Netflix’s servers probably don’t get super frustrated every time the Chaos Monkey strikes. Rather, because it’s expected (self-inflicted even), they become an opportunity to test, refine, and improve the recovery systems. Taking certain servers offline isn’t going to break their streak, or prove that they’re worthless as servers. Shifting gears and responding to the adversity is just a necessary step in order to recover faster.
 
-> The Chaos Monkey is actually here to help you.
+> *The Chaos Monkey is actually here to help you.*
 
 The Chaos Monkey is here to help you practice switching gears, help you build antifragile responses, help you get stronger and smarter about your life, so that you survive even bigger monkeys in the future.
 

@@ -37,12 +37,20 @@ h4.mailchimp {
 li {
 	margin-bottom: 0.75em;
 }
+mark {
+	background-color: #f7f5a0;
+	padding: 2px;
+}
 mark a {
 	color: #000;
 }
 blockquote {
-	border-left: 8px solid #666;
+	border-left: 8px solid #f7f5a0;
 	padding-left: 1em;
+	margin-left: -25px;
+	margin-top: 0.5em;
+	color: #666;
+	padding-top: 0;
 }
 .title {
 	font-size: 60px; 
@@ -134,8 +142,8 @@ iframe {
 .piece-content hr {
 	margin: 3em;
 }
-.piece-content blockquote {
-	font-family: 'lora', serif;
+.piece-content blockquote em {
+	font-family: 'Playfair Display', serif;
 	font-size: 30px;
 	font-style: italic;
 	color: #666;
