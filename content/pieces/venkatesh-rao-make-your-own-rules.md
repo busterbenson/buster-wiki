@@ -9,7 +9,7 @@ belief_delta	 = true
 
 # taxonomies
 influences		 = ['venkatesh-rao']
-piles     		 = ['critical-thinking']
+piles     		 = ['critical-thinking', "rules-to-live-by"]
 projects			 = []
 
 # link, article, reference, thought, book, idea, podcast, blog, tv

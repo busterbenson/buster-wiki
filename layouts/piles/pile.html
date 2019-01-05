@@ -46,11 +46,18 @@
   </div>
   <div class="row mt-2 justify-content-center">
     <div class="col-md-8">
-      <ul class="m-0 p-0">
+      <ul class="list-group">
         {{ $pile := .Data.Term }}
         {{ range $list := index $.Site.Data.beliefs .Data.Term }}
-          <li class="mb-2">{{ $list.desc }}</li>
+          {{ if eq .desc nil }}
+            {{ range . }}
+              {{ partial "belief-li" . }}
+            {{ end }}
+          {{ else }}
+            {{ partial "belief-li" . }}
+          {{ end }}
         {{ end }}
+        <li class="list-group-item"><a href="/beliefs" class="text-secondary">See all beliefs</a></li>
       </ul>
     </div>
   </div>

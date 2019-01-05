@@ -3,7 +3,7 @@ title = "Venkatesh Rao"
 one_liner = "Changed the way I think about <mark>self-reflection</mark> and <mark>critical thinking</mark>."
 featured_image = "/images/people/venkatesh-rao.jpg"
 
-piles = ["critical-thinking", "self-reflection"]
+piles = ["critical-thinking", "rules-to-live-by"]
 twitter = "vgr"
 website = "http://ribbonfarm.com"
 wikipedia = "https://en.wikipedia.org/wiki/Venkatesh_Rao_(writer)"

@@ -32,6 +32,6 @@ Some most definitely are. These beliefs are my best guess and articulation of my
 - ✋ A belief about the outcome of some action. Can be falsied by an experiment.
 - 💪 A belief with high confidence.
 - 🤞 A belief with low confidence.
-- 🔥 A belief that has some heat to it, and increases my blood pressure.
+- 🐲 A belief triggers anxiety.
 
 ### Beliefs by topic

@@ -9,7 +9,7 @@ belief_delta	 = true
 
 # taxonomies
 influences		 = ['elle-luna']
-piles     		 = ['creativity', 'being-a-creator']
+piles     		 = ['creativity', 'being-a-creator', "rules-to-live-by"]
 projects			 = []
 
 # link, article, reference, thought, book, idea

@@ -25,4 +25,3 @@ thoughts			 	= true
 thoughts_prompt = ""
 thoughts_button = "Thoughts?"
 +++
-

@@ -8,7 +8,7 @@ featured_image = "" # /images/pieces/
 
 # taxonomies
 influences		 = []
-piles     		 = ['behavior-change']
+piles     		 = ['behavior-change', "rules-to-live-by"]
 projects			 = []
 
 # link, article, reference, thought, book, idea, podcast, blog, tv

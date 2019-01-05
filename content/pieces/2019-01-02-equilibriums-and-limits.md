@@ -3,22 +3,25 @@
 title     		 	= "Equilibriums and Limits: a better way to look at most every political issue"
 author    		 	= 'me'
 link      		 	= "https://www.theatlantic.com/politics/archive/2018/02/a-better-way-to-look-at-most-every-political-issue/552752/"
-annotated_link	= "http://lnr.li/FDKM8"
 one_liner 		 	= "Understand the difference between equilibriums and limits."
 featured_image 	= "/images/pieces/equilibriums-and-limits.jpg" # /images/pieces/
 belief_delta   	= false
 
 # taxonomies
+
 influences		 	= []
 piles     		 	= ['dialogue']
 projects			 	= []
 
 # article, reference, thought, book, idea, podcast, blog, tv
+
 # annotated-link, space, case
+
 category  		 	= 'article'
 tags					 	= []
 
 # metadata
+
 layout	    	 	= "piece"
 date      		 	= "2019-01-02"
 disqus    		 	= false
@@ -33,7 +36,7 @@ When the argument is about a binary choice between only two option, consider re-
 
 ----
 
-#### My <mark>[highlights](http://lnr.li/FDKM8)</mark>:
+#### My <mark>highlights</mark>:
 
 > We sometimes think of political issues in binary terms. Is someone pro-life or pro-choice? But most individuals hold views that are more complicated than a binary can capture.
 

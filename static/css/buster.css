@@ -2,6 +2,9 @@
 	background-color: #fff;
 	color: #000;
 }
+body {
+	font-size: 16px;
+}
 body.night header {
 	background-color: #eff;
 }
@@ -11,8 +14,14 @@ body.night header {
 body.night .theme-background {
 	background-color: #eff;	
 }
-h1, h2 {
-	font-family: 'lora', serif;
+h1, .h1 {
+	font-weight: 700;
+}
+h1, h2, .h1, .h2 {
+	font-family: 'Playfair Display', 'Georgia', serif;
+}
+h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
+	font-family: "Muli", sans-serif;
 }
 h3.card-title {
 	font-size: 20px; 
@@ -52,8 +61,8 @@ blockquote {
 }
 .card-title {
 }
-.lora {
-	font-family: 'lora', serif;
+.lora, .playfair {
+	font-family: 'Playfair Display', serif;
 }
 header {
 	background-color: #efe;
@@ -67,7 +76,7 @@ header .topnav a:hover.navbar-text {
 footer {
 }
 #mc_embed_signup {
-	font-family: "Muli", sans-serif !important;
+	font-family: sans-serif !important;
 }
 #mc_embed_signup form {
 	margin: 0;
@@ -94,9 +103,9 @@ iframe {
 	padding: 0 10px;
 }
 .piece-content {
-	font-family: "lora", serif;
-	font-size: 20px;
-	line-height: 1.55;
+	font-family: "Georgia", serif;
+	font-size: 19px;
+	line-height: 1.7;
 	font-weight: 200;
 }
 .piece-content h1 {
@@ -104,7 +113,8 @@ iframe {
 }
 .piece-content h2 {
 	font-size: 28px;
-	font-weight: 400;
+	font-weight: 700;
+	margin-top: 1.7em;
 }
 .piece-content h3 {
 	font-size: 24px;
@@ -123,4 +133,11 @@ iframe {
 }
 .piece-content hr {
 	margin: 3em;
+}
+.piece-content blockquote {
+	font-family: 'lora', serif;
+	font-size: 30px;
+	font-style: italic;
+	color: #666;
+	border-left: 0px solid #fff;
 }

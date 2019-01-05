@@ -15,8 +15,8 @@
 		{{ else if eq .confidence "low" }}
 			<span data-toggle="tooltip" data-placement="top" title="Low confidence">🤞</span>
 		{{ end }}
-		{{ if gt .bristle 1 }}
-			<span data-toggle="tooltip" data-placement="top" title="This belief has heat (aka raises my blood pressure).">🔥</span>
+		{{ if gt .anxiety 1 }}
+			<span data-toggle="tooltip" data-placement="top" title="This belief triggers anxiety.">🐲</span>
 		{{ end }}
 	</div>
 </li>
