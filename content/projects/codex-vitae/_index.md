@@ -2,6 +2,7 @@
 title = "Codex vitae"
 one_liner = "A book of life that, when finished, will capture everything I have learned that's I found worth knowing."
 featured_image = "/images/projects/codex-vitae.png"
+url = 'codex-vitae'
 
 piles = ["self-reflection"]
 category = 'idea'
