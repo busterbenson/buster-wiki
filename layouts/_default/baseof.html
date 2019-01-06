@@ -6,8 +6,18 @@
     {{/* NOTE: the Site's title, and if there is a page title, that is set too */}}
     <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Params.Title }} | {{ . }}{{ end }}{{ end }}</title>
     <link rel="icon" type="image/png" href="/images/curlyloop-favicon.png" sizes="32x32">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
+    <meta property="og:url"                content="http://www.nytimes.com/2015/02/19/arts/international/when-great-minds-dont-think-alike.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{ .Title }}" />
+    {{ if and (ne .Params.one_liner nil) (ne .Params.one_liner "") }}
+      <meta property="og:description" content="{{ .Params.one_liner }}" />
+    {{ end }}
+    {{ if and (ne .Params.featured_image nil) (ne .Params.featured_image "") }}
+      <meta property="og:image" content="{{ .Params.featured_image }}" />
+    {{ end }}
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {{ .Hugo.Generator }}

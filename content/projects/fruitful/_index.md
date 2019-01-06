@@ -12,8 +12,9 @@ draft = false
 layout = "project"
 +++
 
+I bet you're wondering... what's the plan? 
 
-### The plan is still being formed...
+### Honestly, the plan is still being formed.
 
 1. One of our first tasks is to write a **shared code of conduct** to help keep us on track in the many disagreements and frustrating developments that are bound to happen. For example, can we identify best practices for not getting sucked into bad faith train wrecks of conversations? Yes, we can. (We'll start with 2 years of lessons learned as I have been writing a book on the art of productive disagreement, and continue to build on it.)
 
@@ -34,16 +35,18 @@ We're all in this together.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
 <div id="mc_embed_signup">
-<form action="https://wiki.us2.list-manage.com/subscribe/post?u=b802d7b76df178f4d6451a78e&amp;id=d56f113b9f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" style="text-align: left; margin-top: 0; padding-top: 0; margin-bottom: 4em;" target="_blank" novalidate>
+<form action="https://wiki.us2.list-manage.com/subscribe/post?u=b802d7b76df178f4d6451a78e&amp;id=d56f113b9f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" style="text-align: left; margin-top: 0; padding-top: 0; margin-bottom: 4em; font-size: 24px;" target="_blank" novalidate>
 <div id="mc_embed_signup_scroll">	
-<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+<input type="email" value="" name="EMAIL" class="email" style="font-size: 20px;" id="mce-EMAIL" placeholder="email address" required>
 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b802d7b76df178f4d6451a78e_d56f113b9f" tabindex="-1" value=""></div>
-<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="font-size: 20px; background-color: #e83e8c"></div>
 </div>
 </form>
 </div>
 <!--End mc_embed_signup-->
 
 ### Share this link
-Invite at least one person that you agree with and respect, and at least one person that you disagree with and respect. 
+Invite at least one person that you agree with and respect, and at least one person that you disagree with and respect. Cut and paste it to your sharing device of choice: 
+
+### `http://buster.wiki/fruitful`
