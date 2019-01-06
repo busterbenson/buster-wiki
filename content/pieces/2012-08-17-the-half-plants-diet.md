@@ -58,7 +58,7 @@ The whole point is to think less about the details, and forgive yourself for thi
 
 #### Some fun extra variables
 
-![Half Plants Tally App](http://farm9.staticflickr.com/8284/7805132880_3aaba2dfc5.jpg)
+![Half Plants Tally App](https://farm9.staticflickr.com/8284/7805132880_3aaba2dfc5.jpg)
 
 * Keep track in your head if that's easiest.  Or, download a simple tally-keeper app (search for "tally" in the App Store of your choice).  I like the ALS Counter iPhone App (shown above).
 * Keep track of drinks too along the same lines.  Instead of half plants, go for half water in a given sitting.

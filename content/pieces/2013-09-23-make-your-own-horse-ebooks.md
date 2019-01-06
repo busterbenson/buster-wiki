@@ -71,6 +71,6 @@ A couple people asked for how this is done:
 
 So I posted the (relatively disorganized but hopefully comprehensible) code here:
 
-<a href="https://gist.github.com/busterbenson/6695350" title="8:36pm Gisting my @buster_ebooks script by Buster Benson, on Flickr" target="_new"><img src="http://farm3.staticflickr.com/2814/9928091075_d4cd36c546_c.jpg" width="730" height="800" alt="8:36pm Gisting my @buster_ebooks script"></a>
+<a href="https://gist.github.com/busterbenson/6695350" title="8:36pm Gisting my @buster_ebooks script by Buster Benson, on Flickr" target="_new"><img src="https://farm3.staticflickr.com/2814/9928091075_d4cd36c546_c.jpg" width="730" height="800" alt="8:36pm Gisting my @buster_ebooks script"></a>
 
 Follow [@buster_ebooks](http://twitter.com/buster_ebooks) here. And [let me know](http://twitter.com/buster) if you do something with this. Enjoy!

@@ -89,7 +89,7 @@ Our brains evolved to strive for a coherent narrative (as a way to predict long-
 
 I've been thinking a lot about my death bed this year. From creating my own memento mori to reflect on every day:
 
-<iframe src="http://www.haikudeck.com/e/u9qVHcR7Ts" width="400" height="338" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+<iframe src="https://www.haikudeck.com/e/u9qVHcR7Ts" width="400" height="338" frameborder="0" marginheight="0" marginwidth="0"></iframe>
 
 To thinking about how I would die [if I lived 100 times](https://medium.com/self-knowledge-through-numbers/806222d3d4e):
 

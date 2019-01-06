@@ -26,8 +26,6 @@ thoughts_prompt = ""
 thoughts_button = "Thoughts?"
 +++
 
-![Lots of filters](http://media.tumblr.com/tumblr_lr7w89SlRw1qb35ml.jpg)
-
 Photo filters are quite popular these days. They're cool because they add personality to a photo with minimal work.
 
 It turns out that OUR PERSONALITIES are also the output of a number of personal distorting filters applied to the universe.

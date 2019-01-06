@@ -38,7 +38,7 @@ I was sort of surprised to think about this and realize that we as a culture don
 
 It reminded me a little bit of my [Beliefs](https://github.com/busterbenson/public/blob/master/Beliefs.md) file, hosted publicly on Github so I'm able to track [changes over time](https://github.com/busterbenson/public/commit/c2df95a71f723e330c58c908a4f3fc2e8e911418).
 
-![Beliefs diff](http://24.media.tumblr.com/tumblr_me8mitAhaQ1qzn9hdo1_1280.png)
+![Beliefs diff](https://24.media.tumblr.com/tumblr_me8mitAhaQ1qzn9hdo1_1280.png)
 
 Github works really well for this because you can comment on changes, see how things change over time, fork it, branch it. There's something magical about treating beliefs like code. It's the code that runs our perspective of the world.
 

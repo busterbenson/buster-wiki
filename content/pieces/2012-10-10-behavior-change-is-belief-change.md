@@ -82,7 +82,7 @@ In the second parallel universe, you look at the numbers and you look at yoursel
 
 The dissonance of having a strong belief, and living in a universe where that belief seems to be false, can create a huge burst of energy that can then be channeled into changing INTO the person that you already believe that you are.
 
-![Explosion](http://fc01.deviantart.net/fs22/i/2009/243/8/2/Explosion__Stock__by_EnforcedCrowd.jpg)
+![Explosion](https://fc01.deviantart.net/fs22/i/2009/243/8/2/Explosion__Stock__by_EnforcedCrowd.jpg)
 
 This is the pattern that I hear over and over again with people who were able to change their behaviors:
 

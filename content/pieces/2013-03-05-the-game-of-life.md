@@ -26,7 +26,7 @@ thoughts_prompt = ""
 thoughts_button = "Thoughts?"
 +++
 
-![The Game of Life](http://hoffbauer.us/blog/wp-content/uploads/2012/10/GameOfLife1.png)
+![The Game of Life](https://hoffbauer.us/blog/wp-content/uploads/2012/10/GameOfLife1.png)
 
 A while ago I tweeted:
 

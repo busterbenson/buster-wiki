@@ -4,7 +4,7 @@ title     		 	= "$1 for you"
 author    		 	= 'me'
 link      		 	= "https://buster.svbtle.com/1-for-you"
 one_liner 		 	= "Help me stop complaining."
-featured_image 	= "" # /images/pieces/
+featured_image 	= "/images/pieces/one-dollar-for-you.jpg" # /images/pieces/
 belief_delta   	= false
 
 # taxonomies
@@ -25,8 +25,6 @@ thoughts			 	= true
 thoughts_prompt = ""
 thoughts_button = "Thoughts?"
 +++
-
-![$1](http://www.letshavefunwithenglish.com/projects/country_film/images/bill_washington.jpg)
 
 I want to change some of my behaviors. What else is new, right? (I'll tell you what is new!) I have a **new strategy** for getting through my habit-gimmick-resistant brain. 
 

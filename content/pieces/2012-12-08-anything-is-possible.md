@@ -30,7 +30,7 @@ Great straight forward explanation about [how habits work](http://charlesduhigg.
 
 It's simple:
 
-![Cue, Routine, Reward](http://thepowerofhabit.com/wp-content/uploads/2011/11/Slide11-300x225.jpg)
+![Cue, Routine, Reward](/images/pieces/anything-is-possible.jpg)
 
 > THE FRAMEWORK:
 > 
