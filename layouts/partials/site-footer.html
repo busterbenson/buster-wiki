@@ -20,7 +20,7 @@
 
       <div class="row mt-2 justify-content-center">
         {{ if and (ne .Params.thoughts_button nil) (ne .Params.thoughts_prompt "") }}
-          <div class="col-md-4 text-center align-self-center"><h4 class="mt-0">{{ .Params.thoughts_prompt }}</h4></div>
+          <div class="col-md-4 text-center align-self-center"><h4 class="mt-0 playfair">{{ .Params.thoughts_prompt }}</h4></div>
         {{ end }}
         <div class="col-md-4 mt-1 text-center align-self-center">
           <a class="typeform-share button" href="https://buster.typeform.com/to/aW80Y3?from_url={{ $from_url }}&from_page_title={{ $from_page_title }}&from_question={{ $from_question }}" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#AB52FF;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:16px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-submit-close-delay="5" target="_blank">

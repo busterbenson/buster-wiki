@@ -4,17 +4,16 @@ one_liner = "How can we build a diverse, friendly, and productive political comm
 featured_image = "/images/grapes.png"
 url = 'fruitful'
 
-piles = []
-perspectives = []
+piles 		 = ['dialogue', 'government']
+influences = []
+projects 	 = []
 
-date = 2018-12-26T13:01:15-08:00
-draft = false
+date   = 2018-12-26T13:01:15-08:00
+draft  = false
 layout = "project"
 +++
 
-I bet you're wondering... what's the plan? 
-
-### Honestly, the plan is still being formed.
+#### Honestly, I'm not quite sure, but it will require smart company.
 
 1. One of our first tasks is to write a **shared code of conduct** to help keep us on track in the many disagreements and frustrating developments that are bound to happen. For example, can we identify best practices for not getting sucked into bad faith train wrecks of conversations? Yes, we can. (We'll start with 2 years of lessons learned as I have been writing a book on the art of productive disagreement, and continue to build on it.)
 
@@ -22,11 +21,11 @@ I bet you're wondering... what's the plan?
 
 3. **Avoid falling into one of the many possible pitfalls** that a community like this could fall into. Like becoming too self-righteous, or too cynical, or too overconfident. So many possible pitfalls. But then again we've sort of been living that reality for the last few years, and it's time for a change.
 
-4. **Add your ideas here**.
+4. **Add your ideas by joining us**.
 
 
 <div style="margin-top: 4em;"></div>
-### Get notified about when this kicks off:
+#### Get notified as things happen:
 We're all in this together. 
 <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
@@ -46,7 +45,7 @@ We're all in this together.
 </div>
 <!--End mc_embed_signup-->
 
-### Share this link
+#### Share this link
 Invite at least one person that you agree with and respect, and at least one person that you disagree with and respect. Cut and paste it to your sharing device of choice: 
 
-### `http://buster.wiki/fruitful`
+#### `http://buster.wiki/fruitful`
