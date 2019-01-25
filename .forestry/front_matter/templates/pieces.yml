@@ -27,12 +27,12 @@ fields:
   label: Layout
   type: text
   hidden: false
-  default: ''
+  default: piece
 - name: author
   label: Author
   type: text
   hidden: false
-  default: ''
+  default: me
 - name: link
   label: Link
   type: textarea
@@ -56,11 +56,10 @@ fields:
   type: list
   hidden: false
   default: ''
-- name: category
+- type: text
+  name: category
   label: Category
-  type: tag_list
-  hidden: false
-  default: ''
+  default: article
 - name: tags
   label: Tags
   type: tag_list
