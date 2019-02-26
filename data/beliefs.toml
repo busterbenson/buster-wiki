@@ -1,3 +1,13 @@
+[[rules-to-live-by]]
+desc = "I should try to follow a few guidelines when participating in a disagreement: use friendly language, understand first, ask questions that aim to surprise me, speak for myself, and help everyone become better."
+notes = ""
+link  = "https://medium.com/fruitful-zone/guidelines-for-fruitful-dialogue-9d7d0b46da89"
+piles = ["rules-to-live-by"]
+confidence = "high"
+conflict_of_hand = true
+anxiety = 1
+last_updated = "2019-02-26"
+
 [[game-theory]]
 desc = "The optimal strategy in a game like Iterated Prisoner's Dilemma dances around in response to all of the other strategies around it. Whenever a strategy is effective and gains popularity, it opens up an opportunity for another strategy to exploit those strengths and turn them into weaknesses."
 notes = ""
@@ -8,13 +18,14 @@ conflict_of_hand = true
 anxiety = 1
 last_updated = "2019-02-26"
 
-[[government]]
-desc = "The electoral college should be replaced by a simpler system founded on popular vote."
-notes = ""
-piles = ["government"]
-confidence = "low"
+[[policy]]
+desc = "The electoral college is out-dated and too easily manipulated. It should be replaced by something like delegative democracy or another simple system founded on popular vote."
+piles = ["policy"]
+confidence = "high"
+conflict_of_head = true
 conflict_of_heart = true
-anxiety = 2
+conflict_of_hand = true
+anxiety = 3
 last_updated = "2019-02-26"
 
 [[critical-thinking]]
@@ -204,7 +215,7 @@ anxiety = 2
 last_updated = "2019-01-01"
 
 [[dialogue]]
-desc = "If you're stuck in an unproductive or harmful conflict that seems impossible to resolve, the best course of action is to consider other alternatives to resolution."
+desc = "If you're stuck in an unproductive or harmful conflict that seems impossible to resolve, the best course of action is to consider other alternatives to resolution like learning about how the other side thinks, connecting on a personal level, and inspiring action that both sides would benefit from."
 piles = ["dialogue", "rules-to-live-by"]
 confidence = "high"
 conflict_of_hand = true
@@ -381,7 +392,7 @@ anxiety = 1
 last_updated = "2019-01-01"
 
 [[ecosystems]]
-desc = "Climate change poses a 1% existential threat to us."
+desc = "Climate change poses a 1% existential threat to us, partially because of the problem and partially because our solutions to it might backfire."
 piles = ["ecosystems"]
 confidence = "low"
 conflict_of_head = true
@@ -493,6 +504,7 @@ confidence = "high"
 conflict_of_head = true
 anxiety = 1
 last_updated = "2019-01-01"
+link = "https://medium.com/@buster/dirt-f6907b34548f"
 
 [[purpose]]
 desc = "There is no official purpose or meaning granted to our lives."
@@ -525,6 +537,7 @@ confidence = "high"
 conflict_of_head = true
 anxiety = 2
 last_updated = "2019-01-01"
+link = "https://en.wikipedia.org/wiki/Hume%27s_fork"
 
 [[critical-thinking]]
 desc = "Logic is a helpful tool, but has flaws and if relied on too heavily it can cause more problems than it solves."
@@ -565,16 +578,6 @@ piles = ["policy"]
 confidence = "low"
 conflict_of_heart = true
 anxiety = 1
-last_updated = "2019-01-01"
-
-[[policy]]
-desc = "The electoral college is out-dated and too easily manipulated. It should be replaced by something like delegative democracy."
-piles = ["policy"]
-confidence = "high"
-conflict_of_head = true
-conflict_of_heart = true
-conflict_of_hand = true
-anxiety = 3
 last_updated = "2019-01-01"
 
 [[policy]]
@@ -700,6 +703,7 @@ conflict_of_heart = true
 conflict_of_hand = true
 anxiety = 2
 last_updated = "2019-01-01"
+link = "https://betterhumans.coach.me/cognitive-bias-cheat-sheet-55a472476b18"
 
 [[cognitive-biases]]
 desc = "We're susceptible to many cognitive biases and logical fallacies, because our brains require them to get any thinking done within our constraints of time and energy."
@@ -727,6 +731,7 @@ conflict_of_heart = true
 conflict_of_hand = true
 anxiety = 1
 last_updated = "2019-01-01"
+link = "https://betterhumans.coach.me/better-than-meditation-12532d29f6cd"
 
 [[internal-mental-space]]
 desc = "Tulpa are super weird, but extremely fascinating as a concept. 'Tulpa' is a term that refers to our internal thoughtforms of conscious entities. For example, while Santa may not exist in the real world, we all have an internal tulpa of Santa that we've trained to essentially simulate Santa in our minds. Tulpa can exist for living people, dead people, historical people, and even our concept of ourselves is a tulpa in some ways."
