@@ -21,7 +21,7 @@ h1, h2, .h1, .h2 {
 	font-family: 'Playfair Display', 'Georgia', serif;
 }
 h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
-	font-family: "kefa", sans-serif;
+	font-family: "Georgia", sans-serif;
 }
 h3.card-title {
 	font-size: 20px; 
@@ -53,6 +53,12 @@ blockquote {
 	color: #666;
 	padding-top: 0;
 	font-style: italic;
+}
+blockquote h4 {
+	font-style: normal;
+}
+#title-and-content h3 {
+	margin-top: 1.25em;
 }
 .title {
 	font-size: 60px; 
