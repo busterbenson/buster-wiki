@@ -1,5 +1,5 @@
 <li class="list-group-item">
-	<h5 class="playfair">{{ .desc }}</h5>
+	<div class="mb-0">{{ .desc }}</div>
 	<div class="small text-muted mt-1">
 		{{ if .conflict_of_head }}
 			<span data-toggle="tooltip" data-placement="top" title="A belief based on information.">🧠</span>
@@ -17,6 +17,12 @@
 		{{ end }}
 		{{ if gt .anxiety 1 }}
 			<span data-toggle="tooltip" data-placement="top" title="This belief triggers some anxiety when challenged.">🐲</span>
+		{{ end }}
+		{{ if .notes }}
+			<span data-toggle="tooltip" data-placement="top" title="{{ .notes }}">📝</span>
+		{{ end }}
+		{{ if .link }}
+			<a href="{{ .link }}" target="_new">Read more</a>
 		{{ end }}
 	</div>
 </li>

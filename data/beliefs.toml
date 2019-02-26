@@ -1,3 +1,22 @@
+[[game-theory]]
+desc = "The optimal strategy in a game like Iterated Prisoner's Dilemma dances around in response to all of the other strategies around it. Whenever a strategy is effective and gains popularity, it opens up an opportunity for another strategy to exploit those strengths and turn them into weaknesses."
+notes = ""
+link  = "https://twitter.com/buster/status/1100103018920390656"
+piles = ["game-theory"]
+confidence = "high"
+conflict_of_hand = true
+anxiety = 1
+last_updated = "2019-02-26"
+
+[[government]]
+desc = "The electoral college should be replaced by a simpler system founded on popular vote."
+notes = ""
+piles = ["government"]
+confidence = "low"
+conflict_of_heart = true
+anxiety = 2
+last_updated = "2019-02-26"
+
 [[critical-thinking]]
 desc = "When assigning responsibility for life outcomes, there are two poles: one being a high-agency stance that treats individual freedom and responsbility as absolute, and the other a low-agency stance that treats choices as constrained so much by social structures that responsibility is best placed on the system as a whole. I think it's necessary to carry both of these positions simultaneously or else injustices will increase over time."
 piles = ["critical-thinking"]
@@ -5,7 +24,8 @@ confidence = "low"
 conflict_of_head = true
 anxiety = 2
 last_updated = "2019-01-04"
-notes = "Adopted from #15 of https://everythingstudies.com/2018/07/16/30-fundamentals/"
+notes = "Adopted from #15 in Everything Studies' 30 Fundamentals"
+link = "https://everythingstudies.com/2018/07/16/30-fundamentals/"
 
 [[rules-to-live-by]]
 desc = "I should avoid using group labels for people unless they explicitly request it."

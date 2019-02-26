@@ -1,0 +1,28 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3716619, 2019-02-06T18:38:31-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: KefaIIPro-SemiBold by Jeremie Hornus
+ * URL: https://www.myfonts.com/fonts/jeremie-hornus/kefa-ii-pro/semi-bold/
+ * Copyright: Copyright (c) Jeremie Hornus, 2006-2013. All rights reserved.
+ * Licensed pageviews: 10,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3716619
+ * 
+ * © 2019 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/38b60b");
+
+  
+@font-face {font-family: 'KefaIIPro-SemiBold';src:url('https://tree.fruitful.zone/fonts/kefa_unhinted.woff2') format('woff2'),url('https://tree.fruitful.zone/fonts/kefa_unhinted.woff') format('woff'),url('https://tree.fruitful.zone/fonts/kefa_unhinted.ttf') format('truetype');}
+ 
