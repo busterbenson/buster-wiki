@@ -1,6 +1,6 @@
 +++
 title = "Tree"
-one_liner = "Where <mark><a href='/pieces'>pieces</a></mark> become meaningful."
+one_liner = "Where <mark><a href='/pieces'>pieces</a></mark> branch out."
 featured_image = ""
 
 show_on_homepage = false
@@ -10,4 +10,5 @@ date = "2019-02-01"
 draft = false
 layout = "home"
 +++
+
 

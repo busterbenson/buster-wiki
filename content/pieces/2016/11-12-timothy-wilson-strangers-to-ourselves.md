@@ -16,7 +16,7 @@ category  		 = 'book'
 
 # metadata
 layout	    	 = "piece"
-date      		 = 2018-12-29T22:24:24-08:00
+date      		 = 2016-11-12
 disqus    		 = false
 +++
 
