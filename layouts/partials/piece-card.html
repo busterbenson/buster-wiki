@@ -3,13 +3,11 @@
   	<h4 class="mt-0" style="font-family: 'Georgia';">
   		<a href="{{ .URL }}">{{ .Params.title }}</a>
 			{{ if .Params.link }}
-		  		&nbsp;
 		  		<a href="{{ .Params.link }}" target="_new" data-toggle="tooltip" data-placement="top" title="Open link in new tab">
 		  			<span class="oi oi-external-link small text-info"></span>
 		  		</a>
 		  {{ end }}
   		{{ if .Params.annotated_link }}
-	  		&nbsp;
 	  		<a href="{{ .Params.annotated_link }}" target="_new" data-toggle="tooltip" data-placement="top" title="Open link with in-line comments">
 	  			<span class="oi oi-comment-square small text-info"></span>
 	  		</a>

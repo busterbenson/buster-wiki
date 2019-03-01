@@ -13,7 +13,7 @@
 	{{- end -}}
 {{- else if ne ($idea := .Get "idea") "" -}}
 	{{- $idea := replace (lower $idea) " " "-" -}}
-	{{- with .Site.GetPage ( printf "/pieces/%s.md" $idea ) -}}
+	{{- with .Site.GetPage ( printf "/tree/%s.md" $idea ) -}}
 		<a href="{{ .Permalink }}">{{ if ne $text "" }}{{ $text }}{{ else }}{{ .Title }}{{ end }}</a>
 	{{- end -}}
 {{- else if ne ($pile := .Get "pile") "" -}}
