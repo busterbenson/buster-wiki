@@ -65,5 +65,3 @@ fields:
   type: tag_list
   hidden: false
   default: ''
-pages:
-- content/pieces/personal-code-of-conduct.md
