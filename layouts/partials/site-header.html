@@ -2,7 +2,7 @@
 	<div class="container">
     <div class="row">
     	<div class="col-md-2 topnav text-right d-none d-md-block navbar-text"></div>
-    	<div class="col-md-8 topnav text-truncate">
+    	<div class="col-md-6 topnav text-truncate">
 
 			{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
 			{{ $.Scratch.Add "path" .Site.BaseURL }}

@@ -157,3 +157,6 @@ iframe {
 	color: #666;
 	border-left: 0px solid #fff;
 }
+.gsc-table-result table {
+	border: 1px solid black;
+}

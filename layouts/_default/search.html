@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<div class="container">
+
+  {{ partial "title-and-content-basic" . }}
+
+  <div class="row mt-2 justify-content-center">
+    <div class="col-md-8">
+      
+        <script>
+            (function() {
+              var cx = '003477865740334718981:z3briwriyd4';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
+          </script>
+          <gcse:search></gcse:search>
+
+    </div>
+  </div>
+
+</div>
+
+{{ end }}
