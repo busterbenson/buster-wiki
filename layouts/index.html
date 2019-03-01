@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $paginator := .Paginate (where .Pages "Section" "in" (slice "pieces" "beliefs") ) 100 }}
+{{ $paginator := .Paginate (where .Pages "Section" "in" (slice "pieces" "beliefs" "tree") ) 100 }}
 
 <div class="container">
   

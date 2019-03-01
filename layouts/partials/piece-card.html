@@ -36,7 +36,7 @@
 			</div>			
 		{{ end }}
 
-		{{ if eq .Section "pieces" }}
+		{{ if or (eq .Section "pieces") (eq .Section "tree") }}
 			<div class="border-left px-1">
 				{{ if .Params.piles }}
         	<div><small>

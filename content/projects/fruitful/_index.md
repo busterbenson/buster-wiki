@@ -1,5 +1,5 @@
 +++
-title = "Fruitful 2020"
+title = "Fruitful"
 one_liner = "How can we build a diverse, friendly, and productive political community in today's world?"
 featured_image = "/images/grapes.png"
 url = 'fruitful'

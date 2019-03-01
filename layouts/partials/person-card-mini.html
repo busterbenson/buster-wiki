@@ -2,7 +2,9 @@
 	<div class="card rounded">
 	  {{ if and (isset .Params "featured_image") (ne (.Param "featured_image") "") }}
 	  	<a href="{{ .URL }}"><img class="card-image-top" src="{{ .Param "featured_image" }}" alt="{{.Title}}"></a>
-	  {{ end }}
+		{{ else }}
+			<a href="{{ .URL }}"><img class="card-image-top" src="/images/pieces/emoji-book.png" alt="{{.Title}}"></a>
+		{{ end }}
 	  <div class="card-body p-1">
 	    <small><a href="{{ .URL }}" class="text-dark">{{ .Title }}</a></small>
 	  </div>	

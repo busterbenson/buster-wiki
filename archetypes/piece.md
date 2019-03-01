@@ -1,8 +1,8 @@
 +++
 # basics
 title     		 	= ""
-author 					= "me"
-link 						= ""
+author 		      = "me"
+link 				    = ""
 one_liner 		 	= ""
 featured_image 	= "" # /images/pieces/
 belief_delta   	= false
@@ -10,18 +10,18 @@ belief_delta   	= false
 # taxonomies
 influences		 	= []
 piles     		 	= []
-projects			 	= []
+projects		 	  = []
 
 # article, reference, thought, book, idea, podcast, blog, tv
 # annotated-link, space, case
 category  		 	= 'article'
-tags					 	= []
+tags			 	    = []
 
 # metadata
 layout	    	 	= "piece"
-date 						= {{ .Date }}
+date 				    = {{ .Date }}
 disqus    		 	= false
-thoughts			 	= true
+thoughts		 	  = true
 thoughts_prompt = ""
 thoughts_button = "Thoughts?"
 +++
