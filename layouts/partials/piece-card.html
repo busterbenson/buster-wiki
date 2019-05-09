@@ -1,18 +1,18 @@
 <div class="row"><a name="blog-{{ urlize .Title }}"></a>
 	<div class="col-12">
-  	<h4 class="mt-0" style="font-family: 'Georgia';">
+  	<h2 class="mt-0" style="font-family: 'Georgia';">
 			{{ if .Params.link }}
 				{{ if lt (len .Content) 250 }}
-		  		<strong><a href="{{ .Params.link }}" class="text-dark">{{ .Params.title }}</a></strong>
+		  		<a href="{{ .Params.link }}" class="text-dark">{{ .Params.title }}</a>
 	  			<span class="oi oi-external-link small text-gray"></span>
 		  	{{ else }}
-		  		<strong><a href="{{ .URL }}">{{ .Params.title }}</a></strong>	  			
+		  		<a href="{{ .URL }}">{{ .Params.title }}</a> 			
 		  		<a href="{{ .Params.link }}" target="_new" data-toggle="tooltip" data-placement="top" title="Open link in new tab">
 		  			<span class="oi oi-external-link small text-gray"></span>
 		  		</a>
 		  	{{ end }}
 		  {{ else}}
-	  		<strong><a href="{{ .URL }}">{{ .Params.title }}</a></strong>	  					  
+	  		<a href="{{ .URL }}">{{ .Params.title }}</a> 					  
 		  {{ end }}
   		
   		{{ if .Params.annotated_link }}
@@ -20,7 +20,7 @@
 	  			<span class="oi oi-comment-square small text-gray"></span>
 	  		</a>
 	  	{{ end }}
-  	</h4>
+  	</h2>
 	  <h5 class="subtitle">{{ .Params.one_liner | safeHTML }}</h5>
 	  <div class="mt-2 piece-content">
 	  	{{ if gt (len .Content) 2000 }}
