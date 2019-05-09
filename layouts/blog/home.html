@@ -38,9 +38,8 @@
       {{ partial "bio-sidebar" . }}
 
       <div class="mt-3 sticky-top d-none d-md-block" style="top: 85px;">
-        <p>Jump to:</p>
-        {{ range $paginator.Pages.ByDate.Reverse }}
-          <small><div class="mb-1"><a href="#blog-{{ urlize .Title }}" class="text-secondary">{{ .Title }}</a></div></small>
+        <div class="mt-4 text-smaller mb-1"><strong>JUMP TO</strong></div>        {{ range $paginator.Pages.ByDate.Reverse }}
+        <small><div class="mb-1"><a href="#blog-{{ urlize .Title }}" class="text-secondary">{{ .Title }}</a></div></small>
         {{ end }}
       </div>
 
