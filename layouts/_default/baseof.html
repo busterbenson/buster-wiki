@@ -60,7 +60,7 @@
   <body id="top">
 
     {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
-    {{ block "main" . }}{{ end }}
+    <div class="mt-1">{{ block "main" . }}{{ end }}</div>
     {{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
     {{ block "scripts" . }}{{ partial "site-scripts.html" . }}{{ end }}
 
