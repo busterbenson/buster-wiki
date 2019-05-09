@@ -22,7 +22,15 @@
 	  	{{ end }}
   	</h4>
 	  <h5 class="subtitle">{{ .Params.one_liner | safeHTML }}</h5>
-	  <div class="mt-2 piece-content">{{ .Content }}</div>
+	  <div class="mt-2 piece-content">
+	  	{{ if gt (len .Content) 2000 }}
+	  		{{ .Content | truncate 1500 }}
+	  		<p><a href="{{ .Permalink }}" style="color: #039">Continue reading (est. {{ (div (len .Content) 2000) }} min read) &rarr;</a></p>
+	  	{{ else }}
+	  		{{ .Content }}
+	  	{{ end }}
+
+	  </div>
     <div class="mb-2">{{ partial "piece-metadata" . }}</div>
 	</div>
 </div>
