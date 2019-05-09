@@ -19,7 +19,7 @@ layout    		 = "piece"
 disqus    		 = false
 +++
 
-## On communication
+#### On communication
 
 **Robert Cialdini, in Influence:** 
 
@@ -87,7 +87,7 @@ disqus    		 = false
 
 ---
 
-## On reason
+#### On reason
 
 **Douglas Adams, in the Restaurant at the End of the Universe:** 
 
@@ -161,7 +161,7 @@ disqus    		 = false
 
 ---
 
-## On perspective
+#### On perspective
 
 **Terry Pratchett:**
 
@@ -306,7 +306,7 @@ disqus    		 = false
 
 ---
 
-## On strategy
+#### On strategy
 
 **Martin Luther King Jr:** 
 

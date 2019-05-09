@@ -1,6 +1,5 @@
 {{ define "main" }}
-{{ $paginator := .Paginate .Pages 20 }}
-
+{{ $paginator := .Paginate (where .Site.Pages "Section" "in" (slice "blog" "tree") ) 10 }}
 
 <div class="container-fluid">
   <div class="row pt-lg-8 pt-10 justify-content-center">
@@ -13,6 +12,7 @@
       {{ partial "title-and-content-basic" . }}
 
       <div class="mb-4">
+
         {{ range $key, $value := .Site.Taxonomies.piles }}
           {{ if gt $value.Count 7 }}
           <a href="/piles/{{ $key }}" class="text-gray">{{ replace $key "-" " " }}</a> • 
@@ -21,7 +21,7 @@
         <a href="/piles" class="text-gray">See more</a>
       </div>
 
-      {{ range (.Paginator 50).Pages.ByDate.Reverse }}
+      {{ range $paginator.Pages.ByDate.Reverse }}
         <div class="py-1">
           {{ partial "piece-card" . }}
         </div>
@@ -36,6 +36,14 @@
 
 	  <div class="col-8 col-lg-3 order-3">
       {{ partial "bio-sidebar" . }}
+
+      <div class="mt-3 sticky-top d-none d-md-block" style="top: 85px;">
+        <p>Jump to:</p>
+        {{ range $paginator.Pages.ByDate.Reverse }}
+          <small><div class="mb-1"><a href="#blog-{{ urlize .Title }}" class="text-secondary">{{ .Title }}</a></div></small>
+        {{ end }}
+      </div>
+
  	  </div>
   </div>
 

@@ -1,6 +1,6 @@
 +++
 title = "Tree"
-one_liner = "Where <mark><a href='/pieces'>pieces</a></mark> branch out."
+one_liner = "Branches that snag themselves out of the reverse chronological stream."
 featured_image = ""
 
 show_on_homepage = false
