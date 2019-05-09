@@ -15,11 +15,11 @@
         <a name="{{ $pile }}" href="#belief-pile-{{ $pile }}" style="top: -60px;"></a>
         <div class="card mb-3">
           <div class="card-body">
-            <h3 class="card-title">
+            <h4 class="card-title mt-0">
               {{ with $.Site.GetPage (printf "/piles/%s" $pile) }}
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
               {{ end }}
-            </h3>
+            </h4>
           </div>
           <ul class="list-group list-group-flush">
             {{ range $list }}

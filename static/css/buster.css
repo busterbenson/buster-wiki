@@ -9,6 +9,9 @@
 body {
 	font-size: 16px;
 }
+a.special, a:hover.special {
+	color: #f0661d;
+}
 a, a:hover {
 	color: #039;
 }
@@ -17,7 +20,7 @@ a:hover {
 	text-decoration: underline;
 }
 .theme-background {
-	background-color: #efe; 
+	background-color: #f7f5a0; 
 }
 .border-tertiary {
 	border-color: #eee;
@@ -26,18 +29,16 @@ a:hover {
 h1, .h1 {
 	font-weight: 700;
 }
-h1, h2, .h1, .h2 {
+h1, h2, h3, .h1, .h2, .h3 {
 	font-family: 'Playfair Display', 'Georgia', serif;
 }
-h3, h4, h5, h6, .h3, .h4, .h5, .h6 {
-	font-family: "Georgia", sans-serif;
+h4, h5, h6, .h3, .h4, .h5, .h6 {
+	font-family: "Source Sans Pro", sans-serif;
 }
-h3.card-title {
-	font-size: 20px; 
-	font-weight: bold;
+.card-title {
+
 }
 h4 {
-	margin-top: 1.5em;
 	color: #333;
 }
 h4.mailchimp {
@@ -95,6 +96,19 @@ blockquote h4 {
 .lora, .playfair {
 	font-family: 'Playfair Display', serif;
 }
+.condensed {
+	font-family: 'Roboto Condensed', 'Georgia', sans-serif;
+}
+.blog-title, .blog-title a {
+	color: #f0661d;
+}
+.blog-title a:hover {
+	text-decoration: none;
+}
+.blog-content {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: normal;
+}
 header {
 	background-color: #111;
 	color: #fff;
@@ -123,7 +137,7 @@ footer {
 	border-bottom: 1px solid #039;
 }
 #mc_embed_signup {
-	font-family: sans-serif !important;
+	font-family: "Source Sans Pro", sans-serif !important;
 }
 #mc_embed_signup form {
 	margin: 0;
@@ -152,40 +166,38 @@ iframe {
 	border-radius: 5px;
 	padding: 0 10px;
 }
-.piece-content {
-	font-family: "Georgia", serif;
-	font-size: 19px;
+.blog-post {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 18px;
 	line-height: 1.8;
-	font-weight: 200;
 }
-.piece-content h1 {
+.blog-post h1 {
 	font-size: 42px;
 }
-.piece-content h2 {
+.blog-post h2 {
 	font-size: 28px;
 	font-weight: 700;
 	margin-top: 1.7em;
 }
-.piece-content h3 {
+.blog-post h3 {
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 1.15;
 	line-spacing: -0.15em;
 }
-.piece-content h4 {
+.blog-post h4 {
 	font-size: 24px;
 	font-weight: 600;
 	line-spacing: -0.15em;
 }
-.piece-content a {
-	color: #000;
+.blog-post a {
 	text-decoration: underline;
+	font-family: "Source Sans Pro", sans-serif;
 }
-.piece-content hr {
+.blog-post hr {
 	margin: 3em;
 }
-.piece-content blockquote em {
-	font-family: 'Playfair Display', serif;
+.blog-post blockquote em {
 	font-size: 30px;
 	font-style: italic;
 	color: #666;

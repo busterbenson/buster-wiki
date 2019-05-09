@@ -10,7 +10,7 @@
 
     <div class="col-12 col-lg-7 px-lg-3 order-lg-2 order-1">
       <div class="mt-1 text-smaller"><strong><a href="/blog">BLOG</a></strong></div>
-	    <h1 class="small-title lora">{{ .Title }}</h1>
+	    <h2 class="blog-title">{{ .Title }}</h2>
 	    <h4 class="subtitle mt-0">{{ .Param "one_liner" | safeHTML }}</h4>
   	  {{ if .Params.link }}
   	  	<div class="mt-1">

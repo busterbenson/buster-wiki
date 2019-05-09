@@ -1,6 +1,6 @@
 <div class="row"><a name="blog-{{ urlize .Title }}"></a>
 	<div class="col-12">
-  	<h2 class="mt-0" style="font-family: 'Georgia';">
+  	<h2 class="mt-0 mb-0 blog-title" style="text-decoration: none;">
 			{{ if .Params.link }}
 				{{ if lt (len .Content) 250 }}
 		  		<a href="{{ .Params.link }}" class="text-dark">{{ .Params.title }}</a>
@@ -21,13 +21,14 @@
 	  		</a>
 	  	{{ end }}
   	</h2>
-	  <h5 class="subtitle">{{ .Params.one_liner | safeHTML }}</h5>
-	  <div class="mt-2 piece-content">
+	  <h5 class="subtitle mt-0">{{ .Params.one_liner | safeHTML }}</h5>
+	  <div class="mt-2 blog-post">
 	  	{{ if gt (len .Content) 2000 }}
-	  		{{ .Content | truncate 1500 }}
-	  		<p><a href="{{ .Permalink }}" style="color: #039">Continue reading (est. {{ (div (len .Content) 2000) }} min read) &rarr;</a></p>
+	  		<div class="blog-content">{{ .Content | truncate 1500 }}
+		  		<div><a href="{{ .Permalink }}" class="special mt-0 pt-0">Continue reading (est. {{ (div (len .Content) 2000) }} min read) &rarr;</a></div>
+		  	</div>
 	  	{{ else }}
-	  		{{ .Content }}
+	  		<div class="blog-content">{{ .Content }}</div>
 	  	{{ end }}
 
 	  </div>
