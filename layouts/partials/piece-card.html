@@ -1,12 +1,20 @@
 <div class="row">
 	<div class="col-12">
   	<h4 class="mt-0" style="font-family: 'Georgia';">
-  		<a href="{{ .URL }}">{{ .Params.title }}</a>
 			{{ if .Params.link }}
+				{{ if lt (len .Content) 250 }}
+		  		<strong><a href="{{ .Params.link }}" class="text-dark">{{ .Params.title }}</a></strong>
+	  			<span class="oi oi-external-link small text-gray"></span>
+		  	{{ else }}
+		  		<strong><a href="{{ .URL }}">{{ .Params.title }}</a></strong>	  			
 		  		<a href="{{ .Params.link }}" target="_new" data-toggle="tooltip" data-placement="top" title="Open link in new tab">
 		  			<span class="oi oi-external-link small text-gray"></span>
 		  		</a>
+		  	{{ end }}
+		  {{ else}}
+	  		<strong><a href="{{ .URL }}">{{ .Params.title }}</a></strong>	  					  
 		  {{ end }}
+  		
   		{{ if .Params.annotated_link }}
 	  		<a href="{{ .Params.annotated_link }}" target="_new" data-toggle="tooltip" data-placement="top" title="Open link with in-line comments">
 	  			<span class="oi oi-comment-square small text-gray"></span>
