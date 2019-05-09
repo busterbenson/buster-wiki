@@ -5,6 +5,7 @@
   {{ $year_border_class := cond (gt $this_year_date now) "border-secondary" "theme-background" }}  
   {{ if eq (mod $age 10) 0}}
     <br clear="all" />
+    <a name="decade-{{ $age }}"></a>
     <div class="sticky-top mt-1" style="top: 60px; background-color: #fff;"><h3>
       {{ if eq $age 0 }}
         My first ten years
