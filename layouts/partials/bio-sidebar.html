@@ -17,3 +17,9 @@
 	<input type="email" name="email" value="" placeholder="Type your email…" class="form-control">
 	<div class="mt-1"><button class="button btn btn-primary btn-sm btn-dark" type="submit" style=""><b>Subscribe</b></button></div>
 </form>
+
+{{ if not (eq .Section "") }}
+<div class="mt-4 text-smaller mb-1"><strong>SEND ME A JOKE</strong></div>
+<p>I'm not great at email but I'm not the worst either. My DMs are open <a href="https://twitter.com/buster" target="_new">on Twitter</a> as well.</p>
+<div class="mt-2">{{ partial "contact-me" . }}</div>
+{{ end }}
