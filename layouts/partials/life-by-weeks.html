@@ -19,7 +19,7 @@
       {{ end }}
     </h3></div>
   {{ end}}      
-  <div class="border border-dark float-left {{ $year_border_class }}" style="height: 2em; padding: 2px 5px; margin: 2px;">{{ $year }}</div>
+  <div class="border border-gray float-left {{ $year_border_class }} text-truncate" style="height: 2em; max-height: 2em; max-width: 100%; padding: 2px 5px; margin: 2px;">{{ $year }}</div>
   {{ range $week := seq 52 }}
     {{ $this_week_date := $this_year_date.AddDate 0 0 (int (mul $week 7) ) }}
     {{ $week_border_class := cond (gt $this_week_date now) "border-tertiary" "border-secondary" }}
