@@ -1,111 +1,20 @@
-<div class="row mb-3">
-	<div class="col-6">
+<div class="row">
+	<div class="col-12">
   	<h4 class="mt-0" style="font-family: 'Georgia';">
   		<a href="{{ .URL }}">{{ .Params.title }}</a>
 			{{ if .Params.link }}
 		  		<a href="{{ .Params.link }}" target="_new" data-toggle="tooltip" data-placement="top" title="Open link in new tab">
-		  			<span class="oi oi-external-link small text-info"></span>
+		  			<span class="oi oi-external-link small text-gray"></span>
 		  		</a>
 		  {{ end }}
   		{{ if .Params.annotated_link }}
 	  		<a href="{{ .Params.annotated_link }}" target="_new" data-toggle="tooltip" data-placement="top" title="Open link with in-line comments">
-	  			<span class="oi oi-comment-square small text-info"></span>
+	  			<span class="oi oi-comment-square small text-gray"></span>
 	  		</a>
 	  	{{ end }}
   	</h4>
-	  <div><small>{{ .Params.one_liner | safeHTML }}</small></h3></div>
-	</div>
-
-	<div class="col-6">
-
-		{{ if .Params.influences }}
-			<div class="border-left px-1">
-      	<small>
-			  	{{ range .Params.influences }}
-			  		{{ with $pile := $.Site.GetPage ( printf "/influences/%s" . ) }}
-				  		<div>From <mark><a href="{{ .Permalink }}">{{ .Title }}</a></mark>.</div>
-			  		{{ end }}
-			  	{{ end }}
-			 	</small>
-			</div>
-		{{ else if and (.Params.author) (ne .Params.author "me") }}
-			<div class="border-left px-1">
-      	<small>
-      		From {{ .Params.author }}.
-				</small>
-			</div>			
-		{{ end }}
-
-		{{ if or (eq .Section "pieces") (eq .Section "tree") }}
-			<div class="border-left px-1">
-				{{ if .Params.piles }}
-        	<div><small>
-        		Added to the 
-          	{{ $length := (sub (len .Params.piles) 1) }}
-						{{ range $index, $pile := .Params.piles }}
-		          {{ with $.Site.GetPage (printf "/piles/%s" $pile ) }}
-	            	<mark><a href="{{ .Permalink }}">{{ .Title }}</a></mark>
-	            	{{- if (ne $length $index) -}}
-	            		{{- if eq $length 1 }}
-	            			and 
-	            		{{- else if eq $index (sub $length 1) -}}
-	            			, and 
-	            		{{- else -}}
-	            			, 
-	            		{{- end -}}
-	            	{{- else -}}
-	            		{{ if gt $length 0 }}
-	            			piles.
-	            		{{ else }}
-	            			pile.
-	            		{{ end }}
-	            	{{- end -}}
-	            {{ end }}
-	          {{ end }}
-         	</small></div>
-        {{ end }}
-
-				{{ if and ($author := .Params.author) false }}
-					{{ if ne .Params.author "me" }}
-						<div><small>
-							{{ with $.Site.GetPage (printf "/piles/%s" $author) }}
-								By <a href="{{$author.Permalink}}">{{ $author.title }}</a>
-							{{ else }}
-								Via {{ $author }}
-							{{ end }}
-						</small></div>
-					{{ end }}
-				{{ end }}	  
-
-				{{ if .Params.projects }}
-        	<small>
-        		Part of the 
-          	{{ $length := (sub (len .Params.projects) 1) }}
-						{{ range $index, $project := .Params.projects }}
-		          {{ with $.Site.GetPage (printf "/projects/%s" $project ) }}
-	            	<mark><a href="{{ .Permalink }}">{{ .Title }}</a></mark>
-	            	{{- if (ne $length $index) -}}
-	            		{{- if eq $length 1 }}
-	            			and 
-	            		{{- else if eq $index (sub $length 1) -}}
-	            			, and 
-	            		{{- else -}}
-	            			, 
-	            		{{- end -}}
-	            	{{- else -}}
-	            		{{ if gt $length 0 }}
-	            			projects.
-	            		{{ else }}
-	            			project.
-	            		{{ end }}
-	            	{{- end -}}
-	            {{ end }}
-	          {{ end }}
-         	</small>
-        {{ end }}
-
-			</div>
-		{{ end }}
-
+	  <h5 class="subtitle">{{ .Params.one_liner | safeHTML }}</h5>
+	  <div class="mt-2 piece-content">{{ .Content }}</div>
+    <div class="mb-2">{{ partial "piece-metadata" . }}</div>
 	</div>
 </div>

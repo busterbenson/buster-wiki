@@ -1,6 +1,6 @@
 +++
 # the basics
-title = "Books"
+title = "Influential Books"
 one_liner = "Each of these books changed how I think about the world the first time I read them."
 featured_image = ""
 

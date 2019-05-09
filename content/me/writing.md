@@ -1,7 +1,7 @@
 +++
 # the basics
-title = "Writing"
-one_liner = "Stuff I've written."
+title = "My writing"
+one_liner = "Some of the better stuff I've written."
 featured_image = ""
 
 show_on_homepage = false

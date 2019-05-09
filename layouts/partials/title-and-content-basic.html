@@ -1,26 +1,7 @@
-<div class="row mt-4 justify-content-center">
-  <div class="col-2 d-none d-md-block"></div>
-
-  <div class="col-md-8">
-    {{ if and (ne (.Param "featured_image") "") (ne (.Param "hide_image_on_detail") true) }}
-      <img src="{{$.Params.featured_image}}" class="rounded align-right img-thumbnail float-left w-25 mr-3 mt-1" />
-    {{ end }}
-    {{ if or (eq .Section "influences") (eq .Layout "space" ) }}
-      <h1 class="small-title">{{ .Title }}</h1>
-    {{ else }}
-      <h1 class="title mt-0">{{ .Title }}</h1>
-    {{ end }}
+<div class="row justify-content-center">
+  <div class="col-12">
+    <h1 class="title mt-0">{{ .Title }}</h1>
     <h4 class="subtitle mt-0">{{ .Param "one_liner" | safeHTML }}</h4>
-
-    {{ if and (ne (.Param "featured_image") "") (ne (.Param "hide_image_on_detail") true) }}
-	    <div class="clearfix mb-6"></div>
-    {{ end }}
-		<div>{{ .Content }}</div>
+		<div class="mt-2">{{ .Content }}</div>
 	</div>
-	<div class="col-2">
-
-
-   
-
-  </div>
 </div>

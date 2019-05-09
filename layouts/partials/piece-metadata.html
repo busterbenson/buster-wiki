@@ -1,0 +1,94 @@
+<div class="row mt-2 justify-content-center">
+  <div class="col-md-12 small">
+		{{ if .Params.influences }}
+			<div class="border-left px-1">
+      	<small>
+			  	{{ range .Params.influences }}
+			  		{{ with $pile := $.Site.GetPage ( printf "/influences/%s" . ) }}
+				  		<div>From <mark><a href="{{ .Permalink }}">{{ .Title }}</a></mark>.</div>
+			  		{{ end }}
+			  	{{ end }}
+			 	</small>
+			</div>
+		{{ else if and (.Params.author) (ne .Params.author "me") }}
+			<div class="border-left px-1">
+      	<small>
+      		From {{ .Params.author }}.
+				</small>
+			</div>			
+		{{ end }}
+
+		{{ if or (eq .Section "blog") (eq .Section "tree") }}
+			<div class="border-left px-1">
+				{{ if .Params.piles }}
+        	<div><small>
+        		Added to the 
+          	{{ $length := (sub (len .Params.piles) 1) }}
+						{{ range $index, $pile := .Params.piles }}
+		          {{ with $.Site.GetPage (printf "/piles/%s" $pile ) }}
+	            	<mark><a href="{{ .Permalink }}">{{ .Title }}</a></mark>
+	            	{{- if (ne $length $index) -}}
+	            		{{- if eq $length 1 }}
+	            			and 
+	            		{{- else if eq $index (sub $length 1) -}}
+	            			, and 
+	            		{{- else -}}
+	            			, 
+	            		{{- end -}}
+	            	{{- else -}}
+	            		{{ if gt $length 0 }}
+	            			piles.
+	            		{{ else }}
+	            			pile.
+	            		{{ end }}
+	            	{{- end -}}
+	            {{ end }}
+	          {{ end }}
+         	</small></div>
+        {{ end }}
+
+				{{ if and ($author := .Params.author) false }}
+					{{ if ne .Params.author "me" }}
+						<div><small>
+							{{ with $.Site.GetPage (printf "/piles/%s" $author) }}
+								By <a href="{{$author.Permalink}}">{{ $author.title }}</a>
+							{{ else }}
+								Via {{ $author }}
+							{{ end }}
+						</small></div>
+					{{ end }}
+				{{ end }}	  
+
+				{{ if .Params.projects }}
+        	<small>
+        		Part of the 
+          	{{ $length := (sub (len .Params.projects) 1) }}
+						{{ range $index, $project := .Params.projects }}
+		          {{ with $.Site.GetPage (printf "/projects/%s" $project ) }}
+	            	<mark><a href="{{ .Permalink }}">{{ .Title }}</a></mark>
+	            	{{- if (ne $length $index) -}}
+	            		{{- if eq $length 1 }}
+	            			and 
+	            		{{- else if eq $index (sub $length 1) -}}
+	            			, and 
+	            		{{- else -}}
+	            			, 
+	            		{{- end -}}
+	            	{{- else -}}
+	            		{{ if gt $length 0 }}
+	            			projects.
+	            		{{ else }}
+	            			project.
+	            		{{ end }}
+	            	{{- end -}}
+	            {{ end }}
+	          {{ end }}
+         	</small>
+        {{ end }}
+
+			</div>
+		{{ end }}
+
+		<div class="border-left px-1"><small>{{ .Date.Format "January 2, 2006" }}</small></div>
+  </div>
+</div>

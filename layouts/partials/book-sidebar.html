@@ -1,0 +1,14 @@
+<div class="sticky-top" style="top: 85px;">
+	{{ if and (ne (.Param "featured_image") "") (ne (.Param "hide_image_on_detail") true) }}
+	  <img src="{{$.Params.featured_image}}" class="rounded align-right img-thumbnail mr-3 mt-1 mb-3" />
+	{{ end }}
+
+	{{ if ne .URL "/book/" }}
+		<div class="mt-1 text-smaller"><strong><a href="/book">READ MY BOOK</a></strong></div>
+		<p><a href="/book"><img src="/images/why-are-we-yelling.png" class="mt-2" style="max-width: 150px;" /></a>
+		<div><em><a href="https://amzn.to/2PNINcO">Available for pre-order</a>, launching November 19th.</em></div></p>
+	{{ end }}
+
+</div>
+
+

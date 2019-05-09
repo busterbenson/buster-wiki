@@ -1,83 +1,93 @@
 {{ define "main" }}
 
-<div class="container">
+<div class="container-fluid">
+  <div class="row pt-lg-8 pt-10 justify-content-center">
 
-  {{ partial "title-and-content-basic" . }}
+    <div class="book-sidebar col-4 col-lg-2 order-lg-1 order-2">
+      {{ partial "book-sidebar" . }}
+    </div>
 
-  {{ if (where .Pages "Section" "influences") }}
-    <div class="row mt-2 justify-content-center">
-      <div class="col-md-8">
-        <h3>Influences</h3>
-      </div>
-      <div class="col-md-8 mt-2">
-        <div class="row justify-content-start">
+    <div class="col-12 col-lg-7 px-lg-3 order-lg-2 order-1">
+      <div class="mt-1 text-smaller"><strong><a href="/blog">BLOG</a></strong> · <strong><a href="/piles">PILES</a></strong></div>
+      {{ partial "title-and-content-basic" . }}
+
+
+      {{ if (where .Pages "Section" "influences") }}
+        <h3 class="border-bottom mt-2">Influences</h3>
+
+        <div class="row justify-content-start mt-2">
           {{ range (where .Pages "Section" "influences").ByTitle }}
             {{ if ne (.Param "hide_from_lists") true }}
               {{ partial "person-card-mini" . }}
             {{ end }}
           {{ end }}
         </div>
-      </div>
-    </div>
-  {{ end }}
+      {{ end }}
 
-  {{ if (where .Pages "Section" "projects") }}
-    <div class="row mt-2 justify-content-center">
-      <div class="col-md-8">
-        <h3>Related projects</h3>
-      </div>
-      <div class="col-md-8 mt-2">
-        <div class="row justify-content-start">
-          {{ range (where .Pages "Section" "projects").ByTitle }}
-            {{ if ne (.Param "hide_from_lists") true }}
-              {{ partial "person-card-mini" . }}
-            {{ end }}
-          {{ end }}
+      {{ if (where .Pages "Section" "projects") }}
+        <div class="row mt-2 justify-content-center">
+          <div class="col-md-12">
+            <h3 class="border-bottom mb-2">Related projects</h3>
+          </div>
+          <div class="col-md-12 mt-2">
+            <div class="row justify-content-start">
+              {{ range (where .Pages "Section" "projects").ByTitle }}
+                {{ if ne (.Param "hide_from_lists") true }}
+                  {{ partial "person-card-mini" . }}
+                {{ end }}
+              {{ end }}
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  {{ end }}
+      {{ end }}
 
-  {{ if ne (index $.Site.Data.beliefs .Data.Term) nil }}
-  <div class="row mt-2 justify-content-center">
-    <div class="col-md-8">
-      <h3>My beliefs</h3>
-    </div>
-  </div>
-  <div class="row mt-2 justify-content-center">
-    <div class="col-md-8">
-      <ul class="list-group">
-        {{ $pile := .Data.Term }}
-        {{ range $list := index $.Site.Data.beliefs .Data.Term }}
-          {{ if eq .desc nil }}
-            {{ range . }}
-              {{ partial "belief-li" . }}
-            {{ end }}
-          {{ else }}
-            {{ partial "belief-li" . }}
-          {{ end }}
+      {{ if ne (index $.Site.Data.beliefs .Data.Term) nil }}
+        <div class="row mt-2 justify-content-center">
+          <div class="col-md-12">
+            <h3 class="border-bottom mb-2">My beliefs</h3>
+          </div>
+        </div>
+        <div class="row mt-2 justify-content-center">
+          <div class="col-md-12">
+            <ul class="list-group">
+              {{ $pile := .Data.Term }}
+              {{ range $list := index $.Site.Data.beliefs .Data.Term }}
+                {{ if eq .desc nil }}
+                  {{ range . }}
+                    {{ partial "belief-li" . }}
+                  {{ end }}
+                {{ else }}
+                  {{ partial "belief-li" . }}
+                {{ end }}
+              {{ end }}
+              <li class="list-group-item"><a href="/beliefs" class="text-secondary">See all beliefs</a></li>
+            </ul>
+          </div>
+        </div>
+      {{ end }}
+
+      {{ if where .Pages "Section" "in" (slice "blog" "tree") }}
+        <div class="row mt-5">
+          <div class="col-md-12">
+            <h3 class="border-bottom mb-2">Blog posts</h3>
+          </div>
+        </div>
+        {{ range (where .Pages "Section" "in" (slice "blog" "tree")).ByDate.Reverse }}
+          <div class="row mt-1">
+            <div class="col-md-12">
+              {{ partial "piece-card" . }}
+              <hr />
+            </div>
+          </div>
         {{ end }}
-        <li class="list-group-item"><a href="/beliefs" class="text-secondary">See all beliefs</a></li>
-      </ul>
+      {{ end }}
+
+    </div>
+
+    <div class="col-8 col-lg-3 order-3">
+      {{ partial "bio-sidebar" . }}
     </div>
   </div>
-  {{ end }}
-
-  {{ if where .Pages "Section" "in" (slice "pieces" "tree") }}
-    <div class="row mt-5 justify-content-center">
-      <div class="col-md-8">
-        <h3>In the pile</h3>
-      </div>
-    </div>
-    {{ range (where .Pages "Section" "in" (slice "pieces" "tree")).ByDate.Reverse }}
-      <div class="row justify-content-center">
-        <div class="col-md-8 justify-content-start">
-          {{ partial "piece-card" . }}
-        </div>
-      </div>
-    {{ end }}
-  {{ end }}
-
 
 </div>
 

@@ -1,8 +1,15 @@
 {{ define "main" }}
-<div class="container">
-  
-	<div class="row mt-4 justify-content-center">
-	  <div class="col-md-8">
+
+
+<div class="container-fluid">
+  <div class="row pt-lg-8 pt-10 justify-content-center">
+
+    <div class="book-sidebar col-4 col-lg-2 order-lg-1 order-2">
+      {{ partial "book-sidebar" . }}
+    </div>
+
+    <div class="col-12 col-lg-7 px-lg-3 order-lg-2 order-1">
+      <div class="mt-1 text-smaller"><strong><a href="/blog">BLOG</a></strong></div>
 	    <h1 class="small-title lora">{{ .Title }}</h1>
 	    <h4 class="subtitle mt-0">{{ .Param "one_liner" | safeHTML }}</h4>
   	  {{ if .Params.link }}
@@ -30,33 +37,15 @@
 	  	  {{ end }}
 	  	</div>
 
-	    {{ if and (ne (.Param "featured_image") "") (ne (.Param "hide_image_on_detail") true) }}
-	      <div class="mt-4">
-	      	<a href="{{ .Params.link }}" class="mr-2" target="_new"><img src="{{$.Params.featured_image}}" class="rounded align-center img-thumbnail" /></a>
-	      </div>
-	    {{ end }}
+			<div class="mt-4 mb-3 pb-2 piece-content border-bottom">{{ .Content }}</div>
+			{{ partial "piece-metadata" . }}
 
-			<div class="mt-4 mb-3 piece-content">{{ .Content }}</div>
-		</div>
-	</div>
+    </div>
 
-	<div class="row mt-2 justify-content-center border-top pt-5">
-	  <div class="col-md-8 small">
-	  	{{ if .Params.piles }}
-		  	{{ range .Params.piles }}
-		  		{{ with $pile := $.Site.GetPage ( printf "/piles/%s" . ) }}
-			  		<div>In the <mark><a href="{{ .Permalink }}">{{ .Title }}</a></mark> pile.</div>
-		  		{{ end }}
-		  	{{ end }}
-			{{ end }}
-			{{ if .Params.projects }}
-		  	{{ range .Params.projects }}
-		  		{{ with $project := $.Site.GetPage ( printf "/projects/%s" . ) }}
-			  		<div>Part of the <mark><a href="{{ .Permalink }}">{{ .Title }}</a></mark> project.</div>
-		  		{{ end }}
-		  	{{ end }}
-			{{ end }}
-	  </div>
-	</div>
+	  <div class="col-8 col-lg-3 order-3">
+      {{ partial "bio-sidebar" . }}
+ 	  </div>
+  </div>
+
 </div>
 {{ end }}

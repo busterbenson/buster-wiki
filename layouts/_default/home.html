@@ -2,11 +2,11 @@
 
 <div class="container">
 
-  {{ partial "title-and-content-basic" . }}
-
-  <div class="row mt-2 justify-content-center">
+  <div class="row mt-6 justify-content-center">
     <div class="col-md-8">
-      {{ range .Pages.ByDate.Reverse }}
+      {{ partial "title-and-content-basic" . }}
+
+      {{ range first 5 (.Pages.ByDate.Reverse) }}
         <div class="box mb-3">
           <h3 class=""><a href="{{ .URL }}">{{ .Title }}</a></h3>
           <div><small>{{ .Param "one_liner" }}</small></h3></div>

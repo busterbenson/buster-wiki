@@ -1,33 +1,22 @@
-<header class="header"> 
-	<div class="container">
-    <div class="row">
-    	<div class="col-md-2 topnav text-right d-none d-md-block navbar-text"></div>
-    	<div class="col-md-6 topnav text-truncate">
+<nav class="fixed-top navbar-dark bg-light">
+	<header class="header"> 
+		<div class="container-fluid">
+	    <div class="row">
+	    	<div class="col-md-5 topnav text-truncate">
+	    		<h2><a href="/" class="navbar-text text-light" style="font-size: 30px; text-decoration: none;"><em>Buster Benson</em></a></h2>
+		     </div>
+		     <div class="col-lg-7 topnav navbar-text text-small pt-lg-2 pt-1">
+   		    <div class="row">
+   		    	<div class="col-2"><a href="/blog" style="font-weight: normal;">BLOG</a></div>
+   		    	<div class="col-2"><a href="/book" style="font-weight: normal;">BOOK</a></div>
+   		    	<div class="col-2"><a href="/beliefs" style="font-weight: normal;">CODEX</a></div>
+   		    	<div class="col-2 d-none d-sm-block"><a href="/piles" style="font-weight: normal;">PILES</a></div>
+   		    	<div class="col-2"><a href="/me" style="font-weight: normal;">ABOUT</a></div>
+   		    	<div class="col-2"><a href="https://buster.substack.com" target="_new" style="font-weight: normal;">NEWSLETTER</a></div>
+   		    </div>
+		     </div>
 
-			{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
-			{{ $.Scratch.Add "path" .Site.BaseURL }}
-			{{ $path_parts := split $url "/" }}
-		  {{ $path_length := (len $path_parts) }}
-
-		  <a href="/" class="navbar-text">➰ Buster's Wiki</a>			
-
-		  {{ range $index, $element := $path_parts }}
-		    {{ $.Scratch.Add "path" $element }}
-		    {{ if ne $element "" }}
-		      / 
-					{{ if eq (add $index 2) $path_length }}
-						{{ . }}
-					{{ else }}
-			    	<a class="navbar-text" href='{{ $.Scratch.Get "path" }}'>{{ . }}</a>
-					{{ end }}
-		      {{ $.Scratch.Add "path" "/" }}
-		    {{ end }}
-		  {{ end }}
-
-
-	     </div>
-     	<div class="col-md-2 topnav"></div>
-
-    </div>
-  </div>
-</header>
+	    </div>
+	  </div>
+	</header>
+</nav>

@@ -1,5 +1,5 @@
 +++
-title = "Beliefs"
+title = "Codex Vitae"
 one_liner = "A living and dying record of my beliefs."
 featured_image = "/images/beliefs.jpg"
 show_on_homepage = true
@@ -15,7 +15,7 @@ A belief is a personal perspective constructed out of pieces of information and 
 
 ### What is this document? 
 
-This is a public, living, dying, document that I created as an experiment one Sunday in April of 2012, and has been revised at least yearly ever since. <a href="https://buster.wiki/pieces/2018-12-31-history-of-my-beliefs/">Brief timeline of that history here</a>. Maintaining it has become one of the most treasured activities in my life. It’s a way for me to remember who I am, catch inconsistencies in how I respond to different events in the world, react to current events from a position of how I believe the world is, should be, and will become. I've updated it at least once a year since 2012, and all changes are tracked. Rather than attempting to avoid all errors in this doc, I'm attempting to be as specific as possible and to quickly correct errors when they become apparent.
+This is a public, living, dying, document that I created as an experiment one Sunday in April of 2012, and has been revised at least yearly ever since. <a href="/blog/2018-12-31-history-of-my-beliefs/">Brief timeline of that history here</a>. Maintaining it has become one of the most treasured activities in my life. It’s a way for me to remember who I am, catch inconsistencies in how I respond to different events in the world, react to current events from a position of how I believe the world is, should be, and will become. I've updated it at least once a year since 2012, and all changes are tracked. Rather than attempting to avoid all errors in this doc, I'm attempting to be as specific as possible and to quickly correct errors when they become apparent.
 
 ### Why does it exist? 
 

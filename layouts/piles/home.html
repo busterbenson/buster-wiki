@@ -1,33 +1,46 @@
 {{ define "main" }}
 {{ $paginator := (.Paginator 50).Pages.ByTitle }}
 
-<div class="container">
-  
-  {{ partial "title-and-content-basic" . }}
+<div class="container-fluid">
+  <div class="row pt-lg-8 pt-10 justify-content-center">
 
-  <div class="row mt-2 justify-content-start">
-    <div class="col-md-12">
-      <div class="row mt-2 justify-content-start">
-      {{ range $paginator }}
-        <div class="col-6 col-lg-4 mb-2">
-          <div class="card">
-            <div class="card-body">
-              <div class="float-right">
-                <span class="badge badge-light badge-pill">{{ len .Pages }}</span>
+    <div class="book-sidebar col-4 col-lg-2 order-lg-1 order-2">
+      {{ partial "book-sidebar" . }}
+    </div>
+
+    <div class="col-12 col-lg-7 px-lg-3 order-lg-2 order-1">
+      <div class="mt-1 text-smaller"><strong><a href="/blog">BLOG</a></strong></div>
+      {{ partial "title-and-content-basic" . }}
+
+      <div class="row">
+        {{ range $paginator }}
+          {{ if gt (len .Pages) 0 }}
+            <div class="col-6 col-md-4 mb-2">
+              <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title">
+                    <a href="{{ .URL }}">{{ .Title }}</a>
+                  </h3>
+                  <h6 class="card-subtitle">
+                    {{ .Params.one_liner }}
+                  </h6>
+                  {{ if gt (len .Pages) 0 }}
+                    <div class="small mt-1 pt-1" style="border-top: 1px solid #eee">{{ len .Pages }} posts</div>
+                  {{ end }}
+                </div>
               </div>
-              <h3 class="card-title">
-                <a href="{{ .URL }}">{{ .Title }}</a>
-              </h3>
-              <h6 class="card-subtitle">
-                {{ .Params.one_liner }}
-              </h6>
             </div>
-          </div>
-        </div>
-      {{ end }}
+          {{ end }}
+        {{ end }}
       </div>
+
+    </div>
+
+    <div class="col-8 col-lg-3 order-3">
+      {{ partial "bio-sidebar" . }}
     </div>
   </div>
 
 </div>
+
 {{ end }}

@@ -1,53 +1,65 @@
 {{ define "main" }}
-  <div class="container">    
-    {{ partial "title-and-content-basic" . }}
+<div class="container-fluid">
+  <div class="row pt-lg-8 pt-10 justify-content-center">
 
-	  <div class="row mt-2 justify-content-start">
+    <div class="book-sidebar col-4 col-lg-2 order-lg-1 order-2">
+      {{ partial "book-sidebar" . }}
+    </div>
+
+    <div class="col-12 col-lg-7 px-lg-3 order-lg-2 order-1 homepage">
+      <div class="mt-1 text-smaller"><strong><a href="/me">ABOUT</a></strong></div>
+      {{ partial "title-and-content-basic" . }}
+
+			<div class="row">
 	  	{{ range (where .Site.Pages "Params.category" "book").ByDate.Reverse }}
 	  		{{ if eq .Params.belief_delta true }}
-	  		<div class="col-12 col-sm-6 col-lg-4 mb-2">
-		  		<div class="card">
-		  			<div class="card-body">
-		  				<div class="card-text">
-			  				{{ if .Params.featured_image }}
-			  					<a href="{{ .Params.link }}" target="_new"><img src="{{ .Params.featured_image }}" class="w-25 pb-2" /></a>
-			  				{{ end }}
-		  				</div>
-		  				<h3 class="card-title">
-				  			<a href="{{ .Params.link }}" target="_new">{{ .Title }}</a>
-				  		</h3>
-				  		<h6 class="card-subtitle mb-2 text-muted">
-		  	  			{{ if eq .Params.author "me" }}
-		  	  				By Buster
-		  	  			{{ else if ne .Params.author ""}}
-		  	  				{{ $person := replace (replace (lower .Params.author) " " "-") "." "" }}
-					  			{{ with $person := $.Site.GetPage ( printf "/influences/%s" $person ) }}
-							  		By <a href="{{ .Permalink }}">{{ .Title }}</a>
-							  	{{ else }}
-							  		By {{ .Params.author }}
-						  		{{ end }}
-						  	{{ end }}
-				  		</h6>
-				  		<p class="card-text">
-				  			{{ .Params.one_liner | safeHTML }}
-				  		</p>
-				  	</div>
-		  		</div>
-		  	</div>
+		  		<div class="col-12 col-sm-6 col-lg-4 mb-3">
+			  		<div class="card">
+			  			<div class="card-body">
+			  				<div class="card-text">
+				  				{{ if .Params.featured_image }}
+				  					<a href="{{ .Params.link }}" target="_new"><img src="{{ .Params.featured_image }}" class="w-25 pb-2" /></a>
+				  				{{ end }}
+			  				</div>
+			  				<h3 class="card-title">
+					  			<a href="{{ .Params.link }}" target="_new">{{ .Title }}</a>
+					  		</h3>
+					  		<h6 class="card-subtitle mb-2 text-muted">
+			  	  			{{ if eq .Params.author "me" }}
+			  	  				By Buster
+			  	  			{{ else if ne .Params.author ""}}
+			  	  				{{ $person := replace (replace (lower .Params.author) " " "-") "." "" }}
+						  			{{ with $person := $.Site.GetPage ( printf "/influences/%s" $person ) }}
+								  		By <a href="{{ .Permalink }}">{{ .Title }}</a>
+								  	{{ else }}
+								  		By {{ .Params.author }}
+							  		{{ end }}
+							  	{{ end }}
+					  		</h6>
+					  		<p class="card-text">
+					  			{{ .Params.one_liner | safeHTML }}
+					  		</p>
+					  	</div>
+			  		</div>
+			  	</div>
 		  	{{ end }}
 	  	{{ end }}
-		</div>
+		  </div>	
 
 
-	  <div class="row mt-2 justify-content-center">
-  		<div class="col-12 col-lg-8 mb-2">
-  			<h4>Articles that changed how I think</h4>
-		  	{{ range (where .Site.Pages "Params.category" "article").ByDate.Reverse }}
-		  		{{ if eq .Params.belief_delta true }}
-		  			{{ partial "piece-card" . }}
-		  		{{ end }}
-		  	{{ end }}
-			</div>
-		</div>
+			<h4>Articles that changed how I think</h4>
+	  	{{ range (where .Site.Pages "Params.category" "article").ByDate.Reverse }}
+	  		{{ if eq .Params.belief_delta true }}
+	  			{{ partial "piece-card" . }}
+	  		{{ end }}
+	  	{{ end }}
+
+    </div>
+
+	  <div class="col-8 col-lg-3 order-3">
+      {{ partial "bio-sidebar" . }}
+ 	  </div>
   </div>
+
+</div>
 {{ end }}

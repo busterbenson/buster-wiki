@@ -10,7 +10,7 @@ belief_delta	 = true
 # taxonomies
 influences		 = ['daniel-kahneman']
 piles     		 = ['cognitive-biases']
-projects			 = ['book']
+projects			 = []
 
 # link, article, reference, thought, book, idea
 category  		 = 'book' 

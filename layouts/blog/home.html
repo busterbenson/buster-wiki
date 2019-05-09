@@ -1,0 +1,43 @@
+{{ define "main" }}
+{{ $paginator := .Paginate .Pages 20 }}
+
+
+<div class="container-fluid">
+  <div class="row pt-lg-8 pt-10 justify-content-center">
+
+    <div class="book-sidebar col-4 col-lg-2 order-lg-1 order-2">
+      {{ partial "book-sidebar" . }}
+    </div>
+
+    <div class="col-12 col-lg-7 px-lg-3 order-lg-2 order-1">
+      {{ partial "title-and-content-basic" . }}
+
+      <div class="mb-4">
+        {{ range $key, $value := .Site.Taxonomies.piles }}
+          {{ if gt $value.Count 7 }}
+          <a href="/piles/{{ $key }}" class="text-gray">{{ replace $key "-" " " }}</a> • 
+          {{ end }}
+        {{ end }}
+        <a href="/piles" class="text-gray">See more</a>
+      </div>
+
+      {{ range (.Paginator 50).Pages.ByDate.Reverse }}
+        <div class="py-1">
+          {{ partial "piece-card" . }}
+        </div>
+
+        <hr />
+
+      {{ end }}
+
+		  {{ partial "pagination" . }}
+
+    </div>
+
+	  <div class="col-8 col-lg-3 order-3">
+      {{ partial "bio-sidebar" . }}
+ 	  </div>
+  </div>
+
+</div>
+{{ end }}

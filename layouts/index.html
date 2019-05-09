@@ -1,34 +1,42 @@
 {{ define "main" }}
-{{ $paginator := .Paginate (where .Pages "Section" "in" (slice "pieces" "beliefs" "tree") ) 100 }}
+{{ $paginator := .Paginate (where .Pages "Section" "in" (slice "pieces" "beliefs" "tree") ) 5 }}
 
-<div class="container">
-  
-  {{ partial "title-and-content-basic" . }}
+<div class="container-fluid">
+  <div class="row pt-lg-8 pt-10 justify-content-center">
 
-
-  <div class="row mt-2 justify-content-center">
-
-    <div class="col-2 d-none d-md-block">
+    <div class="book-sidebar col-4 col-lg-2 order-lg-1 order-2">
+      {{ partial "book-sidebar" . }}
     </div>
 
+    <div class="col-12 col-lg-7 px-lg-3 order-lg-2 order-1 homepage">
+      <h3><strong>Belief #1:</strong> I believe that polarization is our greatest current existential threat.</h3>
+      <blockquote><h4>The easiest thing we can do to address this immediately is to commit to <mark><a href="/book">having more productive disagreements</a></mark>. Then next time you find yourself in a frustrating disagreement that's going nowhere, ask the other person: "Is this about what you think is true, what you think is meaningful, or what you think is useful?" Listen, then answer for yourself as well. Once you can agree at this level then you're on your way.</h4></blockquote>
 
-    <div class="col-md-8">
-      {{ range $paginator.Pages }}
-        {{ partial "piece-card" . }}
-      {{ end }}
+      <p><a href="/book" class="btn btn-sm btn-outline-dark">Learn about my book</a></p>
+
+      <hr />
+
+      <h3><strong>Belief #2:</strong> My purpose in life as simple as seeking high-quality lengthy conversations with people and nature.</h3>
+      <blockquote><h4>This means I need to first of all <mark><a href="/me">know myself</a></mark>, and what I <mark><a href="/beliefs">believe</a></mark>, and to regularly <mark><a href="/me/yearly-reviews">review my life</a></mark>. Since I have vast blind spots, I want to always be open to perspectives and evidence that could help me see things more clearly. If you think I'm wrong about something, please tell me. If I can help you see something from a different perspective, reach out.</h4></blockquote>
+
+      {{ partial "contact-me" . }}
+
+      <hr />
+
+      <h3><strong>Belief #3:</strong> Everything flows together.</h3>
+      <blockquote><h4>Remember we will die, and so will the universe. Good brings bad, and bad brings good. Appreciate the weeks we get.</h4></blockquote>
+
+      <div class="my-2">{{ partial "life-by-weeks-recently" . }}</div>
+
+      <br clear="all" />
+
+
     </div>
 
-	  <div class="col-2 d-none d-md-block">
-		  <div class="sticky sticky-with-header is_stuck" style="position: relative; top: 0; width: 200px;">
-        {{ range (where .Site.Pages ".Params.show_on_homepage" "=" true).ByTitle }}
-          <p><a href="{{ .URL }}" class="text-secondary text-nowrap">{{ .Title }}</a></p>
-        {{ end }}
-		  </div>
-		 </div>
+	  <div class="col-8 col-lg-3 order-3">
+      {{ partial "bio-sidebar" . }}
+ 	  </div>
   </div>
-
-  {{ partial "pagination" . }}
-</div>
 
 </div>
 {{ end }}

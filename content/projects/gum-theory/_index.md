@@ -10,5 +10,6 @@ perspectives = []
 date = 2018-12-26T13:01:15-08:00
 draft = true
 layout = "project"
+project_weight = 1 # 1 = low, 3 = high
 +++
 

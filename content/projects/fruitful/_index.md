@@ -11,6 +11,7 @@ projects 	 = []
 date   = 2018-12-26T13:01:15-08:00
 draft  = false
 layout = "project"
+project_weight = 1 # 1 = low, 3 = high
 +++
 
 #### Honestly, I'm not quite sure, but it will require smart company.

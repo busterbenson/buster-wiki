@@ -1,0 +1,32 @@
+{{ $this_year := (int (dateFormat "2006" now)) }}
+{{ $current_age := sub (int $this_year) 1976 }}
+
+{{ range $num := seq 6 }}
+  {{ $reverse_num := sub 6 $num }}
+  {{ $age := sub $current_age $reverse_num }}
+  {{ $year := add 1975 $age }}
+  {{ $this_year_date := time ( printf "%d-05-21" $year ) }}
+  {{ $year_border_class := cond (gt $this_year_date now) "border-secondary" "theme-background" }}  
+
+  <div class="border border-dark float-left {{ $year_border_class }}" style="height: 2em; padding: 2px 5px; margin: 2px;">{{ add $year 1 }}</div>
+  {{ range $week := seq 52 }}
+    {{ $this_week_date := $this_year_date.AddDate 0 0 (int (mul $week 7) ) }}
+    {{ if not (gt $this_week_date now) }}
+      <div class="border border-secondary float-left text-center" style="height: 2em; padding: 2px 5px; margin: 2px;">
+        {{ range $each_day := seq 7  }}
+          {{ $specific_date := $this_week_date.AddDate 0 0 (int (sub $each_day 1)) }}
+          {{ $date_string := printf "%04d-%02d-%02d" $specific_date.Year $specific_date.Month $specific_date.Day }}
+          {{ $key := index $.Site.Data.life $date_string }}
+          {{ if ne $key nil }}
+            {{ range $key }}
+              <a {{ if ne .link nil }}href="{{ .link }}" target="_new"{{ end }} data-toggle="tooltip" data-placement="top" title="{{$specific_date.Format "Jan"}}, {{$specific_date.Day}} {{$specific_date.Year}}" class="margin-top: -100"><small>{{ .event }}</small></a>
+            {{ end }}
+          {{ end }}
+          {{- if eq ($specific_date.Format "20060102") (now.Format "20060102") -}}
+            <a href="/me" data-toggle="tooltip" data-placement="top" title="TODAY"><strong>👣</strong><small>See all the weeks</small></a>
+          {{- end -}}
+        {{ end }}
+      </div>
+    {{ end }}
+  {{ end }}
+{{ end }}

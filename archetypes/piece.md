@@ -4,7 +4,7 @@ title     		 	= ""
 author 		      = "me"
 link 				    = ""
 one_liner 		 	= ""
-featured_image 	= "" # /images/pieces/
+featured_image 	= "" 
 belief_delta   	= false
 
 # taxonomies

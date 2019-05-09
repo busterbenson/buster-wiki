@@ -13,6 +13,7 @@ date = "2018-12-22"
 draft = false
 show_tree = true
 layout = 'gallery'
+project_weight = 1 # 1 = low, 3 = high
 +++
 
 <a class="btn btn-outline-dark" href="001">Read from the beginning</a>

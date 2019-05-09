@@ -1,18 +1,30 @@
 {{ define "main" }}
-<div class="container">
-  
-  {{ partial "title-and-content-basic" . }}
 
-  <div class="row mt-2">
-    <div class="col-md-12">
+<div class="container-fluid">
+  <div class="row mt-lg-8 mt-10 justify-content-center">
+
+    <div class="book-sidebar col-4 col-lg-2 order-lg-1 order-2">
+      {{ partial "book-sidebar" . }}
+    </div>
+
+    <div class="col-12 col-lg-7 px-lg-3 order-lg-2 order-1">
+      <div class="mt-1 text-smaller"><strong><a href="/me">ABOUT</a></strong></div>
+      {{ partial "title-and-content-basic" . }}
+
       <div class="row justify-content-start">
-      {{ range (.Paginator 50).Pages.ByTitle }}
-        {{ if ne (.Param "hide_from_lists") true }}
-          {{ partial "person-card" . }}
+        {{ range (.Paginator 50).Pages.ByTitle }}
+          {{ if ne (.Param "hide_from_lists") true }}
+            {{ partial "person-card" . }}
+          {{ end }}
         {{ end }}
-      {{ end }}
       </div>
+
+    </div>
+
+    <div class="col-8 col-lg-3 order-3">
+      {{ partial "bio-sidebar" . }}
     </div>
   </div>
+
 </div>
 {{ end }}

@@ -1,39 +1,70 @@
 {{ define "main" }}
 
-<div class="container">
+<div class="container-fluid">
+  <div class="row pt-lg-8 pt-10">
+    <div class="book-sidebar col-4 col-lg-2 order-lg-1 order-2">
+      {{ partial "book-sidebar" . }}
+    </div>
 
-  {{ partial "title-and-content-basic" . }}
+    <div class="col-12 col-lg-10 px-lg-3 order-lg-2 order-1">
+      <div class="float-right">{{ partial "contact-me" . }}</div>
+      {{ partial "title-and-content-basic" . }}
 
-  <div class="row mt-2 justify-content-center">
-    <div class="col-lg small">
-	    {{ range $num := seq 101 }}
-	    	{{ $age := sub $num 1 }}
-	    	{{ $year := add 1976 $age }}
-	    	{{ $this_year_date := time ( printf "%d-05-21" $year ) }}
-        {{ $year_border_class := cond (gt $this_year_date now) "" "theme-background" }}
-      	<div class="border border-dark float-left p-1 m-1 ml-0 {{ $year_border_class }}">AGE {{ $age }} / {{ $year }}</div>
-    		{{ range $week := seq 52 }}
-		    	{{ $this_week_date := $this_year_date.AddDate 0 0 (int (mul $week 7) ) }}
-		    	{{ $week_border_class := cond (gt $this_week_date now) "border-secondary" "border-dark" }}
-    			<div class="border {{$week_border_class}} float-left p-1 m-1 ml-0">
-            {{ range $each_day := seq 7  }}
-              {{ $specific_date := $this_week_date.AddDate 0 0 (int (sub $each_day 1)) }}
-              {{ $date_string := printf "%04d-%02d-%02d" $specific_date.Year $specific_date.Month $specific_date.Day }}
-              {{ $key := index $.Site.Data.life $date_string }}
-              {{ if ne $key nil }}
-                {{ range $key }}
-                  <a {{ if ne .link nil }}href="{{ .link }}" target="_new"{{ end }} data-toggle="tooltip" data-placement="top" title="{{$specific_date.Format "Jan"}}, {{$specific_date.Day}} {{$specific_date.Year}}"><small>{{ .event }}</small></a>
-                {{ end }}
-              {{ end }}
-              {{ if eq ($specific_date.Format "20060102") (now.Format "20060102") }}
-                <a data-toggle="tooltip" data-placement="top" title="TODAY"><strong>👣</strong>
-              {{ end }}
-            {{ end }}
-            <small>&nbsp;</small>
+
+      <div class="row">
+        <div class="col-12 col-md-4 mt-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">🧠 What is true?</h5>
+              <p>My life is the sum of weeks I have spent. Each box below represents a week of my past, present, or future life. I've pre-emptively added boxes all the way to my 100th year, just so I can remember what I'm working with.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Born in 1976</li>
+              <li class="list-group-item">Living in Berkeley, CA</li>
+              <li class="list-group-item">Married to Kellianne</li>
+              <li class="list-group-item">Father to Niko and Louie</li>
+              <li class="list-group-item">Everything else below</li>
+            </ul>
           </div>
-    		{{ end }}
-    	{{ end }}
-  	</div>
-</div>
+        </div>
 
+        <div class="col-12 col-md-4 mt-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">❤️ What is meaningful?</h5>
+              <p>In between the boxes I build a map of events and tell a story. I believe my fundamental purpose in life is to optimize for quality time with myself, other people, and shared interests.
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="/beliefs">My Codex Vitae (book of beliefs)</a></li>
+              <li class="list-group-item"><a href="/me/yearly-reviews">My yearly reviews</a></li>
+              <li class="list-group-item"><a href="/influences">People who influenced me</a></li>
+              <li class="list-group-item"><a href="/me/books">Books that influenced me</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 mt-1">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">🖐 What is useful?</h5>
+              <p>And then, what do I do with what is true and meaningful to me? Which bets should I make? Which outcomes should I strive for? How should I participate? What does the world think of me?
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><a href="/book">Why Are We Yelling?</a></li>
+              <li class="list-group-item"><a href="https://betterhumans.coach.me/cognitive-bias-cheat-sheet-55a472476b18" target="_new">Cognitive Bias Cheat Sheet</a></li>
+              <li class="list-group-item"><a href="https://medium.com/better-humans/better-than-meditation-12532d29f6cd" target="_new">Better Than Meditation</a></li>
+              <li class="list-group-item"><a href="https://medium.com/better-humans/live-like-a-hydra-c02337782a89">Live Like A Hydra</a></li>
+              <li class="list-group-item"><a href="https://750words.com" target="_new">750 Words</a></li>
+              <li class="list-group-item"><a href="/me/writing">Other writing</a></li>
+              <li class="list-group-item"><a href="/projects">Other projects</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      {{ partial "life-by-weeks" . }}
+    </div>
+  </div>
+
+</div>
 {{ end }}

@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+<div class="container-fluid">
+  <div class="row pt-lg-8 pt-10 justify-content-center">
+
+    <div class="book-sidebar col-4 col-lg-2 order-lg-1 order-2">
+      {{ partial "book-sidebar" . }}
+    </div>
+
+    <div class="col-12 col-lg-7 px-lg-3 order-lg-2 order-1 homepage">
+      <div class="mt-1 text-smaller"><strong><a href="/me">ABOUT</a></strong></div>
+      {{ partial "title-and-content-basic" . }}     
+			
+			<div class="row">
+		  	{{ range $pages := index .Site.Taxonomies.categories "year-in-review" }}
+		  		<div class="col-12 col-sm-6 col-md-4 mb-1">
+		  			<div class="card">
+		  				<a href="{{ .URL }}"><img src="{{ .Params.featured_image }}" class="card-img-top" /></a>
+		  				<div class="card-body">
+		  					<h3 class="card-title"><a href="{{ .URL }}">{{ .Date.Year }}</a></h3>
+		  					<p>{{ .Title }}</p>
+		  				</div>
+		  			</div>	
+	  			</div>
+	  		{{ end }}
+	  	</div>
+
+    </div>
+
+	  <div class="col-8 col-lg-3 order-3">
+      {{ partial "bio-sidebar" . }}
+ 	  </div>
+  </div>
+
+</div>
+{{ end }}

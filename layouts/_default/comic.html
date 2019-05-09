@@ -1,11 +1,14 @@
 {{ define "main" }}
 
-<div class="container">
 
-  {{ partial "title-and-content-basic" . }}
+<div class="container-fluid">
+  <div class="row pt-lg-8 pt-10 justify-content-center">
 
-  <div class="row mt-2 justify-content-center">
-    <div class="col-md-12">
+    <div class="col-12">
+
+      <div class="mt-1 text-smaller"><strong><a href="/projects">PROJECTS</a></strong></div>
+      {{ partial "title-and-content-basic" . }}
+
       {{ range .Pages.ByTitle }}
         {{ if ne (.Param "hide_from_lists") true }}
           {{ if and (isset .Params "featured_image") (ne (.Param "featured_image") "") }}
@@ -15,6 +18,17 @@
           {{ end }}          
         {{ end }}
       {{ end }}
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="container">
+
+  <div class="row mt-6 justify-content-center">
+    <div class="col-md-12">
 
     </div>
   </div>

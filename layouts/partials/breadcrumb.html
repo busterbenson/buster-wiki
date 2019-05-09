@@ -1,0 +1,19 @@
+{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+{{ $.Scratch.Add "path" .Site.BaseURL }}
+{{ $path_parts := split $url "/" }}
+{{ $path_length := (len $path_parts) }}
+
+
+{{ range $index, $element := $path_parts }}
+  {{ $.Scratch.Add "path" $element }}
+  {{ if ne $element "" }}
+    / 
+		{{ if eq (add $index 2) $path_length }}
+			{{ . }}
+		{{ else }}
+    	<a class="navbar-text" href='{{ $.Scratch.Get "path" }}'>{{ . }}</a>
+		{{ end }}
+    {{ $.Scratch.Add "path" "/" }}
+  {{ end }}
+{{ end }}
+

@@ -23,7 +23,7 @@
           <div class="col-md-4 text-center align-self-center"><h4 class="mt-0 playfair">{{ .Params.thoughts_prompt }}</h4></div>
         {{ end }}
         <div class="col-md-4 mt-1 text-center align-self-center">
-          <a class="typeform-share button" href="https://buster.typeform.com/to/aW80Y3?from_url={{ $from_url }}&from_page_title={{ $from_page_title }}&from_question={{ $from_question }}" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#AB52FF;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:16px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-submit-close-delay="5" target="_blank">
+          <a class="typeform-share button" href="https://buster.typeform.com/to/aW80Y3?from_url={{ $from_url }}&from_page_title={{ $from_page_title }}&from_question={{ $from_question }}" data-mode="drawer_right" style="display:inline-block;text-decoration:none;background-color:#000;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:16px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-submit-close-delay="5" target="_blank">
             {{ if or (eq .Params.thoughts_button nil) (eq .Params.thoughts_button "") }}
               Thoughts? 
             {{ else }}
@@ -39,12 +39,14 @@
       <div class="row my-10 justify-content-center">
         <div class="col-sm-4 text-center">
           <small class="text-secondary">
-            <p>➰</p>
+            <p>🧠 ❤️ 🖐</p>
             <a href="/" class="text-secondary">Home</a> 
-            {{ range (where .Site.Pages ".Params.show_on_homepage" "=" true).ByParam "homepage_order" }}
-              • <a href="{{ .URL }}" class="text-secondary text-nowrap">{{ .Title }}</a>
-            {{ end }}
-            • <a href="http://eepurl.com/cxgjBT" class="text-secondary" target="_new">Subscribe</a>
+            • <a href="/blog" class="text-secondary">Blog</a>
+            • <a href="/book" class="text-secondary text-nowrap">Book</a>
+            • <a href="/beliefs" class="text-secondary text-nowrap">Codex</a>
+            • <a href="/piles" class="text-secondary text-nowrap">Piles</a>
+            • <a href="/me" class="text-secondary text-nowrap">About</a>
+            • <a href="https://buster.substack.com" class="text-secondary text-nowrap" target="_new">Newsletter</a>
           </small>
         </div>
       </div>

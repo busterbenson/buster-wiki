@@ -8,7 +8,7 @@ featured_image = "" # /images/pieces/
 
 # see /piles
 piles     		 = ['dialogue']
-projects			 = ['book']
+projects			 = []
 
 # link, article, reference, thought, book, idea
 category  		 = 'scratchpad' 

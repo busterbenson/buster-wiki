@@ -1,3 +1,7 @@
+#nav {
+	padding: 0;
+	margin: 0;
+}
 #top {
 	background-color: #fff;
 	color: #000;
@@ -5,14 +9,19 @@
 body {
 	font-size: 16px;
 }
-body.night header {
-	background-color: #eff;
+a, a:hover {
+	color: #039;
+}
+a:hover {
+	color: #039;
+	text-decoration: underline;
 }
 .theme-background {
 	background-color: #efe; 
 }
-body.night .theme-background {
-	background-color: #eff;	
+.border-tertiary {
+	border-color: #eee;
+	color: #666;
 }
 h1, .h1 {
 	font-weight: 700;
@@ -48,7 +57,6 @@ mark a {
 blockquote {
 	border-left: 8px solid #f7f5a0;
 	padding-left: 1em;
-	margin-left: -25px;
 	margin-top: 0.5em;
 	color: #666;
 	padding-top: 0;
@@ -59,6 +67,13 @@ blockquote h4 {
 }
 #title-and-content h3 {
 	margin-top: 1.25em;
+}
+.homepage h3 {
+}
+.homepage blockquote h4 {
+	margin-top: 0;
+	color: #666;
+	font-size: 20px;
 }
 .title {
 	font-size: 60px; 
@@ -81,15 +96,31 @@ blockquote h4 {
 	font-family: 'Playfair Display', serif;
 }
 header {
-	background-color: #efe;
+	background-color: #111;
+	color: #fff;
 }
 header .topnav a.navbar-text, header .topnav a:visited.navbar-text {
-	color: #000;
+	color: #fff;
 }
 header .topnav a:hover.navbar-text {
-	color: #000;
+	color: #fff;
 }
 footer {
+}
+.text-small {
+	font-size: 15px;
+}
+.text-smaller {
+	font-size: 13px;
+}
+.text-smaller strong {
+	color: #333;
+	border-bottom: 1px solid #333;
+}
+.text-smaller strong a, .text-smaller strong a:hover {
+	color: #336;
+	text-decoration: none;
+	border-bottom: 1px solid #039;
 }
 #mc_embed_signup {
 	font-family: sans-serif !important;
@@ -112,6 +143,9 @@ button.btn button.button-link {
 }
 iframe {
 	margin-bottom: 1em;
+}
+.book-sidebar {
+	border-right: 1px solid #ccc;
 }
 .embedly-card {
 	border: 1px solid #ccc;
@@ -156,4 +190,18 @@ iframe {
 	font-style: italic;
 	color: #666;
 	border-left: 0px solid #fff;
+}
+.responsive-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 98%;
+    height: 98%;
+    border: 1px solid #333;
 }

@@ -16,7 +16,7 @@ category  		 			 = 'comic'
 mailchimp 					 = true
 date 								 = "2018-12-24"
 draft 							 = false
-show_tree 					 = true
 layout 							 = 'comic'
+project_weight = 1 # 1 = low, 3 = high
 +++
 

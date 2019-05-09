@@ -1,16 +1,18 @@
 {{ define "main" }}
 
-<div class="container">
+<div class="container-fluid">
+  <div class="row pt-lg-8 pt-10 justify-content-center">
 
-  <div id="title-and-content">
-    {{ partial "title-and-content-basic" . }}
-  </div>
+    <div class="book-sidebar col-4 col-lg-2 order-lg-1 order-2">
+      {{ partial "book-sidebar" . }}
+    </div>
 
-  <div id="beliefs-list" class="row mt-2 justify-content-center">
-    <div class="col-2 d-none d-md-block"></div>
-    <div class="col-lg-8">
+    <div class="col-12 col-lg-7 px-lg-3 order-lg-2 order-1">
+      <div class="mt-1 text-smaller"><strong><a href="/me">ABOUT</a></strong></div>
+      {{ partial "title-and-content-basic" . }}
+
       {{ range $pile, $list := $.Site.Data.beliefs }}
-        <a name="{{ $pile }}" href="#belief-pile-{{ $pile }}"></a>
+        <a name="{{ $pile }}" href="#belief-pile-{{ $pile }}" style="top: -60px;"></a>
         <div class="card mb-3">
           <div class="card-body">
             <h3 class="card-title">
@@ -43,8 +45,8 @@
 
     </div>
 
-    <div class="col-2 d-none d-md-block">
-      <div class="sticky sticky-with-header is_stuck" style="position: relative; top: 0; width: 255px;">
+    <div class="col-8 col-lg-3 order-3 pt-10">
+      <div class="sticky sticky-with-header is_stuck" style="width: 255px; padding-top: 60px;">
         {{ range $pile, $list := $.Site.Data.beliefs }}
           <div class="overlay-menu">
             <p><a class="text-secondary small text-truncate" href="#{{ $pile }}">{{ replace $pile "-" " " }}</a></p>
@@ -52,8 +54,9 @@
         {{ end }}
       </div>
     </div>
-
   </div>
+
 </div>
+
 
 {{ end }}
