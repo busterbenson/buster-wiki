@@ -18,9 +18,9 @@ layout    		 = "piece"
 disqus    		 = false
 +++
 
-The theme of my 30th birthday, and the following year, was "Higher highs and lower lows". 
+The theme of my 30th birthday, and the following year, was [Higher highs and lower lows](/blog/2006/05-31-higher-highs-lower-lows). 
 
-The theme of my 31st birthday, and the following year, was "Double down". Double down on love, on friends, and on my projects.
+The theme of my 31st birthday, and the following year, was [Double down](/blog/2007/05-29-double-down). Double down on love, on friends, and on my projects.
 
 This year, I feel like I should shift the focus a bit. Not so much about building building building, and more about enjoying what has been built and what happens to exist. This is a big deal for me cause I almost always feel like I'm not doing enough. That I have to keep being more ambitious, thinking bigger, not getting too lax lest I fall into a rut, etc.
 

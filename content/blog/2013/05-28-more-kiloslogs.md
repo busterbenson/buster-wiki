@@ -20,13 +20,14 @@ disqus    		 = false
 
 Every year of my 30s has had some kind of birthday reflection and a motto. Here are the ones from the past:
 
-* 36: [Talk it out](/blog/2012/05-28-talk-it-out)
-* 35: [Love the struggle](http://bustr.me/post/5929491429/on-being-35)
-* 34: [Cultivating the core](http://enjoymentland.com/2010/05/28/turning-34-cultivating-the-core/)
-* 33: [Frugal to the max](http://enjoymentland.com/2009/05/28/turning-33-frugal-to-the-max/)
-* 32: [No problem](http://busterbenson.livejournal.com/204717.html)
-* 31: [Double down](http://busterbenson.livejournal.com/120184.html)
-* 30: [Higher highs and lower lows](http://busterbenson.livejournal.com/85489.html)
+* [36: Talk it out](/blog/2012/05-28-talk-it-out)
+* [35: Love the struggle](http://bustr.me/post/5929491429/on-being-35)
+* [34: Cultivating the core](http://enjoymentland.com/2010/05/28/turning-34-cultivating-the-core/)
+* [33: Frugal to the max](http://enjoymentland.com/2009/05/28/turning-33-frugal-to-the-max/)
+* [32: No problem](/blog/2008/05-27-no-problem)
+* [31: Double down](/blog/2007/05-29-double-down)
+* [30: Higher highs and lower lows](/blog/2006/05-31-higher-highs-lower-lows)
+
 
 I was really impressed with my coworker Kevin Weil who ran 30 miles on his 30th birthday this last weekend.
 

@@ -20,11 +20,11 @@ disqus    		 = false
 
 *This one was on a blog that got deleted. Found a copy of the text and archiving it here.*
 
-When I turned 30, my birthday motto was "Higher highs and lower lows".
+When I turned 30, my birthday motto was [Higher highs and lower lows](/blog/2006/05-31-higher-highs-lower-lows).
 
-When I turned 31, my birthday motto was "Double down".
+When I turned 31, my birthday motto was [Double down](/blog/2007/05-29-double-down).
 
-When I turned 32, my birthday motto was "No problem".
+When I turned 32, my birthday motto was [No problem](/blog/2008/05-27-no-problem).
 
 Each year, the motto has helped me frame the upcoming year and give it some kind of direction. Those three mottos are pretty much a table of contents of my 30s so far.
 

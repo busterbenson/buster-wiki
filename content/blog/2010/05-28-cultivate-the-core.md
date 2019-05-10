@@ -20,13 +20,13 @@ disqus    		 = false
 
 *This one was on a blog that got deleted. Found a copy of the text and archiving it here.*
 
-When I turned 30, my birthday motto was "Higher highs and lower lows".
+When I turned 30, my birthday motto was [Higher highs and lower lows](/blog/2006/05-31-higher-highs-lower-lows).
 
-When I turned 31, my birthday motto was [Double down](http://busterbenson.livejournal.com/120184.html).
+When I turned 31, my birthday motto was [Double down](/blog/2007/05-29-double-down).
 
-When I turned 32, my birthday motto was [No problem](http://busterbenson.livejournal.com/204717.html).
+When I turned 32, my birthday motto was [No problem](/blog/2008/05-27-no-problem).
 
-Last year, my 33rd birthday coincided with my last day at the [Robot Co-op](http://robotcoop.com/) and the beginning of [Enjoymentland](http://enjoymentland.com/). My motto for the year was [Frugal to the max](https://github.com/busterbenson/public/blob/master/files/yearly-report-33.md) I just did a little calculation and it looks like our spending over the last 12 months compared to the 12 months prior was 34% lower. So, at least on the money front, I think we did pretty well on the frugality goal.
+Last year, my 33rd birthday coincided with my last day at the [Robot Co-op](http://robotcoop.com/) and the beginning of [Enjoymentland](http://enjoymentland.com/). My motto for the year was [33: Frugal to the max](/blog/2009/05-28-frugal-to-the-max). I just did a little calculation and it looks like our spending over the last 12 months compared to the 12 months prior was 34% lower. So, at least on the money front, I think we did pretty well on the frugality goal.
 
 In the meantime, I spent the whole year working on my own projects, and managed to stay somewhat afloat finance-wise. Also, [we had a baby](http://www.flickr.com/photos/erikbenson/collections/72157623971182557/). I guess that’s not very frugal on the DNA front. But we did have the baby in fairly frugal way: without selling the house (not our choice), without buying a car, without doing all of the screening tests, and hospital visits, and without even requiring a hospital’s intervention. I’m pretty proud about that, and think Kellianne’s more amazing than ever for having gone through the process with such grace, strength, and confidence. And we were also very lucky, as there were a couple near misses on needing a hospital transfer, and I know that it’s entirely possible for someone who does everything right, and has the best intentions, to still have a high-risk pregnancy. Â We are lucky that we never had to draw that straw.
 

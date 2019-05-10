@@ -24,7 +24,7 @@ This is my 12th year of yearly birthday reflections. Here are the previous 11:
 * [39: Make wiggle room](/blog/2015/06-13-make-wiggle-room)
 * [38: Cultivate quality time](/blog/2014/05-28-cultivate-quality-time)
 * [37: More kiloslogs](/blog/2013/05-28-more-kiloslogs)
-* [36: Talk it out](/blog/2012/05-28-cultivate-the-core)
+* [36: Talk it out](/blog/2012/05-28-talk-it-out)
 * [35: Love the struggle](/blog/2011/05-28-cultivate-the-core)
 * [34: Cultivating the core](/blog/2010/05-28-cultivate-the-core)
 * [33: Frugal to the max](/blog/2009/05-28-frugal-to-the-max)
