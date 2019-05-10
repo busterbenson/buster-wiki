@@ -40,6 +40,11 @@
     {{ range .Site.Params.custom_js }}
       <script src="{{ relURL ($.Site.BaseURL) }}{{ . }}"></script>
     {{ end }}
+    
+    {{/* Algolia instant search */}}
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4/dist/instantsearch-theme-algolia.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
 
     {{ if .RSSLink }}
       <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />

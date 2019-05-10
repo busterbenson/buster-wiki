@@ -1,25 +1,70 @@
 {{ define "main" }}
 
-<div class="container">
+<div class="container-fluid">
+  <div class="row pt-lg-8 pt-10 justify-content-center">
 
-  {{ partial "title-and-content-basic" . }}
+    <div class="book-sidebar col-12 col-sm-4 col-lg-2 order-lg-1 order-2">
+      {{ partial "book-sidebar" . }}
+    </div>
 
-  <div class="row mt-2 justify-content-center">
-    <div class="col-md-8">
-      
-        <script>
-            (function() {
-              var cx = '003477865740334718981:z3briwriyd4';
-              var gcse = document.createElement('script');
-              gcse.type = 'text/javascript';
-              gcse.async = true;
-              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-              var s = document.getElementsByTagName('script')[0];
-              s.parentNode.insertBefore(gcse, s);
-            })();
-          </script>
-          <gcse:search></gcse:search>
+    <div class="col-12 col-lg-7 px-lg-3 order-lg-2 order-1 homepage">
 
+      <div id="search-box">
+        <!-- SearchBox widget will appear here -->
+      </div>
+
+      <div id="refinement-list">
+        <!-- RefinementList widget will appear here -->
+      </div>
+
+      <div id="hits">
+        <!-- Hits widget will appear here -->
+      </div>
+
+      <img src="/images/algolia.png" class="mt-5 small" />
+
+
+      <script>
+        const search = instantsearch({
+          appId: 'TPKLWWZA3Y',
+          apiKey: 'f6fde110aac3f0d8c9ed3cbce44b101d',
+          indexName: 'busterbenson',
+          routing: true
+        });
+
+        // initialize RefinementList
+        search.addWidget(
+          instantsearch.widgets.refinementList({
+            container: '#refinement-list',
+            attributeName: 'categories'
+          })
+        );
+
+        // initialize SearchBox
+        search.addWidget(
+          instantsearch.widgets.searchBox({
+            container: '#search-box',
+            placeholder: 'Search for something'
+          })
+        );
+
+        // initialize hits widget
+        search.addWidget(
+          instantsearch.widgets.hits({
+            container: '#hits',
+            templates: {
+              empty: 'No results',
+              item: '<div><h4 class="mt-2"><a href="{{ safeHTML "{{{ permalink }}}" }}">{{ safeHTML "{{{ _highlightResult.title.value }}}" }}</a></h4></div>'
+            }
+          })
+        );
+
+        search.start();
+      </script>
+    </div>
+
+    <div class="col-12 col-sm-8 col-lg-3 order-3">
+      {{ partial "bio-sidebar" . }}
     </div>
   </div>
 

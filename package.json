@@ -4,7 +4,8 @@
   "description": "buster.wiki",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "algolia": "atomic-algolia"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,9 @@
     "grunt-contrib-uglify": "^4.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-responsive-images": "^1.10.1"
+  },
+  "dependencies": {
+    "atomic-algolia": "^0.3.17",
+    "instantsearch.js": "^3.4.0"
   }
 }

@@ -27,6 +27,7 @@ home = ["HTML", "RSS", "Algolia"]
 
 ## Algolia 
 ## https://forestry.io/blog/search-with-algolia-in-hugo/
+## To re-index, from root: npm run algolia (uses .env)
 [outputFormats.Algolia]
 baseName = "algolia"
 isPlainText = true
@@ -34,5 +35,5 @@ mediaType = "application/json"
 notAlternative = true
 
 [params.algolia]
-vars = ["title", "author", "link", "one_liner", "date"]
+vars = ["title", "author", "link", "one_liner", "date", "featured_image"]
 params = ["piles", "influences", "projects", "categories"]
