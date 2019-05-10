@@ -1,149 +1,109 @@
 {{ define "main" }}
+<div class="container-fluid">
+  <div class="row pt-lg-8 pt-10 justify-content-center">
 
-<div class="container">
+    <div class="book-sidebar col-4 col-lg-2 order-lg-1 order-2">
+      {{ partial "book-sidebar" . }}
+    </div>
 
-  <div class="row mt-6 justify-content-center">
-    <div class="col-md-12 order-md-2 order-sm-1">
-
+    <div class="col-12 col-lg-7 px-lg-3 order-lg-2 order-1">
+      <div class="mt-1 text-smaller"><strong><a href="/projects">PROJECTS</a></strong></div>
       {{ partial "title-and-content-basic" . }}
+      <h3>The <strong>3 conundrums</strong> we must face.</h3>
 
-      <h3>The <strong>4 conundrums</strong> we must face.</h3>
-    </div>
-  </div>
-
-  <div class="row mt-2 justify-content-center">
-    <div class="col-12 col-md-6 col-lg-3 mb-3">
-      <div class="card">
-        <div class="card-body">
-          <h3 class="card-title">Information</h3>
-          <p class="card-text">There's too much information to process, and we have <mark>limited attention to give</mark>, so we <strong>filter</strong> lots of things out.</p>
-          <p class="card-text">Noise becomes signal.</p>
-          <p class="card-text">The downside: we don’t see everything. Some of the information we filter out is actually useful and important..</p>
+      <div class="row mt-2 justify-content-center">
+        <div class="col-12 col-lg-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Information</h3>
+              <p class="card-text">There's too much information to process, and we have <mark>limited attention to give</mark>, so we <strong>filter</strong> lots of things out.</p>
+              <p class="card-text">Noise becomes signal.</p>
+              <p class="card-text">The downside: we don’t see everything. Some of the information we filter out is actually useful and important..</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Meaning</h3>
+              <p class="card-text">Lack of meaning is confusing, and we have <mark>limited capacity to understand how things fit together</mark>, so we <strong>create stories</strong> to make sense of everything.</p>
+              <p class="card-text">Signal becomes a story.</p>
+              <p class="card-text">The downside: our search for meaning can conjure illusions. We sometimes imagine details that were filled in by our assumptions, and construct meaning and stories that aren’t really there.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Time</h3>
+              <p class="card-text">We never have enough time, resources, or attention at our disposal <mark>to get everything that needs doing done</mark>, so we <strong>jump to conclusions</strong> with what we have and move ahead.</p>
+              <p class="card-text">Stories become decisions.</p>
+              <p class="card-text">The downside: quick decisions can be seriously flawed. Some of the quick reactions and decisions we jump to are unfair, self-serving, and counter-productive.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-12 col-md-6 col-lg-3 mb-3">
-      <div class="card">
-        <div class="card-body">
-          <h3 class="card-title">Meaning</h3>
-          <p class="card-text">Lack of meaning is confusing, and we have <mark>limited capacity to understand how things fit together</mark>, so we <strong>create stories</strong> to make sense of everything.</p>
-          <p class="card-text">Signal becomes a story.</p>
-          <p class="card-text">The downside: our search for meaning can conjure illusions. We sometimes imagine details that were filled in by our assumptions, and construct meaning and stories that aren’t really there.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-md-6 col-lg-3 mb-3">
-      <div class="card">
-        <div class="card-body">
-          <h3 class="card-title">Time</h3>
-          <p class="card-text">We never have enough time, resources, or attention at our disposal <mark>to get everything that needs doing done</mark>, so we <strong>jump to conclusions</strong> with what we have and move ahead.</p>
-          <p class="card-text">Stories become decisions.</p>
-          <p class="card-text">The downside: quick decisions can be seriously flawed. Some of the quick reactions and decisions we jump to are unfair, self-serving, and counter-productive.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-12 col-md-6 col-lg-3 mb-3">
-      <div class="card">
-        <div class="card-body">
-          <h3 class="card-title">Memory</h3>
-          <p class="card-text">There's way too much to remember, given our <mark>limited capacity to keep track of things</mark>, so we <strong>save take-aways</strong> that seem the most important.</p>
-          <p class="card-text">Decisions get recorded.</p>
-          <p class="card-text">The downside: our memory reinforces errors. Some of the stuff we remember for later just makes all of the above systems more biased, and more damaging to our thought processes.</p>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="row mt-2 justify-content-center">
-    <div class="col-md-8">
-      <h3>The <strong>20 shortcuts</strong> we've picked up to compensate.</h3>
-    </div>
-  </div>
+      <h3>The <strong>13 strategic shortcuts</strong> we've picked up to compensate.</h3>
 
-  <div class="row mt-2 justify-content-center">
-    <div class="col-12 col-md-6 col-lg-3 mb-3">
-      <div class="card">
-        <div class="card-body">
-          <h3 class="card-title">Filter information</h3>
-          <p class="card-text"></p>
+      <div class="row mt-2 justify-content-center">
+        <div class="col-12 col-lg-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Filter information</h3>
+              <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">1. Depend on the context.</li>
+              <li class="list-group-item">2. Accept what comes to mind.</li>
+              <li class="list-group-item">3. Amplify the bizarre.</li>
+              <li class="list-group-item">4. Notice the new and different.</li>
+              <li class="list-group-item">5. Seek take-aways.</li>
+            </ul>
+          </div>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">1. We tend to only consider things that are right in front of us.</li>
-          <li class="list-group-item">2. Bizarre, funny, and visually-striking things stick out more than other things.</li>
-          <li class="list-group-item">3. We notice when things change.</li>
-          <li class="list-group-item">4. We are much more likely to see information that confirms our existing beliefs.</li>
-          <li class="list-group-item">5. We notice flaws in others more than flaws in ourselves.</li>
-        </ul>
-      </div>
-    </div>
 
-    <div class="col-12 col-md-6 col-lg-3 mb-3">
-      <div class="card">
-        <div class="card-body">
-          <h3 class="card-title">Confabulate stories</h3>
-          <p class="card-text"></p>
+        <div class="col-12 col-lg-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Confabulate stories</h3>
+              <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">6. Fill in gaps.</li>
+              <li class="list-group-item">7. Favor the familiar.</li>
+              <li class="list-group-item">8. Treat experience as reality.</li>
+              <li class="list-group-item">9. Simplify mental math.</li>
+              <li class="list-group-item">10. Be overconfident.</li>
+            </ul>
+          </div>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">6. We find stories and patterns even in sparse data.</li>
-          <li class="list-group-item">7. We fill in characteristics from stereotypes, generalities, and past experiences whenever there are gaps in new instances.</li>
-          <li class="list-group-item">8. We imagine things and people we are familiar with or fond of as intrinsically better than things or people we aren&#39;t familiar with or fond of.</li>
-          <li class="list-group-item">9. We simplify probabilities and numbers to make them easier to think about.</li>
-          <li class="list-group-item">10. We think we know what others are thinking.</li>
-          <li class="list-group-item">11. We project our current worldview and mindset onto the past and the future.</li>
-        </ul>
-      </div>
-    </div>
 
-    <div class="col-12 col-md-6 col-lg-3 mb-3">
-      <div class="card">
-        <div class="card-body">
-          <h3 class="card-title">Jump to conclusions</h3>
-          <p class="card-text"></p>
+        <div class="col-12 col-lg-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Jump to conclusions</h3>
+              <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">11. Stick with it.</li>
+              <li class="list-group-item">12. Protect existing beliefs.</li>
+              <li class="list-group-item">13. Do the safe thing.</li>
+            </ul>
+          </div>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">12. In order to act, we need to be confident in our ability to make an impact and to feel like what we do is important.</li>
-          <li class="list-group-item">13. In order to stay focused, we favor the immediate, relatable thing in front of us to the delayed or future possibility.</li>
-          <li class="list-group-item">14. In order to get anything done, we&#39;re motivated to complete things that we&#39;ve already invested time and energy into.</li>
-          <li class="list-group-item">15. In order to avoid risk, we&#39;re motivated to preserve our autonomy and status in a group and to avoid irreversible decisions.</li>
-          <li class="list-group-item">16. We favor options that appear simple or that have complete information over more complex or ambiguous options.</li>
-        </ul>
       </div>
-    </div>
 
-    <div class="col-12 col-md-6 col-lg-3 mb-3">
-      <div class="card">
-        <div class="card-body">
-          <h3 class="card-title">Save take-aways</h3>
-          <p class="card-text"></p>
-        </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">17. We continuously edit and refine memories after the fact.</li>
-          <li class="list-group-item">18. We discard messy specifics in favor of clean generalities.</li>
-          <li class="list-group-item">19. We reduce events and lists to one or two key examples.</li>
-          <li class="list-group-item">20. We store memories differently based on how they were experienced.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <div class="row mt-2 justify-content-center">
-    <div class="col-md-8">
       <h3>All <strong>200+ biases</strong> are both blessings and curses.</h3>
-    </div>
-  </div>
 
-  <div class="row mt-2 justify-content-center">
-    <div class="col-lg-12">
-      <img src="/images/cognitive-bias-codex.jpeg" />
-    </div>
-  </div>
-
-  {{ if (where .Pages "Section" "influences") }}
-    <div class="row mt-8 justify-content-center">
-      <div class="col-md-8">
-          <h3>People who have influenced my thinking</h3>
+      <div class="row mt-2 justify-content-center">
+        <div class="col-lg-12">
+          <img src="/images/cognitive-bias-codex.jpeg" />
+        </div>
       </div>
-      <div class="col-md-8 mt-2">
+
+      {{ if (where .Pages "Section" "influences") }}
+        <h3 class="mt-5">People who have influenced my thinking</h3>
         <div class="row justify-content-start">
           {{ range (where .Pages "Section" "influences").ByTitle }}
             {{ if ne (.Param "hide_from_lists") true }}
@@ -151,35 +111,42 @@
             {{ end }}
           {{ end }}
         </div>
-      </div>
-    </div>
-  {{ end }}
-
-  <div class="row mt-2 justify-content-center">
-    <div class="col-md-8">
-        <h3>My current beliefs</h3>
-    </div>
-  </div>
-  <div class="row mt-2 justify-content-center">
-    <div class="col-md-8">
-      <ul class="m-0 p-0">
-        {{ range $list := index $.Site.Data.beliefs "cognitive-biases" }}
-          <li class="mb-2">{{ $list.desc }}</li>
-        {{ end }}
-      </ul>
-    </div>
-  </div>
-
-
-  <div class="row mt-2 justify-content-center">
-    <div class="col-md-8">
-      <h3>Links</h3>
-
-      {{ range (where (index .Site.Taxonomies.piles "cognitive-biases") "Section" "pieces").Pages }}
-        {{ partial "big-link" (dict "context" . "link" .Params.link "title" .Params.title "desc" .Params.one_liner) }}
       {{ end }}
 
+      <h3>My current beliefs</h3>
+      <div class="row mt-2 justify-content-center">
+        <div class="col-md-12">
+          <ul class="list-group">
+            {{ range $list := index $.Site.Data.beliefs "cognitive-biases" }}
+              {{ if eq .desc nil }}
+                {{ range . }}
+                  {{ partial "belief-li" . }}
+                {{ end }}
+              {{ else }}
+                {{ partial "belief-li" . }}
+              {{ end }}
+            {{ end }}
+            <li class="list-group-item"><a href="/beliefs" class="text-secondary">See all beliefs</a></li>
+          </ul>
+        </div>
+      </div>
+
+      {{ if where .Pages "Section" "in" (slice "blog" "tree") }}
+        <h3 class="mt-5">Related writing</h3>
+        <ul>
+          {{ range (where .Pages "Section" "in" (slice "blog" "tree")).ByDate.Reverse }}
+            <li><h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4></li>
+          {{ end }}
+        </ul>
+      {{ end }}
+
+
     </div>
+
+    <div class="col-8 col-lg-3 order-3">
+      {{ partial "bio-sidebar" . }}
+    </div>
+
   </div>
 
 </div>
