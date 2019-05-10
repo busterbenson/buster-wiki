@@ -23,17 +23,16 @@ category = "categories"
 influence = "influences"
 
 [outputs]
-home = ["HTML", "RSS", "Bonsai"]
+home = ["HTML", "RSS", "Algolia"]
 
-# Bonsai.io config for elasticsearch
-# https://docs.bonsai.io/docs/hugo
-
-[outputFormats.Bonsai]
-baseName = "bonsai"
+## Algolia 
+## https://forestry.io/blog/search-with-algolia-in-hugo/
+[outputFormats.Algolia]
+baseName = "algolia"
 isPlainText = true
 mediaType = "application/json"
 notAlternative = true
 
-[params.bonsai]
-vars = ["title", "summary", "date", "publishdate", "expirydate", "permalink"]
-params = ["categories", "tags", "influences", "piles", "projects"]
+[params.algolia]
+vars = ["title", "author", "link", "one_liner", "date"]
+params = ["piles", "influences", "projects", "categories"]
