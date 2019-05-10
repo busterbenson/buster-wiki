@@ -20,7 +20,7 @@ disqus    		 = false
 
 This is my 12th year of yearly birthday reflections. Here are the previous 11:
 
-* [40: Mind the loops](/blog/2016/05-28-mind-the-loop)
+* [40: Mind the loops](/blog/2016/05-28-mind-the-loops)
 * [39: Make wiggle room](/blog/2015/06-13-make-wiggle-room)
 * [38: Cultivate quality time](/blog/2014/05-28-cultivate-quality-time)
 * [37: More kiloslogs](/blog/2013/05-28-more-kiloslogs)
