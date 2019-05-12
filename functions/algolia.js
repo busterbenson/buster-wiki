@@ -7,14 +7,11 @@ exports.handler = function(event, context, callback) {
 	console.log("Loaded algolia.js");
 
 // Initiate an Algolia client
-  const client = algoliasearch(algoliaApp, context.secrets.ALGOLIA_TOKEN);
+  const client = algoliasearch(algoliaApp, process.env.ALGOLIA_ADMIN_KEY);
   // Initiate the Algolia index
   const index = client.initIndex(algoliaIndex);
-  callback(null, 200);
-
-
   callback(null, {
     statusCode: 200,
-    body: "Done: "+algoliaApp
+    body: "Done: "+algoliaApp+", "+index 
   });
 };
