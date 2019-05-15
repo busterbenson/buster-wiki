@@ -52,3 +52,15 @@
 	src: url('/fonts/recoleta-bold.otf') format('opentype');
 	font-weight: bold;
 }
+
+@font-face {
+	font-family: 'roboto-condensed';
+	src: url('/fonts/RobotoCondensed-Regular.ttf') format('truetype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'roboto-condensed';
+	src: url('/fonts/RobotoCondensed-Bold.ttf') format('truetype');
+	font-weight: bold;
+}
