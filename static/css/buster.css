@@ -7,7 +7,8 @@
 	color: #000;
 }
 body {
-	font-size: 16px;
+	font-size: 18px;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 a.special, a:hover.special {
 	color: #f0661d;
@@ -30,7 +31,7 @@ h1, .h1 {
 	font-weight: 700;
 }
 h1, h2, h3, .h1, .h2, .h3 {
-	font-family: 'Playfair Display', 'Georgia', serif;
+	font-family: 'Source Sans Pro', 'Georgia', serif;
 }
 h4, h5, h6, .h3, .h4, .h5, .h6 {
 	font-family: "Source Sans Pro", sans-serif;
@@ -93,14 +94,22 @@ blockquote h4 {
 }
 .card-title {
 }
-.lora, .playfair {
-	font-family: 'Playfair Display', serif;
+.playfair {
+	font-family: 'recoleta', sans-serif;
+	font-weight: 200;
 }
 .condensed {
-	font-family: 'Roboto Condensed', 'Georgia', sans-serif;
+	font-family: 'Roboto Condensed', 'Times New Roman', sans-serif;
+}
+.supernett {
+	font-family: 'supernett', sans-serif;
+}
+.recoleta {
+	font-family: 'recoleta', "Georgia", serif;
 }
 .blog-title, .blog-title a {
 	color: #f0661d;
+	font-family: 'recoleta', 'Georgia', sans-serif;
 }
 .blog-title a:hover {
 	text-decoration: none;

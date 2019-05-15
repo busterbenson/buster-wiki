@@ -26,7 +26,29 @@
   
 @font-face {
 	font-family: 'KefaIIPro-SemiBold';
-	src: url('//tree.fruitful.zone/fonts/kefa.eot');
-	src: url('//tree.fruitful.zone/fonts/kefa.eot?#iefix') format('embedded-opentype'),url('//tree.fruitful.zone/fonts/kefa.woff2') format('woff2'),url('//tree.fruitful.zone/fonts/kefa.woff') format('woff'),url('//tree.fruitful.zone/fonts/kefa.ttf') format('truetype');
+	src: url('/fonts/kefa.eot');
+	src: url('/fonts/kefa.eot?#iefix') format('embedded-opentype'),url('/fonts/kefa.woff2') format('woff2'),url('//tree.fruitful.zone/fonts/kefa.woff') format('woff'),url('/fonts/kefa.ttf') format('truetype');
 }
  
+@font-face {
+	font-family: 'supernett';
+	src: url('/fonts/supernett.otf');
+}
+
+@font-face {
+	font-family: 'recoleta';
+	src: url('/fonts/recoleta.otf') format('opentype');
+	font-weight: light;
+}
+
+@font-face {
+	font-family: 'recoleta';
+	src: url('/fonts/recoleta-medium.otf') format('opentype');
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'recoleta';
+	src: url('/fonts/recoleta-bold.otf') format('opentype');
+	font-weight: bold;
+}
