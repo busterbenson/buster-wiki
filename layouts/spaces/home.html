@@ -1,12 +1,16 @@
 {{ define "main" }}
-<div class="container">
+<div class="container-fluid">
+  <div class="row pt-lg-8 pt-10 justify-content-center">
 
-  {{ partial "title-and-content-basic" . }}
+    <div class="book-sidebar col-12 col-sm-4 col-lg-2 order-lg-1 order-2">
+      {{ partial "book-sidebar" . }}
+    </div>
 
-	{{ range .Sections }}
-    <div class="row my-5 justify-content-center">
-      <div class="col-md-8">
-    		<h3 class="lora"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+    <div class="col-12 col-lg-7 px-lg-3 order-lg-2 order-1">
+      {{ partial "title-and-content-basic" . }}
+
+    	{{ range .Sections }}
+    		<h3><a href="{{ .Permalink }}" class="blog-title" style="text-decoration: none;">{{ .Title }}</a></h3>
         <div class="row">
           {{ range .Pages }}
             <a class="col-12 col-sm-6 col-lg-4" href="{{ .Permalink }}">
@@ -18,9 +22,14 @@
             </a>
           {{ end }}
         </div>
-      </div>
+      {{ end }}
     </div>
-  {{ end }}
+
+    <div class="col-12 col-sm-8 col-lg-3 order-3">
+      {{ partial "bio-sidebar" . }}
+    </div>
+  </div>
 
 </div>
+
 {{ end }}

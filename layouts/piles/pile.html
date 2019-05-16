@@ -3,17 +3,17 @@
 <div class="container-fluid">
   <div class="row pt-lg-8 pt-10 justify-content-center">
 
-    <div class="book-sidebar col-4 col-lg-2 order-lg-1 order-2">
+    <div class="book-sidebar col-12 col-sm-4 col-lg-2 order-lg-1 order-2">
       {{ partial "book-sidebar" . }}
     </div>
 
-    <div class="col-12 col-lg-7 px-lg-3 order-lg-2 order-1">
+    <div class="col-12 col-lg-7 px-lg-3 order-lg-2 order-1 mb-5">
       <div class="mt-1 text-smaller"><strong><a href="/blog">BLOG</a></strong> · <strong><a href="/piles">PILES</a></strong></div>
       {{ partial "title-and-content-basic" . }}
 
 
       {{ if (where .Pages "Section" "influences") }}
-        <h3 class="border-bottom mt-2">Influences</h3>
+        <h3 class="mt-2">Influences</h3>
 
         <div class="row justify-content-start mt-2">
           {{ range (where .Pages "Section" "influences").ByTitle }}
@@ -24,17 +24,15 @@
         </div>
       {{ end }}
 
-      {{ if (where .Pages "Section" "projects") }}
+      {{ if gt (len (where .Pages "Section" "projects")) 0 }}
         <div class="row mt-2 justify-content-center">
           <div class="col-md-12">
-            <h3 class="border-bottom mb-2">Related projects</h3>
+            <h3 class="mb-2">Related projects</h3>
           </div>
           <div class="col-md-12 mt-2">
             <div class="row justify-content-start">
               {{ range (where .Pages "Section" "projects").ByTitle }}
-                {{ if ne (.Param "hide_from_lists") true }}
-                  {{ partial "person-card-mini" . }}
-                {{ end }}
+                {{ partial "person-card-mini" . }}
               {{ end }}
             </div>
           </div>
@@ -44,7 +42,7 @@
       {{ if ne (index $.Site.Data.beliefs .Data.Term) nil }}
         <div class="row mt-2 justify-content-center">
           <div class="col-md-12">
-            <h3 class="border-bottom mb-2">My beliefs</h3>
+            <h3 class="">My beliefs</h3>
           </div>
         </div>
         <div class="row mt-2 justify-content-center">
@@ -67,24 +65,19 @@
       {{ end }}
 
       {{ if where .Pages "Section" "in" (slice "blog" "tree") }}
-        <div class="row mt-5">
-          <div class="col-md-12">
-            <h3 class="border-bottom mb-2">Blog posts</h3>
-          </div>
+        <div class="my-5">
+          <h3>Related writing</h3>
+          {{ range (where .Pages "Section" "in" (slice "blog" "tree")).ByDate.Reverse }}
+            <ul>
+              {{ partial "list-item-for-page" . }}
+            </ul>
+          {{ end }}
         </div>
-        {{ range (where .Pages "Section" "in" (slice "blog" "tree")).ByDate.Reverse }}
-          <div class="row mt-1">
-            <div class="col-md-12">
-              {{ partial "piece-card" . }}
-              <hr />
-            </div>
-          </div>
-        {{ end }}
       {{ end }}
 
     </div>
 
-    <div class="col-8 col-lg-3 order-3">
+    <div class="col-12 col-sm-8 col-lg-3 order-3">
       {{ partial "bio-sidebar" . }}
     </div>
   </div>

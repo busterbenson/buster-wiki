@@ -3,7 +3,7 @@
 <div class="container-fluid">
   <div class="row pt-lg-8 pt-10 justify-content-center">
 
-    <div class="book-sidebar col-4 col-lg-2 order-lg-1 order-2">
+    <div class="book-sidebar col-12 col-sm-12 col-lg-2 order-lg-1 order-2">
       {{ partial "book-sidebar" . }}
     </div>
 
@@ -37,15 +37,17 @@
 
       {{ partial "divider" }}
 
-      <h3>Notes about beliefs</h3>
+      <h3>Related writing</h3>
 
-      {{ range (where (index .Site.Taxonomies.projects "codex-vitae") "Section" "pieces").Pages.ByDate.Reverse }}
-        {{ partial "piece-in-spaces-card" . }}
-      {{ end }}
+      <ul>
+        {{ range $page := (where (index .Site.Taxonomies.projects "codex-vitae") "Section" "blog").Pages.ByDate.Reverse }}
+          {{ partial "list-item-for-page" . }}
+        {{ end }}
+      </ul>
 
     </div>
 
-    <div class="col-8 col-lg-3 order-3 pt-10">
+    <div class="col-12 col-sm-8 col-lg-3 order-3">
       <div class="sticky sticky-with-header is_stuck" style="width: 255px; padding-top: 60px;">
         {{ range $pile, $list := $.Site.Data.beliefs }}
           <div class="overlay-menu">

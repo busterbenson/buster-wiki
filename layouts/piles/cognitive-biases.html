@@ -2,7 +2,7 @@
 <div class="container-fluid">
   <div class="row pt-lg-8 pt-10 justify-content-center">
 
-    <div class="book-sidebar col-4 col-lg-2 order-lg-1 order-2">
+    <div class="book-sidebar col-12 col-sm-4 col-lg-2 order-lg-1 order-2">
       {{ partial "book-sidebar" . }}
     </div>
 
@@ -131,19 +131,11 @@
         </div>
       </div>
 
-      {{ if where .Pages "Section" "in" (slice "blog" "tree") }}
-        <h3 class="mt-5">Related writing</h3>
-        <ul>
-          {{ range (where .Pages "Section" "in" (slice "blog" "tree")).ByDate.Reverse }}
-            <li><h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4></li>
-          {{ end }}
-        </ul>
-      {{ end }}
 
-
+      {{ partial "related-writing" . }}
     </div>
 
-    <div class="col-8 col-lg-3 order-3">
+    <div class="col-12 col-sm-8 col-lg-3 order-3">
       {{ partial "bio-sidebar" . }}
     </div>
 
