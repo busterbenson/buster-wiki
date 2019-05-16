@@ -1,12 +1,15 @@
 +++
 # the basics
-title = "Who am I?"
-one_liner = "Buster Benson, temporarily human."
+title 				 = "Who am I?"
+one_liner      = "Buster Benson, temporarily human."
 featured_image = "/images/rickshaw.jpg"
+data_username  = "buster"
+data_birthyear = 1976
+data_birth_month_and_day = "05-28"
 
 # metadata
-date = "2018-12-22"
-draft = false
+date   = "2018-12-22"
+draft 	= false
 layout = "home"
 +++
 

@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="container-fluid">
+  <div class="row pt-lg-8 pt-10 justify-content-center">
+    <div class="col-12">
+      <div class="mt-1 text-smaller"><strong><a href="/the-life-of">THE LIFE OF...</a></strong></div>
+      {{ partial "title-and-content-basic" . }}
+      {{ partial "life-by-weeks" . }}
+    </div>
+  </div>
+</div>
+{{ end }}
