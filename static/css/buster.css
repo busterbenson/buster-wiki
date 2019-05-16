@@ -122,11 +122,12 @@ header {
 	background-color: #111;
 	color: #fff;
 }
-header .topnav a.navbar-text, header .topnav a:visited.navbar-text {
+header .navbar-text a.navbar-link, header .navbar-text a:visited.navbar-link {
 	color: #fff;
 }
-header .topnav a:hover.navbar-text {
-	color: #fff;
+header .navbar-text a:hover.navbar-link {
+	color: #ff0;
+	text-decoration: none;
 }
 footer {
 }

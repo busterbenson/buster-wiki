@@ -1,3 +1,7 @@
+{{ $person := "buster" }}
+{{ $data_file := $.Site.Data.life.buster }}
+
+
 {{ $this_year := (int (dateFormat "2006" now)) }}
 {{ $current_age := sub (int $this_year) 1976 }}
 
@@ -10,23 +14,9 @@
 
   <div class="border border-gray float-left {{ $year_border_class }}" style="height: 2em; padding: 2px 5px; margin: 2px;">{{ add $year 1 }}</div>
   {{ range $week := seq 52 }}
-    {{ $this_week_date := $this_year_date.AddDate 0 0 (int (mul $week 7) ) }}
-    {{ if not (gt $this_week_date now) }}
-      <div class="border border-secondary float-left text-center text-truncate" style="height: 2em; max-height: 2em; max-width: 100%; padding: 2px 5px; margin: 2px;">
-        {{ range $each_day := seq 7  }}
-          {{ $specific_date := $this_week_date.AddDate 0 0 (int (sub $each_day 1)) }}
-          {{ $date_string := printf "%04d-%02d-%02d" $specific_date.Year $specific_date.Month $specific_date.Day }}
-          {{ $key := index $.Site.Data.life $date_string }}
-          {{ if ne $key nil }}
-            {{ range $key }}
-              <a {{ if ne .link nil }}href="{{ .link }}" target="_new"{{ end }} data-toggle="tooltip" data-placement="top" title="{{$specific_date.Format "Jan"}}, {{$specific_date.Day}} {{$specific_date.Year}}" class="margin-top: -100"><small>{{ .event }}</small></a>
-            {{ end }}
-          {{ end }}
-          {{- if eq ($specific_date.Format "20060102") (now.Format "20060102") -}}
-            <a href="/me" data-toggle="tooltip" data-placement="top" title="TODAY"><strong>👣</strong><small>See all the weeks</small></a>
-          {{- end -}}
-        {{ end }}
-      </div>
-    {{ end }}
+    {{ partial "week-cell" (dict "year" $this_year_date "week" $week "person" $person "link_to_more" false "site" $.Site "data_file" $data_file ) }}
   {{ end }}
+
+
+  <div class="border border-secondary float-left text-center text-truncate border-secondary" style="height: 2em; max-height: 2em; max-width: 100%; padding: 2px 5px; margin: 2px;"><small><a href="/me#decade-0">See more</a></small></div>
 {{ end }}
