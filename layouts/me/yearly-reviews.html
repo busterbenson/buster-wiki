@@ -13,15 +13,7 @@
 			
 			<div class="row">
 		  	{{ range $pages := index .Site.Taxonomies.categories "year-in-review" }}
-		  		<div class="col-12 col-sm-6 col-md-4 mb-1">
-		  			<div class="card">
-		  				<a href="{{ .URL }}"><img src="{{ .Params.featured_image }}" class="card-img-top" /></a>
-		  				<div class="card-body">
-		  					<h3 class="card-title"><a href="{{ .URL }}">{{ .Date.Year }}</a></h3>
-		  					<p>{{ .Title }}</p>
-		  				</div>
-		  			</div>	
-	  			</div>
+		  		{{ partial "simple-card" . }}
 	  		{{ end }}
 	  	</div>
 

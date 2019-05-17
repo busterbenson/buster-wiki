@@ -3,7 +3,7 @@
   	<h2 class="mt-0 mb-0 blog-title" style="text-decoration: none;">
 			{{ if .Params.link }}
 				{{ if lt (len .Content) 250 }}
-		  		<a href="{{ .Params.link }}" class="text-dark">{{ .Params.title }}</a>
+		  		<a href="{{ .Params.link }}" class="text-dark" target="_blank">{{ .Params.title }}</a>
 	  			<span class="oi oi-external-link small text-gray"></span>
 		  	{{ else }}
 		  		<a href="{{ .URL }}">{{ .Params.title }}</a> 			

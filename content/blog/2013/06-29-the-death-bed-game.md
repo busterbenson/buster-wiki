@@ -27,7 +27,7 @@ I’m strongly considering an alternative to this way of thinking. Follow this t
 
 ----
 
-#### Start here.
+### Start here.
 
 Remember, you will die.
 
@@ -53,7 +53,7 @@ Which ones are being neglected?
 
 ----
 
-#### [Top 5 regrets of the dying](http://www.guardian.co.uk/lifeandstyle/2012/feb/01/top-five-regrets-of-the-dying)
+### [Top 5 regrets of the dying](http://www.guardian.co.uk/lifeandstyle/2012/feb/01/top-five-regrets-of-the-dying)
 
 1. I wish I’d had the courage to live a life true to myself not the life others expected of me.
 2. I wish I hadn’t worked so hard.
@@ -65,7 +65,7 @@ Turn that around and play this game, let’s call it **the Death Bed Game"**.
 
 ----
 
-#### Rules of the Game
+### Rules of the Game
 
 Give yourself 1 point when you do something that counter acts one of these regrets of the dying.
 

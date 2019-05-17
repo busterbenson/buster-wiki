@@ -1,22 +1,23 @@
-<div class="col-12 col-sm-6 col-lg-4 mb-3">
-	<div class="card rounded">
-	  {{ if and (isset .Params "featured_image") (ne (.Param "featured_image") "") }}
-	  	<a href="{{ .URL }}"><img class="card-image-top" src="{{ .Param "featured_image" }}" alt="{{.Title}}"></a>
-	  {{ end }}
-	  <div class="card-body">
-	    <h3 class="card-title playfair"><a href="{{ .URL }}" class="text-dark">{{ .Title }}</a></h3>	    
-	    <p class="card-text px-0"><small>{{ .Param "one_liner" | safeHTML }}</small></p>
-	  </div>	
-
-	    
-    <ul class="list-group list-group-flush m-0 p-0">
-			{{ range $page := first 1 (where (index .Site.Taxonomies.influences .Data.Term) "Params.belief_delta" true) }}
-	    	<li class="list-group-item">
-	    		<small><a href="{{ .Permalink }}" target="_new">{{ .Title }}</a>{{ if ne .Params.one_liner nil }}: {{ .Params.one_liner }}{{ end }}</small>
-	      </li>
-	    {{ end }}
-    </ul>
-
-
+<div class="col-12 col-xs-6 col-sm-4 mb-4">
+  {{ if and (isset .Params "featured_image") (ne (.Param "featured_image") "") }}
+    <a href="{{ .URL }}"><div class="border rounded" style="height: 190px; background-position: center; background-size: cover; background-image: url({{ .Param "featured_image" }});"></div></a>
+  {{ else }}
+    <a href="{{ .URL }}"><img class="card-image-top" src="/images/pieces/emoji-book.png" alt="{{.Title}}"></a>
+  {{ end }}
+  <div class="card-body border rounded">
+  <div class="card-title mb-0 mt-1 recoleta">
+    <a href="{{ .URL }}">{{ .Title }}</a>
+  </div>
+  <small class="card-subtitle">
+    {{ .Params.one_liner | safeHTML }}
+  </small>
+	{{ range $page := first 1 (where (index .Site.Taxonomies.influences .Data.Term) "Params.belief_delta" true) }}
+			<div class="row text-small mt-1">
+				<div class="col-1 text-center">△</div> 
+				<div class="col"><a href="{{ .Permalink }}" target="_new">{{ .Title }}</a></div>
+			</div>
+	{{ end }}
 	</div>
+
 </div>
+

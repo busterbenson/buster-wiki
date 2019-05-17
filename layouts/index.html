@@ -32,19 +32,7 @@
       <h2 class="mt-5">A few highlights</h2>  
       <div class="row">
         {{ range (where .Site.Pages "Params.featured" true).ByDate.Reverse }}
-          <div class="col-4 mb-2">
-            {{ if and (isset .Params "featured_image") (ne (.Param "featured_image") "") }}
-              <a href="{{ .URL }}"><div class="border rounded" style="height: 190px; background-position: center; background-size: cover; background-image: url({{ .Param "featured_image" }});"></div></a>
-            {{ else }}
-              <a href="{{ .URL }}"><img class="card-image-top" src="/images/pieces/emoji-book.png" alt="{{.Title}}"></a>
-            {{ end }}
-            <h3 class="card-title mb-0 mt-1">
-              <a href="{{ .URL }}">{{ .Title }}</a>
-            </h3>
-            <small class="card-subtitle">
-              {{ .Params.one_liner }}
-            </small>
-          </div>
+          {{ partial "simple-card" . }}
         {{ end }}
       </div>
 
