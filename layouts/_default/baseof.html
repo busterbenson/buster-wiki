@@ -55,16 +55,20 @@
       {{ template "_internal/google_analytics_async.html" . }}
     {{ end }}
 
-    <script>
-      var shiftWindow = function() { scrollBy(0, -80) };
-      if (location.hash) shiftWindow();
-      window.addEventListener("hashchange", shiftWindow);
-    </script>
+    {{ if not (eq .Params.suppress_topnav true) }}
+      <script>
+        var shiftWindow = function() { scrollBy(0, -80) };
+        if (location.hash) shiftWindow();
+        window.addEventListener("hashchange", shiftWindow);
+      </script>
+    {{ end }}
   </head>
 
   <body id="top">
 
-    {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
+    {{ if not (eq .Params.suppress_topnav true) }}
+      {{ block "header" . }}{{ partial "site-header.html" .}}{{ end }}
+    {{ end }}
     <div class="mt-1">{{ block "main" . }}{{ end }}</div>
     {{ block "footer" . }}{{ partial "site-footer.html" . }}{{ end }}
     {{ block "scripts" . }}{{ partial "site-scripts.html" . }}{{ end }}

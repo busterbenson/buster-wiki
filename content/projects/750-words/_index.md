@@ -1,17 +1,23 @@
 +++
-title = "750 Words"
-one_liner = "A private journaling community and tool for writing every day."
-featured_image = "/images/750-birds.png"
-date = "2018-12-22"
+title 					= "750 Words"
+one_liner 			= "A private journaling community and tool for writing every day."
+featured_image 	= "/images/750-birds.png"
+date 						= "2009-12-16"
 draft = false
 url = '750-words'
 
+piles    = ['self-reflection', 'mindfulness']
+projects = []
 layout = "project"
 project_weight = 2 # 1 = low, 3 = high
 featured = true
 +++
 
+<p><a href="https://750words.com" class="btn btn-sm btn-outline-success" target="_new">Visit 750 Words</a></p>
+
 ### What is it?
+
+![750 Words Homepage](/images/projects/750words-homepage.png)
 
 It's a website that's all about learning a new habit: Writing. Every. Day.
 
@@ -20,3 +26,10 @@ I've long been inspired by an idea I first learned about inÂ *The Artist's Way*Â
 I've used the exercise as a great way to think out loud without having to worry about half-formed ideas, random tangents, private stuff, and all the other things in our heads that we often filter out before ever voicing them or writing about them. It's a daily brain dump. Over time, I've found that it's also very helpful as a tool to get thoughts going that have become stuck, or to help get to the bottom of a rotten mood.
 
 750 Words is the online, future-ified, fun-ified translation of this exercise.
+
+### Some articles about it
+
+- <a href="https://qz.com/777929/writing-morning-pages-can-offer-many-of-the-same-benefits-as-meditation/" target="_blank">How Writing 750 Words a Day Could Change Your Life</a> by Quartz
+- <a href="http://www.becomingwhoyouare.net/an-interview-with-750-words-creator-buster-benson/" target="_blank">An Interview with 750 Words Creator Buster Benson</a> by Becoming Who You Are
+- <a href="https://lifehacker.com/750-words-clears-your-mind-gets-ideas-flowing-5482921" target="_blank">750 Words Clears Your Mind, Gets Ideas Flowing</a> by Lifehacker
+- <a href="https://lifehacker.com/want-to-create-a-new-habit-get-ready-to-break-it-5964439" target="_blank">Want to Create a New Habit? Get Ready to Break It</a> by Lifehacker

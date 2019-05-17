@@ -1,3 +1,11 @@
+{{ if not (eq .URL "/search/") }}
+<form method="GET" action="/search">
+  <div class="form-group">
+    <input type="input" name="query" class="form-control" id="search-query" placeholder="Searching for something?">
+  </div>
+</form>
+{{ end }}
+
 <div class="mt-1 text-smaller"><strong><a href="/me">ABOUT ME</a></strong></div>
 
 <p class="text-center"><img src="/images/rickshaw-circle.png" style="width: 150px" class="pt-3"></p>

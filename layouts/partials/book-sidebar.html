@@ -1,4 +1,4 @@
-<div class="sticky-top" style="top: 85px;">
+<div class="sticky-top mb-3" style="top: 85px;">
 	{{ if and (ne (.Param "featured_image") "") (ne (.Param "hide_image_on_detail") true) }}
 	  <img src="{{$.Params.featured_image}}" class="rounded align-right img-thumbnail mr-3 mt-1 mb-3" />
 	{{ end }}

@@ -116,7 +116,7 @@ tags = ["robot co-op"]
 [[2006-05-28]]
 event = "🎂 I turn 30. Higher highs and lower lows."
 category = "birthday"
-link = "http://busterbenson.livejournal.com/85489.html"
+link = "/blog/2006/05-31-higher-highs-lower-lows/"
 tags = ["annual review"]
 
 [[2006-09-06]]
@@ -141,7 +141,7 @@ tags = ["kellianne"]
 [[2007-05-28]]
 event = "🎂 I turn 31. Double down."
 category = "birthday"
-link = "http://busterbenson.livejournal.com/120184.html"
+link = "/blog/2007/05-29-double-down/"
 tags = ["annual review"]
 
 [[2007-06-29]]
@@ -152,7 +152,7 @@ tags = ["technology"]
 [[2008-05-28]]
 event = "🎂 I turn 32. No problem."
 category = "birthday"
-link = "http://busterbenson.livejournal.com/204717.html"
+link = "/blog/2008/05-27-no-problem/"
 tags = ["annual review"]
 
 [[2008-09-15]]
@@ -183,13 +183,13 @@ tags = ["locavore"]
 [[2009-05-28]]
 event = "🎂 I turn 33. Frugal to the max."
 category = "birthday"
-link = "https://github.com/busterbenson/public/blob/master/files/yearly-report-33.md"
+link = "/2009/05-28-frugal-to-the-max/"
 tags = ["annual review"]
 
 [[2009-12-16]]
 event = "750words.com launches."
 category = "work"
-link = "https://750words.com"
+link = "/750-words"
 tags = ["750 words"]
 
 [[2010-05-10]]
@@ -200,7 +200,7 @@ tags = ["niko"]
 [[2010-05-28]]
 event = "🎂 I turn 34. Cultivating the core."
 category = "birthday"
-link = "https://github.com/busterbenson/public/blob/master/files/yearly-report-34.md"
+link = "/blog/2010/05-28-cultivate-the-core/"
 tags = ["annual review"]
 
 [[2010-09-01]]
@@ -211,7 +211,7 @@ tags = ["health month"]
 [[2011-05-28]]
 event = "🎂 I turn 35. Love the struggle."
 category = "birthday"
-link = "http://bustr.tumblr.com/post/5929491429/on-being-35"
+link = "/blog/2011/05-28-love-the-struggle/"
 tags = ["annual review"]
 
 [[2011-07-01]]
@@ -227,7 +227,7 @@ tags = ["habit labs", "bud.ge"]
 [[2012-05-28]]
 event = "🎂 I turn 36. Talk it out."
 category = "birthday"
-link = "http://bustr.tumblr.com/post/23934784635/on-being-36"
+link = "/blog/2012/05-28-talk-it-out/"
 tags = ["annual review"]
 
 [[2012-07-11]]
@@ -253,7 +253,7 @@ tags = ["family", "home"]
 [[2013-05-28]]
 event = "🎂 I turn 37. More kiloslogs."
 category = "birthday"
-link = "http://buster.svbtle.com/37"
+link = "/blog/2013/05-28-more-kiloslogs/"
 tags = ["annual review"]
 
 [[2013-12-23]]
@@ -268,7 +268,7 @@ tags = ["rodney"]
 [[2014-05-28]]
 event = "🎂 I turn 38. Cultivate quality time."
 category = "birthday"
-link = "https://medium.com/p/5e72aa44b857"
+link = "/blog/2014/05-28-cultivate-quality-time/"
 tags = ["annual review"]
 
 [[2014-09-09]]
@@ -279,7 +279,7 @@ tags = ["home"]
 [[2015-05-28]]
 event = "🎂 I turn 39. Make wiggle room."
 category = "birthday"
-link = "https://medium.com/buster-benson/39-make-wiggle-room-2546b44b9804"
+link = "/blog/2015/06-13-make-wiggle-room/"
 tags = ["annual review"]
 
 [[2015-06-03]]
@@ -300,7 +300,7 @@ tags = ["slack"]
 [[2016-05-28]]
 event = "🎂 I turn 40. Mind the loops."
 category = "birthday"
-link = "https://medium.com/@buster/40-mind-the-loops-9e0c6ba35a87"
+link = "/blog/2016/05-28-mind-the-loops/"
 tags = ["annual review"]
 
 [[2016-08-06]]
@@ -322,7 +322,7 @@ tags = ["politics"]
 [[2017-05-28]]
 event = "🎂 I turn 41. Seek endarkenment."
 category = "birthday"
-link = "https://medium.com/@buster/41-seek-endarkenment-9700663dea67"
+link = "/blog/2017/05-28-seek-endarkenment/"
 tags = ["annual review"]
 
 [[2018-01-30]]
@@ -343,7 +343,7 @@ tags = ["patreon"]
 [[2018-05-28]]
 event = "🎂 I turn 42. Dig deeper."
 category = "birthday"
-link = "https://medium.com/@buster/42-dig-deeper-e2278d1fe015"
+link = "/blog/2018/07-02-dig-deeper/"
 tags = ["annual review"]
 
 [[2018-09-23]]

@@ -8,10 +8,10 @@ data_birth_month_and_day = "05-28"
 url 		  			= 'the-life-of/buster'
 featured_image 	= ""
 date 						= 2019-05-16
-draft 					= true
-
+draft 					= false
 piles 					= []
-perspectives 		= []
+projects 				= ['the-life-of']
 
 layout 					= "the-life-of-person"
+suppress_topnav = true
 +++

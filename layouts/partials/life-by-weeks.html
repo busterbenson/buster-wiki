@@ -11,7 +11,7 @@
   {{ if eq (mod $age 10) 0}}
     <br clear="all" />
     <a name="decade-{{ $age }}"></a>
-    <div class="sticky-top mt-1" style="top: 60px; background-color: #fff;"><h3>
+    <div class="sticky-top mt-1" style="{{ if not $.Params.suppress_topnav }}top: 60px;{{ end }} background-color: #fff;"><h3>
       {{ if eq $age 0 }}
         My first ten years
       {{ else if eq $age 10 }}

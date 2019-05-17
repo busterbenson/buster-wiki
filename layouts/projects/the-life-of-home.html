@@ -5,14 +5,18 @@
       <div class="mt-1 text-smaller"><strong><a href="/projects">PROJECTS</a></strong></div>
       {{ partial "title-and-content-basic" . }}
 
-      {{ range .Pages.ByTitle }}
-        {{ if ne (.Param "hide_from_lists") true }}
-          {{ if and (isset .Params "featured_image") (ne (.Param "featured_image") "") }}
-              <p class="mb-3">
-                <img class="card-img-top" src="{{ .Param "featured_image" }}" alt="{{.Title}}">
-              </p>
-          {{ end }}          
+      {{ if false }}
+        <div class="row">
+        {{ range .Pages.ByTitle }}
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title"><a href="{{.Permalink}}">{{ .Title }}</a></h3>
+              </div>
+            </div>
+          </div>
         {{ end }}
+        </div>
       {{ end }}
     </div>
   </div>
