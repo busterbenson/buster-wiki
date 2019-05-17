@@ -7,6 +7,7 @@ homepage_order = 3
 date = "2018-12-22"
 draft = false
 layout = "home"
+featured = true
 +++
 
 ### What are beliefs?

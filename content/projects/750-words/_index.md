@@ -8,6 +8,7 @@ url = '750-words'
 
 layout = "project"
 project_weight = 2 # 1 = low, 3 = high
+featured = true
 +++
 
 ### What is it?

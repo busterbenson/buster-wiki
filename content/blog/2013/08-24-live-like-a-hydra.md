@@ -16,6 +16,7 @@ category  		 = 'article'
 date      		 = "2013-08-24"
 layout    		 = "piece"
 disqus    		 = false
+featured       = true
 +++
 
 ## #1 What is antifragility?

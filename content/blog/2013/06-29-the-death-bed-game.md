@@ -16,6 +16,7 @@ category  		 = 'article'
 date      		 = "2013-06-29"
 layout    		 = "piece"
 disqus    		 = false
+featured       = true
 +++
 
 You get one death bed point whenever you do something that you believe will still be valuable and meaningful to you when you’re on your death bed.

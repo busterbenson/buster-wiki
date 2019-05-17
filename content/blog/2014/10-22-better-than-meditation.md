@@ -17,5 +17,6 @@ category  		 = 'article'
 date      		 = "2014-10-22"
 layout    		 = "piece"
 disqus    		 = false
+featured       = true
 +++
 
