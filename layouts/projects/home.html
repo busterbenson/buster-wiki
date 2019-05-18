@@ -9,26 +9,14 @@
     </div>
 
     <div class="col-12 col-lg-7 px-lg-3 order-lg-2 order-1">
+      <div class="mt-1 text-smaller"><strong><a href="/blog">BLOG</a></strong></div>
       {{ partial "title-and-content-basic" . }}
-
 
       <div class="row">
         {{ range (.Pages.ByParam "project_weight").Reverse }}
-          <div class="col-6 mb-2">
-            <div class="card">
-              <div class="card-body">
-                <h3 class="card-title">
-                  <a href="{{ .URL }}">{{ .Title }}</a>
-                </h3>
-                <h6 class="card-subtitle">
-                  {{ .Params.one_liner }}
-                </h6>
-                {{ if gt (len .Pages) 0 }}
-                  <div class="small mt-1 pt-1" style="border-top: 1px solid #eee">{{ len .Pages }} posts</div>
-                {{ end }}
-              </div>
-            </div>
-          </div>
+          {{ if gt (len .Pages) 0 }}
+            {{ partial "section-card" . }} 
+          {{ end }}
         {{ end }}
       </div>
     </div>
