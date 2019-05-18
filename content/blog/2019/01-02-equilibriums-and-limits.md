@@ -30,13 +30,13 @@ thoughts_prompt = ""
 thoughts_button = "Thoughts?"
 +++
 
-#### My top take-away:
+### My top take-away:
 
 When the argument is about a binary choice between only two option, consider re-framing the difference as something that exists along a spectrum, with more than two possible perspectives. Some perspectives will be about which direction we should push, relative to our current circumstances (aka **equilibrium perspectives**). Others will be about what kinds of absolute limits we should put into place regardless of current circumstances (aka **limitation perspectives**). 
 
 ----
 
-#### My <mark>highlights</mark>:
+### My <mark>highlights</mark>:
 
 > We sometimes think of political issues in binary terms. Is someone pro-life or pro-choice? But most individuals hold views that are more complicated than a binary can capture.
 
@@ -69,7 +69,7 @@ The slippery slope fallacy.
 
 ----
 
-#### Read it
+### Read it
 
 Worth reading the [full article here](https://www.theatlantic.com/politics/archive/2018/02/a-better-way-to-look-at-most-every-political-issue/552752/). *Hat tip, Nikki Sylianteng.*
 

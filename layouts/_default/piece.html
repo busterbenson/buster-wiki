@@ -32,11 +32,17 @@
     	{{ end }}
 		  <div class="small mt-1">
 		    {{ if .Params.annotated_link }}
-	  	  	<a href="{{ .Params.annotated_link }}" target="_new"><mark class="text-primary"><span class="oi oi-comment-square"></span> Read it with in-line comments</mark></a>
+	  	  	<a href="{{ .Params.annotated_link }}" target="_blank" class="btn btn-sm btn-dark"><span class="oi oi-comment-square"></span> &nbsp; Read it with in-line comments</a>
 	  	  {{ end }}
 	  	</div>
 
-			<div class="mt-4 mb-3 pb-2 piece-content border-bottom">{{ .Content }}</div>
+      <div class="mt-4 mb-3 pb-2 piece-content border-bottom">
+        {{ if gt (len .Content) 10 }}
+    			{{ .Content }}
+        {{ else if .Params.link }}
+          <a class="button btn btn-lg btn-outline-primary" href="{{ .Params.link }}" target="_blank">Read it!</a>
+        {{ end }}
+      </div>
 			{{ partial "piece-metadata" . }}
 
     </div>

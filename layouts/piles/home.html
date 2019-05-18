@@ -15,19 +15,23 @@
       <div class="row">
         {{ range $paginator }}
           {{ if gt (len .Pages) 0 }}
-            <div class="col-6 col-md-4 mb-2">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="{{ .URL }}">{{ .Title }}</a>
-                  </h4>
-                  <h6 class="card-subtitle">
-                    {{ .Params.one_liner }}
-                  </h6>
-                  {{ if gt (len .Pages) 0 }}
-                    <div class="small mt-1 pt-1" style="border-top: 1px solid #eee">{{ len .Pages }} posts</div>
+            <div class="col-12 col-xs-6 col-sm-4 mb-4">
+              <div class="card-title mb-0 mt-1 recoleta">
+                <a href="{{ .URL }}">{{ .Title }}</a>
+              </div>
+              {{ if gt (len .Pages) 0 }}
+                {{ range .Pages }}
+                  {{ if gt .Date (now.AddDate 0 -1 0) }}
+                    <span data-toggle="tooltip" data-placement="auto" title="{{ .Title }}"><a href="{{ .Permalink }}" style="text-decoration: none;">●</a></span>
+                  {{ else if gt .Date (now.AddDate -1 0 0) }}
+                    <span data-toggle="tooltip" data-placement="auto" title="{{ .Title }}"><a href="{{ .Permalink }}" style="text-decoration: none;">◉</a></span>
+                  {{ else }}
+                    <span data-toggle="tooltip" data-placement="auto" title="{{ .Title }}"><a href="{{ .Permalink }}" style="text-decoration: none;">◎</a></span>
                   {{ end }}
-                </div>
+                {{ end }}
+              {{ end }}
+              <div>
+                <em>{{ .Params.one_liner | safeHTML }}</em>
               </div>
             </div>
           {{ end }}

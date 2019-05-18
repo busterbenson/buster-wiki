@@ -13,41 +13,14 @@
 			<div class="row">
 	  	{{ range (where .Site.Pages "Params.category" "book").ByDate.Reverse }}
 	  		{{ if eq .Params.belief_delta true }}
-		  		<div class="col-12 col-sm-6 col-lg-4 mb-3">
-			  		<div class="card">
-			  			<div class="card-body">
-			  				<div class="card-text">
-				  				{{ if .Params.featured_image }}
-				  					<a href="{{ .Params.link }}" target="_new"><img src="{{ .Params.featured_image }}" class="w-25 pb-2" /></a>
-				  				{{ end }}
-			  				</div>
-			  				<h3 class="card-title">
-					  			<a href="{{ .Params.link }}" target="_new">{{ .Title }}</a>
-					  		</h3>
-					  		<h6 class="card-subtitle mb-2 text-muted">
-			  	  			{{ if eq .Params.author "me" }}
-			  	  				By Buster
-			  	  			{{ else if ne .Params.author ""}}
-			  	  				{{ $person := replace (replace (lower .Params.author) " " "-") "." "" }}
-						  			{{ with $person := $.Site.GetPage ( printf "/influences/%s" $person ) }}
-								  		By <a href="{{ .Permalink }}">{{ .Title }}</a>
-								  	{{ else }}
-								  		By {{ .Params.author }}
-							  		{{ end }}
-							  	{{ end }}
-					  		</h6>
-					  		<p class="card-text">
-					  			{{ .Params.one_liner | safeHTML }}
-					  		</p>
-					  	</div>
-			  		</div>
-			  	</div>
+	  			{{ partial "simple-card" . }}
 		  	{{ end }}
 	  	{{ end }}
 		  </div>	
 
+		  {{ partial "divider" }}
 
-			<h4>Articles that changed how I think</h4>
+			<h3>Articles that changed how I think</h3>
 	  	{{ range (where .Site.Pages "Params.category" "article").ByDate.Reverse }}
 	  		{{ if eq .Params.belief_delta true }}
 	  			{{ partial "piece-card" . }}
