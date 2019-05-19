@@ -15,21 +15,7 @@
       <div class="row">
         {{ range $paginator }}
           {{ if gt (len .Pages) 0 }}
-            <div class="col-6 col-md-4 mb-2">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="{{ .URL }}">{{ .Title }}</a>
-                  </h4>
-                  <h6 class="card-subtitle">
-                    {{ .Params.one_liner }}
-                  </h6>
-                  {{ if gt (len .Pages) 0 }}
-                    <div class="small mt-1 pt-1" style="border-top: 1px solid #eee">{{ len .Pages }} posts</div>
-                  {{ end }}
-                </div>
-              </div>
-            </div>
+            {{ partial "section-card" . }}
           {{ end }}
         {{ end }}
       </div>

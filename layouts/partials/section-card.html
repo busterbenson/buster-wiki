@@ -1,11 +1,19 @@
-<div class="col-6 col-md-4 col-lg-3 mb-3">
-	<div class="card lift">
-	  {{ if and (isset .Params "featured_image") (ne (.Param "featured_image") "") }}
-	  	<a href="{{ .URL }}"><img class="card-image-top" src="{{ .Param "featured_image" }}" alt="{{.Title}}"></a>
-	  {{ end }}
-	  <div class="card-body">
-	    <h3 class="card-title"><a href="{{ .URL }}" class="text-dark">{{ .Title }}</a></h3>
-	    <p class="card-text"><small>{{ .Param "one_liner" }}</small></p>
-	  </div>	
-	</div>
-</div>
+<div class="col-12 col-xs-6 col-sm-4 mb-4">
+      <div class="card-title mb-0 mt-1 recoleta">
+        <a href="{{ .URL }}">{{ .Title }}</a>
+      </div>
+      {{ if gt (len .Pages) 0 }}
+        {{ range .Pages }}
+          {{ if gt .Date (now.AddDate 0 -1 0) }}
+            <span data-toggle="tooltip" data-placement="auto" title="{{ .Title }}"><a href="{{ .Permalink }}" style="text-decoration: none;">✪</a></span>
+          {{ else if gt .Date (now.AddDate -1 0 0) }}
+            <span data-toggle="tooltip" data-placement="auto" title="{{ .Title }}"><a href="{{ .Permalink }}" style="text-decoration: none;">◉</a></span>
+          {{ else }}
+            <span data-toggle="tooltip" data-placement="auto" title="{{ .Title }}"><a href="{{ .Permalink }}" style="text-decoration: none;">◎</a></span>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+      <div>
+        <em>{{ .Params.one_liner | safeHTML }}</em>
+      </div>
+    </div>
