@@ -5,7 +5,6 @@ author    		 	= 'me'
 link      		 	= ""
 one_liner 		 	= ""
 featured_image 	= "" 
-belief_delta   	= false
 
 # taxonomies
 influences		 	= []
@@ -20,8 +19,5 @@ tags					 	= []
 # metadata
 layout	    	 	= "piece"
 date      		 	= {{ .Date }}
-disqus    		 	= false
-thoughts			 	= true
-thoughts_prompt = ""
-thoughts_button = "Thoughts?"
 +++
+
