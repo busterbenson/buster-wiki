@@ -2,8 +2,8 @@
 title     			= "The Life Of Willo"
 one_liner 			= "One sentence summary of your life."
 data_username		= "willo"
-data_birthyear  = 1976
-data_birth_month_and_day = "01-01"
+data_birthyear  = 1975
+data_birth_month_and_day = "06-20"
 
 url 		  			= 'the-life-of/willo'
 featured_image 	= ""

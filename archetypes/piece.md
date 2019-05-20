@@ -20,9 +20,4 @@ tags			 	    = []
 # metadata
 layout	    	 	= "piece"
 date 				    = {{ .Date }}
-disqus    		 	= false
-thoughts		 	  = true
-thoughts_prompt = ""
-thoughts_button = "Thoughts?"
 +++
-
