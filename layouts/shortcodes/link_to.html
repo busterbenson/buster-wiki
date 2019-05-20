@@ -1,24 +1,46 @@
 {{ $text := .Get "text" }}
 {{- if ne ($person := .Get "person") "" -}}
-	{{- $person := replace (replace (lower $person) " " "-") "." "" -}}
-	{{- with .Site.GetPage ( printf "/influences/%s" $person ) -}}
-		<a href="{{ .Permalink }}">{{ if ne $text "" }}{{ $text }}{{ else }}{{ .Title }}{{ end }}</a>
-	{{- else -}}
-		{{- if ne $text "" -}}{{ $text }}{{- else -}}{{- .Get "person" -}}{{- end -}}
-	{{- end -}}
+{{- $person := replace (replace (lower $person) " " "-") "." "" -}}
+{{- with .Site.GetPage ( printf "/influences/%s" $person ) -}}
+<a href="{{ .Permalink }}"
+  >{{ if ne $text "" }}{{ $text }}{{ else }}{{ .Title }}{{ end }}</a
+>
+{{- else -}}
+{{- if ne $text "" -}}{{ $text }}{{- else -}}{{- .Get "person" -}}{{- end -}}
+{{- end -}}
 {{- else if ne ($space := .Get "space") "" -}}
-	{{- $space := replace (lower $space) " " "-" -}}
-	{{- with .Site.GetPage ( printf "/spaces/%s" $space ) -}}
-		<a href="{{ .Permalink }}">{{ if ne $text "" }}{{ $text }}{{ else }}{{ .Title }}{{ end }}</a>
-	{{- end -}}
+{{- $space := replace (lower $space) " " "-" -}}
+{{- with .Site.GetPage ( printf "/spaces/%s" $space ) -}}
+<a href="{{ .Permalink }}"
+  >{{ if ne $text "" }}{{ $text }}{{ else }}{{ .Title }}{{ end }}</a
+>
+{{- end -}}
 {{- else if ne ($idea := .Get "idea") "" -}}
-	{{- $idea := replace (lower $idea) " " "-" -}}
-	{{- with .Site.GetPage ( printf "/tree/%s.md" $idea ) -}}
-		<a href="{{ .Permalink }}">{{ if ne $text "" }}{{ $text }}{{ else }}{{ .Title }}{{ end }}</a>
-	{{- end -}}
+{{- $idea := replace (lower $idea) " " "-" -}}
+{{- with .Site.GetPage ( printf "/tree/%s.md" $idea ) -}}
+<a href="{{ .Permalink }}"
+  >{{ if ne $text "" }}{{ $text }}{{ else }}{{ .Title }}{{ end }}</a
+>
+{{- end -}}
 {{- else if ne ($pile := .Get "pile") "" -}}
-	{{- $pile := replace (lower $pile) " " "-" -}}
-	{{- with .Site.GetPage ( printf "/piles/%s" $pile ) -}}
-		<a href="{{ .Permalink }}">{{ if ne $text "" }}{{ $text }}{{ else }}{{ .Title }}{{ end }}</a>
-	{{- end -}}
+{{- $pile := replace (lower $pile) " " "-" -}}
+{{- with .Site.GetPage ( printf "/piles/%s" $pile ) -}}
+<a href="{{ .Permalink }}"
+  >{{ if ne $text "" }}{{ $text }}{{ else }}{{ .Title }}{{ end }}</a
+>
+{{- end -}}
+{{- else if ne ($project := .Get "project") "" -}}
+{{- $project := replace (lower $project) " " "-" -}}
+{{- with .Site.GetPage ( printf "/projects/%s" $project ) -}}
+<a href="{{ .Permalink }}"
+  >{{ if ne $text "" }}{{ $text }}{{ else }}{{ .Title }}{{ end }}</a
+>
+{{- end -}}
+{{- else if ne ($person := .Get "life-of") "" -}}
+{{- $person := replace (lower $person) " " "-" -}}
+{{- with .Site.GetPage ( printf "/projects/the-life-of/%s" $person ) -}}
+<a href="{{ .Permalink }}"
+  >{{ if ne $text "" }}{{ $text }}{{ else }}{{ .Title }}{{ end }}</a
+>
+{{- end -}}
 {{- end -}}

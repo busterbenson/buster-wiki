@@ -9,7 +9,8 @@ perspectives = []
 
 date = 2018-12-26T13:01:15-08:00
 draft = false
-layout = "the-life-of-home"
+layout = "project"
+suppress_related_writing = true
 project_weight = 1 # 1 = low, 3 = high
 +++
 
