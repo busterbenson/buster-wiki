@@ -1,7 +1,7 @@
 baseURL = "https://busterbenson.com/"
 languageCode = "en-us"
 theme = "buster"
-title = "buster.wiki"
+title = "Buster Benson"
 
 enableEmoji = true
 enableInlineShortcodes = true
