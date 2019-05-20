@@ -96,6 +96,8 @@ blockquote h4 {
 	color: #666;
 	line-height: 1.5em;
 } 
+.significant, .significant a {
+}
 .card-body {
 	padding: 20px;
 }

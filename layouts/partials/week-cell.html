@@ -7,14 +7,25 @@
 {{ $this_week_date := .year.AddDate 0 0 (int (mul .week 7) ) }}
 {{ $week_border_class := cond (gt $this_week_date now) "border-tertiary" "border-secondary" }}
 
-<div class="border {{ $week_border_class }} float-left text-center text-truncate" style="height: 2em; max-height: 2em; max-width: 100%; padding: 2px 5px; margin: 2px;">
+<div class="week border {{ $week_border_class }} float-left text-center text-truncate" style="height: 2em; max-height: 2em; max-width: 100%; padding: 2px 5px; margin: 2px;">
   {{ range $each_day := seq 7  }}
     {{ $specific_date := $this_week_date.AddDate 0 0 (int (sub $each_day 1)) }}
     {{ $date_string := printf "%04d-%02d-%02d" $specific_date.Year $specific_date.Month $specific_date.Day }}
     {{ $key := index $data_file $date_string }}
     {{ if ne $key nil }}
       {{ range $key }}
-        <a {{ if ne .link nil }}href="{{ .link }}" target="_new"{{ end }} data-toggle="tooltip" data-placement="bottom" title="{{$specific_date.Format "Jan"}}, {{$specific_date.Day}} {{$specific_date.Year}}" class="margin-top: -100" style="white-space: nowrap; height: 2em;"><small>{{ .event }}</small></a>
+
+      {{ $scratch := newScratch }}
+      {{ $scratch.Set "human_date" (printf "%s, %02d %04d" ($specific_date.Format "Jan") $specific_date.Day $specific_date.Year) }}
+      {{ if eq .date_resolution "month" }}
+        {{ $scratch.Set "human_date" (printf "%s %04d" ($specific_date.Format "January") $specific_date.Year) }}
+      {{ end }}  
+      
+      {{ if or (eq .desc "") (eq .desc nil) }}
+          <a {{ if ne .link nil }}href="{{ .link }}" target="_new"{{ end }} data-toggle="popover" data-placement="bottom" data-trigger="hover" data-content="{{ $scratch.Get "human_date" }}" class="" style="margin-top: -100px; height: 2em;"><small>{{ .event }}</small></a>
+        {{ else }}
+          <a {{ if ne .link nil }}href="{{ .link }}" target="_new"{{ end }} data-toggle="popover" data-placement="bottom" title="{{ $scratch.Get "human_date" }}" data-trigger="hover" data-content="{{ .desc }}" class="" style="margin-top: -100px; height: 2em;"><small class="significant">{{ .event }}</small></a>        
+        {{ end }}
       {{ end }}
     {{ end }}
   {{ end }}

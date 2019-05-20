@@ -1,5 +1,87 @@
+[[2019-01-01]]
+event    = "Mom visited in Thailand."
+desc   	 = "I flew my Mom out to Thailand (her first time in SE Asia!); we spent time in Chiang Mai & did a beach trip to Koh Phangan. See photos & reflection from her visit."
+date_resolution = "month"
+link     = "https://www.instagram.com/p/BtgkpRCnICU/"
+
+[[2019-02-01]]
+event    = "Finishing Growing my LightMap."
+desc   	 = "Continuing to write/finish my book + Growing my LightMap™ Guidance Group & Double Down on Your Genius Transformation Group!"
+date_resolution = "month"
+link     = "https://willolovesyou.com/lightmap"
+
+[[2019-03-01]]
+event    = "Headed to Ubud, Bali for 3 weeks."
+desc   	 = "After 6 incredibly prolific & wonderful months in Chiang Mai, I’m off to spend three weeks in my other beloved spirit-home, Ubud, Bali, where I’ll see friends, clients, and speak at an event called DCxBali. Then I fly to Florida for two weeks, seeing my Mom and finalizing my name change (so excited)!"
+date_resolution = "month"
+link     = "https://willolovesyou.com/willo-obrien-name-change-willo-sana/"
+
+[[2019-03-01]]
+event    = "Mexico for the summer."
+desc   	 = "I fly to Mexico to live there for the summer! I’ll first be in Mexico City for a few months, and we’ll see where the wind takes me from there. Excited to practice/learn more Spanish & explore some of the other wonderful little mountain/beach towns. And eat ALL THE TACOS! 🙂"
+date_resolution = "month"
+
+[[2018-01-01]]
+event    = "Kicked off the new year in Thailand."
+desc   	 = "Started (more seriously) writing my upcoming book, Double Down on Your Genius! Interviewed on the Girlskill Podcast: Feel the Fear, Revamp Yourself & Thrive in the New Year."
+date_resolution = "month"
+
+[[2018-02-01]]
+event    = "Chiang Mai."
+desc   	 = "Moved my stuff up to Chiang Mai & spent a few weeks there before deciding to put my stuff in storage and slow travel (digital-nomad-style) for 6 months!"
+date_resolution = "month"
+
+[[2018-01-01]]
+event    = "Koh Phangan, Thailand."
+desc   	 = "First stop: back to the lovely island of Koh Phangan, Thailand for some much-needed beach time."
+date_resolution = "month"
+
+[[2018-02-01]]
+event    = "Clarifying Your Vision re-released!"
+desc   	 = "Re-vamped & re-released one of the most popular courses from my Harvest & Thrive series (2013): Clarifying Your Vision."
+date_resolution = "month"
+
+[[2018-03-01]]
+event    = "Ho Chi Minh City, Vietnam."
+desc   	 = "Traveled to Ho Chi Minh City, Vietnam (for the first time!) where I attended Vietnam Blockchain Week and DCxSaigon with many of my fellow location independent friends!"
+date_resolution = "month"
+
+[[2018-03-01]]
+event    = "Bali."
+desc   	 = "Arrived in beautiful Bali where I’ve been soaking up the good vibes in Ubud – writing, meditating, participating in sacred ceremonies, sound healing and more. But mostly writing and enjoying sweet solitude in paradise. All my dreams are coming true!"
+date_resolution = "month"
+
+[[2018-04-20]]
+event    = "Posted my declaration, Coming out of the Macgic Closet"
+desc   	 = "Publicly sharing about my spiritual journey."
+
+[[2018-08-01]]
+event    = "Talking with clients again."
+desc   	 = "Started taking on clients again (read about my taking a break)"
+date_resolution = "month"
+
+[[2018-09-01]]
+event    = "Moved back to Chiang Mai, Thailand."
+desc   	 = "Moved back to my other spirit-home: Chiang Mai, Thailand"
+date_resolution = "month"
+
+[[2018-10-01]]
+event    = "DCBKK in Bangkok."
+desc   	 = "Traveled to Bangkok, Thailand for my 5th DCBKK"
+date_resolution = "month"
+
+[[2018-11-01]]
+event    = "Launched my Close the Gap Masterclass & The LightMap Guidance System."
+desc   	 = ""
+date_resolution = "month"
+
+[[2018-12-01]]
+event    = "Garden Gathering weekend in Hong Kong."
+desc   	 = "Contributed to yet another life-changing Garden Gathering weekend in Hong Kong (and my first time back to my former home in almost a year!)."
+date_resolution = "month"
+
 [[1975-06-20]]
 event 	 = "🐣 I enter the world."
-category = "self"
-tags 		 = ["me"]
 desc     = ""
+
+
