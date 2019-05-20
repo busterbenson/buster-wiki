@@ -8,7 +8,7 @@ featured_image = ""
 belief_delta   	= false
 
 # taxonomies
-influences = ['alan-watts']
+influences = ['alan-watts'] 
 piles = ['strange-loops']
 projects  = []
 
