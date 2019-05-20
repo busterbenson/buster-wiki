@@ -8,8 +8,8 @@ featured_image = ""
 belief_delta   	= false
 
 # taxonomies
-influences = [] 
-piles = []
+influences = ['alan-watts'] 
+piles = ['strange-loops']
 projects  = []
 
 # article, reference, thought, book, idea, podcast, blog, tv
