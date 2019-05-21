@@ -1,0 +1,49 @@
+{
+  "name": "biases",
+  "children": [
+   {
+    "name": "Looking",
+    "children": [
+     {
+      "name": "Depend on the context",
+      "children": [
+       {"name": "Cathedral Effect", "value": 3938},
+       {"name": "Focalism", "value": 3812},
+       {"name": "Generation Effect", "value": 6714},
+       {"name": "Levels of Processing Effect", "value": 743},
+       {"name": "Magic Number +- 2", "value": 743},
+       {"name": "Misattribution of Memory", "value": 743},
+       {"name": "Next-In-Line Effect", "value": 743},
+       {"name": "Picture Superiority Effect", "value": 743},
+       {"name": "Self-Relevance Effect", "value": 743},
+       {"name": "Spacing Effect", "value": 743},
+       {"name": "Testing Effect", "value": 743},
+       {"name": "Tip of the Tongue Phenomenon", "value": 743}
+       
+      ]
+     },
+     {
+      "name": "Accept what comes to mind",
+      "children": [
+       {"name": "Attentional Bias", "value": 3534},
+       {"name": "Availability Heuristic", "value": 5731},
+       {"name": "Change Blindness", "value": 7840},
+       {"name": "Cryptomesia", "value": 5914},
+       {"name": "Cue-Dependant Forgetting", "value": 3416},
+       {"name": "Frequency Illusion", "value": 3416},
+       {"name": "Source Confusion", "value": 3416},
+       {"name": "Survivorship Bias", "value": 3416}
+      ]
+     },
+     {
+      "name": "Amplify the bizarre",
+      "children": [
+       {"name": "Bizarreness Effect", "value": 7074},
+       {"name": "Negativity Bias", "value": 7074},
+       {"name": "Publication Bias", "value": 7074}, 
+       {"name": "Von Restorff Effect", "value": 7074}
+      ]
+     }
+    ]
+  }
+}

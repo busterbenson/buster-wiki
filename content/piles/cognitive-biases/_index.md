@@ -7,4 +7,5 @@ featured = true
 layout = "cognitive-biases"
 
 pile = "cognitive-biases"
+date = "2016-09-01"
 +++
