@@ -39,9 +39,6 @@ h1, h2, h3, .h1, .h2, .h3 {
 h4, h5, h6, .h3, .h4, .h5, .h6 {
 	font-family: "Source Sans Pro", sans-serif;
 }
-.card-title {
-
-}
 h4 {
 	color: #333;
 }
@@ -75,9 +72,7 @@ blockquote h4 {
 }
 .page-content img {
 	border: 1px solid #ccc;
-	martin: 1em 0;
-}
-.homepage h3 {
+	margin: 1em 0;
 }
 .homepage blockquote h4 {
 	margin-top: 0;
@@ -96,14 +91,8 @@ blockquote h4 {
 	color: #666;
 	line-height: 1.5em;
 } 
-.significant, .significant a {
-}
 .card-body {
 	padding: 20px;
-}
-.card-title {
-}
-.tooltip-inner {
 }
 .playfair {
 	font-family: 'recoleta', sans-serif;
@@ -139,8 +128,6 @@ header .navbar-text a.navbar-link, header .navbar-text a:visited.navbar-link {
 header .navbar-text a:hover.navbar-link {
 	color: #ff0;
 	text-decoration: none;
-}
-footer {
 }
 .text-small {
 	font-size: 15px;
@@ -204,12 +191,10 @@ iframe {
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 1.15;
-	line-spacing: -0.15em;
 }
 .blog-post h4 {
 	font-size: 24px;
 	font-weight: 600;
-	line-spacing: -0.15em;
 }
 .blog-post a {
 	text-decoration: underline;

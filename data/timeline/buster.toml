@@ -325,6 +325,10 @@ category = "birthday"
 link = "/blog/2017/05-28-seek-endarkenment/"
 tags = ["annual review"]
 
+[[2017-11-12]]
+event = "My grandfather passes away."
+category  = "family"
+
 [[2018-01-30]]
 event = "Received a book deal for my book about arguing."
 category = "writing"

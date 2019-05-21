@@ -1,14 +1,17 @@
 {{ $data_username    := .Params.data_username }}
 {{ $data_birthyear   := .Params.data_birthyear }}
 {{ $data_birth_month_and_day := .Params.data_birth_month_and_day}}
-{{ $data_file := index $.Site.Data.life $data_username }}
+{{ $data_file := index $.Site.Data.timeline $data_username }}
+{{ $timeline_type := .Params.timeline_type }}
+{{ $timeline_end := .Params.timeline_end | default (add $data_birthyear 101) }}
 
-{{ range $num := seq 101 }}
+
+{{ range $num := seq (sub $timeline_end $data_birthyear) }}
   {{ $age := sub $num 1 }}
   {{ $year := add $data_birthyear $age }}
   {{ $this_year_date := time ( printf "%d-%s" $year $data_birth_month_and_day ) }}
   {{ $year_border_class := cond (gt $this_year_date now) "border-secondary" "theme-background" }}  
-  {{ if eq (mod $age 10) 0}}
+  {{ if and (ne $timeline_type "writing-a-book") (eq (mod $age 10) 0) }}
     <br clear="all" />
     <a name="decade-{{ $age }}"></a>
     <div class="sticky-top mt-1" style="{{ if not $.Params.suppress_topnav }}top: 60px;{{ end }} background-color: #fff;"><h3>
@@ -25,7 +28,14 @@
       {{ end }}
     </h3></div>
   {{ end }}      
-  <div class="border border-gray float-left {{ $year_border_class }} text-truncate" style="height: 2em; max-height: 2em; max-width: 100%; padding: 2px 5px; margin: 2px;" data-toggle="popover" data-placement="auto" data-trigger="hover" data-content="{{ $age }} years old">{{ $year }}</div>
+  
+  {{ if eq $timeline_type "writing-a-book" }}
+    <br clear="all" />
+    <a name="year-{{ $year }}"></a>
+    <div class="sticky-top mt-1" style="{{ if not $.Params.suppress_topnav }}top: 60px;{{ end }} background-color: #fff;"><h3>{{ $year }}</h3></div>
+  {{ else if eq (mod $age 10) 0 }}
+    <div class="border border-gray float-left {{ $year_border_class }} text-truncate" style="height: 2em; max-height: 2em; max-width: 100%; padding: 2px 5px; margin: 2px;" data-toggle="popover" data-placement="auto" data-trigger="hover" data-content="{{ $age }} years old">{{ $year }}</div>
+  {{ end }}
   {{ range $week := seq 52 }}
     {{ partial "week-cell" (dict "year" $this_year_date "week" (sub $week 1) "person" $data_username "site" $.Site "data_file" $data_file ) }}
   {{ end }}
