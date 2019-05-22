@@ -33,7 +33,7 @@
     <br clear="all" />
     <a name="year-{{ $year }}"></a>
     <div class="sticky-top mt-1" style="{{ if not $.Params.suppress_topnav }}top: 60px;{{ end }} background-color: #fff;"><h3>{{ $year }}</h3></div>
-  {{ else if eq (mod $age 10) 0 }}
+  {{ else }}
     <div class="border border-gray float-left {{ $year_border_class }} text-truncate" style="height: 2em; max-height: 2em; max-width: 100%; padding: 2px 5px; margin: 2px;" data-toggle="popover" data-placement="auto" data-trigger="hover" data-content="{{ $age }} years old">{{ $year }}</div>
   {{ end }}
   {{ range $week := seq 52 }}
