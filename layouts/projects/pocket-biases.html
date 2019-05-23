@@ -1,27 +1,34 @@
 {{ define "main" }}
 {{ $biases := getCSV "," "https://docs.google.com/spreadsheets/d/e/2PACX-1vSpcS5jUeGWGk6WiN-yFqpnryWkQhrlwdDXFWCC30daEcMXNmfPdnEWLli2izrqynM77_hywN-z8EVK/pub?gid=354903459&single=true&output=csv" }}
 
-<div class="container-fluid">
-  <div class="row pt-lg-8 pt-10 justify-content-center">
+<div class="container">
+  <div class="mt-5 text-smaller"><strong><a href="/projects">PROJECTS</a></strong></div>
+  {{ partial "title-and-content-basic" . }}
 
-    <div class="book-sidebar col-12 col-sm-4 col-lg-2 order-lg-1 order-2">
-      {{ partial "book-sidebar" . }}
+  <div class="d-none">
+    <hr>
+    <h4>Related links</h4>
+    <!--
+    <div><a href="https://medium.com/@buster/every-cognitive-bias-73c16eeb7dca" class="text-gray" target="_blank">About cognitive biases</a></div>
+    -->
+    <div><a href="https://betterhumans.coach.me/cognitive-bias-cheat-sheet-55a472476b18" class="text-gray" target="_blank">Cognitive Bias Cheat Sheet</a></div>
+    <div><a href="https://pocket-biases.glideapp.io" class="text-gray" target="_blank">
+      Get the mobile app</a></div>
+    <div><a href="https://twitter.com/pocketbiases" class="text-gray" target="_blank">
+      Follow @pocketbiases</a></div>
     </div>
-
-    <div class="col-12 col-lg-7 px-lg-3 order-lg-2 order-1">
-      <div class="mt-1 text-smaller">
-        <strong><a href="/projects">PROJECTS</a></strong>
-      </div>
-      {{ partial "title-and-content-basic" . }}
+          
+  <div class="row">
+    <div class="col-12 col-md-7">
 
       <div id="bias-list">
         <div class="row mb-5">
-          <div class="col-12 col-sm-6">
+          <div class="col-12 col-lg-6">
             <div class="form-group mt-1">
               <input id="bias-search-box" class="search form-control text-dark" placeholder="Search all 200+ biases..." />
             </div>
           </div>
-          <div class="col-12 col-sm-6">
+          <div class="col-12 col-lg-6">
             <small id="passwordHelpBlock" class="form-text">
                 Search by keyword: 
                 <a href="/biases?q=confirmation bias" class="text-gray">confirmation bias</a>, 
@@ -42,20 +49,52 @@
                   <div class="card">
                   <div class="card-body">
                   <a name="{{ anchorize (index $r 4) }}"></a>
-                  <a href="{{ index $r 6 }}" target="_blank"><strong class="bias-name">{{ index $r 4 }}</strong></a> • 
-                  {{ if lt (index $r 0) 2 }}
-                    <span title="Helps filter information" data-toggle="popover" data-placement="auto" data-trigger="hover" data-content="Because there's too much information.">🧠</span>
-                  {{ else if lt (index $r 0) 3 }}
-                    <span title="Helps create stories" data-toggle="popover" data-placement="auto" data-trigger="hover" data-content="Because there's not enough meaning.">❤️</span>
-                  {{ else }}
-                    <span title="Helps motivate action" data-toggle="popover" data-placement="auto" data-trigger="hover" data-content="Because there's not enough time and resources to consider everything.">🖐</span>
-                  {{ end }}
-                  <a href="/biases?q={{ index $r 2 }}" class="text-dark"><em class="bias-strategy">{{ index $r 2 }}</em></a> • 
+                  <a href="{{ index $r 6 }}" target="_blank"><strong class="bias-name">{{ index $r 4 }}</strong></a>: 
                   <span class="bias-desc">{{ index $r 5 }}</span> 
+                  <div class="small text-dark mt-1">
+                    {{ if lt (index $r 0) 2 }}
+                      🧠 Helps filter information :
+                      {{ if eq (index $r 0) "1.1" }}
+                        💫
+                      {{ else if eq (index $r 0) "1.2" }}
+                        ⚡️
+                      {{ else if eq (index $r 0) "1.3" }}
+                        ☄️
+                      {{ else if eq (index $r 0) "1.4" }}
+                        🌘
+                      {{ else if eq (index $r 0) "1.5" }}
+                        💥
+                      {{ end }}
+                    {{ else if lt (index $r 0) 3 }}
+                      ❤️ Helps make sense • 
+                      {{ if eq (index $r 0) "2.1" }}
+                        🔮
+                      {{ else if eq (index $r 0) "2.2" }}
+                        🧸
+                      {{ else if eq (index $r 0) "2.3" }}
+                        🎱
+                      {{ else if eq (index $r 0) "2.4" }}
+                        🧮
+                      {{ else if eq (index $r 0) "2.5" }}
+                        ⚔️
+                      {{ end }}
+                    {{ else }}
+                      🖐 Helps get stuff done • 
+                      {{ if eq (index $r 0) "3.1" }}
+                        🐢
+                      {{ else if eq (index $r 0) "3.2" }}
+                        🦏
+                      {{ else if eq (index $r 0) "3.3" }}
+                        🐇
+                      {{ end }}
+                    {{ end }}
+
+                    <a href="/biases?q={{ index $r 2 }}" class="bias-strategy text-dark">{{ index $r 2 }}</a>
+                  </div>
                   </div>
                   </div>
                   <div class="small text-gray text-right mb-2 px-1">
-                    <a href="/biases/#{{ anchorize (index $r 4) }}" class="text-gray">Link to this</a> • 
+                    <a href="/biases/#{{ anchorize (index $r 4) }}" bias-token="#{{ anchorize (index $r 4) }}" class="bias-link text-gray">Link to this</a> • 
                     <a href="https://twitter.com/intent/tweet?text=I just learned about this bias: {{ index $r 4 }}. Check it out:&url={{ $.Site.BaseURL }}/biases/%23{{ anchorize (index $r 4) }}&via=buster&related=pocketbiases" class="text-gray" target="new">Tweet it</a>
                   </div>
                 </div>
@@ -67,27 +106,47 @@
       <div class="mb-5">
         <a href="/biases" id="show-all" class="p-1">Show full list&hellip;</a>
       </div>
-  
     </div>
-
-    <div class="col-12 col-sm-8 col-lg-3 order-3">
-      <div class="sticky sticky-with-header is_stuck" style="width: 255px; padding-top: 60px;">
-        <h3>Related links</h3>
-        <!--
-        <div><a href="https://medium.com/@buster/every-cognitive-bias-73c16eeb7dca" class="text-gray" target="_blank">About cognitive biases</a></div>
-        -->
-        <div><a href="https://betterhumans.coach.me/cognitive-bias-cheat-sheet-55a472476b18" class="text-gray" target="_blank">Cognitive Bias Cheat Sheet</a></div>
-        <div><a href="https://pocket-biases.glideapp.io" class="text-gray" target="_blank">
-          Get the mobile app</a></div>
-        <div><a href="https://twitter.com/pocketbiases" class="text-gray" target="_blank">
-          Follow @pocketbiases</a></div>
-            
-        <div class="mt-2">
-          <a class="twitter-timeline" data-theme="light" href="https://twitter.com/pocketbiases?ref_src=twsrc%5Etfw" data-chrome="nofooter noheader" data-tweet-limit="1">Tweets by pocketbiases</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  
+    <div class="col-12 col-md-5">
+      <div class="card rounded bg-light">
+        <div class="card-body">
+          <h3 class="card-title text-center">Strategies</h3>
         </div>
+        <ol class="list-group list-group-flush">
+          <li class="list-group-item bg-light"><strong>🧠 FOR FILTERING INFORMATION</strong></li>
+          <li class="list-group-item">💫 <a href="/biases?q=depend on the context">DEPEND ON THE CONTEXT</a>
+            <div class="small">Helps us filter information by overvaluing options that fit our current context or mindset (but undervaluing options that don't).</div></li>
+          <li class="list-group-item">⚡️ <a href="/biases?q=accept what comes to mind">ACCEPT WHAT COMES TO MIND</a>
+            <div class="small">Helps us filter inforamation by overvaluing options that come readily to mind (but not even considering options that don't).</div></li>
+          <li class="list-group-item">☄️ <a href="/biases?q=amplify the bizarre">AMPLIFY THE BIZARRE</a>
+            <div class="small">Helps us filter inforamation by overvaluing loud abnormalities that stand out (but undervaluing quiet things that blend in).</div></li>
+          <li class="list-group-item">🌘 <a href="/biases?q=notice novelty">NOTICE NOVELTY</a>
+            <div class="small">Helps us filter inforamation by overvaluing shiny new things (but undervaluing stuff that's been around a while and has lost it shine).</div></li>
+          <li class="list-group-item">💥 <a href="/biases?q=seek take-aways">SEEK TAKE-AWAYS</a>
+            <div class="small">Helps us filter inforamation by overvaluing things that present themselves as take-aways (but undervaluing things that don't seem relevant in the moment).</div></li>
+          <li class="list-group-item bg-light"><strong>❤️ FOR MAKING SENSE</strong></li>
+          <li class="list-group-item">🔮 <a href="/biases?q=fill in gaps">FILL IN GAPS</a>
+            <div class="small">Helps us make sense by overvaluing how things conform to perceived generalities (but undervaluing how things differ from perceived generalities).</div></li>
+          <li class="list-group-item">️🧸 <a href="/biases?q=favor the familiar">FAVOR THE FAMILIAR</a>
+            <div class="small">Helps us make sense by overvaluing things that we associate with (but undervaluing things that we struggle to associate with).</div></li>
+          <li class="list-group-item">🎱 <a href="/biases?q=experience is reality">EXPERIENCE IS REALITY</a>
+              <div class="small">Helps make sense us by overvaluing stories that match our experiences (but  undervaluing stories that don't match our experiences).</div></li>
+          <li class="list-group-item">🧮 <a href="/biases?q=simplify mental math">SIMPLIFY MENTAL MATH</a>
+              <div class="small">Helps make sense us by overvaluing things of extremely high or low probability (but undervaluing things with probabilities in the middle of the spectrum).</div></li>
+          <li class="list-group-item">⚔️ <a href="/biases?q=be overconfident">BE OVERCONFIDENT</a>
+              <div class="small">Helps us make sense by overvaluing our ability to control everything (but undervaluing the interdependent nature of things).</div></li>
+            <li class="list-group-item bg-light"><strong>✋ FOR GETTING THINGS DONE</strong></li>
+            <li class="list-group-item">🐢 <a href="/biases?q=stick with it">STICK WITH IT</a>
+              <div class="small">Helps us get things done by overvaluing the status quo (but undervaluing a shift in direction).</div></li>
+          <li class="list-group-item">🦏 <a href="/biases?q=protect existing beliefs">PROTECT EXISTING BELIEFS</a>
+              <div class="small">Helps us get things done by overvaluing winning (but undervaluing learning).</div></li>
+          <li class="list-group-item">🐇 <a href="/biases?q=do the safe thing">DO THE SAFE THING</a>
+              <div class="small">Helps us get things done by overvaluing agreement (but undervaluing learning).</div></li>
+        </ol>
+
       </div>
     </div>
-  
   </div>
 </div>
 
@@ -112,6 +171,12 @@ function GetURLParameter(sParam) {
     }
   }
 }
+
+$('.bias-link').on('click', function(event) {
+  $('.bias').removeClass('d-block').addClass('d-none');  
+  $($(this).attr('bias-token')).addClass('d-block');
+  window.scrollTo(0,0);
+})
 
 $('#show-all').on('click', function(event) {
   filterList.search("");
