@@ -1,0 +1,142 @@
+{{ define "main" }}
+{{ $biases := getCSV "," "https://docs.google.com/spreadsheets/d/e/2PACX-1vSpcS5jUeGWGk6WiN-yFqpnryWkQhrlwdDXFWCC30daEcMXNmfPdnEWLli2izrqynM77_hywN-z8EVK/pub?gid=354903459&single=true&output=csv" }}
+
+<div class="container-fluid">
+  <div class="row pt-lg-8 pt-10 justify-content-center">
+
+    <div class="book-sidebar col-12 col-sm-4 col-lg-2 order-lg-1 order-2">
+      {{ partial "book-sidebar" . }}
+    </div>
+
+    <div class="col-12 col-lg-7 px-lg-3 order-lg-2 order-1">
+      <div class="mt-1 text-smaller">
+        <strong><a href="/projects">PROJECTS</a></strong>
+      </div>
+      {{ partial "title-and-content-basic" . }}
+
+      <div id="bias-list">
+        <div class="row mb-5">
+          <div class="col-12 col-sm-6">
+            <div class="form-group mt-1">
+              <input id="bias-search-box" class="search form-control text-dark" placeholder="Search all 200+ biases..." />
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <small id="passwordHelpBlock" class="form-text">
+                Search by keyword: 
+                <a href="/biases?q=confirmation bias" class="text-gray">confirmation bias</a>, 
+                <a href="/biases?q=bias blind spot" class="text-gray">bias blind spot</a>, 
+                <a href="/biases?q=in-group" class="text-gray">in-group</a>
+                • 
+                Or search by strategy: <a href="/biases?q=amplify the bizarre" class="text-gray">amplify the bizarre</a>,
+                <a href="/biases?q=fill in gaps" class="text-gray">fill in gaps</a>,
+                <a href="/biases?q=experience is reality" class="text-gray">experience is reality</a>.
+              </small>
+          </div>
+        </div>
+          
+          <div class="list">
+            {{ range $i, $r := $biases }}
+              {{ if ne $i 0 }}
+                <div id="{{ anchorize (index $r 4) }}" class="bias d-none category-{{ replace (index $r 0) "." "-" }}">
+                  <div class="card">
+                  <div class="card-body">
+                  <a name="{{ anchorize (index $r 4) }}"></a>
+                  <a href="{{ index $r 6 }}" target="_blank"><strong class="bias-name">{{ index $r 4 }}</strong></a> • 
+                  {{ if lt (index $r 0) 2 }}
+                    <span title="Helps filter information" data-toggle="popover" data-placement="auto" data-trigger="hover" data-content="Because there's too much information.">🧠</span>
+                  {{ else if lt (index $r 0) 3 }}
+                    <span title="Helps create stories" data-toggle="popover" data-placement="auto" data-trigger="hover" data-content="Because there's not enough meaning.">❤️</span>
+                  {{ else }}
+                    <span title="Helps motivate action" data-toggle="popover" data-placement="auto" data-trigger="hover" data-content="Because there's not enough time and resources to consider everything.">🖐</span>
+                  {{ end }}
+                  <a href="/biases?q={{ index $r 2 }}" class="text-dark"><em class="bias-strategy">{{ index $r 2 }}</em></a> • 
+                  <span class="bias-desc">{{ index $r 5 }}</span> 
+                  </div>
+                  </div>
+                  <div class="small text-gray text-right mb-2 px-1">
+                    <a href="/biases/#{{ anchorize (index $r 4) }}" class="text-gray">Link to this</a> • 
+                    <a href="https://twitter.com/intent/tweet?text=I just learned about this bias: {{ index $r 4 }}. Check it out:&url={{ $.Site.BaseURL }}/biases/%23{{ anchorize (index $r 4) }}&via=buster&related=pocketbiases" class="text-gray" target="new">Tweet it</a>
+                  </div>
+                </div>
+              {{ end }}
+            {{ end }}
+          </div>
+        </div>  
+            
+      <div class="mb-5">
+        <a href="/biases" id="show-all" class="p-1">Show full list&hellip;</a>
+      </div>
+  
+    </div>
+
+    <div class="col-12 col-sm-8 col-lg-3 order-3">
+      <div class="sticky sticky-with-header is_stuck" style="width: 255px; padding-top: 60px;">
+        <h3>Related links</h3>
+        <!--
+        <div><a href="https://medium.com/@buster/every-cognitive-bias-73c16eeb7dca" class="text-gray" target="_blank">About cognitive biases</a></div>
+        -->
+        <div><a href="https://betterhumans.coach.me/cognitive-bias-cheat-sheet-55a472476b18" class="text-gray" target="_blank">Cognitive Bias Cheat Sheet</a></div>
+        <div><a href="https://pocket-biases.glideapp.io" class="text-gray" target="_blank">
+          Get the mobile app</a></div>
+        <div><a href="https://twitter.com/pocketbiases" class="text-gray" target="_blank">
+          Follow @pocketbiases</a></div>
+            
+        <div class="mt-2">
+          <a class="twitter-timeline" data-theme="light" href="https://twitter.com/pocketbiases?ref_src=twsrc%5Etfw" data-chrome="nofooter noheader" data-tweet-limit="1">Tweets by pocketbiases</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+<script>
+if(window.location.hash) {
+  // Fragment exists
+  $(window.location.hash).addClass('d-block');
+} else {
+  // Fragment doesn't exist
+  $('.bias').removeClass('d-none').addClass('d-block');
+}
+
+// Get params from URL
+function GetURLParameter(sParam) {
+  var sPageURL = window.location.search.substring(1);
+  var sURLVariables = sPageURL.split('&');
+  for (var i = 0; i < sURLVariables.length; i++) {
+    var sParameterName = sURLVariables[i].split('=');
+    if (sParameterName[0] == sParam) 
+    {
+        return sParameterName[1];
+    }
+  }
+}
+
+$('.bias').on('click', function(event) {
+  $(window).scrollTop(0);
+  $('.bias').removeClass('d-block').addClass('d-none');  
+  $(this).removeClass('d-none').addClass('d-block');  
+});
+
+$('#show-all').on('click', function(event) {
+  filterList.search("");
+  $('.bias').removeClass('d-none').addClass('d-block');  
+});
+
+// List.js to filter list
+var options = {
+  valueNames: [ 'bias-name', 'bias-strategy', 'bias-desc' ]
+};
+var filterList = new List('bias-list', options);
+
+// Accept query params 
+var query = GetURLParameter('q');
+if (query) {
+  var q = decodeURIComponent(query);
+  $('#bias-search-box').val(q);
+  filterList.search(q);
+}
+</script>
+
+{{ end }}

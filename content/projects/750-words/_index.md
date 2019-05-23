@@ -3,14 +3,14 @@ title 					= "750 Words"
 one_liner 			= "A private journaling community and tool for writing every day."
 featured_image 	= "/images/750-birds.png"
 date 						= "2009-12-16"
-draft = false
-url = '750-words'
+draft           = false
+url             = '750-words'
 
-piles    = ['self-reflection', 'mindfulness']
-projects = []
-layout = "project"
-project_weight = 2 # 1 = low, 3 = high
-featured = true
+piles           = ['self-reflection', 'mindfulness']
+projects        = []
+layout          = "project"
+project_weight  = 2 # 1 = low, 3 = high
+featured        = true
 +++
 
 <p><a href="https://750words.com" class="btn btn-sm btn-outline-success" target="_new">Visit 750 Words</a></p>

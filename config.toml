@@ -13,7 +13,7 @@ logFile = '/tmp/hugo.log'
 
 [params]
 custom_css = ["css/vendor.css", "css/style.css", "css/open-iconic-bootstrap.min.css", "css/fonts.css", "css/buster.css"]
-custom_js = ["js/vendor.min.js", "js/app.js"]
+custom_js = ["js/vendor.min.js", "js/app.js", "js/list.min.js"]
 
 [taxonomies]
 tag = "tags"
