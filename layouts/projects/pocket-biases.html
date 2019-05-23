@@ -113,12 +113,6 @@ function GetURLParameter(sParam) {
   }
 }
 
-$('.bias').on('click', function(event) {
-  $(window).scrollTop(0);
-  $('.bias').removeClass('d-block').addClass('d-none');  
-  $(this).removeClass('d-none').addClass('d-block');  
-});
-
 $('#show-all').on('click', function(event) {
   filterList.search("");
   $('.bias').removeClass('d-none').addClass('d-block');  
