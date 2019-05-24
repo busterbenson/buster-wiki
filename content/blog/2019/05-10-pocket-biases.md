@@ -24,7 +24,7 @@ disqus    		 	= false
 thoughts		 	  = false
 thoughts_prompt = ""
 thoughts_button = "Thoughts?"
-featured 				= true
+featured 				= false
 +++
 
 <iframe style="border: none;" src="https://cards.producthunt.com/cards/posts/150227?v=1" width="500" height="405" frameborder="0" scrolling="no" allowfullscreen></iframe>
