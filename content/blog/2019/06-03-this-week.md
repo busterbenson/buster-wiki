@@ -35,4 +35,4 @@ disqus    		 	= true
 
 1. I connect with a few more people who want to be early book readers and/or blurbers.
 2. I start making a plan for {{< link_to project="750 Words" >}} development.
-3. I start a new healthy living plan. (I was diagnosed with stage 2 hypertension.)
+3. I start a new healthy living plan. (I was diagnosed with stage 2 hypertension, and have no interest in dying of a heart attack anytime soon.)
