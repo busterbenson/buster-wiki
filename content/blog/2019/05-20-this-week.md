@@ -20,7 +20,7 @@ tags					 	= []
 # metadata
 layout	    	 	= "piece"
 date      		 	= 2019-05-20T10:47:00-07:00
-disqus    		 	= true
+disqus    		 	= false
 +++
 
 I'm taking this week to continue to bask in the enjoyment of turning in my manuscript last week. I want to move as slowly as I can on the hedonic treadmill that normalizes all moments of FIERO! (triumph over adversity or challenge) and reverts us back to our baseline happiness levels. There are so few moments where the things we anticipate in the future actually pass through the window of the present moment and can be experienced directly. So that's my top priority this week.

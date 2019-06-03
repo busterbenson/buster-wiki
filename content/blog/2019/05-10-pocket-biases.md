@@ -10,7 +10,7 @@ belief_delta   	= false
 # taxonomies
 influences		 	= []
 piles     		 	= ['cognitive-biases']
-projects		 	  = ['book']
+projects		 	  = ['pocket-biases', 'book']
 
 # article, reference, thought, book, idea, podcast, blog, tv
 # annotated-link, space, case

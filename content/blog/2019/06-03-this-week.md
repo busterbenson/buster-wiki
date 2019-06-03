@@ -10,7 +10,7 @@ belief_delta   	= false
 # taxonomies
 influences		 	= []
 piles     		 	= []
-projects			 	= []
+projects			 	= ['750-words', 'the-life-of', 'book', 'pocket-biases']
 
 # article, reference, thought, book, idea, podcast, blog, tv
 # annotated-link, space, case
@@ -20,7 +20,7 @@ tags					 	= []
 # metadata
 layout	    	 	= "piece"
 date      		 	= 2019-06-03T10:47:00-07:00
-disqus    		 	= true
+disqus    		 	= false
 +++
 
 ### What went well since the last update...
