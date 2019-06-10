@@ -1,6 +1,6 @@
 +++
 # basics
-title     		 	= "Week of the 🐊 (6.10.2019)"
+title     		 	= "Week of the Crocodile 🐊 (6.10.2019)"
 author    		 	= 'me'
 link      		 	= ""
 one_liner 		 	= "Stuff I'm thinking about this week."
