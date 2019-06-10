@@ -15,7 +15,7 @@ projects			 	= ['750-words', 'the-life-of']
 # article, reference, thought, book, idea, podcast, blog, tv
 # annotated-link, space, case
 category  		 	= ''
-tags					 	= []
+tags					 	= ['weeknote']
 
 # metadata
 layout	    	 	= "piece"
