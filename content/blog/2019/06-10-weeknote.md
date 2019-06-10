@@ -23,7 +23,7 @@ date      		 	= 2019-06-10T10:29:00-07:00
 disqus    		 	= false
 +++
 
-### Last week I said the week would be a good if...
+### I said last week would be good if...
 
 *I connect with a few more people who want to be early book readers and/or blurbers.*
 👍 I sent another handful of emails to people and got a handful of commitments to read. This continues to be the highest anxiety activity of my weeks. I love building social capital with people but I really dislike spending it. You could say I'm a social capital horder.
