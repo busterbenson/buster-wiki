@@ -9,8 +9,8 @@ belief_delta   	= false
 
 # taxonomies
 influences		 	= []
-piles     		 	= []
-projects			 	= []
+piles     		 	= ['health']
+projects			 	= ['750-words', 'book', ]
 
 # article, reference, thought, book, idea, podcast, blog, tv
 # annotated-link, space, case
