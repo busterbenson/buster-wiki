@@ -2,7 +2,7 @@
 # basics
 title     		 = "Weeknotes"
 author    		 = 'me'
-link      		 = "https://medium.com/@buster/software-vs-humans-749ccc4901f4"
+link      		 = ""
 one_liner 		 = "Stuff I think about at the beginning of every week."
 featured_image = "" # /images/pieces/
 belief_delta   = false
@@ -32,8 +32,10 @@ This is a series of weekly answers to the question **"This week will be good if.
 
 ### 06.17.2019: Week of the Duck 🦆 {#week-06-17-2019}
 
-- *When the week began:* 93 (happy, strong, friendly, calm)
-- *When the week ended:* TBD
+**How the previous week went:**
+
+- *When the previous week began:* 100 (happy, strong, friendly, calm)
+- *When this week began:* 93 (happy, strong, friendly, calm)
 
 **This week will be good if:**
 
@@ -47,8 +49,10 @@ This is a series of weekly answers to the question **"This week will be good if.
 
 ### 06.10.2019: Week of the Crocodile 🐊 {#week-06-10-2019}
 
-- *When the week began:* 100 (happy, strong, friendly, calm)
-- *When the week ended:* 93 (happy, strong, friendly, calm)
+**How the previous week went:**
+
+- *When the previous week began:* 82 (happy, strong, worried)
+- *When this week began:* 100 (happy, strong, friendly, calm)
 
 **This week will be good if:**
 
@@ -68,9 +72,6 @@ This is a series of weekly answers to the question **"This week will be good if.
 ----
 
 ### 06.03.2019: Week of the Boar 🐗 {#week-06-03-2019}
-
-- *When the week began:* 82 (happy, strong, worried)
-- *When the week ended:* 100 (happy, strong, friendly, calm)
 
 **This week will be good if:**
 
