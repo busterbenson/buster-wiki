@@ -36,3 +36,5 @@ As for book-related work, I'm starting to send out my manuscript to some people 
 1. I connect with a few people who want to be early readers
 2. I start making a plan for {{< link_to project="750 Words" >}} development
 3. I interview a few people for {{< link_to project="The Life Of" >}} pages
+
+*[See past weeknotes]({{< ref "/tree/weeknotes.md">}})*
