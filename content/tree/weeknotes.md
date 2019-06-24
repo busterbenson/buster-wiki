@@ -26,7 +26,24 @@ disqus    		 = false
 
 This is a series of weekly answers to the question **"This week will be good if..."**, with results from the following week. Inspired by [this write-up by Matt Webb](https://medium.com/job-garden/a-pre-history-of-weeknotes-plus-why-i-write-them-and-perhaps-why-you-should-too-week-16-31a4a5cbf7b0), [this article about the why of weeknotes](https://productforthepeople.xyz/the-why-of-weeknotes-c1cd98967842), and the [weeknot.es](https://weeknot.es/) community on Medium. My version of it here is a simple weekly summary of my time spent in my creative rickshaw (aka independent creative projects with the goal of becoming financially sustainable). The data about "how the previous week went" and "how this week began" comes from taking Gyroscope's "Mood Score" test as I write this each week. Each week also gets an animal or other emoji that begins with incrementing letters of the alphabet. 
 
-*May 2019 - present, newest to oldest:* [🦆]({{< ref "#week-06-17-2019">}}), [🐊👍👍👎]({{< ref "#week-06-10-2019">}}), [🐗👍👍👍]({{< ref "#week-06-03-2019">}}), [🐜👍👎👍]({{< ref "#week-05-20-2019">}})
+*May 2019 - present, newest to oldest:* [🐘]({{< ref "#week-06-17-2019">}}), [🦆👎👌👎]({{< ref "#week-06-17-2019">}}), [🐊👍👍👎]({{< ref "#week-06-10-2019">}}), [🐗👍👍👍]({{< ref "#week-06-03-2019">}}), [🐜👍👎👍]({{< ref "#week-05-20-2019">}})
+
+----
+
+### 06.24.2019: Week of the Elephant 🐘 {#week-06-24-2019}
+
+**How the previous week went:** -7
+
+- *When the previous week began:* 93 (happy, strong, friendly, calm)
+- *When this week began:* 87 (happy, strong, friendly)
+
+**This week will be good if:**
+
+*I write to at least 3 more people about giving blurbs for my book (Continued 4x).*
+
+*I exercise for at least 30 minutes on 3 or more days (Continued 3x).*
+
+*I work on V2 of {{< link_to project="750 Words" >}} for at least 5 hours (Take 3).*
 
 ----
 
@@ -41,9 +58,15 @@ This is a series of weekly answers to the question **"This week will be good if.
 
 *I write to at least 6 more people about giving blurbs for my book (Continued 3x).*
 
+- 👎 I talked to a couple new people, and continued conversations with a couple people from the past few weeks, but didn't get to 6 new people. This whole process is stressing me out more than it should, and I had a productive conversation with my agent about this and got some perspective on the relative importance of this to other activities we'll be doing later on that I'm much more comfortable with. 
+
 *I ride the Peloton at least 120 minutes (Continued 2x).*
 
+- 👌 I got 105 minutes total this week, which seemed like plenty, given that I'm also doing 30-40 minute exercises through [future.fit](http://future.fit). I'm gonna lower this goal for the next week in the hopes of making it easy to hit even when new routines haven't quite set in yet.
+
 *I decide on a text editor to build on for V2 of {{< link_to project="750 Words" >}} (Take 2).*
+
+- 👎 I didn't make progress on this again. I ended up spending more time working on the higher-level ideas and plans than in the code this week. I'll continue this goal but make it a bit more vague to account for the fuzzy discovery phase I'm in.
 
 ----
 
