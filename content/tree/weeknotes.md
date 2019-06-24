@@ -26,13 +26,13 @@ disqus    		 = false
 
 This is a series of weekly answers to the question **"This week will be good if..."**, with results from the following week. Inspired by [this write-up by Matt Webb](https://medium.com/job-garden/a-pre-history-of-weeknotes-plus-why-i-write-them-and-perhaps-why-you-should-too-week-16-31a4a5cbf7b0), [this article about the why of weeknotes](https://productforthepeople.xyz/the-why-of-weeknotes-c1cd98967842), and the [weeknot.es](https://weeknot.es/) community on Medium. My version of it here is a simple weekly summary of my time spent in my creative rickshaw (aka independent creative projects with the goal of becoming financially sustainable). The data about "how the previous week went" and "how this week began" comes from taking Gyroscope's "Mood Score" test as I write this each week. Each week also gets an animal or other emoji that begins with incrementing letters of the alphabet. 
 
-*May 2019 - present, newest to oldest:* [🐘]({{< ref "#week-06-17-2019">}}), [🦆👎👌👎]({{< ref "#week-06-17-2019">}}), [🐊👍👍👎]({{< ref "#week-06-10-2019">}}), [🐗👍👍👍]({{< ref "#week-06-03-2019">}}), [🐜👍👎👍]({{< ref "#week-05-20-2019">}})
+*May 2019 - present, newest to oldest:* [🐘]({{< ref "#week-06-24-2019">}}), [🦆👎👌👎]({{< ref "#week-06-17-2019">}}), [🐊👍👍👎]({{< ref "#week-06-10-2019">}}), [🐗👍👍👍]({{< ref "#week-06-03-2019">}}), [🐜👍👎👍]({{< ref "#week-05-20-2019">}})
 
 ----
 
 ### 06.24.2019: Week of the Elephant 🐘 {#week-06-24-2019}
 
-**How the previous week went:** -7
+**How the previous week went:** 
 
 - *When the previous week began:* 93 (happy, strong, friendly, calm)
 - *When this week began:* 87 (happy, strong, friendly)
@@ -49,7 +49,7 @@ This is a series of weekly answers to the question **"This week will be good if.
 
 ### 06.17.2019: Week of the Duck 🦆 {#week-06-17-2019}
 
-**How the previous week went:** -7
+**How the previous week went:** 
 
 - *When the previous week began:* 100 (happy, strong, friendly, calm)
 - *When this week began:* 93 (happy, strong, friendly, calm)
@@ -72,7 +72,7 @@ This is a series of weekly answers to the question **"This week will be good if.
 
 ### 06.10.2019: Week of the Crocodile 🐊 {#week-06-10-2019}
 
-**How the previous week went:** +18
+**How the previous week went:** 
 
 - *When the previous week began:* 82 (happy, strong, worried)
 - *When this week began:* 100 (happy, strong, friendly, calm)
