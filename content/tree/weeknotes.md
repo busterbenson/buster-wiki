@@ -36,7 +36,7 @@ Data point          | This week | Change w/w
 -------             |-------    |-------
 Mood                | 98        | +35
 Weight              | 194.9     | -0.9
-Resting heart rate  | 69bpm     | --
+Resting heart rate  | 69bpm     | no change
 Avg sleep per night | 7h 6m     | +1h 3m
 
 **This week will be good if:**
@@ -55,8 +55,8 @@ Data point          | This week | Change w/w
 -------             |-------    |-------
 Mood                | 63        | -24
 Weight              | 195.8     | -0.3
-Resting heart rate  | 69bpm     | --
-Avg sleep per night | 6h 3m     | +0h 3m
+Resting heart rate  | 69bpm     | +5
+Avg sleep per night | 6h 3m     | +3m
 
 **This week will be good if:**
 
