@@ -26,33 +26,79 @@ disqus    		 = false
 
 This is a series of weekly answers to the question **"This week will be good if..."**, with results from the following week. Inspired by [this write-up by Matt Webb](https://medium.com/job-garden/a-pre-history-of-weeknotes-plus-why-i-write-them-and-perhaps-why-you-should-too-week-16-31a4a5cbf7b0), [this article about the why of weeknotes](https://productforthepeople.xyz/the-why-of-weeknotes-c1cd98967842), and the [weeknot.es](https://weeknot.es/) community on Medium. My version of it here is a simple weekly summary of my time spent in my creative rickshaw (aka independent creative projects with the goal of becoming financially sustainable). The data about "how the previous week went" and "how this week began" comes from taking Gyroscope's "Mood Score" test as I write this each week. Each week also gets an animal or other emoji that begins with incrementing letters of the alphabet. 
 
-*May 2019 - present, newest to oldest:* [🐘]({{< ref "#week-06-24-2019">}}), [🦆👎👌👎]({{< ref "#week-06-17-2019">}}), [🐊👍👍👎]({{< ref "#week-06-10-2019">}}), [🐗👍👍👍]({{< ref "#week-06-03-2019">}}), [🐜👍👎👍]({{< ref "#week-05-20-2019">}})
+*May 2019 - present, newest to oldest:* [🦎]({{< ref "#week-07-08-2019">}}), [🐠👍👍]({{< ref "#week-07-01-2019">}}), [🐘👍👍👍]({{< ref "#week-06-24-2019">}}), [🦆👎👌👎]({{< ref "#week-06-17-2019">}}), [🐊👍👍👎]({{< ref "#week-06-10-2019">}}), [🐗👍👍👍]({{< ref "#week-06-03-2019">}}), [🐜👍👎👍]({{< ref "#week-05-20-2019">}})
 
 ----
 
+### 07.08.2019: Week of the Gecko 🦎 {#week-07-08-2019}
+
+Data point          | This week | Change w/w
+-------             |-------    |-------
+Mood                | 98        | +35
+Weight              | 194.9     | -0.9
+Resting heart rate  | 69bpm     | --
+Avg sleep per night | 7h 6m     | +1h 3m
+
+**This week will be good if:**
+
+*I have at least 3 blurbs to put on gallies.*
+
+*I spend at least 8 hours on V2 of {{< link_to project="750 Words" >}} (Continued 3x).*
+
+*I maintain an average of at least 7 hours of sleep per night.*
+
+*I exercise at least 2 hours this week.*
+
+### 07.01.2019: Week of the Fish 🐠 {#week-07-01-2019}
+
+Data point          | This week | Change w/w
+-------             |-------    |-------
+Mood                | 63        | -24
+Weight              | 195.8     | -0.3
+Resting heart rate  | 69bpm     | --
+Avg sleep per night | 6h 3m     | +0h 3m
+
+**This week will be good if:**
+
+*Get at least one blurb finalized for the first pass galley copies*
+
+- 👍 Got it! Very very thankful to have broken through the barrier between 0 and 1 on this. After continuing some conversations, and continuing to get great feedback from early readers, my anxiety about this step has been reduced by 50%. 
+
+*I work on V2 of {{< link_to project="750 Words" >}} for at least 5 hours (Continued 2x).*
+
+- 👍 I've been getting enormous value from a few participants in my Discord channel about the writing experience, and feel really grateful to have people to bounce ideas off of. In the meantime, I've also tested 3 or 4 options for which backend framework I should use, and believe I've settled on Ruby on Rails hosted on AWS Elastic Beanstalk, for a number of reasons. This, despite the ever-confusing UI and absense of documentation that AWS is infamous for, all because of the additional flexibility granted by having no other middleware to deal with (and pay for).
+
 ### 06.24.2019: Week of the Elephant 🐘 {#week-06-24-2019}
 
-**How the previous week went:** 
-
-- *When the previous week began:* 93 (happy, strong, friendly, calm)
-- *When this week began:* 87 (happy, strong, friendly)
+Data point          | This week | Change w/w
+-------             |-------    |-------
+Mood                | 87        | -6
+Weight              | 196.1     | --
+Resting heart rate  | 64bpm     | --
+Avg sleep per night | 6h 0m     | -0h 17m
 
 **This week will be good if:**
 
 *I write to at least 3 more people about giving blurbs for my book (Continued 4x).*
 
+- 👍 I sent a lot of emails this week.
+
 *I exercise for at least 30 minutes on 3 or more days (Continued 3x).*
 
+- 👍 I did this but also ended up hurting my back one of the days and had to take half a week off of exercising. 
+
 *I work on V2 of {{< link_to project="750 Words" >}} for at least 5 hours (Take 3).*
+
+- 👍 Made great progress on the writing experience for 750 Words. Settled on ProseMirror for the basic functionality, which is a lot more flexible and nice to work with after the initial higher learning curve of setting it up.
 
 ----
 
 ### 06.17.2019: Week of the Duck 🦆 {#week-06-17-2019}
 
-**How the previous week went:** 
-
-- *When the previous week began:* 100 (happy, strong, friendly, calm)
-- *When this week began:* 93 (happy, strong, friendly, calm)
+Data point          | This week | Change w/w
+-------             |-------    |-------
+Mood                | 93        | -7
+Avg sleep per night | 6h 17m    | --
 
 **This week will be good if:**
 
@@ -72,10 +118,9 @@ This is a series of weekly answers to the question **"This week will be good if.
 
 ### 06.10.2019: Week of the Crocodile 🐊 {#week-06-10-2019}
 
-**How the previous week went:** 
+**Data points:** 
 
-- *When the previous week began:* 82 (happy, strong, worried)
-- *When this week began:* 100 (happy, strong, friendly, calm)
+- *Mood:* 100 (happy, strong, friendly, calm)
 
 **This week will be good if:**
 

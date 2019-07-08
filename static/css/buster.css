@@ -118,6 +118,16 @@ blockquote h4 {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: normal;
 }
+.piece-content table {
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+.piece-content table td {
+	padding-right: 2em;
+}
+.piece-content table td:first-child {
+	font-style: italic;
+}
 header {
 	background-color: #111;
 	color: #fff;
