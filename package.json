@@ -18,19 +18,19 @@
   },
   "homepage": "https://github.com/busterbenson/buster-wiki",
   "devDependencies": {
-    "grunt": "^1.0.3",
-    "grunt-contrib-coffee": "^2.0.0",
+    "grunt": "^1.0.4",
+    "grunt-contrib-coffee": "^2.1.0",
     "grunt-contrib-connect": "^2.0.0",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-less": "^2.0.0",
-    "grunt-contrib-uglify": "^4.0.0",
+    "grunt-contrib-uglify": "^4.0.1",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-responsive-images": "^1.10.1"
   },
   "dependencies": {
-    "ajv": "^6.10.0",
+    "ajv": "^6.10.1",
     "atomic-algolia": "^0.3.17",
-    "instantsearch.js": "^3.4.0",
-    "netlify-lambda": "^1.4.7"
+    "instantsearch.js": "^3.5.4",
+    "netlify-lambda": "^1.5.0"
   }
 }
