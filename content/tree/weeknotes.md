@@ -68,6 +68,12 @@ Avg sleep per night | 6h 3m     | +3m
 
 - 👍 I've been getting enormous value from a few participants in my Discord channel about the writing experience, and feel really grateful to have people to bounce ideas off of. In the meantime, I've also tested 3 or 4 options for which backend framework I should use, and believe I've settled on Ruby on Rails hosted on AWS Elastic Beanstalk, for a number of reasons. This, despite the ever-confusing UI and absense of documentation that AWS is infamous for, all because of the additional flexibility granted by having no other middleware to deal with (and pay for).
 
+**What I'm learning:**
+
+Since being diagnosed with hypertension about a month ago, I've found the momentum I need to make some changes to my eating and exercising habits. The most interesting things I'm learning are around my sleep habits, and how despite my ability to survive on very little sleep, I'm far from getting the full benefit of sleep. Most of my nightly heartrate data (provided by the fantastic Oura ring) is showing me that my nights are generally cut off before the full cycle is finished, and the result is that my deep sleep numbers are horrendously low (usually between 30min-1hr per night). Now that I can see which days suffer the most, it's become possible for me to correlate that to my mental state during the day, and I can feel a significant improvement when I get more deep sleep. 
+
+The other wake-up call for me is that I need to lose some weight. I've lost 5-8 lbs in the last month or so, and plan to keep that trend going until I'm solidly in the healthy range again. Once there, I can shift to better proxies of health than just weight/BMI, but for now that is all the precision I need. 
+
 ### 06.24.2019: Week of the Elephant 🐘 {#week-06-24-2019}
 
 Data point          | This week | Change w/w
