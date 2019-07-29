@@ -26,9 +26,26 @@ disqus    		 = false
 
 This is a series of weekly answers to the question **"This week will be good if..."**, with results from the following week. Inspired by [this write-up by Matt Webb](https://medium.com/job-garden/a-pre-history-of-weeknotes-plus-why-i-write-them-and-perhaps-why-you-should-too-week-16-31a4a5cbf7b0), [this article about the why of weeknotes](https://productforthepeople.xyz/the-why-of-weeknotes-c1cd98967842), and the [weeknot.es](https://weeknot.es/) community on Medium. My version of it here is a simple weekly summary of my time spent in my creative rickshaw (aka independent creative projects with the goal of becoming financially sustainable). The data about "how the previous week went" and "how this week began" comes from taking Gyroscope's "Mood Score" test as I write this each week. Each week also gets an animal or other emoji that begins with incrementing letters of the alphabet. 
 
-*May 2019 - present, newest to oldest:* [🦎]({{< ref "#week-07-08-2019">}}), [🐠👍👍]({{< ref "#week-07-01-2019">}}), [🐘👍👍👍]({{< ref "#week-06-24-2019">}}), [🦆👎👌👎]({{< ref "#week-06-17-2019">}}), [🐊👍👍👎]({{< ref "#week-06-10-2019">}}), [🐗👍👍👍]({{< ref "#week-06-03-2019">}}), [🐜👍👎👍]({{< ref "#week-05-20-2019">}})
+*May 2019 - present, newest to oldest:* [🤹‍]({{< ref "#week-07-29-2019">}}), [🦎👍👍👎👎]({{< ref "#week-07-08-2019">}}), [🐠👍👍]({{< ref "#week-07-01-2019">}}), [🐘👍👍👍]({{< ref "#week-06-24-2019">}}), [🦆👎👌👎]({{< ref "#week-06-17-2019">}}), [🐊👍👍👎]({{< ref "#week-06-10-2019">}}), [🐗👍👍👍]({{< ref "#week-06-03-2019">}}), [🐜👍👎👍]({{< ref "#week-05-20-2019">}})
 
 ----
+
+### 07.29.2019: Week of the Juggler 🤹 {#week-07-08-2019}
+
+Data point          | This week | Since last 
+-------             |-------    |-------
+Mood                | 79        | -19
+Weight              | 192.3     | -2.6
+Resting heart rate  | 70bpm     | +1
+Avg sleep per night | 6h 18m     | -48m
+
+**This week will be good if:**
+
+*I turn in my "first pass" manuscript feeling good about where it is.*
+
+*I record a trial episode of a new podcast and it isn't terrible.*
+
+*I ride the Peloton at least 3 times.* 
 
 ### 07.08.2019: Week of the Gecko 🦎 {#week-07-08-2019}
 
@@ -43,11 +60,19 @@ Avg sleep per night | 7h 6m     | +1h 3m
 
 *I have at least 3 blurbs to put on gallies.*
 
+- 👍 Yes! I got three blurbs, and they're all great and better than I was expecting. I can't tell you how much gratitude I have for the people I've been reaching out to and asking for time and attention that I can never really pay back. I'm definitely going to make myself available to provide blurbs for other up-and-coming authors if that kind of thing is ever asked of me.  
+
 *I spend at least 8 hours on V2 of {{< link_to project="750 Words" >}} (Continued 3x).*
+
+- 👍 Yes! I ended up spending much more time than this just trying to get signup and login flows to work. It's a bit of a pain in the butt, but it always is. I haven't returned to it since my week of camping though, and I'm a bit afraid of trying to remember exactly how it all works. But if I go through this a couple more times and things move more slowly than I was hoping, the benefit will be a simple and clean signup and login flow... which always ends up being a significant percentage of support tickets, so best to get it right.
 
 *I maintain an average of at least 7 hours of sleep per night.*
 
+- 👎 Nope. I'm back down in the 6 hours range. I did get good amounts of sleep while camping, but that didn't translate back into our regular sleeping schedules. 
+
 *I exercise at least 2 hours this week.*
+
+- 👎 I fell off the exercise wagon this week due to irregular summer schedules. Hoping to find the groove again soon.
 
 ### 07.01.2019: Week of the Fish 🐠 {#week-07-01-2019}
 
