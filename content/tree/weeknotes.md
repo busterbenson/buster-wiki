@@ -26,9 +26,26 @@ disqus    		 = false
 
 This is a series of weekly answers to the question **"This week will be good if..."**, with results from the following week. Inspired by [this write-up by Matt Webb](https://medium.com/job-garden/a-pre-history-of-weeknotes-plus-why-i-write-them-and-perhaps-why-you-should-too-week-16-31a4a5cbf7b0), [this article about the why of weeknotes](https://productforthepeople.xyz/the-why-of-weeknotes-c1cd98967842), and the [weeknot.es](https://weeknot.es/) community on Medium. My version of it here is a simple weekly summary of my time spent in my creative rickshaw (aka independent creative projects with the goal of becoming financially sustainable). The data about "how the previous week went" and "how this week began" comes from taking Gyroscope's "Mood Score" test as I write this each week. Each week also gets an animal or other emoji that begins with incrementing letters of the alphabet. 
 
-*May 2019 - present, newest to oldest:* [🤹‍]({{< ref "#week-07-29-2019">}}), [🦎👍👍👎👎]({{< ref "#week-07-08-2019">}}), [🐠👍👍]({{< ref "#week-07-01-2019">}}), [🐘👍👍👍]({{< ref "#week-06-24-2019">}}), [🦆👎👌👎]({{< ref "#week-06-17-2019">}}), [🐊👍👍👎]({{< ref "#week-06-10-2019">}}), [🐗👍👍👍]({{< ref "#week-06-03-2019">}}), [🐜👍👎👍]({{< ref "#week-05-20-2019">}})
+*May 2019 - present, newest to oldest:* [🐭]({{< ref "#week-08-19-2019">}}), [🤹‍👍👍👎]({{< ref "#week-07-29-2019">}}), [🦎👍👍👎👎]({{< ref "#week-07-08-2019">}}), [🐠👍👍]({{< ref "#week-07-01-2019">}}), [🐘👍👍👍]({{< ref "#week-06-24-2019">}}), [🦆👎👌👎]({{< ref "#week-06-17-2019">}}), [🐊👍👍👎]({{< ref "#week-06-10-2019">}}), [🐗👍👍👍]({{< ref "#week-06-03-2019">}}), [🐜👍👎👍]({{< ref "#week-05-20-2019">}})
 
 ----
+
+### 08.19.2019: Week of the Mouse 🐭 {#week-08-19-2019}
+
+Data point          | This week | Since last 
+-------             |-------    |-------
+Mood                | 79        | Flat
+Weight              | 190.8     | -1.5
+Resting heart rate  | 72bpm     | +2
+Avg sleep per night | 5h 33m     | -45m
+
+**This week will be good if:**
+
+*I come up with some good op-ed ideas to pitch newspapers about the book.*
+
+*I get my average sleep per night back above 6 hours.*
+
+*I ride the Peloton at least 3 times.* 
 
 ### 07.29.2019: Week of the Juggler 🤹 {#week-07-08-2019}
 
@@ -43,9 +60,15 @@ Avg sleep per night | 6h 18m     | -48m
 
 *I turn in my "first pass" manuscript feeling good about where it is.*
 
+- 👍 Yup, this all worked out and I feel pretty great about where the book is at the moment. 
+
 *I record a trial episode of a new podcast and it isn't terrible.*
 
+- 👍 Kellianne and I did this, and the actual conversation turned out to be really interesting, but unfortunately it was recorded in a loud room and isn't really usable as a podcast. After talking about it with the team, we decided to postpone the podcast idea until after publication, given the effort and impact it will have, and how there's plenty of other higher-impact, less-work options to keep me fully busy til publication.
+
 *I ride the Peloton at least 3 times.* 
+
+- 👎 I only rode once during this week, unfortunately. 
 
 ### 07.08.2019: Week of the Gecko 🦎 {#week-07-08-2019}
 
