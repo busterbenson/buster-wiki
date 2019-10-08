@@ -128,6 +128,9 @@ blockquote h4 {
 .piece-content table td:first-child {
 	font-style: italic;
 }
+.bonus-list li {
+	font-size: 22px;
+}
 header {
 	background-color: #111;
 	color: #fff;

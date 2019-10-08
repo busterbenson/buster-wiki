@@ -1,66 +1,70 @@
 {{ define "main" }}
 
 <div class="container-fluid">
-  <div class="row pt-lg-8 pt-10 justify-content-center">
+  <div class="row pt-lg-8 pt-10 pb-5 justify-content-center">
+  
+      {{ partial "book-hero" . }}
+      {{ partial "book-buy-buttons" . }}
 
-    <div class="book-sidebar col-12 col-sm-4 col-lg-2 order-lg-1 order-2">
-      {{ partial "book-sidebar" . }}
-    </div>
+  </div>
 
-    <div class="col-12 col-lg-7 px-lg-3 order-lg-2 order-1 homepage">
-      <h3><strong>Belief #1:</strong> I believe that unproductive disagreement is currently our greatest existential threat.</h3>
-      <blockquote><h4>Because if we can't even get to the point of talking productively about our existential threats, it's only a matter of time until one of them does us in. We can begin to address this by committing to <mark><a href="/book">having more productive disagreements</a></mark>. One thing to try: the next time you find yourself in a frustrating disagreement that's going nowhere, find a real person that you disagree with and ask them: "What do you think is true, what do you think is meaningful, and what you think is useful on this topic?" Listen charitably, then answer for yourself as well. Then, if you're both motivated, you can pick one of those things to dig into further, and has a much greater chance of being productive.</h4></blockquote>
+  <div class="row mt-2 justify-content-center">
 
-      <p><a href="/book" class="btn btn-sm btn-outline-dark">Learn about "Why Are We Yelling?"</a></p>
+    <div class="col-12 col-md-8 px-3">
+      <div class="row">
+        <div class="col-12">
+          <h2>Hi, I'm Buster.</h2>
 
-      <hr />
+          <div class="row">
+            <div class="col-12 col-sm-8 order-2 order-sm-1">
+              <p>I'm the author of <strong><a href="/whyareweyelling">Why Are We Yelling? The Art of Productive Disagreement</a></strong>. I put my heart and soul into this book over the last several years, a culmination of work that came out of developing the <a href="https://medium.com/better-humans/cognitive-bias-cheat-sheet-55a472476b18?source=friends_link&sk=eb8e0a6f56df8083ff37d48e8ee356b3" target="_new">Cognitive Bias Cheat Sheet</a> and 20 years of experience as a product leader at companies like Amazon, Twitter, and Slack.</p>
 
-      <h3><strong>Belief #2:</strong> My purpose in life is as simple as seeking high-quality lengthy conversations with people and nature.</h3>
-      <blockquote><h4>This means I need to first of all <mark><a href="/me">know myself</a></mark>, and what I <mark><a href="/beliefs">believe</a></mark>, and to regularly <mark><a href="/me/yearly-reviews">review my life</a></mark>. Since I have vast blind spots, I want to always be open to perspectives and evidence that could help me see things more clearly. If you think I'm wrong about something, please tell me. If I can help you see something from a different perspective, reach out. If you know a good joke, I'd like to hear that too.</h4></blockquote>
+              <p>Want to hear more about the book?<br /><a href="/whyareweyelling#about">Here's what the book is about</a>.</p>
+              <p>Want to reach me for book-related interviews or press?<br /><a href="/whyareweyelling/contact">Here's my contact page</a>.</p>
+              <p>Want to join my irregular newsletter where I write about bias and whatever else is top of mind for me?<br /><a href="http://buster.substack.com" target="_new">This is for you</a>.
+            </div>
+            <div class="col-12 col-sm-4 order-1 order-sm-2">
+              <p class="text-center"><img src="/images/rickshaw-circle.png" class="pt-3"></p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      {{ partial "contact-me" . }}
+      
+      <div class="row">
+        <div class="col-12 col-sm-6 mb-4">
+          <h2 class="mt-5">Recently</h2>
 
-      <hr />
-
-      <h3><strong>Belief #3:</strong> Everything flows together.</h3>
-      <blockquote><h4>Remember we will die, and so will the universe. Good brings bad, and bad brings good. Appreciate the weeks we get.</h4></blockquote>
-
-      <div class="my-2">{{ partial "life-by-weeks-recently" . }}</div>
-
-      <br clear="all" />
-
-      <h2 class="mt-5">A few highlights</h2>  
+          {{ if where .Pages "Section" "in" (slice "blog" "tree") }}
+            <ul>
+              {{ range first 5 (where .Pages "Section" "in" (slice "blog" "tree")).ByDate.Reverse }}
+                {{ partial "list-item-for-page" . }}
+              {{ end }}
+            </ul>
+          <p><a href="/blog">Visit the blog&hellip;</a></p>
+          {{ end }}
+        </div>
+        <div class="col-12 col-sm-6 mb-4">
+          <h2 class="mt-5">Elsewhere</h2>
+          <ul>
+          <li><a href="https://buster.substack.com" target="_new">Substack</a></li>
+          <li><a href="https://medium.com/@buster" target="_new">Medium</a></li>
+          <li><a href="https://twitter.com/buster" target="_new">Twitter</a></li>
+          <li><a href="https://facebook.com/busterbenson" target="_new">Facebook</a></li>
+          <li><a href="https://instagram.com/bustrbensn" target="_new">Instagram</a></li>
+          </ul> 
+        </div>
+      </div>
+      
+      <h2 class="mt-5">Other projects and writing</h2>  
       <div class="row">
         {{ range (where .Site.Pages "Params.featured" true).ByDate.Reverse }}
           {{ partial "simple-card" . }}
         {{ end }}
       </div>
 
-      <div class="row">
-        
-        <div class="col-12 col-sm-4 mb-2">
-          <a class="btn btn-outline-dark w-100" href="/blog">
-            RECENT POSTS 
-          </a>
-        </div>
-
-        <div class="col-12 col-sm-4 mb-2">
-          <a class="btn btn-outline-dark w-100" href="/piles">
-            BY PILES
-          </a>
-        </div>
-        
-        <div class="col-12 col-sm-4 mb-2">
-          <a class="btn btn-outline-dark w-100" href="/projects">
-            BY PROJECT
-          </a>
-        </div>
-      </div>
     </div>
 
-	  <div class="col-12 col-sm-8 col-lg-3 order-3">
-      {{ partial "bio-sidebar" . }}
- 	  </div>
   </div>
 
 </div>

@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+<div class="container-fluid">
+  <div class="row pt-lg-8 pt-10 justify-content-center">
+    {{ partial "book-hero" . }}
+    {{ partial "book-buy-buttons" . }}
+    {{ partial "book-about-blurbs" . }}
+    {{ partial "book-buy-buttons" . }}
+
+
+    <div class="col-12 col-md-8 col-lg-8 mt-5 p-5">
+      <div class="mb-3 text-center text-subdued">❤️ <em>5% of the book's advance and royalties will be donated to <a href="https://www.givewell.org/" target="_new">GiveWell</a>. They're a great organization that does a ton of work to identify the charities that improve the most lives per dollar on based <a href="https://www.givewell.org/how-we-work/criteria#Criteria" target="_new">these criteria</a>.</em></div>
+    </div>
+
+    <div class="col-12 col-md-8 col-lg-8">
+    	<div class="mb-3 text-center text-subdued"><strong>Interested in helping promote the book, or requesting an interview?</strong> <a href="/whyareweyelling/contact">Use this form.</a></div>
+    </div>
+
+  </div>
+</div>
+
+{{ end }}
