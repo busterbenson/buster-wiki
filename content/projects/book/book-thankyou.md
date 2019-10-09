@@ -1,7 +1,8 @@
 +++
 title = "Thank you for picking up this book!"
 one_liner = ""
-featured_image = ""
+featured_image = "/images/projects/whyareweyelling.png"
+hide_image_on_detail = true
 url = "whyareweyelling/book-thankyou"
 projects = ['book']
 
