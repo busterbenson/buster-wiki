@@ -244,5 +244,14 @@ event = "🎂 Niko's 9th birthday!"
 event = "I turn in the final manuscript!"
 desc = "This also included all 100ish illustrations, endnotes, and a 6k word reference chapter for every cognitive bias (that was then immediately removed)."
 
+[[2019-10-01]]
+event = "I record the audiobook"
+desc = "It took 3 days and was super rewarding but also very difficult."
+
+[[2019-10-09]]
+event = "I launch the book website"
+desc = "After much hand-wringing, I went with something minimal."
+link = "https://busterbenson.com/whyareweyelling"
+
 [[2019-11-19]]
 event = "Book is published!"
