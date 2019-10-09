@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
+    <meta name="twitter:card" content="summary"></meta>
+    <meta name="twitter:site" content="Buster Benson"></meta>
+    <meta name="twitter:creator" content="@buster"></meta>
+
+    <meta property="og:title" content="{{ .Title }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="{{ .Title }}" />
     {{ if and (ne .Params.one_liner nil) (ne .Params.one_liner "") }}
       <meta property="og:description" content="{{ .Params.one_liner }}" />
     {{ end }}
