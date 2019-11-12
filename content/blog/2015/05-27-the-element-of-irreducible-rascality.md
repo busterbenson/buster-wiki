@@ -1,6 +1,6 @@
 +++
 # basics
-title = "The Element of Irreduclible Rascality"
+title = "The Element of Irreducible Rascality"
 author = "me"
 link = "https://writtenonbart.com/the-element-of-irreducible-rascality-54bea38d1a2f"
 one_liner = "This is one of my favorite phrases coined by Alan Watts"
