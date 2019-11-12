@@ -29,7 +29,7 @@ It's the exception to every rule, including this one.
 
 All things fall apart.
 
-If the universe is balanced on the top on a turtle’s back, and that turtle is balanced on top of another turtle’s back, and the turtles go all the way down, then the element of irreducible rascality is at the bottom, holding nothing, standing on nothing.
+If the universe is balanced on the top of a turtle’s back, and that turtle is balanced on top of another turtle’s back, and the turtles go all the way down, then the element of irreducible rascality is at the bottom, holding nothing, standing on nothing.
 
 The element of irreducible rascality created the first creator, and nothing created it.
 
