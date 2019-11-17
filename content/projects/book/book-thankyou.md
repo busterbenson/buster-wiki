@@ -4,6 +4,7 @@ one_liner = ""
 featured_image = "/images/projects/whyareweyelling.png"
 hide_image_on_detail = true
 url = "whyareweyelling/thankyou"
+aliases = ["whyareweyelling/thanks"]
 projects = ['book']
 
 date = "2019-10-05"
@@ -33,7 +34,7 @@ I'd like to give you a few free reference guides that you can print out and put 
 ### Bonus materials
 If you'd like some bonus materials to go along with your book, just forward your purchase receipt to `iboughtwhyareweyelling@gmail.com` to receive the following extra goodies:
 
-- **Disagreement Template w/ Examples.** A simple template for having productive disagreements with several real examples from my life.
-- **Disagreement FAQ and Book Club.** I'll be hosting a series of chapter-specific book clubs in a private group, which you'll be invited to join!
-- **Ask Me Anything.** You'll be invited to submit a question that I will answer once the book comes out.
+- **Disagreement Template w/ Examples.** A simple template for having productive disagreements with several real examples from the book and from life.
+- **Disagreement FAQ and AMA** Common questions people have about productive disagreement. You'll be invited to submit a question about anything in the book that you'd like more information on.
+- **Companion Reading Guide** A series of emails with additional insights that complement the 8 tips given in the book.
 
