@@ -5,6 +5,6 @@ featured_image = ""
 created_date = "2018-12-20"
 date = "2018-12-20"
 hide_from_lists = true
-layout = "home" #"book-index" # "home"
+layout = "home" 
 +++
 
