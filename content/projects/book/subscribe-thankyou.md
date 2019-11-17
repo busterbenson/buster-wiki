@@ -3,7 +3,7 @@ title = "Thank you!"
 one_liner = ""
 featured_image = "/images/projects/whyareweyelling.png"
 hide_image_on_detail = true
-url = "whyareweyelling/thankyou"
+url = "whyareweyelling/subscribe-thankyou"
 projects = ['book']
 
 date = "2019-10-05"
