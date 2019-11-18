@@ -4,7 +4,7 @@ one_liner = ""
 featured_image = "/images/projects/whyareweyelling.png"
 hide_image_on_detail = true
 url = "whyareweyelling/thankyou"
-aliases = ["whyareweyelling/thanks"]
+aliases = ['whyareweyelling/thanks']
 projects = ['book']
 
 date = "2019-10-05"

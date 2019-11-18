@@ -37,7 +37,7 @@
 
           {{ if where .Pages "Section" "in" (slice "blog" "tree") }}
             <ul>
-              {{ range first 5 (where .Pages "Section" "in" (slice "blog" "tree")).ByDate.Reverse }}
+              {{ range first 5 (where .Site.Pages "Section" "in" (slice "blog" "tree")).ByDate.Reverse }}
                 {{ partial "list-item-for-page" . }}
               {{ end }}
             </ul>
