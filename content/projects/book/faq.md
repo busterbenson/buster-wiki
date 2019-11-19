@@ -10,4 +10,4 @@ layout = "piece"
 draft = false
 +++
 
-
+Coming soon! Just need to collect some questions first! To ask me a question about the book, [reach out to me (@buster) on Twitter](https://twitter.com/buster).
