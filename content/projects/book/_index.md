@@ -4,7 +4,6 @@ one_liner = "The Art of Productive Disagreement"
 featured_image = "/images/projects/whyareweyelling.png"
 piles = ["dialogue", "cognitive-biases", "being-a-creator", "drawing"]
 url = 'whyareweyelling'
-aliases = ['book']
 
 date = "2016-08-01"
 layout = "book"

@@ -1,0 +1,67 @@
+{{ define "main" }}
+
+<div class="container-fluid">
+  <div class="row pt-lg-8 pt-10 justify-content-center">
+
+    <div class="book-sidebar col-12 col-sm-4 col-lg-2 order-lg-1 order-2">
+      {{ partial "book-sidebar" . }}
+    </div>
+
+    <div class="col-12 col-lg-7 px-lg-3 order-lg-2 order-1">
+      <div class="mt-1 text-smaller"><strong><a href="/blog">BLOG</a></strong></div>
+	    <h2 class="blog-title">{{ .Title }}</h2>
+	    <h4 class="subtitle mt-0">{{ .Param "one_liner" | safeHTML }}</h4>
+  	  {{ if .Params.link }}
+  	  	<div class="mt-1">
+  	  		<small> 
+  	  			{{ if eq .Params.author "me" }}
+  	  				<a href="/me">Buster Benson</a> <span class="text-secondary px-1">|</span>
+  	  			{{ else if ne .Params.author ""}}
+  	  				{{ $person := replace (lower .Params.author) " " "-" }}
+			  			{{ with $person := $.Site.GetPage ( printf "/influences/%s" $person ) }}
+					  		<a href="{{ .Permalink }}">{{ .Title }}</a>
+					  	{{ else }}
+					  		{{ .Params.author }}
+				  		{{ end }}
+  	  				<span class="text-secondary px-1">|</span>  	  			
+  	  			{{ end }}
+  	  			<a href="{{ .Params.link }}" class="text-secondary" target="_blank">{{ .Params.link }}</a>
+  	  		</small>
+  	  	</div>
+    	{{ end }}
+		  <div class="small mt-1">
+		    {{ if .Params.annotated_link }}
+	  	  	<a href="{{ .Params.annotated_link }}" target="_blank" class="btn btn-sm btn-dark"><span class="oi oi-comment-square"></span> &nbsp; Read it with in-line comments</a>
+	  	  {{ end }}
+	  	</div>
+
+      <div class="mt-4 mb-3 pb-2 piece-content border-bottom">
+        {{ if gt (len .Content) 10 }}
+    			{{ .Content }}
+        {{ else if .Params.link }}
+          <a class="button btn btn-lg btn-outline-primary" href="{{ .Params.link }}" target="_blank">Read it!</a>
+        {{ end }}
+
+        <div class="row">
+          {{ range .Resources.ByType "image" }}
+            {{ $image := .Resize "600x jpg" }}
+            <div class="col-12 col-xl-6">
+              <div class="card mb-2">
+                <img src="{{ $image }}" />
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+      <div class="mb-2">{{ partial "piece-metadata" . }}</div>
+
+    </div>
+
+	  <div class="col-12 col-sm-8 col-lg-3 order-3">
+      {{ partial "bio-sidebar" . }}
+ 	  </div>
+  </div>
+
+</div>
+{{ end }}
+
