@@ -44,10 +44,9 @@
 
         <div class="row">
           {{ range .Resources.ByType "image" }}
-            {{ $image := .Resize "600x jpg" }}
             <div class="col-12 col-xl-6">
               <div class="card mb-2">
-                <img src="{{ $image }}" />
+                <img src="{{ .Permalink }}" />
               </div>
             </div>
           {{ end }}
