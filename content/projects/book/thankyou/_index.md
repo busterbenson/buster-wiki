@@ -34,8 +34,10 @@ I'd like to give you a few free reference guides that you can print out and put 
 ### Bonus materials
 If you'd like some bonus materials to go along with your book, just forward your purchase receipt to `iboughtwhyareweyelling@gmail.com` to receive the following extra goodies:
 
-- **Disagreement Template w/ Examples.** A simple template for having productive disagreements with several real examples from the book and from life.
-- **Disagreement FAQ and AMA.** Common questions people have about productive disagreement. You'll be invited to submit a question about anything in the book that you'd like more information on.
-- **Cognitive Bias Desktop Wallpaper.** Get a light and dark mode downloadable wallpaper version of the popular Cognitive Bias Codex.
-- **Companion Reading Guide** A series of emails with additional insights that complement the 8 tips given in the book.
+1. **Disagreement Template w/ Examples.** A simple template for having productive disagreements with several real examples from the book and from life.
+2. **Disagreement FAQ and AMA.** Common questions people have about productive disagreement. You'll be invited to submit a question about anything in the book that you'd like more information on.
+3. **Cognitive Bias Desktop Wallpaper.** Get a light and dark mode downloadable wallpaper version of the popular Cognitive Bias Codex.
+4. **Companion Reading Guide** A series of emails with additional insights that complement the 8 tips given in the book.
+5. **A 3-Month Free Trial of 750words.com.** <a href="https://750words.com" target="_new">750 Words</a> is a private journal to accompany the topics covered in the book's first two chapters: watch how anxiety sparks, and talk to your internal voices. Normally $5/month, you'll get the first 3 months free, which will get you at least to the Albatross badge (30 days of writing) and almost all the way to the Phoenix badge (100 days of writing).
+
 
