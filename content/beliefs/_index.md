@@ -35,4 +35,8 @@ Some most definitely are. These beliefs are my best guess and articulation of my
 - 🤞 A belief with low confidence.
 - 🐲 A belief that triggers anxiety when challenged.
 
+### Didn't this used to be stored on Github? 
+
+Yes, and it still is! I just changed the format of the file so that it was easier to maintain as it grew, and to allow for some metadata attached to each belief. [You can see it here](https://github.com/busterbenson/buster-wiki/blob/master/data/beliefs.toml). When I come to this page and need to make a change, I often just click through to Github and edit the doc directly. If you make something like this, I'd be happy to show you how it's done.
+
 ### Beliefs by topic
