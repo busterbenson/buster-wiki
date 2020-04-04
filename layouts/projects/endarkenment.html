@@ -1,0 +1,39 @@
+{{ define "main" }}
+
+<div class="container-fluid">
+  <div class="row pt-lg-8 pt-10 justify-content-center">
+
+    <div class="col-12">
+      <div class="mt-1 text-smaller"><strong><a href="/projects">PROJECTS</a></strong></div>
+      {{ partial "title-and-content-basic" . }}
+
+      <div class="mt-3 mb-3">
+        <a class="button btn btn-dark btn-lg" style="display: block;" href="javascript:goto_random_card();" style="font-weight: bold;">Draw a card</a>
+      </div>
+
+      <div class="row justify-content-start" style="padding: 4px;">
+
+      {{ range (shuffle $.Site.Data.endarkenment.cards) }}
+        <div class="col-6 col-md-3 mb-3">
+          <a href="/endarkenment/cards/{{ . }}"><img src="/images/endarkenment/{{ . }}.png" /></a>
+        </div>
+      {{ end }}
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+var cards = [
+  {{ range (shuffle $.Site.Data.endarkenment.cards) }}
+    '{{ . }}',
+  {{ end }}
+];
+function goto_random_card() {
+  var random_card = cards[Math.floor(Math.random() * cards.length)];
+  window.location.href = "/endarkenment/cards/"+random_card;
+}
+</script>
+
+{{ end }}

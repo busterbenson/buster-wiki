@@ -10,5 +10,6 @@ date = "2016-08-01"
 layout = "book"
 draft = false
 project_weight = 3 # 1 = low, 3 = high
+featured = true
 +++
 

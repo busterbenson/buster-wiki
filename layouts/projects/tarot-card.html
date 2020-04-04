@@ -1,0 +1,115 @@
+{{ define "main" }}
+
+<div class="container-fluid">
+  <div class="row pt-lg-8 pt-10 justify-content-center">
+
+
+    <div class="col-12">
+      <div class="mt-1 text-smaller">
+        <strong><a href="/projects">PROJECTS</a></strong> • 
+        <strong><a href="/tarot">TAROT</a></strong>
+      </div>
+      {{ partial "title-and-content-basic" . }}
+
+      <div class="row justify-content-start">
+        <div class="col-12 col-sm-3 mb-5">
+          <a href="/tarot/cards/{{ .Params.token }}"><img src="/images/tarot/rws/rw-{{ .Params.token }}.jpg" style="padding: 5px;" /></a>
+        </div>
+
+        <div class="col-12 col-sm-5 mb-5">
+          <h3>Range of meanings</h3>
+          
+          {{ if (or .Params.meaning_light .Params.meaning_shadow) }}
+            <p><strong>Light:</strong> {{ .Params.meaning_light }}</p>
+            <p><strong>Shadow:</strong> {{ .Params.meaning_shadow }}</p>
+          {{ end }}
+
+          {{ if .Params.questions }}
+            <h3>Questions to ask</h3>
+            <ol>
+              {{ range .Params.questions }}
+                <li>{{ . }}</li>
+              {{ end }}
+            </ol>
+          {{ end }}
+
+          <h3>Advice</h3>
+
+          {{ if .Params.advice_personal_growth }}
+            <p><strong>Personal Growth:</strong> {{ .Params.advice_personal_growth }}</p>
+          {{ end }}
+
+          {{ if .Params.advice_work }}
+            <p><strong>Work:</strong> {{ .Params.advice_work }}</p>
+          {{ end }}
+
+          {{ if .Params.advice_relationships }}
+            <p><strong>Relationships:</strong> {{ .Params.advice_relationships }}</p>
+          {{ end }}
+
+          {{ if .Params.advice_spirituality }}
+            <p><strong>Spirituality:</strong> {{ .Params.advice_spirituality }}</p>
+          {{ end }}
+
+          {{ if .Params.advice_fortune_telling }}
+            <p><strong>Fortune-Telling:</strong> {{ .Params.advice_fortune_telling }}</p>
+          {{ end }}
+
+        </div>
+        <div class="col-12 col-sm-4">
+
+          <h3>Associations</h3>
+
+          {{ if .Params.correspondence_suit }}
+            <p><strong>Suit:</strong> {{ .Params.correspondence_suit }}</p>
+          {{ end }}
+
+          {{ if .Params.correspondence_element }}
+            <p><strong>Element:</strong> {{ .Params.correspondence_element }}</p>
+          {{ end }}
+          
+          {{ if .Params.correspondence_astrological }}
+            <p><strong>Astrological:</strong> {{ .Params.correspondence_astrological }}</p>
+          {{ end }}
+
+          {{ if .Params.correspondence_planet }}
+            <p><strong>Planet:</strong> {{ .Params.correspondence_planet }}</p>
+          {{ end }}
+
+          {{ if .Params.correspondence_hebrew }}
+            <p><strong>Hebrew:</strong> {{ .Params.correspondence_hebrew }}</p>
+          {{ end }}
+
+          {{ if .Params.correspondence_archetype }}
+            <p><strong>Archetype:</strong> {{ .Params.correspondence_archetype }}</p>
+          {{ end }}
+
+          {{ if .Params.correspondence_mystical }}
+            <p><strong>Religions:</strong> {{ .Params.correspondence_mystical }}</p>
+          {{ end }}
+
+          {{ if .Params.correspondence_story }}
+            <p><strong>Fool's Journey:</strong> {{ .Params.correspondence_story }}</p>
+          {{ end }}
+
+          {{ if .Params.symbols }}
+            {{ range .Params.symbols }}
+              <p>
+                {{ $symbol := index $.Site.Data.symbols . }}
+                {{ if $symbol }}
+                  <strong>{{ $symbol.name }}:</strong> {{ $symbol.desc }}
+                {{ end }}
+                </p>
+            {{ end }}
+          {{ end }}
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{{ end }}

@@ -1,0 +1,81 @@
+{{ define "main" }}
+
+<div class="container-fluid">
+  <div class="row pt-lg-8 pt-10 justify-content-center">
+
+
+    <div class="col-12">
+      <div class="mt-1 text-smaller">
+        <strong><a href="/projects">PROJECTS</a></strong> • 
+        <strong><a href="/endarkenment">ENDARKENMENT</a></strong>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <h1 class="title mt-0">{{ .Title }}</h1>
+          <h4 class="subtitle mt-0">{{ .Param "one_liner" | safeHTML }}</h4>
+        </div>
+      </div>
+
+      <div class="row justify-content-start">
+        <div class="col-12 col-sm-5 mb-5">
+          <a href="/endarkenment/cards/{{ .Params.token }}"><img src="/images/endarkenment/{{ .Params.token }}.png" style="padding: 5px;" /></a>
+
+          <h3 class="mt-2">Associations</h3>
+
+          {{ if .Params.primary }}
+            {{ $symbol := index $.Site.Data.endarkenment.symbol .Params.primary }}
+            {{ if $symbol }}
+              <p>
+                <div><strong>Primary Suit</strong></div>
+                <div>{{ $symbol.suit }} <em>{{ $symbol.name }}</em> &mdash; {{ $symbol.desc }}</div>
+              </p>
+            {{ end }}
+          {{ end }}
+
+          {{ if .Params.secondary }}
+            {{ $symbol := index $.Site.Data.endarkenment.symbol .Params.secondary }}
+            {{ if $symbol }}
+              <p>
+                <div><strong>Secondary Suit</strong></div>
+                <div>{{ $symbol.suit }} <em>{{ $symbol.name }}</em> &mdash; {{ $symbol.desc }}</div>
+              </p>
+            {{ end }}
+          {{ end }}
+
+          {{ if .Params.rescuer }}
+            {{ $symbol := index $.Site.Data.endarkenment.symbol .Params.rescuer }}
+            {{ if $symbol }}
+              <p>
+                <div><strong>Rescuer: {{ $symbol.name }}</strong></div>
+                <div>{{ $symbol.desc }}</div>
+              </p>
+            {{ end }}
+          {{ end }}
+          
+          {{ if .Params.other_symbols }}
+            {{ range .Params.other_symbols }}
+              <p>
+                {{ $symbol := index $.Site.Data.endarkenment.symbol . }}
+                {{ if $symbol }}
+                  <strong>{{ $symbol.name }}:</strong> {{ $symbol.desc }}
+                {{ end }}
+                </p>
+            {{ end }}
+          {{ end }}
+
+        </div>
+
+        <div class="col-12 col-sm-5 mb-5">
+          <div class="page-content poem" style="font-family: Georgia; font-weight: light; font-size: 20px;">{{ .Content }}</div>
+        </div>
+        <div class="col-12 col-sm-4">
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{{ end }}

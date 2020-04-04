@@ -11,4 +11,5 @@ category = 'idea'
 
 layout = "project"
 project_weight = 1 # 1 = low, 3 = high
+featured = true
 +++

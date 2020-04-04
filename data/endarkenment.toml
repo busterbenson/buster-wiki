@@ -1,0 +1,51 @@
+cards = [
+	'chaos-monkey',
+	'phoenix-bones',
+	'snake-bus',
+	'napping-cheetah',
+	'hero-with-100-arms'
+]
+
+[symbol.blue]
+suit = "🌎"
+name = "Blue"
+desc = "Asks 'What is true?' Believes in evidence. Connected to the world."
+cards = ['phoenix-bones', 'chaos-monkey']
+
+[symbol.red]
+suit = "❤️"
+name = "Red"
+desc = "Asks 'What is possible?' Believes in experience. Connected to intuition."
+cards = ['snake-bus', 'napping-cheetah']
+
+[symbol.yellow]
+suit = "✋"
+name = "Yellow"
+desc = "Asks 'What is useful?' Believes in results. Connected to community."
+cards = ['hero-with-100-arms']
+
+[symbol.white]
+suit = "❄️"
+name = "White"
+desc = "The Crystal Tower. Order, structure, security."
+
+[symbol.black]
+suit = "🕸"
+name = "Black"
+desc = "Dark Forest. Chaos, uncertainty, flux."
+
+[symbol.play-rock]
+name = "Rock"
+desc = "Make it happen."
+cards = ['hero-with-100-arms']
+
+[symbol.play-paper]
+name = "Paper"
+desc = "Internalize it."
+cards = ['snake-bus', 'napping-cheetah']
+
+[symbol.play-scissors]
+name = "Scissors"
+desc = "Make sense of it."
+cards = ['phoenix-bones']
+

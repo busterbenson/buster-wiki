@@ -14,7 +14,7 @@
 
       <div class="row">
         {{ range (.Pages.ByParam "project_weight").Reverse }}
-          {{ if gt (len .Pages) 0 }}
+          {{ if eq .Params.featured true }}
             {{ partial "section-card" . }} 
           {{ end }}
         {{ end }}

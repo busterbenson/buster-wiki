@@ -103,7 +103,7 @@
       </div>
 
       {{ if (where .Pages "Section" "influences") }}
-        <h3 class="mt-5">People who have influenced my thinking</h3>
+        <h3 class="mt-5">Influences</h3>
         <div class="row justify-content-start">
           {{ range (where .Pages "Section" "influences").ByTitle }}
             {{ if ne (.Param "hide_from_lists") true }}

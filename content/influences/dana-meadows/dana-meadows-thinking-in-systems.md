@@ -8,7 +8,7 @@ featured_image = "" # /images/pieces/
 
 # taxonomies
 influences		 = ['dana-meadows']
-piles     		 = ['system-thinking']
+piles     		 = ['systems-thinking']
 projects			 = []
 
 # link, article, reference, thought, book, idea

@@ -32,9 +32,14 @@
   {{ if eq $timeline_type "writing-a-book" }}
     <br clear="all" />
     <a name="year-{{ $year }}"></a>
-    <div class="sticky-top mt-1" style="{{ if not $.Params.suppress_topnav }}top: 60px;{{ end }} background-color: #fff;"><h3>{{ $year }}</h3></div>
+    <div class="sticky-top mt-1" style="{{ if not $.Params.suppress_topnav }}top: 60px;{{ end }} background-color: #fff;"><h3>{{ $age }} in {{ $year }}</h3></div>
   {{ else }}
-    <div class="border border-gray float-left {{ $year_border_class }} text-truncate" style="height: 2em; max-height: 2em; max-width: 100%; padding: 2px 5px; margin: 2px;" data-toggle="popover" data-placement="auto" data-trigger="hover" data-content="{{ $age }} years old">{{ $year }}</div>
+    <div class="border border-gray float-left {{ $year_border_class }} text-truncate" style="height: 2em; max-height: 2em; max-width: 100%; padding: 2px 5px; margin: 2px;" data-toggle="popover" data-placement="auto" data-trigger="hover" data-content="{{ $year }}">
+      {{ $age }} years old
+      {{ if or (eq $age 0) (eq (mod $age 10) 0) }} 
+        in {{ $year }}
+      {{ end }}
+    </div>
   {{ end }}
   {{ range $week := seq 52 }}
     {{ partial "week-cell" (dict "year" $this_year_date "week" (sub $week 1) "person" $data_username "site" $.Site "data_file" $data_file ) }}

@@ -29,7 +29,7 @@ I've used the exercise as a great way to think out loud without having to worry 
 
 ### Some articles about it
 
-- <a href="https://qz.com/777929/writing-morning-pages-can-offer-many-of-the-same-benefits-as-meditation/" target="_blank">How Writing 750 Words a Day Could Change Your Life</a> by Quartz
-- <a href="http://www.becomingwhoyouare.net/an-interview-with-750-words-creator-buster-benson/" target="_blank">An Interview with 750 Words Creator Buster Benson</a> by Becoming Who You Are
-- <a href="https://lifehacker.com/750-words-clears-your-mind-gets-ideas-flowing-5482921" target="_blank">750 Words Clears Your Mind, Gets Ideas Flowing</a> by Lifehacker
-- <a href="https://lifehacker.com/want-to-create-a-new-habit-get-ready-to-break-it-5964439" target="_blank">Want to Create a New Habit? Get Ready to Break It</a> by Lifehacker
+- [How Writing 750 Words a Day Could Change Your Life](https://qz.com/777929/writing-morning-pages-can-offer-many-of-the-same-benefits-as-meditation/) by Quartz
+- [An Interview with 750 Words Creator Buster Benson](http://www.becomingwhoyouare.net/an-interview-with-750-words-creator-buster-benson) by Becoming Who You Are
+- [750 Words Clears Your Mind](https://lifehacker.com/750-words-clears-your-mind-gets-ideas-flowing-5482921) by Lifehacker
+- [Want to Create a New Habit? Get Ready to Break It](https://lifehacker.com/want-to-create-a-new-habit-get-ready-to-break-it-5964439) by Lifehacker

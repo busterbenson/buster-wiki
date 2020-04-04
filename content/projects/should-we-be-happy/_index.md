@@ -18,5 +18,6 @@ date 								 = "2018-12-24"
 draft 							 = false
 layout 							 = 'comic'
 project_weight = 1 # 1 = low, 3 = high
+featured 						 = true
 +++
 
