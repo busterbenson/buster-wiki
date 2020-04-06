@@ -145,6 +145,11 @@ name = "Blindfolded Figure"
 desc = "In RWS-inspired decks, we frequently see a blindfolded woman grasping two broadswords on the Two of Swords. Set apart from the waters of intuition, for better or worse she is depending solely on logic to make a difficult decision."
 cards = ['swords-02']
 
+[boatman]
+name = "Boatman"
+desc = "On RWS versions of the 6 of Swords, a boatman steers a craft bearing one or two huddled figures. What are they leaving? Where are they going?"
+cards = ['swords-06']
+
 [bolted-wand]
 name = "Bolted Wand"
 desc = "In RWS-inspired decks, one of the two Wands is bolted to the wall, hinting at the possibility that you may need to abandon old habits for new, more flexible ones."
@@ -252,6 +257,11 @@ name = "Dancing Woman"
 desc = "In RWS-inspired decks, the 3 of Cups frequently depicts three dancing women. How in touch are you with your more feminine emotions and instincts?"
 cards = ['cups-03']
 
+[dark-skies]
+name = "Dark Skies"
+desc = "RWS-inspired decks often depict a sunset (or sunrise) in the background of the 10 of Swords, suggesting that a change of some kind is at hand, but only after hitting rock bottom."
+cards = ['swords-10']
+
 [darkness]
 name = "Darkness"
 desc = "With the exception of early decks (like the Marseilles), many Tower cards depict darkened skies. The moment of disaster is our lowest point."
@@ -293,6 +303,11 @@ name = "Distant Village"
 desc = "Some RWS-inspired decks depict a distant village in the background of the 10 of Wands and on the 2 of Coins. The village is the light at the end of the tunnel: a reminder that the destination is close at hand. The 'way out' may be as simple as declining an opportunity you lack the time or energy to complete. In the case of the 4 of coins, the distant village can be interpreted as a city that the king holds dear and is unable to let go of, much like the coins in his arms."
 cards = ['wands-10', 'coins-02', 'coins-04']
 
+[distraught-figure]
+name = "Distraught Figure"
+desc = "In illustrations for 9 of Swords, postures of agony abound. Something is keeping this person up, perhaps it's something from a nightmare, or something from real life."
+cards = ['swords-09']
+
 [dog]
 name = "Dog"
 desc = "Accompanies the Fool in the RWS deck. The dog is a symbol of loyalty and instinct. On the Wheel of Fortune, the dog (or Anubis) is ascending to reign after the Sphynx."
@@ -308,6 +323,12 @@ cards = ['major-13']
 name = "Eight-Pointed Stars"
 desc = "Depending on the deck used, the number eight suggests the work associated with expressions of strength or the delivery of justice. Eight, the number of action, doubles four, the number of persistence and stability."
 cards = ['major-17']
+
+[embedded-swords]
+name = "Embedded Swords"
+desc = "Many versions of the 6 of Swords depict six swords embedded in the deck of the boat. Do they form a defensive barrier? Are they needed in case of attack? Or are they products, being ferried to market?"
+variations = ['swords']
+cards = ['swords-06']
 
 [extended-cup]
 name = "Extended Cup"
@@ -481,6 +502,11 @@ name = "Lobster"
 desc = "The night can put us in contact with our deepest, most instinctual fears. Here, this lobster represents our most primitive brain, crawls up from the depths of the subconscious mind, and bathes itself in the light of the moon."
 cards = ['major-18']
 
+[loose-bonds]
+name = "Loose Bonds"
+desc = "Many versions of the 8 of Swords feature someone tied with what appear to be very loose bonds. They are reminiscent of the chains around the fawns’ necks on the Devil card. She feels trapped in many different ways, but each of those ways is relatively easy to get out of?"
+cards = ['swords-08']
+
 [mandalora]
 name = "Mandalora"
 desc = "Both the Marseilles and RWS-inspired decks surround the central figure with a wreath, or mandalora. Like the oroborous, the snake that swallows its own tail, the mandalora has no beginning or end. Its shape also suggests the number zero -- the designation of the Fool."
@@ -584,6 +610,12 @@ name = "Prisoners"
 desc = "The Devil is accompanied by fauns -- mythical half-goats whose horns and tails emphasize their bestial nature. Their fascination with the material prevents them from stepping away from the loose chains around their necks."
 cards = ['major-15']
 
+[rack-of-swords]
+name = "Rack of Swords"
+desc = "In the RWS, the swords in this 9 of Swords point forward, suggesting a dread of future events. If you pause to define exactly what you fear, you may find that you diminish that fear’s ability to rob you of a good night’s sleep."
+variations = ['swords']
+cards = ['swords-09']
+
 [ram]
 name = "The Ram"
 desc = "The ram, absent in early versions of the card, suggests the Emperor’s ties to Aries. Traditionally, the ram symbolizes the fiery energy of Aries and, physically, the head of the body."
@@ -680,16 +712,20 @@ name = "Skeleton"
 desc = "Bones persist long after the decay of the body; so, they are symbols of the enduring and eternal."
 cards = ['major-13']
 
-[sunset]
-name = "Sunset"
-desc = "In many illustrations, it’s difficult to tell whether the sun is rising or setting. The ambiguity of the sun's direction here points to the ambiguous relationship between life and death."
-cards = ['major-15']
+[smug-figure]
+name = "Smug Figure"
+desc = "The knight depicted on many versions of the 5 of Swords appears to be gloating over his triumph. How we act when we get our way reveals a lot about our character."
 
 [snake-belt]
 name = "Snake Belt"
 desc = "Worn by the Magician, fashioned like an oroborous, which is a snake swallowing its own tail. Suggests constant reinvention."
 variations = ['mandalora']
 cards = ['major-01']
+
+[sneaky-figure]
+name = "Sneaky Figure"
+desc = "RWS-inspired illustrations of the 7 of Swords often depict a thief tip-toeing away with stolen goods. He carries five (the number of chaos) swords, but leaves behind two (the number of duality). When we are dishonest, you invite chaos into your life, and force others to question their high opinions of you."
+cards = ['swords-07']
 
 [sphynx]
 name = "Sphynx"
@@ -729,16 +765,31 @@ name = "Stingy King"
 desc = "By definition, the King owns it all. On many RWS-influenced cards, we see a ruler who takes this idea to extremes. His possessions are constantly on his mind and close to his heart, to the point of unhealthy obsession."
 cards = ['coins-04']
 
+[stolen-swords]
+name = "Stolen Swords"
+desc = "Many see the figure in the foreground of RWS-influenced 5 of Swords as a thief, stealing swords at the expense of his associates. Just remember: victory achieved through dishonesty robs you of your integrity, and often causes some retribution to bounce back in the future."
+variations = ['swords']
+cards = ['swords-05']
+
 [sunflower]
 name = "Sunflower"
 desc = "Sunflowers turn to follow the path of the sun through the sky, modeling the sort of attention paid to any sunny personality. Their shape and color emulates the object of their attention."
 cards = ['major-19']
 
+[sunset]
+name = "Sunset"
+desc = "In many illustrations, it’s difficult to tell whether the sun is rising or setting. The ambiguity of the sun's direction here points to the ambiguous relationship between life and death."
+cards = ['major-15']
+
 [swords]
 name = "Swords"
 desc = "One of the four suits of the tarot. Also sometimes called blades, knives or athames. Represents logic, objectivity, intellect, and choice. Along with the responsibility such talents bring. Swords suggest logic, clarity, and decision-making. Remember the story of wise King Solomon, who once offered to slice a baby in half in order to resolve a dispute over motherhood? Swords cut through confusion, revealing our agendas in the process."
-variations = []
+variations = ['stolen-swords', 'embedded-swords', 'wall-of-swords', 'rack-of-swords']
 cards = ['major-01', 'major-11', 'swords-01', 'swords-02', 'swords-03', 'swords-04', 'swords-05', 'swords-6', 'swords-07', 'swords-08', 'swords-09', 'swords-10', 'swords-11', 'swords-12', 'swords-13', 'swords-14']
+
+[swords-in-back]
+name = "Swords in Back"
+desc = "Optimistic users of the RWS claim the swords on the 10 of Swords pierce the pitiful figure’s charkas, yielding enlightenment through trial. Other decks show the figure face-up, suggesting the additional agony of seeing a bad situation coming."
 
 [taro]
 name = "TARO"
@@ -750,6 +801,10 @@ cards = ['major-10']
 name = "Teamwork"
 desc = "In RWS-inspired decks, the 3 of Coins shows an apprentice sharing his work with a priest and nobleman. This represents a coming together of different kinds of knowledge into an effective collaboration."
 cards = ['coins-03']
+
+[tents]
+name = "Tents"
+desc = "In the background of many RWS-inspired 7 of Swords, we see a cluster of distant tents. Is the figure in the foreground an outsider, come to steal? Or an insider, taking advantage of his own people?"
 
 [threatening-wands]
 name = "Threatening Wands"
@@ -849,6 +904,11 @@ cards = ['major-01']
 name = "Venus"
 desc = "The familiar planetary symbol for Venus often appears in illustrations for the Empress, stressing the her association with domesticity, motherhood, and female sexuality."
 cards = ['major-03']
+
+[wall-of-swords]
+name = "Wall of Swords"
+desc = "RWS-inspired versions of the 8 of Swords depict a woman trapped in the middle of a circle of swords. The circle, however, is incomplete. Escape is simply a matter of casting off the blindfold and taking that first step. How many of your own limitations are strictly imagined?"
+variations = ['swords']
 
 [wands]
 name = "Wands"
