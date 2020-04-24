@@ -1,3 +1,4 @@
+---
 title: "Blogging"
 author: 'me'
 link: ""
@@ -8,5 +9,6 @@ categories: 'thought'
 date: "2020-04-22"
 layout: "piece"
 disqus: false
+---
 
-I don't really have any idea. But starting to think about it. 
+I don't really have any idea. But starting to think about it.
