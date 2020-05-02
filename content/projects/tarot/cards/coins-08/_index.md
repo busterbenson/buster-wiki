@@ -1,7 +1,7 @@
 +++
 # hugo new --kind tarot-card content/projects/tarot/cards/suit-number.md
 # basics
-title     		 = "8 of Coins"
+title     		 = "8 of Pentacles"
 token					 = 'coins-08'
 card_type			 = '' # major, minor, court
 layout				 = "tarot-card"
@@ -33,10 +33,10 @@ advice_personal_growth = "Instead of just getting by, a mature person recognizes
 
 advice_fortune_telling = "Stop over-analyzing, researching, and outlining. Buckle down and get the work done."
 
-questions	= ["What might happen if you shunned distraction, isolated yourself, and focused yourself entirely on the work at hand?", "Our friend on many versions of this card has several coins hanging on the doorpost … but he can only make one coin at a time. What small step can you take right now toward realizing a larger plan?", "What are the obstacles between ourselves and our best work?", "How long has it been since you were “lost in your work?", "How can you improve your level of dedication and focus?", "What work do you do best? What about that work appeals to you?"]
+questions	= ["What might happen if you shunned distraction, isolated yourself, and focused yourself entirely on the work at hand?", "What small step can you take right now toward realizing a larger plan?", "What are the obstacles between ourselves and our best work?", "How long has it been since you were “lost in your work?", "How can you improve your level of dedication and focus?", "What work do you do best? What about that work appeals to you?"]
 
 # referenced in the symbols.toml data file
-symbols	  = ['8', 'coins', ]
+symbols	  = ['8', 'coins', 'devoted-craftsman', 'one-at-a-time']
 
 # metadata
 suppress_topnav = true

@@ -25,7 +25,7 @@
     {{ end }}
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {{ .Hugo.Generator }}
+    {{ hugo.Generator }}
     {{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}
     {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -52,9 +52,9 @@
     <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.4"></script>
     <script src="https://d3js.org/d3.v5.min.js"></script>
 
-    {{ if .RSSLink }}
-      <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-      <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ with .OutputFormats.Get "RSS" }}
+      <link href="{{ .RelPermalink }}" rel="alternate" type="application/rss+xml" title="Buster Benson" />
+      <link href="{{ .RelPermalink }}" rel="feed" type="application/rss+xml" title="Buster Benson" />
     {{ end }}
 
     {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}

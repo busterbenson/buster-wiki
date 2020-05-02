@@ -1,7 +1,7 @@
 +++
 # hugo new --kind tarot-card content/projects/tarot/cards/suit-number.md
 # basics
-title     		 = "King of Coins"
+title     		 = "King of Pentacles"
 token					 = 'coins-14'
 card_type			 = '' # major, minor, court
 layout				 = "tarot-card"
@@ -9,25 +9,28 @@ author    		 = 'me'
 one_liner 		 = ""
 images				 = ['/images/tarot/rws/rw-coins-14.jpg']
 keywords			 = []
-meaning_light  = ''
-meaning_shadow = ''
 url						 = 'tarot/cards/coins-14'
 aliases				 = ['coins-king']
 
+personality    = ""
+
+meaning_light  = ""
+
+meaning_shadow = ""
+
 # more detail
-correspondence_suit 				= ""
-correspondence_archetype 		= ""
-correspondence_hebrew 			= ""
 correspondence_element 			= ""
-correspondence_planet 			= ""
-correspondence_astrological = ""
-correspondence_mystical 		= ""
+correspondence_affirmation 	= ""
 correspondence_story 				= ""
 
 advice_relationships 	 = ""
+
 advice_work 					 = ""
+
 advice_spirituality 	 = ""
+
 advice_personal_growth = ""
+
 advice_fortune_telling = ""
 
 questions	= []

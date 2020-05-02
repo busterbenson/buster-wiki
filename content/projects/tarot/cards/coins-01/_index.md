@@ -1,7 +1,7 @@
 +++
 # hugo new --kind tarot-card content/projects/tarot/cards/suit-number.md
 # basics
-title     		 = "Ace of Coins"
+title     		 = "Ace of Pentacles"
 token					 = 'coins-01'
 card_type			 = '' # major, minor, court
 layout				 = "tarot-card"

@@ -1,7 +1,7 @@
 +++
 # hugo new --kind tarot-card content/projects/tarot/cards/suit-number.md
 # basics
-title     		 = "7 of Coins"
+title     		 = "7 of Pentacles"
 token					 = 'coins-07'
 card_type			 = '' # major, minor, court
 layout				 = "tarot-card"
@@ -35,7 +35,7 @@ advice_fortune_telling = "Things won’t work out as expected. Pick up the piece
 questions	= ["What expectations do you have? How have these expectations shaped your efforts?", "To what extent have I fulfilled my own expectations?", "What are the terms of success?", "How can I be happier with the progress I’ve made?"]
 
 # referenced in the symbols.toml data file
-symbols	  = ['7', 'coins', 'crop-of-coins']
+symbols	  = ['7', 'coins', 'crop-of-coins', 'unhappy-farmer']
 
 # metadata
 suppress_topnav = true

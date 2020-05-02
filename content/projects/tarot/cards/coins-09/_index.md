@@ -1,7 +1,7 @@
 +++
 # hugo new --kind tarot-card content/projects/tarot/cards/suit-number.md
 # basics
-title     		 = "9 of Coins"
+title     		 = "9 of Pentacles"
 token					 = 'coins-09'
 card_type			 = '' # major, minor, court
 layout				 = "tarot-card"
@@ -35,7 +35,7 @@ advice_fortune_telling = "Until you appreciate what you have, you won’t have a
 questions	= ["How might patience and empathy play a role in your situation today?", "How have past efforts (or a lack of effort) shaped the situation you find yourself in now? To what extent is someone reaping what he or she has sown?", "How have past efforts (or a lack of effort) shaped the situation you find yourself in now? To what extent is someone reaping what he or she has sown?", "The woman on many versions of this card appears to have plenty of resources at her disposal. For you, how much is too little? How much is too much? What would be “just right?”", "If you could not have what you want, how would you make do?", "Could you make a complex task easier by breaking it down into smaller steps?", "How patient are you during the learning process? With yourself? With others?"]
 
 # referenced in the symbols.toml data file
-symbols	  = ['9', 'coins']
+symbols	  = ['9', 'coins', 'falcon', 'bumper-crop']
 
 # metadata
 suppress_topnav = true

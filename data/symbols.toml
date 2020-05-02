@@ -62,6 +62,11 @@ cards = ['wands-01', 'cups-01', 'swords-01', 'coins-01']
 name = "Acolytes"
 desc = "The kneeling acolytes or ministers wear robes adorned with roses and lilies in RWS-influenced decks, suggesting a connection with repressed male and female sexual energies."
 
+[adoration-of-coin]
+name = "Adoration of Coin"
+desc = "The RWS Page and Knight of Pentacles romanticizes the giant coin in his hands, holding it like a beloved treasure. There's something silly and a bit naive about this level of reverence for money. And once you’ve attained the object of your quest, caution is required to protect, maintain, and preserve what you’ve won. And yet, regarding something too highly is the best way to render it useless."
+cards = ['page-11', 'page-12']
+
 [angel]
 name = "An Angel"
 desc = "Whether seen as Cupid (in the Marseilles deck) or Eros (in the RWS-influenced decks), the influence of the angel draws the lovers together."
@@ -466,6 +471,11 @@ name = "King of the Hill"
 desc = "Many illustrations for the 7 of Wands card place the lone warrior on top of a small hill or cliff."
 cards = ['wands-07']
 
+[knight]
+name = "Knight"
+desc = "Knights embody extremes. The Knight of Coins could be a miser or a spendthrift, depending on which way his energy flows. The Knight of Cups could be emotionally-intelligent or overly sentimental. The Knight of Swords rushes towards insight, but might skip over important facts in the process. The Knight of Wands is motivated to rush to action, but might never be able to build something that lasts, like the pyramids behind him."
+cards = ['coins-12', 'cups-12', 'wands-12', 'swords-12']
+
 [land-and-water]
 name = "Land and Water"
 desc = "Occult decks frequently draw Temperance with one foot on stable land and one foot in emotional water. A dive-in-or-get-off-the-dock approach assumes extremes are the only options, but they aren't. On the Star card, the figure pours the Water of Life over both land and water, "
@@ -547,6 +557,10 @@ name = "Nudity"
 desc = "Nudity communicates innocence, openness, and shamelessness. On some cards, like the Star and Lovers cards, this is a good thing. On others, like the Devil card, it's framed as a weakness."
 cards = ['major-06', 'major-15', 'major-17']
 
+[one-at-a-time]
+name = "One at a Time"
+desc = "Our friend on many versions of this card has several coins hanging on the doorpost, but he can only make one coin at a time. This represents how some work, especially involving craftsmanship, can't be rushed."
+
 [orb-and-cross-scepter]
 name = "Scepter with Orb and Cross"
 desc = "The Empress’s scepter is a symbol of authority. It's topped by a cross and an orb, a sign of earthly dominion."
@@ -563,6 +577,11 @@ name = "Partially Overturned Cups"
 desc = "Tradition leads many artists to draw this card with three Cups overturned and two still standing. The outcome (three) of your emotional or spiritual effort may be disappointing, but now it’s time to focus on achieving a new sense of unity (two) elsewhere."
 variations = ['cups']
 cards = ['cups-05']
+
+[page]
+name = "Page"
+desc = "The Page represents anyone who wants to or needs to learn about something."
+cards = ['coins-11', 'cups-11', 'wands-11', 'swords-11']
 
 [pale-horse]
 name = "Pale Horse"
@@ -884,6 +903,11 @@ cards = ['major-18']
 name = "Unhappy Farmer"
 desc = "RWS-influenced decks depict in 7 of Coins a man whose posture and expression suggest a level of exhaustion and regret that not even a bumper crop can alleviate. Most likely, his expectations were out of alignment with reality."
 cards = ['coins-07']
+
+[unmoving-horse]
+name = "Unmoving Horse"
+desc = "In many decks, the Knight of Coin’s horse stands as rigid and still as a statue. There’s a difference between proceeding with caution and allowing yourself to become paralyzed by pessimism."
+cards = ['coins-12']
 
 [unstable-ground]
 name = "Unstable Ground"

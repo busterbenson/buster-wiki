@@ -1,7 +1,7 @@
 +++
 # hugo new --kind tarot-card content/projects/tarot/cards/suit-number.md
 # basics
-title     		 = "10 of Coins"
+title     		 = "10 of Pentacles"
 token					 = 'coins-10'
 card_type			 = '' # major, minor, court
 layout				 = "tarot-card"
@@ -35,7 +35,7 @@ advice_fortune_telling = "Big money is in the near future. Expect a powerful ble
 questions	= ["How much stuff do I really need?", "How do I feel about wealth and abundance? How do I define these terms?", "How might shedding some possessions open room for growth?"]
 
 # referenced in the symbols.toml data file
-symbols	  = ['10', 'coins']
+symbols	  = ['10', 'coins', 'tree-of-life', 'pensive-elder']
 
 # metadata
 suppress_topnav = true

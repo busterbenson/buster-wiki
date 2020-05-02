@@ -12,14 +12,15 @@ keywords			 = []
 url						 = 'tarot/cards/cups-11'
 aliases				 = []
 
+personality    = ""
+
 meaning_light  = ""
 
 meaning_shadow = ""
 
 # more detail
-correspondence_planet 			= ""
-correspondence_astrological = ""
-correspondence_affirmation  = ""
+correspondence_element 			= ""
+correspondence_affirmation 	= ""
 correspondence_story 				= ""
 
 advice_relationships 	 = ""

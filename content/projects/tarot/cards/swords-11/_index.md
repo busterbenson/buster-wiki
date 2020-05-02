@@ -9,25 +9,28 @@ author    		 = 'me'
 one_liner 		 = ""
 images				 = ['/images/tarot/rws/rw-swords-11.jpg']
 keywords			 = []
-meaning_light  = ''
-meaning_shadow = ''
 url						 = 'tarot/cards/swords-11'
 aliases				 = ['swords-page']
 
+personality    = ""
+
+meaning_light  = ""
+
+meaning_shadow = ""
+
 # more detail
-correspondence_suit 				= ""
-correspondence_archetype 		= ""
-correspondence_hebrew 			= ""
 correspondence_element 			= ""
-correspondence_planet 			= ""
-correspondence_astrological = ""
-correspondence_mystical 		= ""
+correspondence_affirmation 	= ""
 correspondence_story 				= ""
 
 advice_relationships 	 = ""
+
 advice_work 					 = ""
+
 advice_spirituality 	 = ""
+
 advice_personal_growth = ""
+
 advice_fortune_telling = ""
 
 questions	= []
