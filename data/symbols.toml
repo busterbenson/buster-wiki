@@ -64,8 +64,8 @@ desc = "The kneeling acolytes or ministers wear robes adorned with roses and lil
 
 [adoration-of-coin]
 name = "Adoration of Coin"
-desc = "The RWS Page and Knight of Pentacles romanticizes the giant coin in his hands, holding it like a beloved treasure. There's something silly and a bit naive about this level of reverence for money. And once you’ve attained the object of your quest, caution is required to protect, maintain, and preserve what you’ve won. And yet, regarding something too highly is the best way to render it useless."
-cards = ['page-11', 'page-12']
+desc = "The RWS Page, Knight, and Queen of Pentacles seem to romanticize the giant coin in their hands, holding it like a beloved treasure. There's something a bit silly and superficial about this level of reverence for money. As the court cards progress you can see how once you’ve attained the object of your quest, caution is increasingly required to protect, maintain, and preserve what you’ve won."
+cards = ['coins-11', 'coins-12', 'coins-13']
 
 [angel]
 name = "An Angel"
@@ -196,6 +196,10 @@ name = "Boaz and Jachin"
 desc = "The B (Boaz) and J (Jachin) often seen on the columns to either side of the Priestess are the two pillars of Solomon’s Temple. Their names mean “in strength” and “God will establish” and hint at the High Priestess's mysterious connection with reality. We also see these columns in the Justice card, but the veil now represents human law."
 variations = ['black-and-white']
 cards = ['major-02', 'major-11']
+
+[controlled-luxury]
+name = "Controlled Luxury"
+desc = "No excesses here; the King of Coins enjoys his comforts, but he keeps them in perspective."
 
 [the-couple]
 name = "The Couple"
@@ -434,7 +438,12 @@ cards = ['cups-10']
 [happy-merchant]
 name = "Happy Merchant"
 desc = "The RWS-inspired merchant on the 9 of Cups sits in front of a raised and curtained platform, looking as happy as he can be. The Gilded Tarot’s wine maker is “in his cups,” merry as ever."
-cards = ['cards-09']
+cards = ['cups-09']
+
+[harvest-throne]
+name = "The Harvest Throne"
+desc = "The King of Coins frequently sits on a throne draped with vines and grapes—a reminder of his intimate connection with the forces that create abundance."
+cards = ['coins-14']
 
 [holy-grail]
 name = "Holy Grail"
@@ -516,6 +525,11 @@ cards = ['major-18']
 name = "Loose Bonds"
 desc = "Many versions of the 8 of Swords feature someone tied with what appear to be very loose bonds. They are reminiscent of the chains around the fawns’ necks on the Devil card. She feels trapped in many different ways, but each of those ways is relatively easy to get out of?"
 cards = ['swords-08']
+
+[luxurious-robes]
+name = "Luxurious Robes"
+desc = "Reflecting themes of luxury and sensuality, the Queen of Coins is frequently clothed in rich fabrics and loose, comfortable robes. She loves the pentacle in her hands: its texture, its temperature, its smoothness, its weight."
+cards = ['coins-13']
 
 [mandalora]
 name = "Mandalora"

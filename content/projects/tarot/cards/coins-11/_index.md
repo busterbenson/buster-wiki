@@ -20,6 +20,7 @@ meaning_shadow = "Trying to appear healthier or wealthier than you really are. S
 
 # more detail
 correspondence_element 			= "Earth"
+correspondence_planet 			= "Earth"
 correspondence_affirmation 	= "I am physically and financially responsible."
 correspondence_story 				= "The main character must compensate for or learn from an earlier financial or sexual impropriety."
 
