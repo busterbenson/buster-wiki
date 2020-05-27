@@ -2,4 +2,4 @@
   functions = "./functions"
 
 [context.production.environment]
-  HUGO_VERSION = "0.68"
+  HUGO_VERSION = "0.71.1"
