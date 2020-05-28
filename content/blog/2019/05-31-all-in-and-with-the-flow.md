@@ -33,7 +33,7 @@ And here I am back on the 1-human rickshaw. Honestly, when I joined Twitter in 2
 
 It’s tempting to always rationalize why our current position is optimal, but as I get older it’s a lot easier to see how things move in cycles, and the cycles themselves are what we should pay attention to more than where we happen to be in them at the moment.
 
-Online & offline
+### Online & offline
 Another cycle that’s present here is the cycle between tech and traditional businesses. I was a creative writing major in college, and dreamed of writing novels but then joined the tech world because it was such an exciting time. McLeod Residence was an art gallery and bar in Seattle that was my first attempt to return to the brick and mortar tangible world. That was hard so I ended up going back to tech for a while, and am now trying another route that hearkens back to my original writing aspirations.
 
 There’s something in the air.
