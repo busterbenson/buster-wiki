@@ -197,9 +197,15 @@ desc = "The B (Boaz) and J (Jachin) often seen on the columns to either side of 
 variations = ['black-and-white']
 cards = ['major-02', 'major-11']
 
+[contemplative-horse]
+name = "Contemplative Horse"
+desc = "In RWS-inspired versions of this card, the Knight’s steed looks almost contemplative. But Knights, by nature embody extremes. In times of extreme emotion, are you reflective…or berserk?"
+cards = ['cups-12']
+
 [controlled-luxury]
 name = "Controlled Luxury"
 desc = "No excesses here; the King of Coins enjoys his comforts, but he keeps them in perspective."
+cards = ['coins-14']
 
 [the-couple]
 name = "The Couple"
@@ -260,6 +266,11 @@ name = "Cups"
 desc = "One of the 4 suits of the tarot. Also sometimes called vessels, or chalices. Represents intuition, spirituality, affection, and motivation. As a suit marker, Cups suggest receptivity: they are vessels, waiting to be filled. Cups have long been associated with divination (remember the uproar caused when Benjamin stole King Joseph’s cup?) and, by extension, intuition."
 variations = ['upraised-cups', 'extended-cup', 'partially-overturned-cups', 'floating-cups']
 cards = ['major-01', 'cups-01', 'cups-02', 'cups-03', 'cups-04', 'cups-05', 'cups-06', 'cups-07', 'cups-08', 'cups-09', 'cups-10', 'cups-11', 'cups-12', 'cups-13', 'cups-14']
+
+[cup-held-aloft]
+name = "Cup Held Aloft"
+desc = "The Knight of Cups is frequently drawn with a cup held aloft—or, at least, carried reverently. Emotions are powerful; they must be treated with the utmost care. If we fail to take proper precautions, emotions will overrun our lives, drenching us in obsession and over-reaction."
+cards = ['cups-12']
 
 [dancing-woman]
 name = "Dancing Woman"
@@ -359,6 +370,12 @@ cards = ['major-16']
 name = "Fiery Surroundings"
 desc = "The Emperor often appears in a blasted desert landscape (suggestive of Mars). Here, the emotional stream that flowed so freely past the Empress is often compressed into a weak, regulated trickle."
 cards = ['major-04']
+
+[fish]
+name = "Fish"
+desc = "In many decks, a playful fish peeks out of the Page’s Cup."
+cards = ['cups-11']
+
 
 [five-figures]
 name = "In RWS-inspired decks, five figures on the 5 of Wands confront each other. Are they fighting? Are they dancing? Are three watching while the other two battle to the death? Waite claimed the youths could be engaged in either sport or strife -- or even a “sham fight.” It’s worth asking whether or not your conflict, represented by this card, is the problem or just a symptom of something else in the group dynamic."
@@ -474,6 +491,11 @@ cards = ['major-00']
 name = "Juggler"
 desc = "In the Marseilles deck, the Magician is a juggler, known for his slight of hand. In RWS-inspired decks, the 2 of Coins depicts a juggler carefully balancing two Coins joined by a lemniscate (infinity symbol). The world offers us infinite options; the choices we make are a result of weighing each option against our personal value system. There are options in the air."
 cards = ['major-01', 'coins-02']
+
+[king]
+name = "King"
+desc = "A King card in your reading makes things limited and certain but also delivers results that are more concrete, more absolute and of a longer lasting impact."
+cards = ['cups-14', 'coins-14', 'wands-14', 'swords-14']
 
 [king-of-the-hill]
 name = "King of the Hill"
@@ -612,6 +634,11 @@ name = "Pensive Elder"
 desc = "On the 10 of Coins, RWS-inspired decks often depict an older man, deep in thought. What’s on his mind? His wealth? His family? The future of his empire? How might these sobering topics play a role in your situation?"
 cards = ['coins-10']
 
+[pensive-expression]
+name = "Pensive Expression"
+desc = "Some see the Queen of Cups as pensive and moody. Are your own strong feelings an aid…or a distraction?"
+cards = ['cups-13']
+
 [pentagram]
 name = "Pentagram"
 desc = "Upright, the Star of David is associated with the five points of the human body. Inverted as a pentagram it suggests the head (the intellect) has been conquered by desire."
@@ -642,6 +669,11 @@ cards = ['major-03']
 name = "Prisoners"
 desc = "The Devil is accompanied by fauns -- mythical half-goats whose horns and tails emphasize their bestial nature. Their fascination with the material prevents them from stepping away from the loose chains around their necks."
 cards = ['major-15']
+
+[queeen]
+name = "Queen"
+desc = "Each Queen card is the emotional manifestation of the suit she rules."
+cards = ['cups-13', 'coins-13', 'wands-13', 'swords-13']
 
 [rack-of-swords]
 name = "Rack of Swords"
@@ -729,6 +761,11 @@ name = "Scales"
 desc = "Scales have long been a symbol of balance and evaluation, as seen in the Justice card. The Egyptian god Ma’at weighed souls to determine purity of heart. In the 6 of Coins, there's a man with scales doling out charity to grateful recipients. The scales emphasize the fairness with which his charity is delivered, making it possible for each person to receive exactly what’s needed. In your own circumstance, what role does fairness play?"
 variations = ['balance']
 cards = ['major-11', 'coins-06']
+
+[seashell-throne]
+name = "Seashell Throne"
+desc = "While the nature of the Queen’s throne is difficult to see in the Marseilles version of this card, most RWS-inspired cards depict a throne integrating watery themes."
+cards = ['cups-13']
 
 [serpent]
 name = "Serpent"
@@ -906,7 +943,7 @@ cards = ['wands-06']
 [turbulent-seas]
 name = "Turbulent Seas"
 desc = "In some versions of the 2 of Coins we see a rolling, unstable sea in the background -- a sign the juggler’s emotions are stirred as he struggles to get a handle on his dilemma."
-cards = ['coins-02']
+cards = ['coins-02', 'coins-14']
 
 [two-towers]
 name = "Two Towers"
@@ -959,6 +996,11 @@ name = "Wand in Hand"
 desc = "In RWS-inspired decks, the 3 of Wands card often depicts a merchant and three wands. Two (the number of duality) have been planted in the ground, but one (the “starting point”) is in hand—suggesting the time for debate has given way to a time for action."
 variations = ['wands']
 cards = ['wands-03']
+
+[watery-throne]
+name = "Watery Throne"
+desc = "Many decks depict the King’s throne floating in water. Rather than sink into emotionalism, this King rises above it."
+cards = ['cups-14']
 
 [wedding]
 name = "Wedding"
