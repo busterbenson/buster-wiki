@@ -7,16 +7,107 @@
       <div class="mt-1 text-smaller"><strong><a href="/projects">PROJECTS</a></strong></div>
       {{ partial "title-and-content-basic" . }}
 
-      <div class="mt-3 mb-3">
-        <a class="button btn btn-warning btn-lg" style="display: block;" href="javascript:goto_random_card();" style="font-weight: bold;">Draw a card</a>
-      </div>
-
       <div class="row justify-content-start" style="padding: 4px;">
-      {{ range (shuffle $.Site.Data.tarot.cards) }}
+
         <div class="col-4 col-sm-3 col-md-2 mb-2">
-          <a href="/tarot/cards/{{ . }}"><img src="/images/tarot/rws/rw-{{ . }}.jpg" /></a>
+          <div><a href="/tarot/cards/major-00">The Fool</a></div>
+          <div><a href="/tarot/cards/major-01">The Magician</a></div>
+          <div><a href="/tarot/cards/major-02">The High Priestess</a></div>
+          <div><a href="/tarot/cards/major-03">The Empress</a></div>
+          <div><a href="/tarot/cards/major-04">The Emporer</a></div>
+          <div><a href="/tarot/cards/major-05">The Hierophant</a></div>
+          <div><a href="/tarot/cards/major-06">The Lovers</a></div>
+          <div><a href="/tarot/cards/major-07">The Chariot</a></div>
+          <div><a href="/tarot/cards/major-08">Strength</a></div>
+          <div><a href="/tarot/cards/major-09">The Hermit</a></div>
+          <div><a href="/tarot/cards/major-10">Wheel of Fortune</a></div>
+          <div><a href="/tarot/cards/major-11">Justice</a></div>
+          <div><a href="/tarot/cards/major-12">The Hanging Man</a></div>
+          <div><a href="/tarot/cards/major-13">Death</a></div>
+          <div><a href="/tarot/cards/major-14">Temperance</a></div>
+          <div><a href="/tarot/cards/major-15">The Devil</a></div>
+          <div><a href="/tarot/cards/major-16">The Tower</a></div>
+          <div><a href="/tarot/cards/major-17">The Star</a></div>
+          <div><a href="/tarot/cards/major-18">The Moon</a></div>
+          <div><a href="/tarot/cards/major-19">The Sun</a></div>
+          <div><a href="/tarot/cards/major-20">Judgement</a></div>
+          <div><a href="/tarot/cards/major-21">The World</a></div>
         </div>
-      {{ end }}
+
+
+        <div class="col-4 col-sm-3 col-md-2 mb-2">
+          <div><a href="/tarot/cards/cups-01">Ace of Cups</a></div>
+          <div><a href="/tarot/cards/cups-02">2 of Cups</a></div>
+          <div><a href="/tarot/cards/cups-03">3 of Cups</a></div>
+          <div><a href="/tarot/cards/cups-04">4 of Cups</a></div>
+          <div><a href="/tarot/cards/cups-05">5 of Cups</a></div>
+          <div><a href="/tarot/cards/cups-06">6 of Cups</a></div>
+          <div><a href="/tarot/cards/cups-07">7 of Cups</a></div>
+          <div><a href="/tarot/cards/cups-08">8 of Cups</a></div>
+          <div><a href="/tarot/cards/cups-09">9 of Cups</a></div>
+          <div><a href="/tarot/cards/cups-10">10 of Cups</a></div>
+          <div><a href="/tarot/cards/cups-11">Page of Cups</a></div>
+          <div><a href="/tarot/cards/cups-12">Knight of Cups</a></div>
+          <div><a href="/tarot/cards/cups-13">Queen of Cups</a></div>
+          <div><a href="/tarot/cards/cups-14">King of Cups</a></div>
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2 mb-2">
+          <div><a href="/tarot/cards/coins-01">Ace of Coins</a></div>
+          <div><a href="/tarot/cards/coins-02">2 of Coins</a></div>
+          <div><a href="/tarot/cards/coins-03">3 of Coins</a></div>
+          <div><a href="/tarot/cards/coins-04">4 of Coins</a></div>
+          <div><a href="/tarot/cards/coins-05">5 of Coins</a></div>
+          <div><a href="/tarot/cards/coins-06">6 of Coins</a></div>
+          <div><a href="/tarot/cards/coins-07">7 of Coins</a></div>
+          <div><a href="/tarot/cards/coins-08">8 of Coins</a></div>
+          <div><a href="/tarot/cards/coins-09">9 of Coins</a></div>
+          <div><a href="/tarot/cards/coins-10">10 of Coins</a></div>
+          <div><a href="/tarot/cards/coins-11">Page of Coins</a></div>
+          <div><a href="/tarot/cards/coins-12">Knight of Coins</a></div>
+          <div><a href="/tarot/cards/coins-13">Queen of Coins</a></div>
+          <div><a href="/tarot/cards/coins-14">King of Coins</a></div>
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2 mb-2">
+          <div><a href="/tarot/cards/wands-01">Ace of Wands</a></div>
+          <div><a href="/tarot/cards/wands-02">2 of Wands</a></div>
+          <div><a href="/tarot/cards/wands-03">3 of Wands</a></div>
+          <div><a href="/tarot/cards/wands-04">4 of Wands</a></div>
+          <div><a href="/tarot/cards/wands-05">5 of Wands</a></div>
+          <div><a href="/tarot/cards/wands-06">6 of Wands</a></div>
+          <div><a href="/tarot/cards/wands-07">7 of Wands</a></div>
+          <div><a href="/tarot/cards/wands-08">8 of Wands</a></div>
+          <div><a href="/tarot/cards/wands-09">9 of Wands</a></div>
+          <div><a href="/tarot/cards/wands-10">10 of Wands</a></div>
+          <div><a href="/tarot/cards/wands-11">Page of Wands</a></div>
+          <div><a href="/tarot/cards/wands-12">Knight of Wands</a></div>
+          <div><a href="/tarot/cards/wands-13">Queen of Wands</a></div>
+          <div><a href="/tarot/cards/wands-14">King of Wands</a></div>
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2 mb-2">
+          <div><a href="/tarot/cards/swords-01">Ace of Swords</a></div>
+          <div><a href="/tarot/cards/swords-02">2 of Swords</a></div>
+          <div><a href="/tarot/cards/swords-03">3 of Swords</a></div>
+          <div><a href="/tarot/cards/swords-04">4 of Swords</a></div>
+          <div><a href="/tarot/cards/swords-05">5 of Swords</a></div>
+          <div><a href="/tarot/cards/swords-06">6 of Swords</a></div>
+          <div><a href="/tarot/cards/swords-07">7 of Swords</a></div>
+          <div><a href="/tarot/cards/swords-08">8 of Swords</a></div>
+          <div><a href="/tarot/cards/swords-09">9 of Swords</a></div>
+          <div><a href="/tarot/cards/swords-10">10 of Swords</a></div>
+          <div><a href="/tarot/cards/swords-11">Page of Swords</a></div>
+          <div><a href="/tarot/cards/swords-12">Knight of Swords</a></div>
+          <div><a href="/tarot/cards/swords-13">Queen of Swords</a></div>
+          <div><a href="/tarot/cards/swords-14">King of Swords</a></div>
+        </div>
+
+        <div class="col-4 col-sm-3 col-md-2 mb-2">
+          <p>Or, if you'd like to get a random card...</p>
+          <a class="button btn btn-warning btn-lg" style="display: block;" href="javascript:goto_random_card();" style="font-weight: bold;">Draw card</a>
+        </div>
+
       </div>
 
     </div>
