@@ -28,7 +28,7 @@
     "grunt-responsive-images": "^1.10.1"
   },
   "dependencies": {
-    "ajv": "^6.10.1",
+    "ajv": "^6.12.3",
     "atomic-algolia": "^0.3.17",
     "instantsearch.js": "^3.5.4",
     "netlify-lambda": "^1.5.0",
