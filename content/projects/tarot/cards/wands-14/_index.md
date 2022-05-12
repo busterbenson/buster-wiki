@@ -9,8 +9,6 @@ author    		 = 'me'
 one_liner 		 = ""
 images				 = ['/images/tarot/rws/rw-wands-14.jpg']
 keywords			 = ['creativity', 'ingenuity', 'achievement', 'direction']
-meaning_light  = ''
-meaning_shadow = ''
 url						 = 'tarot/cards/wands-14'
 aliases				 = ['wands-king']
 

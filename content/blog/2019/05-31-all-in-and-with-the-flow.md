@@ -38,7 +38,7 @@ Another cycle that’s present here is the cycle between tech and traditional bu
 
 There’s something in the air.
 
-{{< instagram ByIT4qSnbtB >}}
+instagram ByIT4qSnbtB
 
 The phrase “all in” is really interesting to me, because it’s both exactly how I feel and also the opposite of how I feel. And this distinction is what fascinates me. How is it possible to go in “full force” while doing it “at least temporarily” and not trigger a paradox that destroys the universe?
 

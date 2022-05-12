@@ -31,7 +31,7 @@ advice_spirituality 	 = "Practice the delivery of praise. When you receive bless
 
 advice_personal_growth = "Your insights, opinions, and attitudes influence others more than you know. Express your thoughts with care, making sure you phrase your observations in ways that encourage growth. If you need encouragement, encourage others to give it."
 
-advice_fortune_telling = This card represents a woman with an artistic, intellectual nature, likely born between September 12th and October 12th, who uses clever, positive communication to sway others to her point of view."
+advice_fortune_telling = "This card represents a woman with an artistic, intellectual nature, likely born between September 12th and October 12th, who uses clever, positive communication to sway others to her point of view."
 
 questions	= ["What do I have a knack for? How might my special gift prove useful now?", "To what extent am I capable of saying what needs to be said?", "What is the best possible way to say what I want to say?"]
 
