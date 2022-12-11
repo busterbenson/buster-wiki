@@ -181,7 +181,6 @@ Avg sleep per night | 6h 17m    | --
 *I turn in my manuscript with all the copy edits incorporated and all 450 comments addressed.*
 
 - 👍 I did this, though it was a bit rushed at the end. Some of this work feels a bit like Zeno's paradox... while I can get closer and closer to the end, I feel like I'm approaching an asymptote where each revision comes more likely of needed to be revised again in the future, generating work that approaches infinite. I guess that's a good place to begin to think that I'm "done" for now. 
-- This metaphor was inspired by this tweet: {{< tweet "1140681273725206528" >}}
 
 *I do at least 20 minutes on the Peloton every day.*
 
